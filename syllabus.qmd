@@ -1,0 +1,174 @@
+---
+title: "Syllabus"
+author: "Davi Moreira"
+editor: visual
+---
+
+<br>
+
+<center>
+
+*IMPORTANT*
+
+*This document does not replace the official syllabus in the course brightspace page*
+
+</center>
+
+<br>
+
+## Course Description and Objectives
+
+The course enables students to navigate the entire predictive analytics pipeline skillfully, from data preparation and exploration to modeling, assessment, and interpretation. Throughout the course, learners engage with real-world examples and hands-on labs emphasizing essential programming and analytical skills. By exploring topics such as linear and logistic regression, classification, resampling methods, regularization techniques, tree-based approaches, and advanced learning paradigms (including neural networks), participants gain a robust theoretical understanding and practical experience. Ultimately, students will leave the course equipped to apply predictive models to data-driven problems, communicate their findings to diverse audiences, and critically evaluate model performance to inform strategic decision-making across various business contexts.
+
+**Course Website**: [https://davi-moreira.github.io/2026Summer_predictive_analytics_purdue_MGMT474/](https://davi-moreira.github.io/2026Summer_predictive_analytics_purdue_MGMT474/){target="_blank"}
+
+## Instructor
+
+### Instructor: [Professor Davi Moreira](https://davi-moreira.github.io)
+
+-   Email: [dcordeir\@purdue.edu](mailto:dcordeir@purdue.edu)
+-   Office: Young Hall 1019
+-   Class meetings: Section Y01 -- Monday--Friday online, with a **synchronous meeting Fridays 11 am -- 12:00 pm EST** (Zoom link on Brightspace)
+-   Office Hours: **Tuesdays 11:00 am -- 12:00 pm EST** (Zoom link on Brightspace)
+-   Individual Appointments: *Book time with me through the link in the course syllabus on your Course Brightspace Page, or by appointment.*
+
+> **Note:** Email responses are typically within 24 business hours. If you do not receive a response by the 24-hour mark, please email me again.
+
+## Learning Outcomes
+
+By the conclusion of this course, students will be able to:
+
+1.  **Explain Core Predictive Analytics Concepts:** Define, distinguish, and exemplify the key ideas of statistical/machine learning.
+
+2.  **Prepare, Process, and Explore Data Effectively:** Demonstrate the ability to clean, organize, and preprocess data using appropriate tools and techniques; address missing values, apply feature engineering methods, and perform comprehensive exploratory data analysis to generate meaningful insights.
+
+3.  **Implement and Compare Diverse Predictive Modeling Techniques:** Specify, train, and evaluate a range of predictive models using appropriate algorithms; apply systematic hyperparameter optimization to enhance performance; and diagnose model limitations through quantitative and visual diagnostics to guide model refinement and selection.
+
+4.  **Evaluate, Interpret, and Communicate Model Performance:** Estimate out-of-sample performance using direct and indirect approaches (e.g., holdout sets, cross-validation, resampling); interpret metrics in the context of project objectives; and deliver clear, audience-appropriate recommendations that explicitly address uncertainty, risk trade-offs, and ethical implications.
+
+## Course Materials
+
+-   **Textbook (Recommended): [ISLP]** James, G., Witten, D., Hastie, T., & Tibshirani, R. (2023). *An Introduction to Statistical Learning with Applications in Python.* Springer. <https://doi.org/10.1007/978-1-0716-2926-2>. Free download: [https://www.statlearning.com/](https://www.statlearning.com/){target="_blank"}
+
+-   **Computing (Required):** A laptop or desktop with internet access and the capability to run Python code through Google Colab: [https://colab.research.google.com/](https://colab.research.google.com/){target="_blank"}.
+
+-   **Software (Required):**
+
+    -   [**Google Colab**](https://colab.research.google.com/){target="_blank"} is a cloud-based platform that requires no software installation on your local machine; it is accessible through a modern web browser such as Google Chrome, Mozilla Firefox, Microsoft Edge, or Safari. To use Google Colab, you need a Google account and a stable internet connection. All course notebooks are designed to run directly in Google Colab with all necessary dependencies pre-configured. While optional, having tools like a local Python installation (e.g., Anaconda) or a Python IDE (e.g., Jupyter Notebook or VS Code) can be helpful for offline development. Additionally, browser extensions, such as those for VS Code integration, can enhance your experience but are not required. This makes Google Colab convenient and easy for Python programming and data science tasks.
+    -   [**Google Gemini in Colab**](https://colab.research.google.com/){target="_blank"}: Students will use Google Gemini AI assistance directly within Colab notebooks to accelerate coding while maintaining accountability through the "vibe coding" workflow: draft code with AI assistance $\rightarrow$ verify correctness $\rightarrow$ document decisions. This approach helps students learn faster while developing critical thinking about AI-generated code.
+    -   [**Microsoft Copilot**](https://it.purdue.edu/newsroom/2024/240313-copilot-with-data-protection.php){target="_blank"}: is an AI-powered assistant designed to enhance productivity and streamline workflows across various applications and services. It utilizes large language models and is integrated within Microsoft 365 apps like Word, Excel, PowerPoint, Outlook, and Teams, providing real-time, context-aware assistance for tasks such as drafting documents, analyzing data, managing projects, and communicating more efficiently. Users can leverage Copilot to automate repetitive tasks, generate ideas, summarize information, and access data across their work environment and the web, all within a secure and privacy-conscious framework.
+
+### Course Infra-structure
+
+**Brightspace:** The Course Brightspace Page <https://purdue.brightspace.com/> should be checked on a regular basis for announcements and course material.
+
+## Assessments
+
+As part of a university-wide initiative, the Business School has adopted an **Official Grading Policy** that caps the overall class GPA at 3.3. Final letter grades are determined by curving final percentages, subject to any extra-credit exceptions discussed in this syllabus. While you will see your final percentage in Brightspace, individual grade thresholds will not be disclosed before official submissions.
+
+| **Assessment**                    | **Weight** |
+|-----------------------------------|-----------:|
+| Participation                     |         5% |
+| Quizzes                           |        20% |
+| Online Midterm Exam               |        20% |
+| Course Case Competition (Kaggle)  |        20% |
+| Final Project                     |        35% |
+
+### Participation (5%)
+
+You are required to complete participation activities (e.g., surveys, instructor requests) and all participatory PAUSE-AND-DO exercises embedded in the lecture materials. You must submit the corresponding Jupyter Notebook (`.ipynb`) containing your completed work to the course Brightspace site by the stated deadline. Your participation grade is assessed based on completeness and timeliness of these notebook submissions, with no participatory activity dropped.
+
+### Quizzes (20%)
+
+Short quizzes based on lecture and notebook content promote consistent engagement with the course material. Quizzes contribute to the final course grade with no quiz dropped. Due dates are clearly outlined on Brightspace and aligned with the course schedule. Quizzes are designed to reinforce understanding and ensure steady progress through the curriculum.
+
+### Online Midterm Exam (20%)
+
+The midterm exam wraps up the foundational concepts of the course in a comprehensive assessment delivered on **Day 10**. Students have limited time to complete multiple-choice questions that evaluate their technical abilities and their understanding of core concepts. Only under exceptional circumstances, when legitimate and verifiable reasons are provided, will make-ups be given. *Exceptional circumstances* means a death in the family, a serious personal medical emergency, participation in a conflicting NCAA athletic event, or as otherwise required by University policies. Except for emergencies, requests for a make-up must be made by email with supporting documentation no later than 7 days before the scheduled exam.
+
+### Course Case Competition — Kaggle (20%)
+
+A course-long predictive analytics competition hosted on Kaggle. The **Summer 2026 QM47400 Case Competition: Bank Churn** is adapted from the 2024 Kaggle Playground Series, which uses AI-generated synthetic data designed for educational purposes. Your task is to build models that predict whether a customer continues with their account or closes it (churn). **Students are randomly assigned to teams (up to four members)** and have a limit of **five Kaggle submissions per day**. The competition **opens May 18, 2026, and the final submission deadline is June 12, 2026**. Kaggle automatically evaluates submissions and maintains the leaderboard throughout the competition period.
+
+-   **Competition:** Summer 2026 QM47400 Case Competition: Bank Churn
+-   **Task:** Predict the probability that a customer will churn (`Exited` = 1)
+-   **Metric:** AUC-ROC
+-   **Max submissions:** 5 per day on Kaggle
+
+**Grading breakdown (of the competition grade):**
+
+1.  **Team Participation (20%):** An evaluation of your submitted, reproducible notebook — a clean Run-All in Colab, a leakage-safe pipeline, cross-validated ROC-AUC with 95% confidence intervals for a baseline and a more complex model, systematic hyperparameter tuning, the required visualizations, and a brief write-up. Earned with at least one valid Kaggle submission plus the notebook, and **not** conditioned on leaderboard rank.
+2.  **Leaderboard Performance (60%):** Your team's final standing on the **private** Kaggle leaderboard at the close, scored by **rank** on a scale anchored so that a model no better than random guessing (AUC = 0.5) earns zero credit.
+3.  **Peer Evaluation (20%):** A confidential intra-team evaluation of each member's contribution; this is the individual portion of the competition grade.
+
+Two **−10 point** penalties apply to the team total: a Kaggle team name that is not `Group NN` at the deadline, and a submitted notebook filename that is not `NN_kaggle_code.ipynb`.
+
+**Brightspace deliverable:** Submit the complete code for your best-performing model. The code must be fully replicable, allowing the instructor and TA to reproduce the same results and performance metrics. Include all necessary steps: data preprocessing, feature engineering, model training, evaluation, and generation of the submission file.
+
+### Final Project (35%)
+
+In **groups of four randomly assigned members**, students complete a practical predictive analytics project culminating in a **final research poster**. Although presenting the poster at the Fall 2026 Purdue Undergraduate Research Conference is **not required**, it is **strongly encouraged**. All groups must still prepare and submit the final poster as part of the course requirements. Professor Moreira is happy to serve as faculty mentor for groups choosing to present at the conference.
+
+**Grading breakdown (of the final-project grade):** Review the course syllabus available on the Course Brightspace page for details.
+
+1.  **Milestone Deliverables.**
+2.  **Peer Evaluation.**
+3.  **Instructor / TA Evaluation.**
+
+**Optional conference presentation.** Presenting at the Fall 2026 Purdue Undergraduate Research Conference is optional and not required for your course grade. Students who plan to present are encouraged to communicate with the instructor early so he can provide mentorship, feedback, and guidance throughout the process. Additional information about Purdue undergraduate research conferences: <https://www.purdue.edu/undergrad-research/conferences/index.php>{target="_blank"}.
+
+### Grade Challenges
+
+Students who wish to challenge a grade must do so **within 3 calendar days** of the grade's release. An exception applies for the last week of class, when assignments must be challenged **within 1 calendar day** to ensure timely computation of final course grades. Grade challenges must be grounded in legitimate disputes over predictive analytics principles or grading accuracy. Challenges based on post-hoc legalistic arguments or subjective dissatisfaction will not be considered.
+
+To challenge an assignment score:
+
+1.  **Review posted solutions** thoroughly.
+2.  If you still believe an error has been made, email the instructor with:
+    -   Course name, section, and lecture date/time
+    -   Your name and Student ID
+    -   Assignment number / title
+    -   Specific deduction being challenged
+    -   Reason for the challenge, clearly explaining why the deduction is believed to be incorrect, with reference to the solutions or grading rubric
+
+> *Grades will not be discussed in-class — before, during, or after class. Please use office hours for questions related to course content or assignment clarification. After the challenge period, all grades are final and cannot be revised further for purposes of calculating final course grades.*
+
+## Course Policies and Additional Details
+
+### Extra Credit Opportunities:  
+
+- Review the course syllabus available on the Course Brightspace page for details.
+
+### AI Policy
+
+I encourage you to use AI tools you believe will enhance your individual or group learning performance. Learning to use AI is a valuable and emerging skill, and I am available to provide support during office hours or by appointment. Be aware of the following guidelines:
+
+-   You are **not allowed to use AI tools during exams**.
+-   Providing low-effort prompts will result in low-quality outputs. Refine your prompts to achieve desirable outcomes — use the course knowledge for that.
+-   Use AI to **support your learning**: ask for explanations, examples, or clarifications of doubts; **do not** simply ask for solutions.
+-   **Do not blindly trust the information** provided by the output. Any errors or omissions resulting from your use of an AI tool are your responsibility. AI works better for topics you already understand.
+-   While AI is a tool, you must **acknowledge its use**. Always cite — include a short note at the end of any document mentioning that you used AI in its development.
+
+### Netiquette Guidelines (Zoom Classes / Office Hours)
+
+-   Join with your full name; mute when not speaking.
+-   Be respectful and clear in communication.
+-   Avoid background distractions.
+
+### Accessibility, Accommodations, and Student Well-Being
+
+-   **Accessibility.** Purdue University strives to make learning experiences as accessible as possible. If you anticipate or experience physical or academic barriers based on disability, please let me know so we can discuss options. You are also encouraged to contact the **Disability Resource Center**: [drc\@purdue.edu](mailto:drc@purdue.edu) or 765-494-1247.
+-   **CAPS.** Purdue University is committed to advancing student mental health and well-being. If you or someone you know is feeling overwhelmed, depressed, or in need of support, services are available. Contact **Counseling and Psychological Services (CAPS)** at 765-494-6995 and <http://www.purdue.edu/caps/>{target="_blank"} during and after hours, on weekends and holidays, or through counselors located in the Purdue University Student Health Center (PUSH) during business hours.
+-   **Basic Needs Security.** Contact ODOS if you are facing food or housing insecurity; no appointment needed.
+-   **Non-Discrimination Statement.** Please refer to the Nondiscrimination Statement on Brightspace.
+-   **Emergency Situations.** Please refer to the Emergency Preparedness page on Brightspace.
+
+### Additional Information
+
+Refer to Brightspace for deadlines, academic integrity policies, accommodations, CAPS information, and non-discrimination statements. Registrar add/drop/modify deadlines: <http://www.purdue.edu/Registrar/>{target="_blank"}.
+
+### Subject to Change Policy
+
+While I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change during the term.
+
+## [Schedule](./schedule.qmd)

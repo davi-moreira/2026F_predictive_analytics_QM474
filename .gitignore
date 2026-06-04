@@ -1,0 +1,97 @@
+# R/RStudio
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+
+# Quarto
+/.quarto/
+_freeze/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.pyc
+.venv/
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Admin (keep out of public repo)
+_adm_stuff/
+_announcements/
+_grades/
+_grade/
+grades/
+grade/
+_students_contact/
+_tas/
+_accomodation/
+_course_eval/
+_reflection_*/
+
+# Course materials to exclude
+_complementary_material/
+_syllabus/
+_syllabus_docx/
+_notebook_lm/
+_test_ignore/
+_00_py4ps_install_guide/
+_handouts/
+_homework/
+_lecture_notes/
+_quizzes/
+_midterm_exam/
+_supplemental_material/
+_in_class_participation/
+_notebook/
+_lab/
+_old_files/
+_command_line_activity_solution.qmd
+_command_line_activity_solution.html
+_command_line_activity_solution_files/
+
+# Instructor solution notebooks (keep out of public repo)
+notebooks/*_instructor*.ipynb
+
+# Video lecture guides (local only, not for students)
+video_guides/
+
+# Instructor production templates (poster/video/competition aids, local only)
+_production_kit/
+
+# Notebook datasets (downloaded locally; link externally instead of committing)
+notebooks/data/
+
+# Brightspace LMS content (local only, instructor-facing)
+brightspace/
+
+# Large files (exclude from repo, link instead)
+*.zip
+*.mp4
+*.mp3
+*.m4a
+*.mov
+
+# Keep docs for GitHub Pages
+!docs/
+
+# Temporary
+*.tmp
+*.bak
+.scratch/
+
+**/*.quarto_ipynb
