@@ -1,6 +1,9 @@
 # Final Project — Milestone Reference (Fall 2026, QM47400)
 
-**Single source of truth for the Fall 2026 Final Project milestone numbering, due dates, and grading.** The detailed per-milestone instructions and rubrics live in `Final Project Milestones .docx` (this folder) and `milestone_00_group_contact_confirmation.md`. This file aligns those milestones to the full-semester Fall 2026 format and pins their due dates.
+**Single source of truth for the Fall 2026 Final Project milestone numbering, due dates, and grading.** Every other document — `syllabus.qmd`, `schedule.qmd`, the planning docs, the individual milestone instruction files in this folder, and the project-related notebooks — must be kept consistent with this file. Update it first whenever the project structure changes. The detailed per-milestone instruction files are siblings in this folder (`milestone_00_…` … `milestone_12_…`); the original source rubrics live in [`reference/Final Project Milestones .docx`](reference/Final%20Project%20Milestones%20.docx).
+
+### Individual milestone files (this folder)
+[`milestone_00_group_contact_confirmation.md`](milestone_00_group_contact_confirmation.md) · [`milestone_01_initial_proposal.md`](milestone_01_initial_proposal.md) · [`milestone_02_expanded_outline.md`](milestone_02_expanded_outline.md) · [`milestone_03_draft_abstract.md`](milestone_03_draft_abstract.md) · [`milestone_05_conference_application.md`](milestone_05_conference_application.md) · [`milestone_06_simple_model.md`](milestone_06_simple_model.md) · [`milestone_08_complex_models.md`](milestone_08_complex_models.md) · [`milestone_09_poster_first_draft.md`](milestone_09_poster_first_draft.md) · [`milestone_10_final_poster.md`](milestone_10_final_poster.md) · [`milestone_11_presentation_planning.md`](milestone_11_presentation_planning.md) · [`milestone_12_linkedin_invitation.md`](milestone_12_linkedin_invitation.md)
 
 > **Milestone numbering note.** The numbering below is taken **exactly** from the 2026F reference documents and intentionally keeps the gaps at **M04, M07, M13** (those were instructor/TA meeting-scheduling milestones in Fall 2025 and are not used this term). Do not renumber.
 
@@ -51,7 +54,7 @@ Milestone deliverables are due on **Sundays, 11:59 PM** (the project track runs 
 
 ## Per-milestone summary
 
-Full instructions + rubrics: `Final Project Milestones .docx`. M00: `milestone_00_group_contact_confirmation.md`.
+Full instructions + rubrics: the individual `milestone_NN_*.md` files in this folder (source: `reference/Final Project Milestones .docx`).
 
 ### M00 — Group Contact Confirmation · due Sun Sep 6
 Administrative kickoff: one email thread with all four members + Professor Moreira CC'd, a reply from each of the other three confirming contact info, exported as a single `NN_contact_confirmation.pdf`. Confirms the group is reachable before substantive work begins.

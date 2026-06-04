@@ -70,7 +70,7 @@ Final-project grade composition (see Brightspace syllabus for exact splits): mil
 
 ## Project milestones (Fall 2026)
 
-Canonical reference: [`_final_project/2026F/reference/final_project_milestone_reference.md`](../_final_project/2026F/reference/final_project_milestone_reference.md). **Milestone numbering is taken exactly from the 2026F reference documents** — it intentionally skips M04 / M07 / M13 (retired meeting-scheduling milestones). Due dates follow the Fall 2025 cadence; deliverables are due **Sundays 11:59 PM** except the final poster (pinned to **Tue Nov 10**, 7 days before the conference).
+Canonical reference: [`_final_project/2026F/final_project_milestone_reference.md`](../_final_project/2026F/final_project_milestone_reference.md) (individual `milestone_NN_*.md` files sit beside it). **Milestone numbering is taken exactly from the 2026F reference documents** — it intentionally skips M04 / M07 / M13 (retired meeting-scheduling milestones). Due dates follow the Fall 2025 cadence; deliverables are due **Sundays 11:59 PM** except the final poster (pinned to **Tue Nov 10**, 7 days before the conference).
 
 > **Notebook vs. milestone numbering:** the notebooks use a simplified "M1–M4" project track internally (nb05 proposal, nb09 baseline, nb15 "M3" complex-model walkthrough). The **official deliverables are M00–M12** below; map by topic (complex model → M08, draft abstract → M03). Notebook content is unchanged this term.
 
