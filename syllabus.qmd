@@ -88,7 +88,7 @@ The midterm exam wraps up the foundational concepts of the course in a comprehen
 
 ### Course Case Competition — Kaggle (20%)
 
-A course-long predictive analytics competition hosted on Kaggle. The **Fall 2026 QM47400 Case Competition: Bank Churn** is adapted from the 2024 Kaggle Playground Series, which uses AI-generated synthetic data designed for educational purposes. Your task is to build models that predict whether a customer continues with their account or closes it (churn). **Students are randomly assigned to teams (up to four members)** and have a limit of **five Kaggle submissions per day**. The competition **opens August 24, 2026, and the final submission deadline is November 23, 2026** (concluded on an online session before the Thanksgiving break). Kaggle automatically evaluates submissions and maintains the leaderboard throughout the competition period.
+A course-long predictive analytics competition hosted on Kaggle. The **Fall 2026 QM47400 Case Competition: Bank Churn** is adapted from the 2024 Kaggle Playground Series, which uses AI-generated synthetic data designed for educational purposes. Your task is to build models that predict whether a customer continues with their account or closes it (churn). **Students are randomly assigned to teams (up to four members)** and have a limit of **five Kaggle submissions per day**. The competition **opens August 24, 2026**; we hold an **online work session on Monday, November 23**, and the **final submission deadline is Sunday, November 29, 2026** (before the Thanksgiving break ends). Kaggle automatically evaluates submissions and maintains the leaderboard throughout the competition period.
 
 -   **Competition:** Fall 2026 QM47400 Case Competition: Bank Churn
 -   **Task:** Predict the probability that a customer will churn (`Exited` = 1)
@@ -115,7 +115,7 @@ In **groups of four randomly assigned members**, students complete a practical p
 
 **Grading breakdown (of the final-project grade):** Review the course syllabus available on the Course Brightspace page for details.
 
-1.  **Milestone Deliverables** (M1–M4).
+1.  **Milestone Deliverables** (M00–M12; numbering follows the [Final Project milestone reference](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/tree/main/_final_project/2026F) and skips M04/M07/M13). Due dates are listed on the [Schedule](./schedule.qmd).
 2.  **Poster + Poster-to-Product deliverables** (deployed app + executive brief + showcase).
 3.  **Peer Evaluation.**
 4.  **Instructor / TA Evaluation.**
