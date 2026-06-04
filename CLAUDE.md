@@ -1,15 +1,18 @@
-# 2026 Summer Predictive Analytics — AI Assistant Guide
+# 2026 Fall Predictive Analytics — AI Assistant Guide
 
 This file documents the rules and workflows that change Claude's behavior in this repository. Reference material lives in linked files — read those when relevant, not by default.
 
 ## Project Mission
 
-**QM47400 — Predictive Analytics**, a 4-week intensive online summer course (20 business days, May 18 – June 12, 2026) for Purdue's Daniels School of Business. Daily engagement: ~112.5 minutes via micro-videos (≤12 min) and Google Colab notebooks. Pedagogy: Concept → Demo → PAUSE-AND-DO Practice → Solution → Repeat.
+**QM47400 — Predictive Analytics**, a full-semester course for Purdue's Daniels School of Business, **Fall 2026** (Aug 24 – Dec 11, 2026). In-person **Monday / Wednesday / Friday** class meetings, with the course's micro-videos (≤12 min) and Google Colab notebooks as the hands-on spine. Pedagogy: Concept → Demo → PAUSE-AND-DO Practice → Solution → Repeat.
+
+The same **21-notebook arc (nb00–nb20)** from the 4-week intensive offering is **re-paced across ~15 weeks** — notebook content is unchanged; only the calendar and surrounding project/studio structure differ. Two dates dominate the calendar: course content completes by **~Oct 30**, the **Fall Undergraduate Research Conference poster presentation is Tue Nov 17** (all students present; poster due Nov 10), and the post-poster **Poster-to-Product** build sprint (deployed dashboard/app + executive brief, funded by a Daniels Experiential Learning Grant) runs Nov 18 – Dec 11.
 
 - **Instructor:** Professor Davi Moreira
-- **Repository:** https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474
-- **Website:** https://davi-moreira.github.io/2026Summer_predictive_analytics_purdue_MGMT474/
+- **Repository:** https://github.com/davi-moreira/2026F_predictive_analytics_QM474
+- **Website:** https://davi-moreira.github.io/2026F_predictive_analytics_QM474/
 - **Deployment:** Quarto → `docs/` → GitHub Pages
+- **Master plan:** `_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md`
 
 ## See Also (Reference Files)
 
@@ -20,7 +23,7 @@ This file documents the rules and workflows that change Claude's behavior in thi
 | `_project_docs/DECISIONS.md` | Before proposing changes to conventions (seeds, splits, format) |
 | `_project_docs/TROUBLESHOOTING.md` | Render fails, GitHub Pages stale, Colab errors, leaked solutions |
 | `CONVERSATION_LOG.md` | Project history and prior decisions |
-| `_project_docs/MGMT47400_Online4Week_Plan_2026Summer.md` | The master course plan (source of truth for sequencing) |
+| `_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md` | The master course plan (source of truth for sequencing, Fall 2026 calendar, milestones, Poster-to-Product) |
 | `_project_docs/claude_course_plan.md` | Implementation plan with notebook-content justification |
 | `scripts/audit_cv_first.py` | Run before every commit in nb09–nb20 |
 | `scripts/voice_check_guides.py` | Run before every video-guide edit |

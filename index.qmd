@@ -1,6 +1,6 @@
 ---
 title: "QM47400: Predictive Analytics"
-subtitle: "Mitch. Daniels School of Business, Purdue University (Summer 2026 - 4-Week Online Intensive)"
+subtitle: "Mitch Daniels School of Business, Purdue University (Fall 2026)"
 ---
 
 <!--- # IMPORTANT REFERENCE: https://www.youtube.com/watch?v=uimdXPZc40I&list=PLkrJrLs7xfbXcEKhTCKRSr2VXH4yiBeXo&index=4 --->
@@ -21,14 +21,14 @@ subtitle: "Mitch. Daniels School of Business, Purdue University (Summer 2026 - 4
 
 The course enables students to navigate the entire predictive analytics pipeline skillfully, from data preparation and exploration to modeling, assessment, and interpretation. Throughout the course, learners engage with real-world examples and hands-on labs emphasizing essential programming and analytical skills. By exploring topics such as linear and logistic regression, classification, resampling methods, regularization techniques, tree-based approaches, and advanced learning paradigms (including neural networks), participants gain a robust theoretical understanding and practical experience. Ultimately, students will leave the course equipped to apply predictive models to data-driven problems, communicate their findings to diverse audiences, and critically evaluate model performance to inform strategic decision-making across various business contexts.
 
-**Course Website**: [https://davi-moreira.github.io/2026Summer_predictive_analytics_purdue_MGMT474/](https://davi-moreira.github.io/2026Summer_predictive_analytics_purdue_MGMT474/){target="_blank"}
+**Course Website**: [https://davi-moreira.github.io/2026F_predictive_analytics_QM474/](https://davi-moreira.github.io/2026F_predictive_analytics_QM474/){target="_blank"}
 
 ### Instructor: [Professor Davi Moreira](https://davi-moreira.github.io)
 
 -   Email: [dcordeir\@purdue.edu](mailto:dcordeir@purdue.edu)
 -   Office: Young Hall 1019
--   Class meetings: Section Y01 — Monday–Friday online, with a **synchronous meeting Fridays 11 am – 12:00 pm EST** (Zoom link on Brightspace)
--   Office Hours: **Tuesdays 11:00 am – 12:00 pm EST** (Zoom link on Brightspace)
+-   Class meetings: **Monday / Wednesday / Friday, in person** (room and time on Brightspace), Fall 2026 (Aug 24 – Dec 11, 2026)
+-   Office Hours: **Tuesdays 11:00 am – 12:00 pm EST** (in person or Zoom; link on Brightspace)
 -   Individual Appointments: *Book time with me through the link in the course syllabus on your Course Brightspace Page, or by appointment.*
 
 ## Learning Outcomes

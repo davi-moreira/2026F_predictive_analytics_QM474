@@ -20,7 +20,7 @@ editor: visual
 
 The course enables students to navigate the entire predictive analytics pipeline skillfully, from data preparation and exploration to modeling, assessment, and interpretation. Throughout the course, learners engage with real-world examples and hands-on labs emphasizing essential programming and analytical skills. By exploring topics such as linear and logistic regression, classification, resampling methods, regularization techniques, tree-based approaches, and advanced learning paradigms (including neural networks), participants gain a robust theoretical understanding and practical experience. Ultimately, students will leave the course equipped to apply predictive models to data-driven problems, communicate their findings to diverse audiences, and critically evaluate model performance to inform strategic decision-making across various business contexts.
 
-**Course Website**: [https://davi-moreira.github.io/2026Summer_predictive_analytics_purdue_MGMT474/](https://davi-moreira.github.io/2026Summer_predictive_analytics_purdue_MGMT474/){target="_blank"}
+**Course Website**: [https://davi-moreira.github.io/2026F_predictive_analytics_QM474/](https://davi-moreira.github.io/2026F_predictive_analytics_QM474/){target="_blank"}
 
 ## Instructor
 
@@ -28,8 +28,8 @@ The course enables students to navigate the entire predictive analytics pipeline
 
 -   Email: [dcordeir\@purdue.edu](mailto:dcordeir@purdue.edu)
 -   Office: Young Hall 1019
--   Class meetings: Section Y01 -- Monday--Friday online, with a **synchronous meeting Fridays 11 am -- 12:00 pm EST** (Zoom link on Brightspace)
--   Office Hours: **Tuesdays 11:00 am -- 12:00 pm EST** (Zoom link on Brightspace)
+-   Class meetings: **Monday / Wednesday / Friday, in person** (room and time on Brightspace), Fall 2026 (Aug 24 -- Dec 11, 2026)
+-   Office Hours: **Tuesdays 11:00 am -- 12:00 pm EST** (in person or Zoom; link on Brightspace)
 -   Individual Appointments: *Book time with me through the link in the course syllabus on your Course Brightspace Page, or by appointment.*
 
 > **Note:** Email responses are typically within 24 business hours. If you do not receive a response by the 24-hour mark, please email me again.
@@ -70,7 +70,7 @@ As part of a university-wide initiative, the Business School has adopted an **Of
 |-----------------------------------|-----------:|
 | Participation                     |         5% |
 | Quizzes                           |        20% |
-| Online Midterm Exam               |        20% |
+| Midterm Exam (in person)          |        20% |
 | Course Case Competition (Kaggle)  |        20% |
 | Final Project                     |        35% |
 
@@ -82,15 +82,15 @@ You are required to complete participation activities (e.g., surveys, instructor
 
 Short quizzes based on lecture and notebook content promote consistent engagement with the course material. Quizzes contribute to the final course grade with no quiz dropped. Due dates are clearly outlined on Brightspace and aligned with the course schedule. Quizzes are designed to reinforce understanding and ensure steady progress through the curriculum.
 
-### Online Midterm Exam (20%)
+### Midterm Exam (20%)
 
-The midterm exam wraps up the foundational concepts of the course in a comprehensive assessment delivered on **Day 10**. Students have limited time to complete multiple-choice questions that evaluate their technical abilities and their understanding of core concepts. Only under exceptional circumstances, when legitimate and verifiable reasons are provided, will make-ups be given. *Exceptional circumstances* means a death in the family, a serious personal medical emergency, participation in a conflicting NCAA athletic event, or as otherwise required by University policies. Except for emergencies, requests for a make-up must be made by email with supporting documentation no later than 7 days before the scheduled exam.
+The midterm exam wraps up the foundational concepts of the course in a comprehensive assessment delivered **in person, during class time, in late September** (after the classification and cross-validation arc). Students have limited time to complete multiple-choice questions that evaluate their technical abilities and their understanding of core concepts. Only under exceptional circumstances, when legitimate and verifiable reasons are provided, will make-ups be given. *Exceptional circumstances* means a death in the family, a serious personal medical emergency, participation in a conflicting NCAA athletic event, or as otherwise required by University policies. Except for emergencies, requests for a make-up must be made by email with supporting documentation no later than 7 days before the scheduled exam.
 
 ### Course Case Competition — Kaggle (20%)
 
-A course-long predictive analytics competition hosted on Kaggle. The **Summer 2026 QM47400 Case Competition: Bank Churn** is adapted from the 2024 Kaggle Playground Series, which uses AI-generated synthetic data designed for educational purposes. Your task is to build models that predict whether a customer continues with their account or closes it (churn). **Students are randomly assigned to teams (up to four members)** and have a limit of **five Kaggle submissions per day**. The competition **opens May 18, 2026, and the final submission deadline is June 12, 2026**. Kaggle automatically evaluates submissions and maintains the leaderboard throughout the competition period.
+A course-long predictive analytics competition hosted on Kaggle. The **Fall 2026 QM47400 Case Competition: Bank Churn** is adapted from the 2024 Kaggle Playground Series, which uses AI-generated synthetic data designed for educational purposes. Your task is to build models that predict whether a customer continues with their account or closes it (churn). **Students are randomly assigned to teams (up to four members)** and have a limit of **five Kaggle submissions per day**. The competition **opens August 24, 2026, and the final submission deadline is December 11, 2026**. Kaggle automatically evaluates submissions and maintains the leaderboard throughout the competition period.
 
--   **Competition:** Summer 2026 QM47400 Case Competition: Bank Churn
+-   **Competition:** Fall 2026 QM47400 Case Competition: Bank Churn
 -   **Task:** Predict the probability that a customer will churn (`Exited` = 1)
 -   **Metric:** AUC-ROC
 -   **Max submissions:** 5 per day on Kaggle
@@ -107,15 +107,20 @@ Two **−10 point** penalties apply to the team total: a Kaggle team name that i
 
 ### Final Project (35%)
 
-In **groups of four randomly assigned members**, students complete a practical predictive analytics project culminating in a **final research poster**. Although presenting the poster at the Fall 2026 Purdue Undergraduate Research Conference is **not required**, it is **strongly encouraged**. All groups must still prepare and submit the final poster as part of the course requirements. Professor Moreira is happy to serve as faculty mentor for groups choosing to present at the conference.
+In **groups of four randomly assigned members**, students complete a practical predictive analytics project that unfolds in **two integrated stages**: a **final research poster** and a **Poster-to-Product** build sprint.
+
+**Stage 1 — Research Poster.** Each group builds an end-to-end predictive analytics project across milestones M1–M4 and presents the resulting poster at the **Fall 2026 Purdue Undergraduate Research Conference on Tuesday, November 17, 2026**. **Presentation at the conference is required for all students.** The final poster is due **one week before the conference (Tuesday, November 10, 2026)**. Professor Moreira serves as faculty mentor throughout.
+
+**Stage 2 — Poster-to-Product.** After the conference, groups enter a **two-week in-class build sprint** that converts the validated model into a **stakeholder-ready dashboard/app plus an executive brief**, following an industry product workflow (scope → data engineering → model validation → UX → deployment → usability test → showcase). Each team works with an assigned AI assistant under human-in-the-loop sign-offs and receives feedback from industry/nonprofit partners, culminating in a **showcase (early December)**. Poster-to-Product is assessed on the **NACE competencies** — Technology, Teamwork, Communication, and Critical Thinking — via rubric. *(This experiential capstone is supported by a Daniels School Experiential Learning Grant.)*
 
 **Grading breakdown (of the final-project grade):** Review the course syllabus available on the Course Brightspace page for details.
 
-1.  **Milestone Deliverables.**
-2.  **Peer Evaluation.**
-3.  **Instructor / TA Evaluation.**
+1.  **Milestone Deliverables** (M1–M4).
+2.  **Poster + Poster-to-Product deliverables** (deployed app + executive brief + showcase).
+3.  **Peer Evaluation.**
+4.  **Instructor / TA Evaluation.**
 
-**Optional conference presentation.** Presenting at the Fall 2026 Purdue Undergraduate Research Conference is optional and not required for your course grade. Students who plan to present are encouraged to communicate with the instructor early so he can provide mentorship, feedback, and guidance throughout the process. Additional information about Purdue undergraduate research conferences: <https://www.purdue.edu/undergrad-research/conferences/index.php>{target="_blank"}.
+Additional information about Purdue undergraduate research conferences: <https://www.purdue.edu/undergrad-research/conferences/index.php>{target="_blank"}.
 
 ### Grade Challenges
 

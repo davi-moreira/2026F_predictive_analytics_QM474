@@ -7,7 +7,7 @@ project:
 
 
 website:
-  title: "QM47400: Predictive Analytics (Summer 2026 - 4-Week Intensive)"
+  title: "QM47400: Predictive Analytics (Fall 2026)"
   sidebar:
     background: primary
     logo: "images/mgmt_474_ai_logo_02-modified.png"
@@ -15,7 +15,7 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474
+        href: https://github.com/davi-moreira/2026F_predictive_analytics_QM474
         text: GitHub
     style: docked
     contents:
