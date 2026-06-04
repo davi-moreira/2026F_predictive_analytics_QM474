@@ -24,9 +24,11 @@
 **Course-specific anchors:**
 - **Fall Undergraduate Research Conference (URC) poster presentation: Tue Nov 17, 2026** — **all students required to present.**
 - **Poster submission deadline: Tue Nov 10, 2026** (7 days before URC).
-- **Course content (nb00–nb20) completes by ~Oct 30**, leaving early November for poster finalization and dry-runs.
+- **Course content (nb00–nb20) completes by Oct 21**, leaving Oct 23 – Nov 16 for poster build, finalization, and dry-runs.
 - **Poster-to-Product (P2P) build sprint runs after URC:** Nov 18 – Dec 11, culminating in a showcase (~Dec 9).
-- **Kaggle Case Competition** runs Aug 24 → final submission **Fri Dec 11**.
+- **Kaggle Case Competition** runs Aug 24 → final submission **Mon Nov 23** (concluded before Thanksgiving, so December is a clean P2P runway — mirrors Fall 2025, which closed the competition Nov 30).
+
+**Session modality.** Most sessions are **in-person** (MWF). A handful are deliberately **online/async** (watch the recorded micro-videos + work the notebook): **Oct 2** (instructor travel to Chicago), **Oct 9 & Oct 14** (bracketing Fall Break Oct 12–13), and **Mon Nov 23** (before Thanksgiving — used to finalize and conclude the Kaggle competition). Per the design: **nb05 (Ridge/Lasso) is an in-person lecture**; **nb10 (midterm casebook), nb15 (M3 walkthrough), and nb20 (course wrap) need no lecture** (self-guided / studio).
 
 ---
 
@@ -61,7 +63,7 @@ Final-project grade composition (see Brightspace syllabus for exact splits): mil
 - **Competition:** Fall 2026 QM47400 Case Competition: Bank Churn
 - **Task:** Predict the probability that a bank customer churns (`Exited` = 1)
 - **Metric:** AUC-ROC; **Platform:** Kaggle (private class competition, max 5 submissions/day)
-- **Opens:** Aug 24, 2026 · **Final submission:** Fri Dec 11, 2026, 11:59 PM (Kaggle + Brightspace code)
+- **Opens:** Aug 24, 2026 · **Final submission:** Mon Nov 23, 2026, 11:59 PM (Kaggle + Brightspace code) — concluded on the online pre-Thanksgiving session
 - **Brightspace deliverable:** complete, fully replicable code for the best model (preprocessing → feature engineering → training → evaluation → submission file). Kaggle team name `Group NN`; notebook `NN_kaggle_code.ipynb`.
 
 ---
@@ -74,7 +76,7 @@ Canonical reference: [`_final_project/2026Summer/final_project_milestone_referen
 |---|---|---|
 | **M1** | Initial Project Proposal (goal + motivation + data + preliminary methods, 1–2 pp) | **Fri Sep 4** |
 | **M2** | Simple Model + Performance Evaluation (EDA + FE + baseline pipeline w/ k-fold CV) | **Fri Sep 18** |
-| **M3** | Complex Model + Hyperparameter Tuning + Draft Abstract (~250 words) + saved `champion_pipeline.joblib` | **Mon Oct 5** |
+| **M3** | Complex Model + Hyperparameter Tuning + Draft Abstract (~250 words) + saved `champion_pipeline.joblib` | **Fri Oct 9** |
 | **M4** | Final Research Poster (`<group-number>.pdf`) + intra-group Peer Evaluation | **Poster due Tue Nov 10**; present **Tue Nov 17** |
 | **P2P** | Poster-to-Product: deployed dashboard/app + executive brief + showcase | **Showcase ~Wed Dec 9** |
 
@@ -110,122 +112,131 @@ The CV-first / test-set-lock discipline is preserved exactly: cross-validation i
 
 ## Session-by-session calendar (MWF, Fall 2026)
 
-Legend: **nbNN** = notebook anchored that session · *Studio* = project/poster/P2P working session · ⛔ = no class.
+Legend: **nbNN** = notebook anchored that session · Mode = *In person* / *Online (async)* (watch recorded videos + work the notebook) / *Studio* (project/poster/P2P working session) · ⛔ = no class.
 
 ### Week 1 — Aug 24–28 · Orientation + start of Regression
-| Date | Session |
-|---|---|
-| Mon Aug 24 | Course launch + **nb00** Launchpad (syllabus, grading, Colab, Gemini, AI policy, **P2P preview**, **Kaggle launch**) |
-| Wed Aug 26 | **nb01** EDA & Splits |
-| Fri Aug 28 | **nb02** Preprocessing Pipelines |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Aug 24 | In person | Course launch + **nb00** Launchpad (syllabus, grading, Colab, Gemini, AI policy, **P2P preview**, **Kaggle launch**) |
+| Wed Aug 26 | In person | **nb01** EDA & Splits |
+| Fri Aug 28 | In person | **nb02** Preprocessing Pipelines |
 
 ### Week 2 — Aug 31–Sep 4 · Regression
-| Date | Session |
-|---|---|
-| Mon Aug 31 | **nb03** Regression Metrics & Baselines |
-| Wed Sep 2 | **nb04** Linear Features & Diagnostics |
-| Fri Sep 4 | **nb05** Regularization (Ridge/Lasso) · **M1 Proposal due** |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Aug 31 | In person | **nb03** Regression Metrics & Baselines |
+| Wed Sep 2 | In person | **nb04** Linear Features & Diagnostics |
+| Fri Sep 4 | **Lecture** | **nb05** Regularization (Ridge/Lasso) — live lecture · **M1 Proposal due** |
 
 ### Week 3 — Sep 7–11 · Classification I
-| Date | Session |
-|---|---|
-| Mon Sep 7 | ⛔ Labor Day |
-| Wed Sep 9 | **nb06** Logistic Regression & Pipelines |
-| Fri Sep 11 | **nb07** Classification Metrics & Thresholding |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Sep 7 | ⛔ | Labor Day |
+| Wed Sep 9 | In person | **nb06** Logistic Regression & Pipelines |
+| Fri Sep 11 | In person | **nb07** Classification Metrics & Thresholding |
 
 ### Week 4 — Sep 14–18 · Evaluation spine
-| Date | Session |
-|---|---|
-| Mon Sep 14 | **nb08** Cross-Validation & Model Comparison |
-| Wed Sep 16 | **nb09** Tuning + Feature Engineering + Leakage Detection |
-| Fri Sep 18 | *Studio* — project work + midterm review · **M2 Baseline due** |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Sep 14 | In person | **nb08** Cross-Validation & Model Comparison |
+| Wed Sep 16 | In person | **nb09** Tuning + Feature Engineering + Leakage Detection |
+| Fri Sep 18 | Studio | Project work + midterm review · **M2 Baseline due** |
 
 ### Week 5 — Sep 21–25 · Midterm
-| Date | Session |
-|---|---|
-| Mon Sep 21 | **nb10** Midterm Casebook (strategy practicum / review) |
-| Wed Sep 23 | **MIDTERM EXAM** — in person, in class |
-| Fri Sep 25 | **nb11** Decision Trees (paired clf + reg) |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Sep 21 | Online (async) | **nb10** Midterm Casebook — self-guided review (no lecture) |
+| Wed Sep 23 | **Exam (in person)** | **MIDTERM EXAM** — in person, in class |
+| Fri Sep 25 | In person | **nb11** Decision Trees (paired clf + reg) |
 
 ### Week 6 — Sep 28–Oct 2 · Ensembles
-| Date | Session |
-|---|---|
-| Mon Sep 28 | **nb12** Random Forests & Importance |
-| Wed Sep 30 | **nb13** Gradient Boosting |
-| Fri Oct 2 | **nb14** Model Selection + Test-Set Ceremony + Monitoring |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Sep 28 | In person | **nb12** Random Forests & Importance |
+| Wed Sep 30 | In person | **nb13** Gradient Boosting |
+| Fri Oct 2 | **Online (async)** | Project studio + watch-ahead — *instructor travel (Chicago)* |
 
-### Week 7 — Oct 5–9 · Interpretation + Time Series
-| Date | Session |
-|---|---|
-| Mon Oct 5 | **nb15** Interpretation / M3 Walkthrough · **M3 due** |
-| Wed Oct 7 | **nb16** Time-Series Forecasting |
-| Fri Oct 9 | *Studio* — project work + buffer |
+### Week 7 — Oct 5–9 · Selection + Time Series
+| Date | Mode | Session |
+|---|---|---|
+| Mon Oct 5 | In person | **nb14** Model Selection + Test-Set Ceremony + Monitoring (live ceremony) |
+| Wed Oct 7 | Studio | **nb15** M3 Walkthrough — project studio (no lecture) |
+| Fri Oct 9 | **Online (async)** | **nb16** Time-Series Forecasting (recorded videos + notebook) · **M3 due** |
 
 ### Week 8 — Oct 12–16 · Delivery I
-| Date | Session |
-|---|---|
-| Mon Oct 12 | ⛔ Fall Break |
-| Wed Oct 14 | **nb17** Data Communication & Poster Design |
-| Fri Oct 16 | **nb18** Competition Workflow & Kaggle Submission |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Oct 12 | ⛔ | Fall Break |
+| Wed Oct 14 | **Online (async)** | **nb17** Data Communication & Poster Design (recorded videos + notebook) |
+| Fri Oct 16 | In person | **nb18** Competition Workflow & Kaggle Submission |
 
 ### Week 9 — Oct 19–23 · Delivery II + poster start
-| Date | Session |
-|---|---|
-| Mon Oct 19 | **nb19** Deep Learning |
-| Wed Oct 21 | **nb20** Course Wrap / Reflection bridge — **content complete** |
-| Fri Oct 23 | *Poster Studio* — build poster from M3 results |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Oct 19 | In person | **nb19** Deep Learning |
+| Wed Oct 21 | Online (async) | **nb20** Course Wrap / Reflection bridge (no lecture) — **content complete** |
+| Fri Oct 23 | Studio | Poster studio — build poster from M3 results |
 
 ### Week 10 — Oct 26–30 · Poster build
-| Date | Session |
-|---|---|
-| Mon Oct 26 | *Poster Studio* — figures, narrative, abstract |
-| Wed Oct 28 | *Poster Studio* — structured peer review |
-| Fri Oct 30 | *Poster Studio* — finalization |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Oct 26 | Studio | Poster studio — figures, narrative, abstract |
+| Wed Oct 28 | Studio | Poster studio — structured peer review |
+| Fri Oct 30 | Studio | Poster studio — finalization |
 
 ### Week 11 — Nov 2–6 · Poster polish + Kaggle push
-| Date | Session |
-|---|---|
-| Mon Nov 2 | Poster polish + Kaggle leaderboard push |
-| Wed Nov 4 | Dry-run presentations |
-| Fri Nov 6 | Final poster QA |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Nov 2 | Studio | Poster polish + Kaggle leaderboard push |
+| Wed Nov 4 | Studio | Dry-run presentations |
+| Fri Nov 6 | Studio | Final poster QA |
 
 ### Week 12 — Nov 9–13 · Poster submission + presentation prep
-| Date | Session |
-|---|---|
-| Mon Nov 9 | Final poster QA → **Poster due Tue Nov 10** |
-| Wed Nov 11 | Presentation practice |
-| Fri Nov 13 | Logistics + presentation coaching |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Nov 9 | Studio | Final poster QA → **Poster due Tue Nov 10** |
+| Wed Nov 11 | Studio | Presentation practice |
+| Fri Nov 13 | Studio | Logistics + presentation coaching |
 
 ### Week 13 — Nov 16–20 · URC + P2P kickoff
-| Date | Session |
-|---|---|
-| Mon Nov 16 | Final presentation prep |
-| **Tue Nov 17** | **URC Poster Presentation — all students present** |
-| Wed Nov 18 | **P2P kickoff** — scoping, partner problem framing, AI-assistant assignment, product spec |
-| Fri Nov 20 | **P2P** — data engineering + model validation for the product |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Nov 16 | Studio | Final presentation prep |
+| **Tue Nov 17** | **Conference** | **URC Poster Presentation — all students present** |
+| Wed Nov 18 | Build sprint | **P2P kickoff** — scoping, partner problem framing, AI-assistant assignment, product spec |
+| Fri Nov 20 | Build sprint | **P2P** — data engineering + model validation for the product |
 
-### Week 14 — Nov 23–27 · P2P build (short week)
-| Date | Session |
-|---|---|
-| Mon Nov 23 | **P2P** — build dashboard/app, UX copy |
-| Wed Nov 25 | ⛔ Thanksgiving |
-| Fri Nov 27 | ⛔ Thanksgiving |
+### Week 14 — Nov 23–27 · Kaggle close + Thanksgiving
+| Date | Mode | Session |
+|---|---|---|
+| Mon Nov 23 | **Online (async)** | **Course Case Competition — finalize & conclude** (Kaggle final submission, 11:59 PM) |
+| Wed Nov 25 | ⛔ | Thanksgiving |
+| Fri Nov 27 | ⛔ | Thanksgiving |
 
 ### Week 15 — Nov 30–Dec 4 · P2P build
-| Date | Session |
-|---|---|
-| Mon Nov 30 | **P2P** — deployment + partner checkpoint |
-| Wed Dec 2 | **P2P** — usability testing + iteration |
-| Fri Dec 4 | **P2P** — executive brief drafting |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Nov 30 | Build sprint | **P2P** — deployment + partner checkpoint |
+| Wed Dec 2 | Build sprint | **P2P** — usability testing + iteration |
+| Fri Dec 4 | Build sprint | **P2P** — executive brief drafting |
 
 ### Week 16 — Dec 7–11 · Showcase + closeout
-| Date | Session |
-|---|---|
-| Mon Dec 7 | **P2P** — showcase preparation |
-| Wed Dec 9 | **P2P SHOWCASE** — partners + feedback |
-| Fri Dec 11 | Course wrap — peer evaluation, reflection survey, **Kaggle final submission** |
+| Date | Mode | Session |
+|---|---|---|
+| Mon Dec 7 | Build sprint | **P2P** — showcase preparation |
+| Wed Dec 9 | Showcase | **P2P SHOWCASE** — partners + feedback |
+| Fri Dec 11 | In person | Course wrap — peer evaluation + reflection survey (Kaggle already concluded Nov 23) |
 
 **Finals week (Dec 14–19):** no final exam (the midterm is the only exam); buffer for late deliverables and grading.
+
+### Comparison with Fall 2025 pacing (what changed and why)
+
+The Fall 2025 offering (`_syllabus/2025F/mgmt474_fall2025_schedule.md`) spread ~9 topics across the semester with twice-weekly in-class sessions + weekly homework, and **taught deep learning in December, *after* the conference**; its case-competition rank submission closed **Nov 30**. Fall 2026 keeps the proven beats but re-orders for the Nov 17 URC requirement:
+
+- **All content finishes before the conference** (by Oct 21) instead of running into December — the poster needs the full toolkit (incl. nb19 deep learning) in hand by early November.
+- **Kaggle concludes Nov 23** (was Nov 30 in 2025F) so December is a clean Poster-to-Product runway, and the conclusion lands on the online pre-Thanksgiving session.
+- **Modality is explicit and travel-aware:** async on Oct 2 (Chicago), Oct 9 & 14 (around Fall Break), and Nov 23 (before Thanksgiving) — all delivered via the existing recorded micro-videos + notebooks, so no live session is lost.
+- **No-lecture sessions** (nb10 casebook, nb15 walkthrough, nb20 wrap) free instructor time for milestone/poster support; **nb05 stays a live lecture** because Ridge/Lasso benefits from real-time explanation.
 
 ---
 
