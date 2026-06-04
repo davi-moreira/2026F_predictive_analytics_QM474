@@ -195,10 +195,13 @@ ul.task-list li input[type="checkbox"] {
     vertical-align: top; /* Align cell content to the top */
   }
   .overflow-table th:nth-child(1), .overflow-table td:nth-child(1) {
-    width: 5%; /* Week column */
+    width: 4%; /* Week column */
   }
   .overflow-table th:nth-child(2), .overflow-table td:nth-child(2) {
-    width: 9%; /* Date column */
+    width: 8%; /* Date column */
+  }
+  .overflow-table th:nth-child(3), .overflow-table td:nth-child(3) {
+    width: 9%; /* Mode column */
   }
   .below-table {
     font-size: 0.85rem; /* Match the font size of the table */
@@ -208,15 +211,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 <section id="course-schedule" class="level1">
 <h1>Course Schedule</h1>
-<p><strong>Fall 2026 — Monday / Wednesday / Friday, in person.</strong> The same 21-notebook arc is paced across the full semester. Course content completes by the end of October; the <strong>Undergraduate Research Conference poster presentation is Tue Nov 17</strong> (all students present), followed by the <strong>Poster-to-Product</strong> build sprint through early December.</p>
+<p><strong>Fall 2026 — Monday / Wednesday / Friday.</strong> The same 21-notebook arc is paced across the full semester. Course content completes by <strong>Oct 21</strong>, the <strong>Undergraduate Research Conference poster presentation is Tue Nov 17</strong> (all students present), and the <strong>Poster-to-Product</strong> build sprint runs through early December.</p>
+<p><strong>Mode key.</strong> <em>In person</em> = we meet in class. <em>Online (async)</em> = no live meeting — watch the recorded micro-videos and work the notebook on your own that day. <em>Studio</em> = a working session (project/poster/sprint). A few sessions are intentionally online around instructor travel (Oct 2), Fall Break (Oct 9 &amp; 14), and Thanksgiving (Nov 23).</p>
 <div class="overflow-table">
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Wk</th>
 <th>Date</th>
-<th>Topic</th>
-<th>Notebook</th>
+<th>Mode</th>
+<th>Topic / Notebook</th>
 <th>Assessment / Milestone</th>
 </tr>
 </thead>
@@ -224,345 +228,345 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>1</td>
 <td>Mon Aug 24</td>
-<td>Course launch + Launchpad: setup, Colab, Gemini, AI policy, Kaggle launch, Poster-to-Product preview</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb00_launchpad_course_setup_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Course launch + Launchpad (setup, Colab, Gemini, AI policy, Kaggle launch, Poster-to-Product preview) — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb00_launchpad_course_setup_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Colab Readiness Check</td>
 </tr>
 <tr class="even">
 <td>1</td>
 <td>Wed Aug 26</td>
-<td>Predictive analytics fundamentals, EDA, and data splitting</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb01_eda_splits_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Predictive analytics fundamentals, EDA, and data splitting — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb01_eda_splits_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz</td>
 </tr>
 <tr class="odd">
 <td>1</td>
 <td>Fri Aug 28</td>
-<td>Data setup and preprocessing pipelines (the professional way)</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb02_preprocessing_pipelines_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Data setup and preprocessing pipelines — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb02_preprocessing_pipelines_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br>Participation</td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>Mon Aug 31</td>
-<td>Regression metrics and baseline modeling (with test-set lockbox discipline)</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb03_regression_metrics_baselines_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Regression metrics and baseline modeling — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb03_regression_metrics_baselines_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br>3-sentence Evaluation Note</td>
 </tr>
 <tr class="odd">
 <td>2</td>
 <td>Wed Sep 2</td>
-<td>Linear regression that actually works: features, interactions, diagnostics</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb04_linear_features_diagnostics_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Linear regression: features, interactions, diagnostics — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb04_linear_features_diagnostics_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br>Participation</td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>Fri Sep 4</td>
-<td>Regularization (Ridge/Lasso) + Project proposal</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb05_regularization_project_proposal_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td><strong>Lecture (in person)</strong></td>
+<td><strong>Regularization — Ridge &amp; Lasso</strong> + Project proposal — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb05_regularization_project_proposal_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br><strong>MILESTONE 1: Proposal + Dataset</strong></td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>Mon Sep 7</td>
-<td><em>No class — Labor Day</em></td>
 <td>—</td>
+<td><em>No class — Labor Day</em></td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td>3</td>
 <td>Wed Sep 9</td>
-<td>Logistic regression: probabilities, decision boundaries, and pipelines</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb06_logistic_pipelines_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Logistic regression: probabilities, boundaries, pipelines — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb06_logistic_pipelines_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br>Participation</td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>Fri Sep 11</td>
-<td>Classification metrics: confusion matrix, ROC and PR curves, and business costs</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb07_classification_metrics_thresholding_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Classification metrics: confusion matrix, ROC/PR, business costs — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb07_classification_metrics_thresholding_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br>Threshold Recommendation</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Mon Sep 14</td>
-<td>Resampling and CV: how to compare models without fooling yourself (k-fold + Student’s <em>t</em> CIs)</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb08_cross_validation_model_comparison_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Resampling and cross-validation (k-fold + Student’s <em>t</em> CIs) — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb08_cross_validation_model_comparison_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br>Participation</td>
 </tr>
 <tr class="odd">
 <td>4</td>
 <td>Wed Sep 16</td>
-<td>Hyperparameter tuning + feature engineering + leakage detection</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb09_tuning_feature_engineering_project_baseline_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Hyperparameter tuning + feature engineering + leakage detection — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb09_tuning_feature_engineering_project_baseline_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br>Project Baseline Draft</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Fri Sep 18</td>
+<td>Studio (in person)</td>
 <td>Project studio + midterm review</td>
-<td><em>(work session)</em></td>
 <td><strong>MILESTONE 2: Baseline Model + Evaluation Plan</strong></td>
 </tr>
 <tr class="odd">
 <td>5</td>
 <td>Mon Sep 21</td>
-<td>Midterm casebook: business-case predictive strategy practicum</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb10_midterm_casebook_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>Online (async)</td>
+<td>Midterm casebook self-review (no lecture) — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb10_midterm_casebook_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Midterm prep</td>
 </tr>
 <tr class="even">
 <td>5</td>
 <td>Wed Sep 23</td>
+<td><strong>Exam (in person)</strong></td>
 <td><strong>MIDTERM EXAM — in person, in class</strong></td>
-<td>—</td>
 <td><strong>MIDTERM (graded)</strong></td>
 </tr>
 <tr class="odd">
 <td>5</td>
 <td>Fri Sep 25</td>
-<td>Decision trees: interpretable models with sharp edges</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb11_decision_trees_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Decision trees: interpretable models with sharp edges — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb11_decision_trees_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br>Participation</td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>Mon Sep 28</td>
-<td>Random forests: bagging, OOB intuition, and feature importance</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb12_random_forests_importance_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Random forests: bagging, OOB, feature importance — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb12_random_forests_importance_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br>Participation</td>
 </tr>
 <tr class="odd">
 <td>6</td>
 <td>Wed Sep 30</td>
-<td>Gradient boosting: performance with discipline (and leakage avoidance)</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb13_gradient_boosting_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Gradient boosting: performance with discipline — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb13_gradient_boosting_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br>Participation</td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>Fri Oct 2</td>
-<td>Model selection and comparison: making the call like a professional</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb14_model_selection_protocol_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
-<td>Concept Quiz<br>Participation</td>
+<td><strong>Online (async)</strong></td>
+<td>Project studio + watch-ahead <em>(instructor travel — Chicago)</em></td>
+<td>Project work</td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>Mon Oct 5</td>
-<td>Final Project Milestone 03 Walkthrough — Complex Model + Hyperparameter Tuning + Draft Abstract</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb15_milestone_03_walkthrough_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
-<td>Concept Quiz<br><strong>MILESTONE 3: Complex Model + Tuning + Draft Abstract + <code>champion_pipeline.joblib</code></strong></td>
+<td>In person</td>
+<td>Model selection + test-set ceremony + monitoring — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb14_model_selection_protocol_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>Concept Quiz<br>Participation</td>
 </tr>
 <tr class="even">
 <td>7</td>
 <td>Wed Oct 7</td>
-<td>Time-series forecasting: walk-forward CV, lag features, and baseline models</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb16_time_series_forecasting_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
-<td>Concept Quiz<br>Participation</td>
+<td>Studio (in person)</td>
+<td>Milestone 03 walkthrough (no lecture) — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb15_milestone_03_walkthrough_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>Project studio</td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>Fri Oct 9</td>
-<td>Project studio + buffer</td>
-<td><em>(work session)</em></td>
-<td>Project work</td>
+<td><strong>Online (async)</strong></td>
+<td>Time-series forecasting (recorded videos + notebook) — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb16_time_series_forecasting_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>Concept Quiz<br><strong>MILESTONE 3: Complex Model + Tuning + Draft Abstract + <code>champion_pipeline.joblib</code></strong></td>
 </tr>
 <tr class="even">
 <td>8</td>
 <td>Mon Oct 12</td>
-<td><em>No class — Fall Break</em></td>
 <td>—</td>
+<td><em>No class — Fall Break</em></td>
 <td>—</td>
 </tr>
 <tr class="odd">
 <td>8</td>
 <td>Wed Oct 14</td>
-<td>Data communication and poster design: six principles applied to the eleven-section research-poster architecture</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb17_data_communication_poster_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td><strong>Online (async)</strong></td>
+<td>Data communication &amp; poster design (recorded videos + notebook) — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb17_data_communication_poster_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br>Draft Poster Outline + Abstract</td>
 </tr>
 <tr class="even">
 <td>8</td>
 <td>Fri Oct 16</td>
-<td>Competition workflow: end-to-end pipeline from notebook to Kaggle submission</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb18_competition_workflow_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Competition workflow: notebook to Kaggle submission — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb18_competition_workflow_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>submission.csv to Kaggle</td>
 </tr>
 <tr class="odd">
 <td>9</td>
 <td>Mon Oct 19</td>
-<td>Deep learning (intuition videos, hands-on PyTorch on FashionMNIST, when-to-use rubric, tabular demo, Hugging Face LLM lab)</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb19_deep_learning_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>In person</td>
+<td>Deep learning (PyTorch + when-to-use + LLM lab) — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb19_deep_learning_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Concept Quiz<br>Four-Question Rubric</td>
 </tr>
 <tr class="even">
 <td>9</td>
 <td>Wed Oct 21</td>
-<td>Course wrap / reflection bridge — <strong>content complete</strong></td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb20_final_submission_peer_review_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
+<td>Online (async)</td>
+<td>Course wrap / reflection bridge (no lecture) — <strong>content complete</strong> — <a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb20_final_submission_peer_review_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
 <td>Reflection bridge</td>
 </tr>
 <tr class="odd">
 <td>9</td>
 <td>Fri Oct 23</td>
+<td>Studio (in person)</td>
 <td>Poster studio — build poster from M3 results</td>
-<td><em>(work session)</em></td>
 <td>Poster build</td>
 </tr>
 <tr class="even">
 <td>10</td>
 <td>Mon Oct 26</td>
+<td>Studio (in person)</td>
 <td>Poster studio — figures, narrative, abstract</td>
-<td><em>(work session)</em></td>
 <td>Poster build</td>
 </tr>
 <tr class="odd">
 <td>10</td>
 <td>Wed Oct 28</td>
+<td>Studio (in person)</td>
 <td>Poster studio — structured peer review</td>
-<td><em>(work session)</em></td>
 <td>Poster peer review</td>
 </tr>
 <tr class="even">
 <td>10</td>
 <td>Fri Oct 30</td>
+<td>Studio (in person)</td>
 <td>Poster studio — finalization</td>
-<td><em>(work session)</em></td>
 <td>Poster draft complete</td>
 </tr>
 <tr class="odd">
 <td>11</td>
 <td>Mon Nov 2</td>
+<td>Studio (in person)</td>
 <td>Poster polish + Kaggle leaderboard push</td>
-<td><em>(work session)</em></td>
 <td>Kaggle push</td>
 </tr>
 <tr class="even">
 <td>11</td>
 <td>Wed Nov 4</td>
+<td>Studio (in person)</td>
 <td>Dry-run presentations</td>
-<td><em>(work session)</em></td>
 <td>Presentation practice</td>
 </tr>
 <tr class="odd">
 <td>11</td>
 <td>Fri Nov 6</td>
+<td>Studio (in person)</td>
 <td>Final poster QA</td>
-<td><em>(work session)</em></td>
 <td>Poster QA</td>
 </tr>
 <tr class="even">
 <td>12</td>
 <td>Mon Nov 9</td>
+<td>Studio (in person)</td>
 <td>Final poster QA → submission</td>
-<td><em>(work session)</em></td>
 <td><strong>POSTER DUE Tue Nov 10</strong> (7 days before URC)</td>
 </tr>
 <tr class="odd">
 <td>12</td>
 <td>Wed Nov 11</td>
+<td>Studio (in person)</td>
 <td>Presentation practice</td>
-<td><em>(work session)</em></td>
 <td>Presentation practice</td>
 </tr>
 <tr class="even">
 <td>12</td>
 <td>Fri Nov 13</td>
+<td>Studio (in person)</td>
 <td>Logistics + presentation coaching</td>
-<td><em>(work session)</em></td>
 <td>Presentation coaching</td>
 </tr>
 <tr class="odd">
 <td>13</td>
 <td>Mon Nov 16</td>
+<td>Studio (in person)</td>
 <td>Final presentation prep</td>
-<td><em>(work session)</em></td>
 <td>Presentation prep</td>
 </tr>
 <tr class="even">
 <td>13</td>
 <td><strong>Tue Nov 17</strong></td>
+<td><strong>Conference</strong></td>
 <td><strong>Undergraduate Research Conference — Poster Presentation (all students present)</strong></td>
-<td>—</td>
 <td><strong>POSTER PRESENTATION</strong></td>
 </tr>
 <tr class="odd">
 <td>13</td>
 <td>Wed Nov 18</td>
-<td>Poster-to-Product kickoff — scoping, partner problem framing, AI-assistant assignment, product spec</td>
-<td><em>(build sprint)</em></td>
+<td>Build sprint (in person)</td>
+<td>Poster-to-Product kickoff — scoping, partner framing, AI-assistant assignment</td>
 <td>P2P scope</td>
 </tr>
 <tr class="even">
 <td>13</td>
 <td>Fri Nov 20</td>
-<td>Poster-to-Product — data engineering + model validation for the product</td>
-<td><em>(build sprint)</em></td>
+<td>Build sprint (in person)</td>
+<td>Poster-to-Product — data engineering + model validation</td>
 <td>P2P build</td>
 </tr>
 <tr class="odd">
 <td>14</td>
 <td>Mon Nov 23</td>
-<td>Poster-to-Product — build dashboard/app, UX copy</td>
-<td><em>(build sprint)</em></td>
-<td>P2P build</td>
+<td><strong>Online (async)</strong></td>
+<td><strong>Course Case Competition — finalize &amp; conclude</strong> <em>(before Thanksgiving)</em></td>
+<td><strong>KAGGLE final submission</strong> + <code>NN_kaggle_code.ipynb</code> (deadline 11:59 PM)</td>
 </tr>
 <tr class="even">
 <td>14</td>
 <td>Wed Nov 25</td>
-<td><em>No class — Thanksgiving vacation</em></td>
 <td>—</td>
+<td><em>No class — Thanksgiving vacation</em></td>
 <td>—</td>
 </tr>
 <tr class="odd">
 <td>14</td>
 <td>Fri Nov 27</td>
-<td><em>No class — Thanksgiving vacation</em></td>
 <td>—</td>
+<td><em>No class — Thanksgiving vacation</em></td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td>15</td>
 <td>Mon Nov 30</td>
+<td>Build sprint (in person)</td>
 <td>Poster-to-Product — deployment + partner checkpoint</td>
-<td><em>(build sprint)</em></td>
 <td>P2P deploy</td>
 </tr>
 <tr class="odd">
 <td>15</td>
 <td>Wed Dec 2</td>
+<td>Build sprint (in person)</td>
 <td>Poster-to-Product — usability testing + iteration</td>
-<td><em>(build sprint)</em></td>
 <td>P2P usability</td>
 </tr>
 <tr class="even">
 <td>15</td>
 <td>Fri Dec 4</td>
+<td>Build sprint (in person)</td>
 <td>Poster-to-Product — executive brief drafting</td>
-<td><em>(build sprint)</em></td>
 <td>P2P brief</td>
 </tr>
 <tr class="odd">
 <td>16</td>
 <td>Mon Dec 7</td>
+<td>Build sprint (in person)</td>
 <td>Poster-to-Product — showcase preparation</td>
-<td><em>(build sprint)</em></td>
 <td>Showcase prep</td>
 </tr>
 <tr class="even">
 <td>16</td>
 <td>Wed Dec 9</td>
+<td>Showcase (in person)</td>
 <td><strong>Poster-to-Product SHOWCASE</strong> (partners + feedback)</td>
-<td><em>(showcase)</em></td>
 <td><strong>P2P SHOWCASE</strong></td>
 </tr>
 <tr class="odd">
 <td>16</td>
 <td>Fri Dec 11</td>
+<td>In person</td>
 <td>Course wrap — peer evaluation, reflection survey</td>
-<td><a href="https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb20_final_submission_peer_review_student.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open In Colab"></a></td>
-<td><strong>KAGGLE final submission</strong> + <code>NN_kaggle_code.ipynb</code><br><strong>Intra-group Peer Evaluation</strong><br><strong>REFLECTION SURVEY</strong> (required for completion)</td>
+<td><strong>Intra-group Peer Evaluation</strong><br><strong>REFLECTION SURVEY</strong> (required for completion)</td>
 </tr>
 </tbody>
 </table>
