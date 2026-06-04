@@ -1,0 +1,352 @@
+[
+  {
+    "objectID": "workflow.html",
+    "href": "workflow.html",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "",
+    "text": "WarningWork in progress: read it as a field journal, not a finished manual\n\n\n\nThis page documents a course while it is still being delivered. The Summer 2026 offering of QM47400 (Predictive Analytics) runs from May 18 to June 12, 2026, with students wrapping up their final activities by June 14. As I write this the course is in its closing stretch: the notebooks, video guides, quizzes, and midterm are built, and my attention has shifted from authoring material to delivering it and grading the project milestones and the final case competition. Treat what follows as an honest, mid-stream account of working with Claude Code as an AI co-designer: what has worked for me, what cost me time, and what I would tell a colleague before they start.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#you-will-spend-more-time-than-you-expect",
+    "href": "workflow.html#you-will-spend-more-time-than-you-expect",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "3.1 You will spend more time than you expect",
+    "text": "3.1 You will spend more time than you expect\nTranslating a 15-week course into a 4-week intensive looks, on paper, like compression. In practice it is a redesign. Cognitive load, daily engagement of roughly 112.5 minutes per day, notebook pacing, the order in which concepts appear, the difficulty curve from EDA to gradient boosting in fourteen business days: none of that survives the move unchanged. The CONVERSATION_LOG.md in this repo has 16+ working sessions logged during the intensive design phase alone, before delivery even began. The AI sped up production, not deliberation. I still had to decide what to teach, in what order, and at what depth. The minute I tried to skip that step and let the assistant just propose a plan, the plan was bland and had to be redone.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#flexibility-is-a-double-edged-sword",
+    "href": "workflow.html#flexibility-is-a-double-edged-sword",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "3.2 Flexibility is a double-edged sword",
+    "text": "3.2 Flexibility is a double-edged sword\nClaude Code is extremely flexible. It will adopt almost any convention you ask it to. That is wonderful, because the tool conforms to your course rather than the other way around. But it also means there is no obvious right way to use it, and the time-to-effectiveness is dominated by figuring out your own style. Expect to throw away your first two or three workflows before settling on one that fits.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#where-the-ai-really-shines-structured-artifacts-at-scale",
+    "href": "workflow.html#where-the-ai-really-shines-structured-artifacts-at-scale",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "3.3 Where the AI really shines: structured artifacts at scale",
+    "text": "3.3 Where the AI really shines: structured artifacts at scale\nThe cautions above are real, but they are not the whole picture. There is a category of work where the assistant is unambiguously better than I am, and it is worth naming because it is the easiest first win for a colleague who has not yet tried this. Generating structured, schema-compliant artifacts at scale is exactly that kind of work, and the example I lean on most is Brightspace-ready quiz CSVs.\nBrightspace’s Question Library accepts CSV uploads in a specific column format. Once I showed the assistant the format (one example file in the repo is enough), it can generate dozens of well-structured multiple-choice and short-answer questions from a short topic brief, all in the exact CSV shape Brightspace expects, with distractors that are pedagogically plausible rather than obviously wrong. I review and edit, I do not draft from scratch. What used to be an hour of formatting per quiz is now ten minutes of review. The same pattern works for grading rubrics, casebook scaffolds, peer-review forms, and any other artifact whose value lies in being uniform, complete, and machine-uploadable.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#think-of-the-ai-assistant-as-a-rotating-tara-team",
+    "href": "workflow.html#think-of-the-ai-assistant-as-a-rotating-tara-team",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "3.4 Think of the AI assistant as a rotating TA/RA team",
+    "text": "3.4 Think of the AI assistant as a rotating TA/RA team\nThis is the mental model that finally made the workflow click for me. Claude is the best teaching assistant I have ever had: fast, patient, indefatigable, and well-read. But it is not the same TA in every session. Tone drifts. Default formatting drifts. Last week’s good habit can quietly become next week’s regression. The implication is simple and load-bearing:\n\nIf you would tell a new TA something on their first day, write it down where the next TA will see it.\n\nEverything in Recommendations below is a consequence of taking that one sentence seriously.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#treat-claude.md-as-the-projects-constitution",
+    "href": "workflow.html#treat-claude.md-as-the-projects-constitution",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "4.1 Treat CLAUDE.md as the project’s constitution",
+    "text": "4.1 Treat CLAUDE.md as the project’s constitution\nCLAUDE.md is the file Claude Code reads at the start of every session. Anything written there is in the assistant’s context by default, like a standing handout you would give every new RA on day one. My CLAUDE.md has grown from a few paragraphs to a structured document with:\n\nProject mission (course code, run dates, pedagogy).\nA small table of “see also” reference files, so the constitution stays slim and detailed material lives elsewhere.\nCritical rules with a 🚨 prefix that flag the regressions I have actually been bitten by.\nStyle guidelines as a table (random seed 474, train/val/test split 60/20/20, figure size, money in markdown cells, emoji vocabulary).\nAnti-patterns drawn from real prior mistakes, not from hypotheticals.\nA session-end checklist.\n\nThe most valuable parts are the critical rules and anti-patterns, because they encode lessons the assistant cannot derive from the code. Two real examples from this repository:\n\n\n\n\n\n\nNoteExample rule: voice and audience in student-facing content\n\n\n\n\nThe student notebook is read by students, not by instructors who then teach it. Every sentence in a student-facing cell, including Gemini prompts and “After running, verify” checklists, must be written to the student, never about the student, and never to the instructor.\n\nThis rule exists because in early sessions the assistant drifted into instructor-voice phrasings like “… so students see the per-class breakdown.” The student is the reader, so the phrase is wrong. After the rule went into CLAUDE.md, the regression effectively stopped. I also wrote a small script (scripts/voice_check_guides.py) that grep-audits modified files, so the constitution is enforced and not just declared.\n\n\n\n\n\n\n\n\nNoteExample rule: CV-first evaluation and test-set lock\n\n\n\n\nFrom notebook 9 onward, all model-performance claims come from cross-validation. Before notebook 14, the test set is locked and no model evaluation touches it. Notebook 14’s “Opening the Locked Test Set” ceremony is the one and only authorized test-set opening in the entire course.\n\nThis is not a style preference. It is the pedagogical spine of the course. If the assistant generates an accuracy_score(y_test, ...) call in notebook 11 because it is the obvious thing to write, notebook 14’s payoff disappears. Encoded as a CLAUDE.md rule plus a runnable audit (scripts/audit_cv_first.py), the rule is durable across sessions.\n\n\nThe pattern is the same in both cases: write the rule down, then encode it as a check the assistant can run on demand.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#keep-a-source-.md-file-for-every-artifact",
+    "href": "workflow.html#keep-a-source-.md-file-for-every-artifact",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "4.2 Keep a source .md file for every artifact",
+    "text": "4.2 Keep a source .md file for every artifact\nThis is the recommendation I would give first if a colleague asked me for one thing only. Every kind of artifact in the course has a corresponding plain-text “source” file in the repo:\n\n\n\n\n\n\n\nArtifact\nSource-of-truth file(s)\n\n\n\n\nNotebooks (student-facing)\nnotebooks/nbNN_topic_student.ipynb\n\n\nNotebooks (instructor, with solutions)\nnotebooks/nbNN_topic_instructor.ipynb (gitignored, local-only)\n\n\nVideo lecture guide (script and timestamps)\nvideo_guides/NN_video_lecture_guide.md (gitignored)\n\n\nBrightspace content pages\nbrightspace/NN_topic.md\n\n\nQuizzes\n_quizzes/2026Summer/\n\n\nMidterm exam\n_midterm_exam/2026Summer/\n\n\nNotebook to NotebookLM podcast transcript\n_notebook_lm/&lt;basename&gt;.md (auto-generated, gitignored)\n\n\nCourse map and rationale\n_project_docs/MGMT47400_Online4Week_Plan_2026Summer.md\n\n\nImplementation plan\n_project_docs/claude_course_plan.md\n\n\nConventions and decisions\n_project_docs/DECISIONS.md\n\n\nTroubleshooting playbook\n_project_docs/TROUBLESHOOTING.md\n\n\nSession-by-session history\nCONVERSATION_LOG.md\n\n\n\nTwo benefits compound here. First, the AI can read and edit any of these directly. There is no copy-paste from a web UI, no screenshots, no “look at this PDF.” Second, when a quiz question changes, you can ask the assistant to propagate that change to the matching brightspace page, to the relevant video-guide section, and to the schedule. Plain-text source files are what make that propagation possible.\n\n\n\n\n\n\nTipWhat goes into a source .md file\n\n\n\nNot just the artifact itself, but also the rationale for it. Each brightspace page in this repo begins with what the student is learning today, why this matters, and how this connects to yesterday and tomorrow. That framing is for me and for the assistant, not only for the student. When the assistant has the rationale, it edits the artifact in ways that preserve intent.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#adopt-an-instructor-first-notebook-workflow",
+    "href": "workflow.html#adopt-an-instructor-first-notebook-workflow",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "4.3 Adopt an instructor-first notebook workflow",
+    "text": "4.3 Adopt an instructor-first notebook workflow\nNotebooks are the workhorse of this course (21 of them, roughly one per business day). The convention I settled on after a lot of failed alternatives:\n\nEdit the instructor notebook first. nbNN_topic_instructor.ipynb is the source of truth and contains all solutions inside cells marked with INSTRUCTOR SOLUTION. This file is gitignored and never leaves my machine.\nGenerate the student notebook from it. Copy the instructor file, strip every cell tagged with INSTRUCTOR SOLUTION, update the Colab badge URL, and commit only the student file.\nUpdate the matching video guide in video_guides/, which is also gitignored. Speaking prompts, cell references, and timestamps live there.\nRender the Quarto site and commit docs/ so the website actually reflects the change.\n\nThis sequencing matters because it gives the assistant a single, unambiguous answer to the question where do I write the next edit? Without it, the assistant has been known to edit the student file directly, lose the solution version, and force me to reconstruct it from memory. With it, the workflow is mechanical.\nOne more piece of sequencing surprised me, and I think it generalizes. I can only record the lecture videos after the notebook is genuinely finalized, because the camera captures whatever is on the screen and any later edit forces a re-take. So before I press record, I read the notebook end to end and walk through the matching video-guide narrative one more time. That last pass catches anything that drifted while I was working on adjacent notebooks, and it ensures the notebook, the guide, and the recording all say the same thing. If you skip the pass, the recording will reveal the disagreement and you will lose an hour.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#encode-invariants-as-runnable-scripts",
+    "href": "workflow.html#encode-invariants-as-runnable-scripts",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "4.4 Encode invariants as runnable scripts",
+    "text": "4.4 Encode invariants as runnable scripts\nThe most reliable rules in this project are the ones I made the assistant enforce on itself before committing. Two examples, both real, both in scripts/:\n\n\n\n\n\n\nNotescripts/audit_cv_first.py\n\n\n\nScans every notebooks/*_student.ipynb for model-evaluation uses of X_test and y_test that violate the CV-first rule. The only acceptable hits are the two authorized openings in notebook 14 (the test-set ceremony) and notebook 18 (the Kaggle-submission demo). Anything else is flagged and must be fixed before commit.\n\n\n\n\n\n\n\n\nNotescripts/voice_check_guides.py\n\n\n\nAudits video-guide markdown for instructor-voice violations inside blockquotes only (the read-aloud sections), while leaving wrapper prose untouched. It flags students (as a third-party noun), the instructor, on camera, and speaking prompt, but whitelists Student's t because that one is the statistical test, not a regression.\n\n\nWhy this matters: a rule that lives only in CLAUDE.md depends on the assistant remembering and applying it. A rule that exists as a script gets run every commit, regardless of which “TA” is on shift today. The conversation about voice does not have to happen again. The audit either passes or it does not.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#automate-the-boring-parts-with-hooks",
+    "href": "workflow.html#automate-the-boring-parts-with-hooks",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "4.5 Automate the boring parts with hooks",
+    "text": "4.5 Automate the boring parts with hooks\nClaude Code lets you configure shell commands to run automatically after certain tool calls. I use this for one thing right now, and it has paid for itself many times over. The project’s .claude/settings.json:\n{\n  \"hooks\": {\n    \"PostToolUse\": [\n      {\n        \"matcher\": \"Edit|Write|NotebookEdit\",\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"f=$(jq -r '.tool_input.file_path // .tool_input.notebook_path // empty'); case \\\"$f\\\" in *_instructor.ipynb) bash \\\"$CLAUDE_PROJECT_DIR/scripts/sync_instructor_md.sh\\\" \\\"$f\\\" &gt;&2 ;; esac\"\n          }\n        ]\n      }\n    ]\n  }\n}\nTranslation: every time the assistant edits an instructor notebook, a shell script regenerates the corresponding _notebook_lm/&lt;basename&gt;.md file so NotebookLM (Google’s research and podcast tool) can ingest the latest version automatically. I never have to remember to export to markdown for NotebookLM, because the hook does it on every edit. This is the same idea Pedro Sant’Anna documents extensively in his guide.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#log-decisions-not-just-changes",
+    "href": "workflow.html#log-decisions-not-just-changes",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "4.6 Log decisions, not just changes",
+    "text": "4.6 Log decisions, not just changes\nGit remembers what changed. It does not remember why. I keep three companions to the commit log:\n\n_project_docs/DECISIONS.md collects short entries explaining load-bearing choices (random seed, split ratios, evaluation spine, narrative voice). When I or the assistant catch myself second-guessing a choice three weeks later, this file ends the debate.\nCONVERSATION_LOG.md is a session-by-session journal, appended at the end of each working session. Sixteen-plus sessions in, this is where I look first when I have forgotten what we tried in a prior round.\n_project_docs/TROUBLESHOOTING.md lists the failure modes I have actually hit: Quarto rendering glitches, GitHub Pages caching, Colab MathJax breaking on unescaped $ in money strings. Future-me reads this so future-me does not re-debug it.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#skills-a-venue-i-have-not-explored-yet-but-you-might",
+    "href": "workflow.html#skills-a-venue-i-have-not-explored-yet-but-you-might",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "4.7 Skills: a venue I have not explored yet (but you might)",
+    "text": "4.7 Skills: a venue I have not explored yet (but you might)\nClaude Code supports user-defined skills, which are reusable, invocable workflows (often registered as slash commands) that bundle a prompt, a sequence of steps, and access to specific tools. I have not built any skills for this course yet, because the project’s velocity has been dominated by writing notebooks and rendering the site rather than by automating my own meta-workflow. That said, every time I find myself typing the same opening instructions into a session for the third time, I am one step closer to needing a skill, and I plan to invest there in the next iteration.\nIf you are starting a new project from scratch, skills are likely a high-leverage place to invest early. For a domain-specific catalog of how academics are using them, I recommend the Claude Code Skills for Academics PDF (listed in the references below), which collects concrete patterns by discipline and is the cleanest starting point I have found.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#the-pause-and-do-block",
+    "href": "workflow.html#the-pause-and-do-block",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "5.1 The Pause-and-Do block",
+    "text": "5.1 The Pause-and-Do block\nEvery student notebook is organized around the rhythm Concept, Demo, Pause-and-Do practice, Solution discussion. The Pause-and-Do block has a fixed six-cell anatomy in the instructor notebook (cells 4 through 6 are stripped from the student copy):\n1. ## 📝 PAUSE-AND-DO Exercise X       (markdown, prompt)\n2. &gt; 💡 Gemini Prompt: ...              (markdown, AI prompt + verify checklist)\n3. # YOUR SOLUTION CODE HERE           (code, student writes here)\n4. ### INSTRUCTOR SOLUTION             (markdown, removed for student)\n5. # INSTRUCTOR SOLUTION               (code, removed for student)\n6. &lt;!-- INSTRUCTOR SOLUTION --&gt;        (markdown, \"reading the output\", removed)\nThis is encoded in _project_docs/NOTEBOOK_TEMPLATE.md so any session, mine or the assistant’s, can produce a new exercise in the canonical shape without me re-explaining it.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#the-narrative-polish-pattern",
+    "href": "workflow.html#the-narrative-polish-pattern",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "5.2 The narrative polish pattern",
+    "text": "5.2 The narrative polish pattern\nEvery markdown cell in a student notebook follows five structural elements borrowed from notebooks/nb08_cross_validation_model_comparison_student.ipynb, which I treat as the canonical voice for the course:\n\nA business-case “Why This Matters” cell with a named stakeholder (the HomeValue CFO, the MedScreen chief medical officer, the TechCorp People Analytics lead).\nNarrative prose, not bullet lists, in “Reading the output” cells.\nInline Q&A blocks introduced by the grep-findable phrase “A question that often comes up here”.\nExplicit section bridges, for example “Section 2 landed the regression estimate with a tight CI. Now apply the identical four steps to the classification problem.”\nWarm wrap-ups with a one-paragraph bridge to the next notebook.\n\nBecause the pattern is documented and the trigger phrases are grep-findable, the assistant can polish a batch of notebooks consistently, and I can spot-check by running grep \"A question that often comes up\" across all student notebooks.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#the-render-and-commit-ritual",
+    "href": "workflow.html#the-render-and-commit-ritual",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "5.3 The render-and-commit ritual",
+    "text": "5.3 The render-and-commit ritual\nThe most common project-wide mistake I made in the first two months was pushing a content change without rendering Quarto, so the website would silently go stale. I fixed this by writing the ritual into the constitution, in plain steps the assistant can follow:\n# 1. Commit content changes\ngit add notebooks/nbNN_topic_student.ipynb\ngit commit -m \"feat: Update notebook NN\"\n\n# 2. Render the Quarto site\n/Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto render\n\n# 3. Commit rendered docs/\ngit add docs/\ngit commit -m \"build: Render Quarto site\"\n\n# 4. Push everything\ngit push origin main\nTiny ritual, large payoff. As long as the assistant follows the four-step sequence, the website never drifts from the notebooks.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#step-1.-get-the-repository-onto-your-machine",
+    "href": "workflow.html#step-1.-get-the-repository-onto-your-machine",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "8.1 Step 1. Get the repository onto your machine",
+    "text": "8.1 Step 1. Get the repository onto your machine\n\nClone the repo into a sensible working directory:\n\ngit clone https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474.git\ncd 2026Summer_predictive_analytics_purdue_MGMT474\n\nInstall Claude Code if you have not yet, then launch it from inside the cloned repo so the working directory is set correctly.\n(Optional but recommended.) Open the same directory in your preferred editor or IDE so you can read along while the assistant works.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#step-2.-get-oriented-before-you-change-anything",
+    "href": "workflow.html#step-2.-get-oriented-before-you-change-anything",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "8.2 Step 2. Get oriented before you change anything",
+    "text": "8.2 Step 2. Get oriented before you change anything\n\nAsk the assistant to read the constitution and the course plan, then describe the project back to you:\n\n\nRead claude.md and _project_docs/MGMT47400_Online4Week_Plan_2026Summer.md. Describe back to me how this course is structured: the pedagogy, the 21-notebook arc, the source-of-truth files, and the rules that are non-obvious.\n\n\nAsk for the file map:\n\n\nList every kind of source file in this repo and what each one is the source of truth for. Group them by artifact type (notebooks, video guides, brightspace pages, quizzes, exam, and so on).\n\n\nSpot-check by opening one notebook the assistant cites, for example notebooks/nb08_cross_validation_model_comparison_student.ipynb, so you can see what “canonical voice” actually looks like.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#step-3.-translate-the-constitution-to-your-domain",
+    "href": "workflow.html#step-3.-translate-the-constitution-to-your-domain",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "8.3 Step 3. Translate the constitution to your domain",
+    "text": "8.3 Step 3. Translate the constitution to your domain\n\nCopy claude.md into your own repo (rename to CLAUDE.md or keep it lowercase, either works), then ask the assistant to adapt it:\n\n\nThis is the constitution from another course’s repo. Adapt it for my course, which is [your course code and topic]. Replace QM47400, swap “predictive analytics” for my subject, and go through each critical rule and anti-pattern one by one. For each, tell me whether it transfers cleanly, needs editing, or does not apply.\n\n\nKeep the structural elements even if every concrete rule changes: project mission, the “see also” reference table, critical rules with a 🚨 prefix, style guidelines as a table, anti-patterns, and a session-end checklist.\nAlso copy and adapt the companion files: DECISIONS.md, TROUBLESHOOTING.md, and NOTEBOOK_TEMPLATE.md. They start small and grow alongside the project.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#step-4.-adopt-one-pattern-at-a-time-not-all-at-once",
+    "href": "workflow.html#step-4.-adopt-one-pattern-at-a-time-not-all-at-once",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "8.4 Step 4. Adopt one pattern at a time, not all at once",
+    "text": "8.4 Step 4. Adopt one pattern at a time, not all at once\nStart with the two patterns that cost almost nothing and remove the two most common failure modes.\n\nThe render-and-commit ritual. Copy the four-step ritual from §5.3 into your own CLAUDE.md as a critical workflow, adjusted to your renderer (Quarto, Jekyll, Hugo, MkDocs).\nPer-artifact source .md files. Pick one artifact (a syllabus, one quiz, one Brightspace content page). Convert it to plain-text Markdown. Edit it with the assistant. Notice what the assistant gets right and where it drifts. Capture the corrections in CLAUDE.md.\nAfter those two are stable, add the instructor-first notebook workflow from §4.3 if your course uses notebooks or lab worksheets. This is the highest-leverage addition for any course built around hands-on practice.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#step-5.-adapt-the-audit-scripts-to-your-invariants",
+    "href": "workflow.html#step-5.-adapt-the-audit-scripts-to-your-invariants",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "8.5 Step 5. Adapt the audit scripts to your invariants",
+    "text": "8.5 Step 5. Adapt the audit scripts to your invariants\n\nRead both audit scripts in this repo:\n\n\nscripts/audit_cv_first.py\nscripts/voice_check_guides.py\n\n\nIdentify two or three invariants in your course that you keep correcting by hand. Then ask the assistant:\n\n\nRead both audit scripts in scripts/. The invariants in my course are: [list them]. Write the equivalent audit scripts and explain how to wire them into the commit workflow.\n\n\nA few domain-specific invariants worth automating:\n\n\nCausal inference course: no causal claim on observational data without a stated identifying assumption.\nWriting-intensive course: passive voice flagged in graded examples and rubrics.\nLab course: every method section cites the protocol it follows.\nAny course with student-facing materials: a voice check like voice_check_guides.py.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#step-6.-reuse-the-bulk-csv-pattern-for-brightspace-quizzes",
+    "href": "workflow.html#step-6.-reuse-the-bulk-csv-pattern-for-brightspace-quizzes",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "8.6 Step 6. Reuse the bulk-CSV pattern for Brightspace quizzes",
+    "text": "8.6 Step 6. Reuse the bulk-CSV pattern for Brightspace quizzes\n\nEither export one existing quiz from Brightspace as CSV, or build one by hand in the format Brightspace’s Question Library expects.\nSave that file inside _quizzes/ in your repo. This becomes your schema example.\nGenerate the next quiz by pointing the assistant at the schema example:\n\n\nUse _quizzes/&lt;term&gt;/&lt;example-quiz&gt;.csv as the format. Generate a 10-question quiz on [topic], in the same CSV shape, with plausible distractors and one correct answer per question.\n\n\nReview, edit, upload. The hour you invest in step (a) pays back across the entire semester.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "workflow.html#step-7.-share-what-you-build-and-what-failed",
+    "href": "workflow.html#step-7.-share-what-you-build-and-what-failed",
+    "title": "Designing a Course with an AI Co-Designer",
+    "section": "8.7 Step 7. Share what you build (and what failed)",
+    "text": "8.7 Step 7. Share what you build (and what failed)\n\nOpen an issue on the course repository describing what you adapted, what worked, and what failed.\nOr just email me directly. I keep updating this page as I learn, and a sharper version of any of these patterns from a different discipline is genuinely useful to me.",
+    "crumbs": [
+      "For Instructors"
+    ]
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Day\nDate\nTopic\nVideos\nNotebook\nAssessment\nMaterials\n\n\n\n\n0\nPre-course\nLaunchpad: Welcome, course setup, and Colab orientation\n3 videos\n\nColab Readiness Check\nGoogle Colab docs\n\n\n1\nMon May 18\nPredictive analytics fundamentals, EDA, and data splitting\n6 videos\n\nConcept Quiz\nISLP Ch 2sklearn: cross-validationKaggle Learn: data leakage\n\n\n2\nTue May 19\nData setup and preprocessing pipelines (the professional way)\n2 videos\n\nConcept QuizParticipation\nsklearn: pipelines, ColumnTransformerPedregosa et al.: scikit-learn paper\n\n\n3\nWed May 20\nRegression metrics and baseline modeling (with test-set lockbox discipline)\n3 videos\n\nConcept Quiz3-sentence Evaluation Note\nISLP: Model Assessmentsklearn: regression metrics\n\n\n4\nThu May 21\nLinear regression that actually works: features, interactions, diagnostics\n3 videos\n\nConcept QuizParticipation\nISLP Ch 3: Linear Regressionsklearn: LinearRegression, PolynomialFeatures\n\n\n5\nFri May 22\nRegularization (Ridge/Lasso) + Project proposal sprint\nSynchronous lecture + 2 videos\n\nConcept QuizPROJECT MILESTONE 1: Proposal + Dataset\nISLP Ch 6: Regularizationsklearn: Ridge/Lasso/ElasticNet\n\n\n6\nMon May 25\nLogistic regression: probabilities, decision boundaries, and pipelines\n3 videos\n\nConcept QuizParticipation\nISLP Ch 4: Classificationsklearn: LogisticRegression\n\n\n7\nTue May 26\nClassification metrics: confusion matrix, ROC and PR curves, and business costs\n2 videos\n\nConcept QuizThreshold Recommendation\nFawcett: ROC analysisSaito & Rehmsmeier: PR curvessklearn: classification metrics\n\n\n8\nWed May 27\nResampling and CV: how to compare models without fooling yourself (k-fold + Student’s t CIs)\n2 videos\n\nConcept QuizParticipation\nISLP Ch 5: Resamplingsklearn: cross-validation utilities\n\n\n9\nThu May 28\nHyperparameter tuning + feature engineering + leakage detection (and Project baseline build)\n4 videos\n\nConcept QuizProject Baseline Draft\nsklearn: GridSearchCV, RandomizedSearchCVProvost & Fawcett: evaluation framing\n\n\n10\nFri May 29\nMidterm: Business-case predictive strategy practicum + Project baseline submission\nSynchronous: Midterm exam (Lockdown Browser)\n\nMIDTERM (graded)PROJECT MILESTONE 2: Baseline Model + Evaluation Plan\nProvost & Fawcett: business framingsklearn: common pitfalls\n\n\n11\nMon Jun 1\nDecision trees: interpretable models with sharp edges\n3 videos\n\nConcept QuizParticipation\nISLP Ch 8: Tree-Based Methodssklearn: DecisionTree estimators\n\n\n12\nTue Jun 2\nRandom forests: bagging, OOB intuition, and feature importance\n3 videos\n\nConcept QuizParticipation\nBreiman: Random Forests papersklearn: RandomForest, permutation importance\n\n\n13\nWed Jun 3\nGradient boosting: performance with discipline (and leakage avoidance)\n3 videos\n\nConcept QuizParticipation\nFriedman: Gradient Boosting Machinesklearn: gradient boosting estimators\n\n\n14\nThu Jun 4\nModel selection and comparison: making the call like a professional\n3 videos\n\nConcept QuizParticipation\nISLP: Model Assessmentsklearn: model evaluation best practices\n\n\n15\nFri Jun 5\nFinal Project Milestone 03 Walkthrough — Complex Model + Hyperparameter Tuning + Draft Abstract\nSynchronous walkthrough (no recorded videos)\n\nConcept QuizPROJECT MILESTONE 3: More Complex Model + Hyperparameter Tuning + Draft Abstract + saved champion_pipeline.joblib\nM3 rubric: complex-model tuning, CI-overlap rule, draft abstractsklearn: GridSearchCV, joblib persistence\n\n\n16\nMon Jun 8\nTime-series forecasting: walk-forward CV, lag features, and baseline models\n3 videos\n\nConcept QuizParticipation\nHyndman & Athanasopoulos: FPP3 (otexts.com/fpp3)sklearn: TimeSeriesSplit\n\n\n17\nTue Jun 9\nData communication and poster design: six principles (context, visualization, less-is-more, hierarchy, beauty, story) applied to the eleven-section research-poster architecture\n2 videos\n\nConcept QuizDraft Poster Outline + Abstract\nTufte: data-ink ratioHealy: Data VisualizationKnaflic: Storytelling with Data\n\n\n18\nWed Jun 10\nCompetition workflow: end-to-end pipeline from notebook to Kaggle submission\n2 videos\n\nsubmission.csv to Kaggle\nChip Huyen: Designing ML Systemssklearn: model persistence (joblib)\n\n\n19\nThu Jun 11\nDeep learning (intuition videos, hands-on PyTorch training on FashionMNIST, when-to-use rubric, one tabular demo, and a hands-on large-language-model lab with Hugging Face)\n4 videos\n\nConcept QuizFour-Question Rubric\nISLP Ch. 10: Deep LearningGoodfellow et al.: Deep Learning Book\n\n\n20\nFri Jun 12\nCourse end and reflection: final poster + Kaggle final submission + peer evaluation + reflection survey\nSynchronous closeout session (no recorded videos)\n\nPROJECT MILESTONE 4: Final Research Poster (&lt;group-number&gt;.pdf) + final notebook (NN_final.ipynb)Intra-group Peer Evaluation (Final Project + Case Competition)KAGGLE final submission + NN_kaggle_code.ipynb (deadline 11:59 PM)REFLECTION SURVEY (required for course completion)\nCourse rubric for M4 final posterPurdue URC poster guidelines\n\n\n\n\n\n\n\nJames, Witten, Hastie, Tibshirani. An Introduction to Statistical Learning (ISLP) + Python labs. Download: https://www.statlearning.com/\nHastie, Tibshirani, Friedman. The Elements of Statistical Learning (ESL).\nProvost, Fawcett. Data Science for Business.\nPedregosa et al. “Scikit-learn: Machine Learning in Python.” JMLR.\nscikit-learn User Guide (pipelines, preprocessing, model selection, metrics, inspection).\nChip Huyen. Designing Machine Learning Systems (deployment thinking, monitoring).",
+    "crumbs": [
+      "Schedule and Material"
+    ]
+  },
+  {
+    "objectID": "schedule.html#core-course-references",
+    "href": "schedule.html#core-course-references",
+    "title": "Schedule",
+    "section": "",
+    "text": "James, Witten, Hastie, Tibshirani. An Introduction to Statistical Learning (ISLP) + Python labs. Download: https://www.statlearning.com/\nHastie, Tibshirani, Friedman. The Elements of Statistical Learning (ESL).\nProvost, Fawcett. Data Science for Business.\nPedregosa et al. “Scikit-learn: Machine Learning in Python.” JMLR.\nscikit-learn User Guide (pipelines, preprocessing, model selection, metrics, inspection).\nChip Huyen. Designing Machine Learning Systems (deployment thinking, monitoring).",
+    "crumbs": [
+      "Schedule and Material"
+    ]
+  },
+  {
+    "objectID": "index.html#course-description-and-objectives",
+    "href": "index.html#course-description-and-objectives",
+    "title": "QM47400: Predictive Analytics",
+    "section": "Course Description and Objectives",
+    "text": "Course Description and Objectives\nThe course enables students to navigate the entire predictive analytics pipeline skillfully, from data preparation and exploration to modeling, assessment, and interpretation. Throughout the course, learners engage with real-world examples and hands-on labs emphasizing essential programming and analytical skills. By exploring topics such as linear and logistic regression, classification, resampling methods, regularization techniques, tree-based approaches, and advanced learning paradigms (including neural networks), participants gain a robust theoretical understanding and practical experience. Ultimately, students will leave the course equipped to apply predictive models to data-driven problems, communicate their findings to diverse audiences, and critically evaluate model performance to inform strategic decision-making across various business contexts.\nCourse Website: https://davi-moreira.github.io/2026Summer_predictive_analytics_purdue_MGMT474/\n\nInstructor: Professor Davi Moreira\n\nEmail: dcordeir@purdue.edu\nOffice: Young Hall 1019\nClass meetings: Section Y01 — Monday–Friday online, with a synchronous meeting Fridays 11 am – 12:00 pm EST (Zoom link on Brightspace)\nOffice Hours: Tuesdays 11:00 am – 12:00 pm EST (Zoom link on Brightspace)\nIndividual Appointments: Book time with me through the link in the course syllabus on your Course Brightspace Page, or by appointment.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#learning-outcomes",
+    "href": "index.html#learning-outcomes",
+    "title": "QM47400: Predictive Analytics",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy the conclusion of this course, students will be able to:\n\nExplain Core Predictive Analytics Concepts: Define, distinguish, and exemplify the key ideas of statistical/machine learning.\nPrepare, Process, and Explore Data Effectively: Demonstrate the ability to clean, organize, and preprocess data using appropriate tools and techniques; address missing values, apply feature engineering methods, and perform comprehensive exploratory data analysis to generate meaningful insights.\nImplement and Compare Diverse Predictive Modeling Techniques: Specify, train, and evaluate a range of predictive models using appropriate algorithms; apply systematic hyperparameter optimization to enhance performance; and diagnose model limitations through quantitative and visual diagnostics to guide model refinement and selection.\nEvaluate, Interpret, and Communicate Model Performance: Estimate out-of-sample performance using direct and indirect approaches (e.g., holdout sets, cross-validation, resampling); interpret metrics in the context of project objectives; and deliver clear, audience-appropriate recommendations that explicitly address uncertainty, risk trade-offs, and ethical implications.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#course-materials",
+    "href": "index.html#course-materials",
+    "title": "QM47400: Predictive Analytics",
+    "section": "Course Materials",
+    "text": "Course Materials\n\nTextbook (Recommended): [ISLP] James, G., Witten, D., Hastie, T., & Tibshirani, R. (2023). An Introduction to Statistical Learning with Applications in Python. Springer. https://doi.org/10.1007/978-1-0716-2926-2. Free download: https://www.statlearning.com/\nComputing (Required): A laptop or desktop with internet access and the capability to run Python code through Google Colab: https://colab.research.google.com/.\nSoftware (Required):\n\nGoogle Colab is a cloud-based platform that requires no software installation on your local machine; it is accessible through a modern web browser such as Google Chrome, Mozilla Firefox, Microsoft Edge, or Safari. To use Google Colab, you need a Google account and a stable internet connection. All course notebooks are designed to run directly in Google Colab with all necessary dependencies pre-configured. While optional, having tools like a local Python installation (e.g., Anaconda) or a Python IDE (e.g., Jupyter Notebook or VS Code) can be helpful for offline development. Additionally, browser extensions, such as those for VS Code integration, can enhance your experience but are not required. This makes Google Colab convenient and easy for Python programming and data science tasks.\nGoogle Gemini in Colab: Students will use Google Gemini AI assistance directly within Colab notebooks to accelerate coding while maintaining accountability through the “vibe coding” workflow: draft code with AI assistance → verify correctness → document decisions. This approach helps students learn faster while developing critical thinking about AI-generated code.\nMicrosoft Copilot: is an AI-powered assistant designed to enhance productivity and streamline workflows across various applications and services. It utilizes large language models and is integrated within Microsoft 365 apps like Word, Excel, PowerPoint, Outlook, and Teams, providing real-time, context-aware assistance for tasks such as drafting documents, analyzing data, managing projects, and communicating more efficiently. Users can leverage Copilot to automate repetitive tasks, generate ideas, summarize information, and access data across their work environment and the web, all within a secure and privacy-conscious framework.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#course-infra-structure",
+    "href": "index.html#course-infra-structure",
+    "title": "QM47400: Predictive Analytics",
+    "section": "Course Infra-structure",
+    "text": "Course Infra-structure\nBrightspace: The Course Brightspace Page https://purdue.brightspace.com/ should be checked on a regular basis for announcements and course material.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-description-and-objectives",
+    "href": "syllabus.html#course-description-and-objectives",
+    "title": "Syllabus",
+    "section": "Course Description and Objectives",
+    "text": "Course Description and Objectives\nThe course enables students to navigate the entire predictive analytics pipeline skillfully, from data preparation and exploration to modeling, assessment, and interpretation. Throughout the course, learners engage with real-world examples and hands-on labs emphasizing essential programming and analytical skills. By exploring topics such as linear and logistic regression, classification, resampling methods, regularization techniques, tree-based approaches, and advanced learning paradigms (including neural networks), participants gain a robust theoretical understanding and practical experience. Ultimately, students will leave the course equipped to apply predictive models to data-driven problems, communicate their findings to diverse audiences, and critically evaluate model performance to inform strategic decision-making across various business contexts.\nCourse Website: https://davi-moreira.github.io/2026Summer_predictive_analytics_purdue_MGMT474/",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#instructor",
+    "href": "syllabus.html#instructor",
+    "title": "Syllabus",
+    "section": "Instructor",
+    "text": "Instructor\n\nInstructor: Professor Davi Moreira\n\nEmail: dcordeir@purdue.edu\nOffice: Young Hall 1019\nClass meetings: Section Y01 – Monday–Friday online, with a synchronous meeting Fridays 11 am – 12:00 pm EST (Zoom link on Brightspace)\nOffice Hours: Tuesdays 11:00 am – 12:00 pm EST (Zoom link on Brightspace)\nIndividual Appointments: Book time with me through the link in the course syllabus on your Course Brightspace Page, or by appointment.\n\n\nNote: Email responses are typically within 24 business hours. If you do not receive a response by the 24-hour mark, please email me again.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#learning-outcomes",
+    "href": "syllabus.html#learning-outcomes",
+    "title": "Syllabus",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy the conclusion of this course, students will be able to:\n\nExplain Core Predictive Analytics Concepts: Define, distinguish, and exemplify the key ideas of statistical/machine learning.\nPrepare, Process, and Explore Data Effectively: Demonstrate the ability to clean, organize, and preprocess data using appropriate tools and techniques; address missing values, apply feature engineering methods, and perform comprehensive exploratory data analysis to generate meaningful insights.\nImplement and Compare Diverse Predictive Modeling Techniques: Specify, train, and evaluate a range of predictive models using appropriate algorithms; apply systematic hyperparameter optimization to enhance performance; and diagnose model limitations through quantitative and visual diagnostics to guide model refinement and selection.\nEvaluate, Interpret, and Communicate Model Performance: Estimate out-of-sample performance using direct and indirect approaches (e.g., holdout sets, cross-validation, resampling); interpret metrics in the context of project objectives; and deliver clear, audience-appropriate recommendations that explicitly address uncertainty, risk trade-offs, and ethical implications.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-materials",
+    "href": "syllabus.html#course-materials",
+    "title": "Syllabus",
+    "section": "Course Materials",
+    "text": "Course Materials\n\nTextbook (Recommended): [ISLP] James, G., Witten, D., Hastie, T., & Tibshirani, R. (2023). An Introduction to Statistical Learning with Applications in Python. Springer. https://doi.org/10.1007/978-1-0716-2926-2. Free download: https://www.statlearning.com/\nComputing (Required): A laptop or desktop with internet access and the capability to run Python code through Google Colab: https://colab.research.google.com/.\nSoftware (Required):\n\nGoogle Colab is a cloud-based platform that requires no software installation on your local machine; it is accessible through a modern web browser such as Google Chrome, Mozilla Firefox, Microsoft Edge, or Safari. To use Google Colab, you need a Google account and a stable internet connection. All course notebooks are designed to run directly in Google Colab with all necessary dependencies pre-configured. While optional, having tools like a local Python installation (e.g., Anaconda) or a Python IDE (e.g., Jupyter Notebook or VS Code) can be helpful for offline development. Additionally, browser extensions, such as those for VS Code integration, can enhance your experience but are not required. This makes Google Colab convenient and easy for Python programming and data science tasks.\nGoogle Gemini in Colab: Students will use Google Gemini AI assistance directly within Colab notebooks to accelerate coding while maintaining accountability through the “vibe coding” workflow: draft code with AI assistance \\(\\rightarrow\\) verify correctness \\(\\rightarrow\\) document decisions. This approach helps students learn faster while developing critical thinking about AI-generated code.\nMicrosoft Copilot: is an AI-powered assistant designed to enhance productivity and streamline workflows across various applications and services. It utilizes large language models and is integrated within Microsoft 365 apps like Word, Excel, PowerPoint, Outlook, and Teams, providing real-time, context-aware assistance for tasks such as drafting documents, analyzing data, managing projects, and communicating more efficiently. Users can leverage Copilot to automate repetitive tasks, generate ideas, summarize information, and access data across their work environment and the web, all within a secure and privacy-conscious framework.\n\n\n\nCourse Infra-structure\nBrightspace: The Course Brightspace Page https://purdue.brightspace.com/ should be checked on a regular basis for announcements and course material.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#assessments",
+    "href": "syllabus.html#assessments",
+    "title": "Syllabus",
+    "section": "Assessments",
+    "text": "Assessments\nAs part of a university-wide initiative, the Business School has adopted an Official Grading Policy that caps the overall class GPA at 3.3. Final letter grades are determined by curving final percentages, subject to any extra-credit exceptions discussed in this syllabus. While you will see your final percentage in Brightspace, individual grade thresholds will not be disclosed before official submissions.\n\n\n\nAssessment\nWeight\n\n\n\n\nParticipation\n5%\n\n\nQuizzes\n20%\n\n\nOnline Midterm Exam\n20%\n\n\nCourse Case Competition (Kaggle)\n20%\n\n\nFinal Project\n35%\n\n\n\n\nParticipation (5%)\nYou are required to complete participation activities (e.g., surveys, instructor requests) and all participatory PAUSE-AND-DO exercises embedded in the lecture materials. You must submit the corresponding Jupyter Notebook (.ipynb) containing your completed work to the course Brightspace site by the stated deadline. Your participation grade is assessed based on completeness and timeliness of these notebook submissions, with no participatory activity dropped.\n\n\nQuizzes (20%)\nShort quizzes based on lecture and notebook content promote consistent engagement with the course material. Quizzes contribute to the final course grade with no quiz dropped. Due dates are clearly outlined on Brightspace and aligned with the course schedule. Quizzes are designed to reinforce understanding and ensure steady progress through the curriculum.\n\n\nOnline Midterm Exam (20%)\nThe midterm exam wraps up the foundational concepts of the course in a comprehensive assessment delivered on Day 10. Students have limited time to complete multiple-choice questions that evaluate their technical abilities and their understanding of core concepts. Only under exceptional circumstances, when legitimate and verifiable reasons are provided, will make-ups be given. Exceptional circumstances means a death in the family, a serious personal medical emergency, participation in a conflicting NCAA athletic event, or as otherwise required by University policies. Except for emergencies, requests for a make-up must be made by email with supporting documentation no later than 7 days before the scheduled exam.\n\n\nCourse Case Competition — Kaggle (20%)\nA course-long predictive analytics competition hosted on Kaggle. The Summer 2026 QM47400 Case Competition: Bank Churn is adapted from the 2024 Kaggle Playground Series, which uses AI-generated synthetic data designed for educational purposes. Your task is to build models that predict whether a customer continues with their account or closes it (churn). Students are randomly assigned to teams (up to four members) and have a limit of five Kaggle submissions per day. The competition opens May 18, 2026, and the final submission deadline is June 12, 2026. Kaggle automatically evaluates submissions and maintains the leaderboard throughout the competition period.\n\nCompetition: Summer 2026 QM47400 Case Competition: Bank Churn\nTask: Predict the probability that a customer will churn (Exited = 1)\nMetric: AUC-ROC\nMax submissions: 5 per day on Kaggle\n\nGrading breakdown (of the competition grade):\n\nTeam Participation (20%): An evaluation of your submitted, reproducible notebook — a clean Run-All in Colab, a leakage-safe pipeline, cross-validated ROC-AUC with 95% confidence intervals for a baseline and a more complex model, systematic hyperparameter tuning, the required visualizations, and a brief write-up. Earned with at least one valid Kaggle submission plus the notebook, and not conditioned on leaderboard rank.\nLeaderboard Performance (60%): Your team’s final standing on the private Kaggle leaderboard at the close, scored by rank on a scale anchored so that a model no better than random guessing (AUC = 0.5) earns zero credit.\nPeer Evaluation (20%): A confidential intra-team evaluation of each member’s contribution; this is the individual portion of the competition grade.\n\nTwo −10 point penalties apply to the team total: a Kaggle team name that is not Group NN at the deadline, and a submitted notebook filename that is not NN_kaggle_code.ipynb.\nBrightspace deliverable: Submit the complete code for your best-performing model. The code must be fully replicable, allowing the instructor and TA to reproduce the same results and performance metrics. Include all necessary steps: data preprocessing, feature engineering, model training, evaluation, and generation of the submission file.\n\n\nFinal Project (35%)\nIn groups of four randomly assigned members, students complete a practical predictive analytics project culminating in a final research poster. Although presenting the poster at the Fall 2026 Purdue Undergraduate Research Conference is not required, it is strongly encouraged. All groups must still prepare and submit the final poster as part of the course requirements. Professor Moreira is happy to serve as faculty mentor for groups choosing to present at the conference.\nGrading breakdown (of the final-project grade): Review the course syllabus available on the Course Brightspace page for details.\n\nMilestone Deliverables.\nPeer Evaluation.\nInstructor / TA Evaluation.\n\nOptional conference presentation. Presenting at the Fall 2026 Purdue Undergraduate Research Conference is optional and not required for your course grade. Students who plan to present are encouraged to communicate with the instructor early so he can provide mentorship, feedback, and guidance throughout the process. Additional information about Purdue undergraduate research conferences: https://www.purdue.edu/undergrad-research/conferences/index.php.\n\n\nGrade Challenges\nStudents who wish to challenge a grade must do so within 3 calendar days of the grade’s release. An exception applies for the last week of class, when assignments must be challenged within 1 calendar day to ensure timely computation of final course grades. Grade challenges must be grounded in legitimate disputes over predictive analytics principles or grading accuracy. Challenges based on post-hoc legalistic arguments or subjective dissatisfaction will not be considered.\nTo challenge an assignment score:\n\nReview posted solutions thoroughly.\nIf you still believe an error has been made, email the instructor with:\n\nCourse name, section, and lecture date/time\nYour name and Student ID\nAssignment number / title\nSpecific deduction being challenged\nReason for the challenge, clearly explaining why the deduction is believed to be incorrect, with reference to the solutions or grading rubric\n\n\n\nGrades will not be discussed in-class — before, during, or after class. Please use office hours for questions related to course content or assignment clarification. After the challenge period, all grades are final and cannot be revised further for purposes of calculating final course grades.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-policies-and-additional-details",
+    "href": "syllabus.html#course-policies-and-additional-details",
+    "title": "Syllabus",
+    "section": "Course Policies and Additional Details",
+    "text": "Course Policies and Additional Details\n\nExtra Credit Opportunities:\n\nReview the course syllabus available on the Course Brightspace page for details.\n\n\n\nAI Policy\nI encourage you to use AI tools you believe will enhance your individual or group learning performance. Learning to use AI is a valuable and emerging skill, and I am available to provide support during office hours or by appointment. Be aware of the following guidelines:\n\nYou are not allowed to use AI tools during exams.\nProviding low-effort prompts will result in low-quality outputs. Refine your prompts to achieve desirable outcomes — use the course knowledge for that.\nUse AI to support your learning: ask for explanations, examples, or clarifications of doubts; do not simply ask for solutions.\nDo not blindly trust the information provided by the output. Any errors or omissions resulting from your use of an AI tool are your responsibility. AI works better for topics you already understand.\nWhile AI is a tool, you must acknowledge its use. Always cite — include a short note at the end of any document mentioning that you used AI in its development.\n\n\n\nNetiquette Guidelines (Zoom Classes / Office Hours)\n\nJoin with your full name; mute when not speaking.\nBe respectful and clear in communication.\nAvoid background distractions.\n\n\n\nAccessibility, Accommodations, and Student Well-Being\n\nAccessibility. Purdue University strives to make learning experiences as accessible as possible. If you anticipate or experience physical or academic barriers based on disability, please let me know so we can discuss options. You are also encouraged to contact the Disability Resource Center: drc@purdue.edu or 765-494-1247.\nCAPS. Purdue University is committed to advancing student mental health and well-being. If you or someone you know is feeling overwhelmed, depressed, or in need of support, services are available. Contact Counseling and Psychological Services (CAPS) at 765-494-6995 and http://www.purdue.edu/caps/ during and after hours, on weekends and holidays, or through counselors located in the Purdue University Student Health Center (PUSH) during business hours.\nBasic Needs Security. Contact ODOS if you are facing food or housing insecurity; no appointment needed.\nNon-Discrimination Statement. Please refer to the Nondiscrimination Statement on Brightspace.\nEmergency Situations. Please refer to the Emergency Preparedness page on Brightspace.\n\n\n\nAdditional Information\nRefer to Brightspace for deadlines, academic integrity policies, accommodations, CAPS information, and non-discrimination statements. Registrar add/drop/modify deadlines: http://www.purdue.edu/Registrar/.\n\n\nSubject to Change Policy\nWhile I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change during the term.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#schedule",
+    "href": "syllabus.html#schedule",
+    "title": "Syllabus",
+    "section": "Schedule",
+    "text": "Schedule",
+    "crumbs": [
+      "Syllabus"
+    ]
+  }
+]
