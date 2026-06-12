@@ -42,10 +42,10 @@ The instructor notebook is the spine of every downstream artifact: the videos fo
 
 **C2. Lock the video splits to the edited videos.** Set the page's video count and section ranges to match the **actual recorded/edited** videos (e.g., NB17 became 2 videos, not the planned 3). **This is the lock point** — every downstream artifact follows these ranges.
 
-**C3. Generate per-video titles + descriptions.** Run the notebook through an LLM (ChatGPT) once per video segment with the prompt below, and paste the result into the page's Video sections.
+**C3. Generate per-video titles + descriptions.** Paste the developed notebook into an LLM (ChatGPT) and run the prompt below over a section range (fill in the boundary), then paste the result into the page's Video sections.
 
-> **Prompt (run per video segment; fill in that segment's section range):**
-> *"Provide me a summary and description of `<section range — e.g. from the start to before Section 8>` as if it were a video: a very short 2–3 sentence summary, a paragraph for course documentation, and a short title for the video."*
+> **Prompt (verbatim — fill in the section boundary):**
+> *"provide me a summary and description from the start to before Section 8 as if it was a video: a very short 2-3 sentence summary, a paragraph for course documentation + provide me a short title for each of the videos."*
 
 Collect, per video: the **short title**, the **2–3 sentence summary**, and the **documentation paragraph**.
 
@@ -58,6 +58,8 @@ Collect, per video: the **short title**, the **2–3 sentence summary**, and the
 ### Phase E — Assessment
 
 **E1. Generate the quizzes.** Follow `_quizzes/2026Summer/quiz_generation_plan.md`: first the per-notebook **blueprint** (`quiz_blueprint_nbNN.md`) covering all video splits, then the per-video **CSVs** (`quiz_nbNN_vN.csv`), byte-compatible with `_quizzes/2026Summer/sample_quiz.csv`. The blueprint is sourced from the **split video md files** (Phase D), so **E follows D**. *(Done for NB19.)*
+
+**E2. Run the answer-length gate.** Before importing ANY quiz or exam CSV to Brightspace: `python scripts/audit_answer_length.py --file <csv>` must print PASS (no option-length cue to the correct answer — see the MC Option-Length Parity rule in `CLAUDE.md` and the spec in `scripts/_distractor_rewrite_instructions.md`). A bank that FAILs does not ship.
 
 ### Phase F — Sync the rest of the course
 

@@ -2193,3 +2193,9 @@ Fix (still 100% markdown, nothing to run):
 - Target: `2026F_predictive_analytics__QM474` in the `predictive_analytics` root.
 
 All committed + pushed. Left untouched: user's in-progress `_final_project/2026Summer/milestone_01/02` edits and case-competition untracked files.
+
+## Session — 2026-06-12: Inherit MC option-length parity protections from 2026Summer
+
+- 2026Summer students proved "always pick the longest option" scored ~100% on quizzes/midterm (correct-is-longest 96% / 99.5% vs 25% chance, p < 1e-123). All inherited assessment banks in this repo were the pre-fix versions — replaced with the rewritten, audit-PASSing ones.
+- Copied from 2026Summer: `scripts/audit_answer_length.py` (gate), `scripts/_distractor_rewrite_instructions.md` (authoring spec), updated `_project_docs/DECISIONS.md` (Decision 11), `_project_docs/COURSE_MATERIAL_WORKFLOW.md` (step E2), 48 quiz CSVs + 14 midterm CSVs + generation plans + audit reports (gitignored dirs). Spliced the "MC Option-Length Parity" CRITICAL RULE, See-Also rows, anti-pattern, and session-end checklist item into `claude.md` (preserving Fall-specific adaptations).
+- Verified: corpus audit on this repo's banks is at chance (quizzes 26.8% / 25.7%, midterm 27.6%, connector cue gone).

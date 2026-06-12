@@ -27,6 +27,8 @@ The same **21-notebook arc (nb00–nb20)** from the 4-week intensive offering is
 | `_project_docs/claude_course_plan.md` | Implementation plan with notebook-content justification |
 | `scripts/audit_cv_first.py` | Run before every commit in nb09–nb20 |
 | `scripts/voice_check_guides.py` | Run before every video-guide edit |
+| `scripts/audit_answer_length.py` | Run before importing ANY quiz/exam CSV to Brightspace (MC answer-length cue gate) |
+| `scripts/_distractor_rewrite_instructions.md` | Authoring/rewriting MC distractors — the full length-parity spec |
 
 **Canonical notebook reference:** `notebooks/nb01_eda_splits_student.ipynb`. Match its formatting exactly.
 
@@ -141,6 +143,25 @@ The only acceptable output is hits in `nb14` cell 33 plus `nb18`'s Kaggle-submis
 - `classification_report` on held-out predictions: `y_pred = cross_val_predict(model, X_train, y_train, cv=cv_strat)` — every prediction comes from a fold that never saw it during fitting.
 - Permutation importance that would otherwise touch `X_test`: split `X_train` further (e.g., 75/25 inside the cell), fit on the 75% slice, measure permutation importance on the 25% slice. Test set stays locked.
 - Calibration that needs a held-out sample: use `CalibratedClassifierCV(base, cv=5)` fit on `X_train` (internal CV handles the calibrator fit), evaluate Brier on `X_val`.
+
+---
+
+## 🚨 CRITICAL RULE — MC Option-Length Parity (Quizzes and Exams)
+
+**The correct answer must not be identifiable by its length or elaboration.** This actually happened in the 2026Summer offering: correct options were authored as full decisions-with-rationale while distractors stayed terse one-liners. Students discovered that "always pick the longest option" scored \~100% (correct-is-longest in 96% of quiz questions and 99.5% of midterm questions vs. 25% chance — hypothesis-tested at p < 10⁻¹²³; see `_project_docs/DECISIONS.md` Decision 11). All inherited banks were rewritten on 2026-06-12; this rule keeps it fixed.
+
+**Hard rules for every multiple-choice question (quizzes, midterm, any future exam):**
+
+1. **Every option ≥ 60% of the length of that question's longest option.** Distractors carry their own flawed-but-specific rationale at the same elaboration and connector-word density as the correct option — wrongness comes from a real misconception, never from brevity, vagueness, or "always/never" tells.
+2. **Per bank, the correct option is strictly longest in ≤ 40% of questions** (target \~25%, chance). Vary the correct option's length rank — it must land at longest, middle, and shortest across the bank, and the longest option's position must vary.
+3. **Full authoring spec:** `scripts/_distractor_rewrite_instructions.md` (also embedded in the quiz and midterm generation plans, §4.5 and §5.6).
+
+**Before importing ANY quiz or exam CSV to Brightspace**, run the gate — PASS is mandatory:
+
+```bash
+python scripts/audit_answer_length.py --file <path-to-csv>   # per-bank gate (PASS/FAIL)
+python scripts/audit_answer_length.py                        # corpus-wide statistics
+```
 
 ---
 
@@ -262,6 +283,7 @@ These are the failures that have actually happened in this project. The positive
 - **Don't mix student placeholder and instructor solution in one cell.** Student cell = `# YOUR SOLUTION CODE HERE` only. Solution = SEPARATE cell with `# INSTRUCTOR SOLUTION`.
 - **Don't use unescaped `$` for money in markdown cells.** Use `\$50,000`. Colab's MathJax breaks the cell otherwise.
 - **Don't use unescaped `~` for "approximately" in markdown cells.** Always escape: `\~341 patients`, `(\~0.52)`. Pandoc/Quarto interpret `~` as a strikethrough delimiter or non-breaking space depending on context, which silently mangles the rendered output. Same rule applies to all markdown content the course renders — student notebooks (markdown cells in `.ipynb`), instructor notebooks, video guides (`video_guides/*.md`), and `.qmd` pages.
+- **Don't write fully-justified correct options against terse distractors.** Elaboration leaks correctness: students scored \~100% by always picking the longest option (caught by student reports, 2026Summer). Every option in a question must sit in the same length band, and `scripts/audit_answer_length.py --file <csv>` must PASS before Brightspace import.
 - **Don't add complexity that wasn't requested.** No extra features, refactoring, or "improvements" unless asked. Over-engineering confuses students and adds maintenance burden.
 - **Don't append to `CONVERSATION_LOG.md` by overwriting** — always append, never replace. Lose history once and you lose it forever.
 
@@ -289,6 +311,7 @@ Before ending any session that touched course content:
 - [ ] All changes committed with clear `<type>: <subject>` messages and `Co-Authored-By:` line.
 - [ ] **Voice-check grep run** on any modified student notebook (`grep -iE '\bstudents?\b|\bthe instructor\b|on camera|speaking prompt' notebooks/nbNN_*_student.ipynb` returns zero non-`Student's t` hits). If video guides changed: `python scripts/voice_check_guides.py` is clean.
 - [ ] **CV-first audit run** if any nb09–nb20 evaluation code changed: `python scripts/audit_cv_first.py` returns only the nb14 cell 33 + nb18 Kaggle-submission exceptions.
+- [ ] **Answer-length audit run** if any quiz/exam CSV was created or edited: `python scripts/audit_answer_length.py --file <csv>` returns PASS for every touched bank.
 - [ ] **Narrative polish applied** if any new or rewritten student markdown cells landed: named stakeholder in Why-This-Matters, narrative prose over bullet lists in Reading-the-output, at least one `"A question that often comes up here"` Q&A, warm wrap-up with bridge to the next notebook.
 - [ ] **`quarto render` run** if ANY content changed (`.qmd`, notebooks, images), AND `docs/` committed.
 - [ ] `CONVERSATION_LOG.md` updated with session summary (appended, not overwritten).
