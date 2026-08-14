@@ -732,15 +732,15 @@ div.csl-indent {
 </section>
 <section id="sec-template" class="level1" data-number="8">
 <h1 data-number="8"><span class="header-section-number">8</span> Using this course as a template for your own</h1>
-<p>If you would like to use this <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474">repository</a> as a starting point rather than reinventing the workflow, there are two paths. <strong>Replicate the design</strong> if you teach a course that resembles QM47400 in spirit, meaning a data-skills course delivered online or in a compressed window. <strong>Use it as a reference</strong> if your domain is different, and lift only the patterns that transfer.</p>
+<p>If you would like to use this <a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474">repository</a> as a starting point rather than reinventing the workflow, there are two paths. <strong>Replicate the design</strong> if you teach a course that resembles QM47400 in spirit, meaning a data-skills course delivered online or in a compressed window. <strong>Use it as a reference</strong> if your domain is different, and lift only the patterns that transfer.</p>
 <p>The seven steps below are the most direct on-ramp. Each step lists <strong>what to do</strong>, the <strong>prompt</strong> you can paste into Claude Code (shown in blockquotes), and the <strong>files in this repository</strong> to point the assistant at (shown as hyperlinks).</p>
 <section id="step-1.-get-the-repository-onto-your-machine" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="step-1.-get-the-repository-onto-your-machine"><span class="header-section-number">8.1</span> Step 1. Get the repository onto your machine</h2>
 <ol type="a">
 <li>Clone the repo into a sensible working directory:</li>
 </ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474.git</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> 2026Summer_predictive_analytics_purdue_MGMT474</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/davi-moreira/2026F_predictive_analytics_QM474.git</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> 2026F_predictive_analytics_QM474</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="2" type="a">
 <li><p>Install <a href="https://www.anthropic.com/claude-code">Claude Code</a> if you have not yet, then launch it from inside the cloned repo so the working directory is set correctly.</p></li>
 <li><p>(Optional but recommended.) Open the same directory in your preferred editor or IDE so you can read along while the assistant works.</p></li>
@@ -752,7 +752,7 @@ div.csl-indent {
 <li>Ask the assistant to read the constitution and the course plan, then describe the project back to you:</li>
 </ol>
 <blockquote class="blockquote">
-<p>Read <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/claude.md"><code>claude.md</code></a> and <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/_project_docs/MGMT47400_Online4Week_Plan_2026Summer.md"><code>_project_docs/MGMT47400_Online4Week_Plan_2026Summer.md</code></a>. Describe back to me how this course is structured: the pedagogy, the 21-notebook arc, the source-of-truth files, and the rules that are non-obvious.</p>
+<p>Read <a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/CLAUDE.md"><code>CLAUDE.md</code></a> and <a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md"><code>_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md</code></a>. Describe back to me how this course is structured: the pedagogy, the 20-notebook arc, the source-of-truth files, and the rules that are non-obvious.</p>
 </blockquote>
 <ol start="2" type="a">
 <li>Ask for the file map:</li>
@@ -761,20 +761,20 @@ div.csl-indent {
 <p>List every kind of source file in this repo and what each one is the source of truth for. Group them by artifact type (notebooks, video guides, brightspace pages, quizzes, exam, and so on).</p>
 </blockquote>
 <ol start="3" type="a">
-<li>Spot-check by opening one notebook the assistant cites, for example <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/notebooks/nb08_cross_validation_model_comparison_student.ipynb"><code>notebooks/nb08_cross_validation_model_comparison_student.ipynb</code></a>, so you can see what “canonical voice” actually looks like.</li>
+<li>Spot-check by opening one notebook the assistant cites, for example <a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb08_cross_validation_model_comparison_student.ipynb"><code>notebooks/nb08_cross_validation_model_comparison_student.ipynb</code></a>, so you can see what “canonical voice” actually looks like.</li>
 </ol>
 </section>
 <section id="step-3.-translate-the-constitution-to-your-domain" class="level2" data-number="8.3">
 <h2 data-number="8.3" class="anchored" data-anchor-id="step-3.-translate-the-constitution-to-your-domain"><span class="header-section-number">8.3</span> Step 3. Translate the constitution to your domain</h2>
 <ol type="a">
-<li>Copy <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/claude.md"><code>claude.md</code></a> into your own repo (rename to <code>CLAUDE.md</code> or keep it lowercase, either works), then ask the assistant to adapt it:</li>
+<li>Copy <a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/CLAUDE.md"><code>CLAUDE.md</code></a> into your own repo (<code>CLAUDE.md</code> or <code>claude.md</code>, either works), then ask the assistant to adapt it:</li>
 </ol>
 <blockquote class="blockquote">
 <p>This is the constitution from another course’s repo. Adapt it for my course, which is [your course code and topic]. Replace QM47400, swap “predictive analytics” for my subject, and go through each critical rule and anti-pattern one by one. For each, tell me whether it transfers cleanly, needs editing, or does not apply.</p>
 </blockquote>
 <ol start="2" type="a">
 <li><p>Keep the <strong>structural elements</strong> even if every concrete rule changes: project mission, the “see also” reference table, critical rules with a 🚨 prefix, style guidelines as a table, anti-patterns, and a session-end checklist.</p></li>
-<li><p>Also copy and adapt the companion files: <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/_project_docs/DECISIONS.md"><code>DECISIONS.md</code></a>, <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/_project_docs/TROUBLESHOOTING.md"><code>TROUBLESHOOTING.md</code></a>, and <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/_project_docs/NOTEBOOK_TEMPLATE.md"><code>NOTEBOOK_TEMPLATE.md</code></a>. They start small and grow alongside the project.</p></li>
+<li><p>Also copy and adapt the companion files: <a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/_project_docs/DECISIONS.md"><code>DECISIONS.md</code></a>, <a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/_project_docs/TROUBLESHOOTING.md"><code>TROUBLESHOOTING.md</code></a>, and <a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/_project_docs/NOTEBOOK_TEMPLATE.md"><code>NOTEBOOK_TEMPLATE.md</code></a>. They start small and grow alongside the project.</p></li>
 </ol>
 </section>
 <section id="step-4.-adopt-one-pattern-at-a-time-not-all-at-once" class="level2" data-number="8.4">
@@ -792,8 +792,8 @@ div.csl-indent {
 <li>Read both audit scripts in this repo:</li>
 </ol>
 <ul>
-<li><a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/scripts/audit_cv_first.py"><code>scripts/audit_cv_first.py</code></a></li>
-<li><a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/scripts/voice_check_guides.py"><code>scripts/voice_check_guides.py</code></a></li>
+<li><a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/scripts/audit_cv_first.py"><code>scripts/audit_cv_first.py</code></a></li>
+<li><a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/scripts/voice_check_guides.py"><code>scripts/voice_check_guides.py</code></a></li>
 </ul>
 <ol start="2" type="a">
 <li>Identify two or three invariants in <em>your</em> course that you keep correcting by hand. Then ask the assistant:</li>
@@ -808,18 +808,18 @@ div.csl-indent {
 <li><em>Causal inference course:</em> no causal claim on observational data without a stated identifying assumption.</li>
 <li><em>Writing-intensive course:</em> passive voice flagged in graded examples and rubrics.</li>
 <li><em>Lab course:</em> every method section cites the protocol it follows.</li>
-<li><em>Any course with student-facing materials:</em> a voice check like <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/scripts/voice_check_guides.py"><code>voice_check_guides.py</code></a>.</li>
+<li><em>Any course with student-facing materials:</em> a voice check like <a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/scripts/voice_check_guides.py"><code>voice_check_guides.py</code></a>.</li>
 </ul>
 </section>
 <section id="step-6.-reuse-the-bulk-csv-pattern-for-brightspace-quizzes" class="level2" data-number="8.6">
 <h2 data-number="8.6" class="anchored" data-anchor-id="step-6.-reuse-the-bulk-csv-pattern-for-brightspace-quizzes"><span class="header-section-number">8.6</span> Step 6. Reuse the bulk-CSV pattern for Brightspace quizzes</h2>
 <ol type="a">
 <li><p>Either export one existing quiz from Brightspace as CSV, or build one by hand in the format Brightspace’s Question Library expects.</p></li>
-<li><p>Save that file inside <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/tree/main/_quizzes"><code>_quizzes/</code></a> in your repo. This becomes your <strong>schema example</strong>.</p></li>
+<li><p>Save that file inside <code>_quizzes/</code> in your repo. This becomes your <strong>schema example</strong>.</p></li>
 <li><p>Generate the next quiz by pointing the assistant at the schema example:</p></li>
 </ol>
 <blockquote class="blockquote">
-<p>Use <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/tree/main/_quizzes"><code>_quizzes/&lt;term&gt;/&lt;example-quiz&gt;.csv</code></a> as the format. Generate a 10-question quiz on [topic], in the same CSV shape, with plausible distractors and one correct answer per question.</p>
+<p>Use <code>_quizzes/&lt;term&gt;/&lt;example-quiz&gt;.csv</code> as the format. Generate a 10-question quiz on [topic], in the same CSV shape, with plausible distractors and one correct answer per question.</p>
 </blockquote>
 <ol start="4" type="a">
 <li>Review, edit, upload. The hour you invest in step (a) pays back across the entire semester.</li>
@@ -828,7 +828,7 @@ div.csl-indent {
 <section id="step-7.-share-what-you-build-and-what-failed" class="level2" data-number="8.7">
 <h2 data-number="8.7" class="anchored" data-anchor-id="step-7.-share-what-you-build-and-what-failed"><span class="header-section-number">8.7</span> Step 7. Share what you build (and what failed)</h2>
 <ol type="a">
-<li><p>Open an issue on the <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/issues">course repository</a> describing what you adapted, what worked, and what failed.</p></li>
+<li><p>Open an issue on the <a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474/issues">course repository</a> describing what you adapted, what worked, and what failed.</p></li>
 <li><p>Or just <a href="mailto:dcordeir@purdue.edu">email me</a> directly. I keep updating this page as I learn, and a sharper version of any of these patterns from a different discipline is genuinely useful to me.</p></li>
 </ol>
 </section>
@@ -847,7 +847,7 @@ div.csl-indent {
 <li>Cunningham, S. <strong>Claude Code Changed How I Work.</strong> <em>Causal Inference</em> (Substack). <a href="https://causalinf.substack.com/p/claude-code-changed-how-i-work-part" class="uri">https://causalinf.substack.com/p/claude-code-changed-how-i-work-part</a>. <em>(A working economist’s account of bringing Claude Code into research and teaching workflows.)</em></li>
 <li>Xu, Y., &amp; Yang, L. Y. (2026). <strong>Scaling Reproducibility: An AI-Assisted Workflow for Large-Scale Reanalysis.</strong> Working paper. <em>(A complementary view on template-executor architectures for AI-assisted reproducible research.)</em></li>
 <li>Moreira, D. (2025). <strong>QM47400 Predictive Analytics, 2025 Fall (semester-length, in-person).</strong> Course website. <a href="https://davi-moreira.github.io/2025F_predictive_analytics_purdue_MGMT474/" class="uri">https://davi-moreira.github.io/2025F_predictive_analytics_purdue_MGMT474/</a>. <em>(The 16-week course this 4-week intensive was translated from.)</em></li>
-<li>Moreira, D. (2026). <strong>QM47400 Predictive Analytics: Course Repository.</strong> GitHub: <a href="https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474" class="uri">https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474</a>. <em>(The repository this page describes. Everything cited above, including <code>CLAUDE.md</code>, <code>scripts/audit_cv_first.py</code>, <code>scripts/voice_check_guides.py</code>, the brightspace source pages, the notebook template, and the conversation log, is open for inspection.)</em></li>
+<li>Moreira, D. (2026). <strong>QM47400 Predictive Analytics: Course Repository.</strong> GitHub: <a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474" class="uri">https://github.com/davi-moreira/2026F_predictive_analytics_QM474</a>. <em>(The repository this page describes. Everything cited above, including <code>CLAUDE.md</code>, <code>scripts/audit_cv_first.py</code>, <code>scripts/voice_check_guides.py</code>, the brightspace source pages, the notebook template, and the conversation log, is open for inspection.)</em></li>
 </ul>
 </div>
 <hr>
