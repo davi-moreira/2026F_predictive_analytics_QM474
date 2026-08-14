@@ -83,7 +83,7 @@ The course is organized into a **pre-course orientation** and **four weekly arcs
 | **19** Executive Narrative & Video Studio | Five-Act Framework (Problem → Approach → Results → Recommendation → Risks), slide storyboard, video script | Translates 18 notebooks of technical work into a compelling non-technical story. Without NB18's competition pipeline and saved artifacts, the narrative would lack operational credibility. |
 | **20** Final Submission & Peer Review | Self-audit checklist, artifact manifest, peer review rubric, postmortem | The capstone: audit your own work, submit the complete package, evaluate a peer's project, and reflect. Closes the course arc from NB00's first Colab session and NB01's first data split to a fully reviewed deliverable. |
 
-**Arc logic:** Better decisions → Poster design → Competition packaging → Executive narrative → Delivery and reflection. Fall 2026 reorders the middle two: packaging opens the arc on Fri Sep 25 (revisited Fri Oct 23) and poster design closes the lecture content on Mon Oct 26.
+**Arc logic:** Better decisions → Poster design → Competition packaging → Executive narrative → Delivery and reflection. Fall 2026 reorders the middle two: packaging opens the arc on Fri Sep 25 with linear models only and returns in full on Mon Oct 19, deep learning follows on Wed Oct 21, and poster design closes the lecture content on Mon Oct 26.
 
 ---
 

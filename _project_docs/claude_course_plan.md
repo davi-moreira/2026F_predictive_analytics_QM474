@@ -97,17 +97,15 @@ and therefore belong on Fridays.
 | nb07 | Wed Sep 16 | Classification arc closes here |
 | nb08 | Mon Sep 21 | |
 | nb09 | Wed Sep 23 | Single session — the Fri Sep 25 studio is its applied follow-up |
-| **nb18** | **Fri Sep 25** | *Out of conceptual order.* First competition studio, once the classification arc closes and CV + tuning are in hand |
+| **nb18** | **Fri Sep 25** | *Out of conceptual order.* First pass — competition workflow with linear models only, once the classification arc closes and CV + tuning are in hand |
 | nb11 | Mon Sep 28 | |
 | nb12 | Wed Sep 30 | |
 | nb13 | Mon Oct 5 | |
 | nb14 | Wed Oct 7 | Test-set ceremonies — taught in person, deliberately |
 | nb16 | Wed Oct 14 | First session after fall break (Oct 12–13) |
-| nb19 | Mon Oct 19 | |
-| **nb18 revisit** | **Fri Oct 23** | Random forests, boosting, and nb14's champion protocol swapped into the submission pipeline |
+| **nb18 second pass** | **Mon Oct 19** | Full coverage — random forests, boosting, and nb14's champion protocol swapped into the submission pipeline |
+| nb19 | Wed Oct 21 | |
 | **nb17** | **Mon Oct 26** | *Out of conceptual order.* Last lecture — every headline number the poster reports already exists |
-| **nb15** | **Fri Oct 30** | *Out of conceptual order.* Milestone walkthrough + structured peer review of poster drafts |
-| **nb20** | **Fri Nov 6** | Closeout brief — all 20 notebooks covered, four days before the poster deadline |
 
 **Why the three deviations are safe.** nb17 has no upstream dependency at all (it forward-references
 nb18 only), so it can sit anywhere; placing it last puts poster design immediately before the poster

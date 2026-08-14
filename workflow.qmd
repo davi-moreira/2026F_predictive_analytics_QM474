@@ -311,7 +311,7 @@ c. (Optional but recommended.) Open the same directory in your preferred editor 
 
 a. Ask the assistant to read the constitution and the course plan, then describe the project back to you:
 
-> Read [`CLAUDE.md`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/CLAUDE.md) and [`_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md). Describe back to me how this course is structured: the pedagogy, the 20-notebook arc, the source-of-truth files, and the rules that are non-obvious.
+> Read [`CLAUDE.md`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/CLAUDE.md) and [`_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md). Describe back to me how this course is structured: the pedagogy, the 18-notebook arc, the source-of-truth files, and the rules that are non-obvious.
 
 b. Ask for the file map:
 

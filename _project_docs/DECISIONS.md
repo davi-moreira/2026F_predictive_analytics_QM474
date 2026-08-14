@@ -28,7 +28,7 @@ This document records design decisions made during course development and the re
 - Sufficient validation data for tuning.
 - Realistic test set size for course-scale datasets.
 
-*Updated 2026-08-14: the arc is now 20 notebooks, not 21 — see Decision 12. The 60/20/20 split still applies to every one of them.*
+*Updated 2026-08-14: the arc is now 18 notebooks — see Decision 12. The 60/20/20 split still applies to every one of them.*
 
 ---
 
@@ -96,7 +96,7 @@ This document records design decisions made during course development and the re
 - 10-minute scope — not homework, not a project.
 - Builds an engagement habit across all 21 notebooks.
 
-*Updated 2026-08-14: the arc is now 20 notebooks, not 21 — see Decision 12. PAUSE-AND-DO still runs across all of them.*
+*Updated 2026-08-14: the arc is now 18 notebooks — see Decision 12. PAUSE-AND-DO still runs across all of them.*
 
 ---
 
@@ -165,9 +165,9 @@ This document records design decisions made during course development and the re
 
 1. **The midterm exam is dropped.** There is no midterm in Fall 2026.
 2. **Its 20% is reallocated** — +10 points to the Course Case Competition (20% → 30%) and +10 points to the Final Project (35% → 45%). Participation (5%) and Quizzes (20%) are unchanged, so the weights are Participation 5% / Quizzes 20% / Course Case Competition (Kaggle) 30% / Final Project 45%.
-3. **nb10 (the Midterm Casebook + Cheat Sheet) retires from the notebook arc**, which now runs to **twenty** notebooks — nb00–nb09 and nb11–nb20.
-4. **Monday and Wednesday carry content; every Friday is a poster and/or competition studio.** The single exception is Fri Aug 28, which carries nb02.
-5. **The last lecture session is Mon Oct 26** (nb17, Data Communication & Poster Design). The two remaining notebooks are delivered inside the Friday poster studios — **nb15 on Fri Oct 30** and **nb20 on Fri Nov 6** — so all twenty notebooks are covered by Fri Nov 6, leaving the calendar clear for the final poster.
+3. **nb10 (the Midterm Casebook + Cheat Sheet) retires from the notebook arc.** As of 2026-08-14 **nb15 and nb20 retire as well**, leaving **eighteen** notebooks — nb00–nb09, nb11–nb14 and nb16–nb19.
+4. **Monday and Wednesday carry content; every Friday is a Group Work session for the final project and the Course Case Competition.** Two Fridays are exceptions: Fri Aug 28 carries nb02 and Fri Sep 25 carries nb18's first pass.
+5. **The last lecture session is Mon Oct 26** (nb17, Data Communication & Poster Design). **nb18 is taught twice** — Fri Sep 25 with linear models only, and Mon Oct 19 in full once the ensembles and nb14's protocol are in hand — and **nb19 moves to Wed Oct 21**, so all eighteen notebooks are covered by Mon Oct 26, leaving the calendar clear for the final poster.
 
 **Rationale:**
 - The full-semester format already assesses the same strategic reasoning the midterm tested — continuously, through the Kaggle competition and the twelve project milestones — so a one-shot in-person exam duplicated evidence the course was collecting anyway.

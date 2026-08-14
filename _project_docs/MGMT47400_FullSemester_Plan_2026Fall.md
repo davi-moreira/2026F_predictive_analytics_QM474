@@ -184,12 +184,12 @@ Legend: **nbNN** = notebook anchored that session · Mode = *In person* / *Studi
 | Wed Oct 14 | In person | **nb16** Time-Series Forecasting |
 | Fri Oct 16 | Studio | Poster studio — turn M06 results into tables and draft figures · **M06 Simple Model due Sun Oct 18** |
 
-### Week 9 — Oct 19–23 · Deep learning + results lock-in
+### Week 9 — Oct 19–23 · Competition packaging + deep learning
 | Date | Mode | Session |
 |---|---|---|
-| Mon Oct 19 | In person | **nb19** Deep Learning |
-| Wed Oct 21 | Studio | Results lock-in clinic — champion model, CV intervals, model card for the poster |
-| Fri Oct 23 | Studio | Competition studio — **nb18 revisit**: random forest / gradient boosting / champion model into the submission pipeline · **M08 Complex Models due Sun Oct 25** |
+| Mon Oct 19 | In person | **nb18 second pass (full coverage)** — random forest / gradient boosting / nb14's champion protocol into the submission pipeline |
+| Wed Oct 21 | In person | **nb19** Deep Learning |
+| Fri Oct 23 | Group Work | Group Work: Final Project/Competition · **M08 Complex Models due Sun Oct 25** |
 
 ### Week 10 — Oct 26–30 · Communication + poster production
 | Date | Mode | Session |

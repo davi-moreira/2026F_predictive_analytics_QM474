@@ -6,7 +6,7 @@ This file documents the rules and workflows that change Claude's behavior in thi
 
 **QM47400 — Predictive Analytics**, a full-semester course for Purdue's Daniels School of Business, **Fall 2026** (Aug 24 – Dec 11, 2026). In-person **Monday / Wednesday / Friday** class meetings, with the course's micro-videos (≤12 min) and Google Colab notebooks as the hands-on spine. Pedagogy: Concept → Demo → PAUSE-AND-DO Practice → Solution → Repeat.
 
-The same **20-notebook arc (nb00–nb09, nb11–nb20 — nb10, the midterm casebook, is retired: Fall 2026 has no midterm exam)** from the 4-week intensive offering is **re-paced across ~15 weeks** — notebook content is unchanged; only the calendar and surrounding project/studio structure differ. **Mondays and Wednesdays carry the notebook content; every Friday is a poster and/or competition studio** — the single exception is Fri Aug 28, which carries nb02. Three anchors dominate the calendar: the last **lecture** session is **nb17 on Mon Oct 26** (the remaining two notebooks are delivered inside the Friday poster studios — nb15 on Oct 30, nb20 on Nov 6 — so all twenty are covered by Fri Nov 6), the **Fall Undergraduate Research Conference poster presentation is Tue Nov 17** (all students present; poster due Nov 10), and the post-poster **Poster-to-Product** build sprint (deployed dashboard/app + executive brief, funded by a Daniels Experiential Learning Grant) runs **Fri Nov 20 – Wed Dec 9** (Wed Nov 18 is a no-class rest day; the course wraps Fri Dec 11).
+The same **18-notebook arc (nb00–nb09, nb11–nb14, nb16–nb19 — nb10 the midterm casebook, nb15 the milestone walkthrough, and nb20 the final-submission notebook are all retired: Fall 2026 has no midterm exam, and nb15/nb20 were dropped from delivery on 2026-08-14)** from the 4-week intensive offering is **re-paced across ~15 weeks** — notebook content is unchanged; only the calendar and surrounding project/studio structure differ. **Mondays and Wednesdays carry the notebook content; every Friday is a Group Work session for the final project and the Course Case Competition** — the only Fridays carrying a notebook are Fri Aug 28 (nb02) and Fri Sep 25 (nb18, first pass). Three anchors dominate the calendar: the last **lecture** session is **nb17 on Mon Oct 26** (nb18 is taught twice — Fri Sep 25 with linear models only and Mon Oct 19 in full — and nb19 follows on Wed Oct 21, so all eighteen are covered by Mon Oct 26), the **Fall Undergraduate Research Conference poster presentation is Tue Nov 17** (all students present; poster due Nov 10), and the post-poster **Poster-to-Product** build sprint (deployed dashboard/app + executive brief, funded by a Daniels Experiential Learning Grant) runs **Fri Nov 20 – Wed Dec 9** (Wed Nov 18 is a no-class rest day; the course wraps Fri Dec 11).
 
 - **Instructor:** Professor Davi Moreira
 - **Repository:** https://github.com/davi-moreira/2026F_predictive_analytics_QM474
@@ -25,7 +25,7 @@ The same **20-notebook arc (nb00–nb09, nb11–nb20 — nb10, the midterm caseb
 | `CONVERSATION_LOG.md` | Project history and prior decisions |
 | `_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md` | The master course plan (source of truth for sequencing, Fall 2026 calendar, milestones, Poster-to-Product) |
 | `_project_docs/claude_course_plan.md` | Implementation plan with notebook-content justification |
-| `scripts/audit_cv_first.py` | Run before every commit in nb09–nb20 |
+| `scripts/audit_cv_first.py` | Run before every commit in nb09–nb19 |
 | `scripts/voice_check_guides.py` | Run before every video-guide edit |
 | `scripts/audit_answer_length.py` | Run before importing ANY quiz/exam CSV to Brightspace (MC answer-length cue gate) |
 | `scripts/_distractor_rewrite_instructions.md` | Authoring/rewriting MC distractors — the full length-parity spec |
@@ -66,7 +66,7 @@ Hits in wrapper prose (lines not starting with `>`) are fine — only blockquote
 
 ## 🚨 CRITICAL RULE — Narrative Polish Pattern (nb08 Style)
 
-Every student-notebook markdown cell follows the nb08 narrative style. This is the course's voice — applied consistently across all 20 notebooks.
+Every student-notebook markdown cell follows the nb08 narrative style. This is the course's voice — applied consistently across all 18 notebooks.
 
 **Five structural elements every student notebook has:**
 
@@ -122,14 +122,13 @@ The idempotent check (`if 'A question that often comes up' in src`) is critical 
 |---|---|
 | nb01–nb07 | Single train/val/test split is introduced; `X_val` for mid-course evaluation |
 | nb08 | k-fold CV + Student's *t* 95% CI becomes the course's evaluation spine |
-| nb09–nb13, nb15, nb16, nb17 | `cross_val_score`, `cross_val_predict`, `GridSearchCV`, `RandomizedSearchCV` on `X_train`; held-out evaluation uses `X_val`, never `X_test` |
+| nb09–nb13, nb16, nb17 | `cross_val_score`, `cross_val_predict`, `GridSearchCV`, `RandomizedSearchCV` on `X_train`; held-out evaluation uses `X_val`, never `X_test` |
 | **nb14 cells 30 + 34 ONLY** | `X_test` / `y_test` opened for the one-shot ceremony (INSIDE/ABOVE/BELOW verdict) — cell 30 is the **classification** spine, cell 34 the **regression** spine; one opening per business case |
 | nb18 | `X_test` may appear in the Kaggle-submission demo (production-pipeline pattern, not model evaluation) |
-| nb20 | No model evaluation — peer review + postmortem |
 
 **The CV-first principle is not a style preference; it is the course's pedagogical spine.** nb14's ceremony loses its meaning if the test set has been touched 30 times before students get there.
 
-**Before shipping any evaluation code in nb09–nb20**, run the audit:
+**Before shipping any evaluation code in nb09–nb19**, run the audit:
 
 ```bash
 python scripts/audit_cv_first.py
@@ -322,7 +321,7 @@ Before ending any session that touched course content:
 
 - [ ] All changes committed with clear `<type>: <subject>` messages and `Co-Authored-By:` line.
 - [ ] **Voice-check grep run** on any modified student notebook (`grep -iE '\bstudents?\b|\bthe instructor\b|on camera|speaking prompt' notebooks/nbNN_*_student.ipynb` returns zero non-`Student's t` hits). If video guides changed: `python scripts/voice_check_guides.py` is clean.
-- [ ] **CV-first audit run** if any nb09–nb20 evaluation code changed: `python scripts/audit_cv_first.py` returns only the nb14 cells 30 + 34 (one per spine) + nb18 Kaggle-submission exceptions.
+- [ ] **CV-first audit run** if any nb09–nb19 evaluation code changed: `python scripts/audit_cv_first.py` returns only the nb14 cells 30 + 34 (one per spine) + nb18 Kaggle-submission exceptions.
 - [ ] **Answer-length audit run** if any quiz/exam CSV was created or edited: `python scripts/audit_answer_length.py --file <csv>` returns PASS for every touched bank.
 - [ ] **Narrative polish applied** if any new or rewritten student markdown cells landed: named stakeholder in Why-This-Matters, narrative prose over bullet lists in Reading-the-output, at least one `"A question that often comes up here"` Q&A, warm wrap-up with bridge to the next notebook.
 - [ ] **`quarto render` run** if ANY content changed (`.qmd`, notebooks, images), AND `docs/` committed.
