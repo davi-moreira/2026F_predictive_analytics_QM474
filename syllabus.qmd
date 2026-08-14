@@ -143,7 +143,7 @@ To challenge an assignment score:
 
 I encourage you to use AI tools you believe will enhance your individual or group learning performance. Learning to use AI is a valuable and emerging skill, and I am available to provide support during office hours or by appointment. Be aware of the following guidelines:
 
--   You are **not allowed to use AI tools during exams**.
+-   You are **not allowed to use AI tools while taking quizzes**.
 -   Providing low-effort prompts will result in low-quality outputs. Refine your prompts to achieve desirable outcomes — use the course knowledge for that.
 -   Use AI to **support your learning**: ask for explanations, examples, or clarifications of doubts; **do not** simply ask for solutions.
 -   **Do not blindly trust the information** provided by the output. Any errors or omissions resulting from your use of an AI tool are your responsibility. AI works better for topics you already understand.

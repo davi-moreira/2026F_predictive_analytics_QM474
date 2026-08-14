@@ -6,7 +6,7 @@ This file documents the rules and workflows that change Claude's behavior in thi
 
 **QM47400 — Predictive Analytics**, a full-semester course for Purdue's Daniels School of Business, **Fall 2026** (Aug 24 – Dec 11, 2026). In-person **Monday / Wednesday / Friday** class meetings, with the course's micro-videos (≤12 min) and Google Colab notebooks as the hands-on spine. Pedagogy: Concept → Demo → PAUSE-AND-DO Practice → Solution → Repeat.
 
-The same **20-notebook arc (nb00–nb09, nb11–nb20 — nb10, the midterm casebook, is retired: Fall 2026 has no midterm exam)** from the 4-week intensive offering is **re-paced across ~15 weeks** — notebook content is unchanged; only the calendar and surrounding project/studio structure differ. Two dates dominate the calendar: course content completes by **~Oct 30**, the **Fall Undergraduate Research Conference poster presentation is Tue Nov 17** (all students present; poster due Nov 10), and the post-poster **Poster-to-Product** build sprint (deployed dashboard/app + executive brief, funded by a Daniels Experiential Learning Grant) runs Nov 18 – Dec 11.
+The same **20-notebook arc (nb00–nb09, nb11–nb20 — nb10, the midterm casebook, is retired: Fall 2026 has no midterm exam)** from the 4-week intensive offering is **re-paced across ~15 weeks** — notebook content is unchanged; only the calendar and surrounding project/studio structure differ. **Mondays and Wednesdays carry the notebook content; every Friday is a poster and/or competition studio** — the single exception is Fri Aug 28, which carries nb02. Three anchors dominate the calendar: the last **lecture** session is **nb17 on Mon Oct 26** (the remaining two notebooks are delivered inside the Friday poster studios — nb15 on Oct 30, nb20 on Nov 6 — so all twenty are covered by Fri Nov 6), the **Fall Undergraduate Research Conference poster presentation is Tue Nov 17** (all students present; poster due Nov 10), and the post-poster **Poster-to-Product** build sprint (deployed dashboard/app + executive brief, funded by a Daniels Experiential Learning Grant) runs **Fri Nov 20 – Wed Dec 9** (Wed Nov 18 is a no-class rest day; the course wraps Fri Dec 11).
 
 - **Instructor:** Professor Davi Moreira
 - **Repository:** https://github.com/davi-moreira/2026F_predictive_analytics_QM474
@@ -211,7 +211,7 @@ See `_project_docs/NOTEBOOK_TEMPLATE.md` for the full notebook structure and `_p
 1. **Update its video guide** (`video_guides/NN_video_lecture_guide.md`).
    Guides are gitignored — no commit needed, but cell references, speaking prompts, and timestamps go stale fast. Guide structure: At a Glance, Purpose, 9 sections (Why exists, Why after N-1, Why before N+1, Libraries/Tools, Key Concepts, Student Takeaways, Common Questions, Course Arc, Suggested Video Structure with Options A & B). Template: `video_guides/02_video_lecture_guide.md`.
 2. **Update planning docs** if the change is significant (added/removed sections, new tools/libraries, reordered content, or shifted dependencies):
-   - `_project_docs/MGMT47400_Online4Week_Plan_2026Summer.md` — section "Notebook Sequence Rationale" and dependency diagram.
+   - `_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md` — section "Notebook Sequence Rationale" and dependency diagram.
    - `_project_docs/claude_course_plan.md` — section "Notebook Sequence and Content Justification".
 
    Minor fixes (typos, wording) do not require planning-doc updates.

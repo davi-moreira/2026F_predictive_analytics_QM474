@@ -161,14 +161,14 @@ This document records design decisions made during course development and the re
 2. **Its 20% is reallocated** — +10 points to the Course Case Competition (20% → 30%) and +10 points to the Final Project (35% → 45%). Participation (5%) and Quizzes (20%) are unchanged, so the weights are Participation 5% / Quizzes 20% / Course Case Competition (Kaggle) 30% / Final Project 45%.
 3. **nb10 (the Midterm Casebook + Cheat Sheet) retires from the notebook arc**, which now runs to **twenty** notebooks — nb00–nb09 and nb11–nb20.
 4. **Monday and Wednesday carry content; every Friday is a poster and/or competition studio.** The single exception is Fri Aug 28, which carries nb02.
-5. **Lecture content completes Mon Oct 26** (nb17, Data Communication & Poster Design), leaving the calendar clear for the final poster.
+5. **The last lecture session is Mon Oct 26** (nb17, Data Communication & Poster Design). The two remaining notebooks are delivered inside the Friday poster studios — **nb15 on Fri Oct 30** and **nb20 on Fri Nov 6** — so all twenty notebooks are covered by Fri Nov 6, leaving the calendar clear for the final poster.
 
 **Rationale:**
 - The full-semester format already assesses the same strategic reasoning the midterm tested — continuously, through the Kaggle competition and the twelve project milestones — so a one-shot in-person exam duplicated evidence the course was collecting anyway.
 - Reallocating the 20% to the two authentic deliverables makes the grade track what the semester is actually built around: a deployed, reproducible predictive model and a poster defended in public.
 - The Friday studio rhythm needs protected, recurring time. A midterm consumed a content session plus the review and consolidation sessions around it; dropping it is what makes the every-Friday studio pattern fit inside the Purdue calendar (Labor Day Sep 7, Fall break Oct 12–13, Thanksgiving break Nov 25–28).
 - nb10 existed only to stage the midterm. Without the exam it has no successor to prepare, and its consolidation role is absorbed by nb09's Toolkit Recap and by the Friday studios.
-- Finishing content on Mon Oct 26 gives every team two clear weeks to build the poster before it is due Tue Nov 10, ahead of the Fall Undergraduate Research Conference presentation on Tue Nov 17 and the Poster-to-Product sprint that follows.
+- Finishing the lecture content on Mon Oct 26 gives every team two clear weeks to build the poster before it is due Tue Nov 10, ahead of the Fall Undergraduate Research Conference presentation on Tue Nov 17 and the Poster-to-Product sprint that follows.
 
 **Exceptions:** none. The nb10 notebook files stay on disk for archival reference but are not taught, scheduled, or assessed in Fall 2026.
 

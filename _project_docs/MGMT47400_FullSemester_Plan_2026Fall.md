@@ -111,8 +111,8 @@ Unit 2 — CLASSIFICATION
   (M2 Baseline in this unit; nb10 retired with the midterm exam)
 
 Unit 3 — ENSEMBLES + SELECTION
-  11 Trees → 12 Random Forests → 13 Gradient Boosting → 14 Selection + Test-Set Ceremony → 15 Interpretation
-  (M3 Complex Model + Abstract at nb15)
+  11 Trees → 12 Random Forests → 13 Gradient Boosting → 14 Selection + Test-Set Ceremony → 15 M03 Walkthrough
+  (nb15 walks the complex-model + abstract milestone retrospectively on Fri Oct 30 — after M03 and M08 have been submitted — inside the studio whose structured peer review of poster drafts feeds M09)
 
 Unit 4 — DELIVERY
   16 Time Series → 17 Communication/Poster Design → 18 Competition Workflow → 19 Deep Learning → 20 Course Wrap
@@ -161,7 +161,7 @@ Legend: **nbNN** = notebook anchored that session · Mode = *In person* / *Studi
 |---|---|---|
 | Mon Sep 21 | In person | **nb08** Cross-Validation & Model Comparison |
 | Wed Sep 23 | In person | **nb09** Tuning + Feature Engineering + Leakage Detection |
-| Fri Sep 25 | In person | **nb18** Competition Workflow & Kaggle Submission — competition studio · **M02 Outline due Sun Sep 27** |
+| Fri Sep 25 | Studio | **nb18** Competition Workflow & Kaggle Submission — competition studio · **M02 Outline due Sun Sep 27** |
 
 ### Week 6 — Sep 28–Oct 2 · Ensembles I
 | Date | Mode | Session |
