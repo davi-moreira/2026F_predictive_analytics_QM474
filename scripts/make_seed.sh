@@ -11,7 +11,7 @@
 #
 # Example (the 2026 Fall course, one level up in the predictive_analytics root):
 #   bash scripts/make_seed.sh \
-#     "/Users/dcordeir/Dropbox/academic/cursos/cursos-davi/predictive_analytics/2026F_predictive_analytics__QM474"
+#     "/Users/dcordeir/Dropbox/academic/cursos/cursos-davi/predictive_analytics/2026F_predictive_analytics_QM474"
 #
 # It is a DRY-RUN by default. Re-run with --go to actually copy.
 

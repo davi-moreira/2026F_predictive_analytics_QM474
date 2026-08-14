@@ -12,7 +12,7 @@ The only acceptable hits are:
     ceremony) and 34 (reg ceremony) — the two authorized test-set openings,
     one per spine. Each test set still opens exactly ONCE per case; the
     singleness rule is preserved per project, not diluted across spines.
-  * notebooks/nb18_reproducibility_monitoring_student.ipynb (Kaggle-submission
+  * notebooks/nb18_competition_workflow_student.ipynb (Kaggle-submission
     demo — production pipeline, not model evaluation)
 
 Anything else is a regression and must be fixed before commit.

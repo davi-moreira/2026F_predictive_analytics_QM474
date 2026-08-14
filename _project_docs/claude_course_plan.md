@@ -1,28 +1,40 @@
-# Implementation Plan: 2026 Summer Predictive Analytics Course Migration
+# Implementation Plan: 2026 Fall Predictive Analytics (QM47400)
 
-## Overview
-Transform the 2025F semester-based course into a 2026 Summer 4-week intensive format (20 business days) while maintaining GitHub Pages deployment and git best practices.
+## What this document is
 
-## Context Summary
+The **notebook-content justification** for the Fall 2026 offering: why each notebook sits
+where it does, what it assumes, and what it sets up. `CLAUDE.md` names this file as the
+place to update whenever a notebook's content, dependencies, or position changes.
 
-### Current State
-- **Repository:** `/Users/dcordeir/Dropbox/academic/cursos/cursos-davi/predictive_analytics/2026Summer_predictive_analytics_purdue_MGMT474`
-- **Old format:** 16-week semester with Quarto slides in `/lecture_slides/`
-- **New format:** 4-week intensive with Jupyter notebooks in `/notebooks/`
-- **Status:** 17/20 notebooks created (Days 1-17 complete, Days 18-20 missing)
-- **Course plan:** `MGMT47400_Online4Week_Plan_2026Summer.md` (complete, 956 lines)
-- **GitHub Pages:** Uses Quarto → `docs/` → GitHub Pages
-- **Old course URL:** https://davi-moreira.github.io/2025F_predictive_analytics_purdue_MGMT474/
+What it is **not**: it is not the calendar (that is
+[`MGMT47400_FullSemester_Plan_2026Fall.md`](MGMT47400_FullSemester_Plan_2026Fall.md)), not the
+build workflow (that is [`../CLAUDE.md`](../CLAUDE.md)), and not the decision record (that is
+[`DECISIONS.md`](DECISIONS.md)). Where those files are authoritative, this one defers.
 
-### What Needs to Be Done
-1. Complete missing notebooks (Days 18-20)
-2. Update Quarto website configuration for new 20-day structure
-3. Create new schedule page mapping to 20 business days
-4. Update syllabus for 4-week format
-5. Initialize local git repository
-6. Connect to GitHub remote
-7. Configure for GitHub Pages deployment
-8. Create conversation log for future resumption
+> **History.** Through 2026-08-14 this file was the *2026 Summer migration runbook* — a
+> phase-by-phase plan for building the 4-week intensive (create nb18–nb20, configure Quarto,
+> initialize git, connect the remote, configure Pages). All of that work is long finished and
+> the Fall repository is live, so those phases were removed. The notebook-sequence
+> justification below is the section that carried forward.
+
+---
+
+## The Fall 2026 offering in one page
+
+**QM47400 — Predictive Analytics**, Purdue Daniels School of Business, **Aug 24 – Dec 11, 2026**,
+in person **Monday / Wednesday / Friday**.
+
+| | |
+|---|---|
+| **Arc** | **20 notebooks** — nb00–nb09 and nb11–nb20. nb10 (Midterm Casebook) retired with the midterm. |
+| **Session structure** | Monday and Wednesday carry notebook content. **Every Friday is a poster and/or Course Case Competition studio** — the single exception is **Fri Aug 28**, which carries nb02. |
+| **Assessment** | Participation 5% · Quizzes 20% · Course Case Competition (Kaggle) 30% · Final Project 45%. **No midterm, no final exam.** |
+| **Last lecture** | **Mon Oct 26** (nb17). The remaining two notebooks, nb15 and nb20, are delivered inside the Friday poster studios on **Oct 30** and **Nov 6**. |
+| **Two fixed dates** | Final poster (M10) due **Tue Nov 10**; Undergraduate Research Conference presentation **Tue Nov 17**, required of every student. |
+| **After the conference** | Poster-to-Product build sprint **Fri Nov 20 – Wed Dec 9**; Kaggle closes **Sun Nov 29**; course wrap **Fri Dec 11**. |
+
+Pedagogy is unchanged from prior offerings: **Concept → Demo → PAUSE-AND-DO Practice → Solution → Repeat**,
+with micro-videos (≤12 min) and Google Colab notebooks as the hands-on spine.
 
 ---
 
@@ -57,488 +69,88 @@ Each notebook builds exactly one conceptual layer, assumes only what prior noteb
 
 > **NB10 retired (Fall 2026).** The Midterm Casebook + Cheat Sheet left the arc when the midterm exam was dropped. The Fall course covers **twenty** notebooks — nb00–nb09 and nb11–nb20.
 
-### Weekly Arc Pattern
+### Conceptual order vs. Fall delivery order
 
-Each week follows: introduce capability → build evaluation skills → practice integration → deliver milestone.
+The dependency chain below is the *conceptual* order — it is what each notebook assumes and
+prepares, and it does not change between offerings. The Fall **delivery** order deviates from it
+in three deliberate places, because three notebooks are themselves poster or competition content
+and therefore belong on Fridays.
 
-- **Week 1 (Regression):** EDA/Splits → Pipelines → Metrics → Features → Regularization → *Proposal + Kaggle Launch (Day 5)*
-- **Week 2 (Classification):** LogReg → Metrics → CV → Tuning + Leakage → *Baseline + Competition Workflow Studio (nb18) + Kaggle Check-in*
-- **Week 3 (Ensembles):** Trees + class_weight → Forests + Importance Table → Boosting + Leak Callout → Selection + Test Set Ceremony → *M3 Walkthrough — Complex Model + Tuning + Abstract (Day 15)*
-- **Week 4 (Production):** Calibration → Fairness → Deployment + Kaggle Submission → Narrative → *Final Submission + Kaggle Leaderboard Reveal (Day 20)*
+**Conceptual modules (dependency chain):**
 
-> **Fall 2026 pacing.** The same four arcs stretch across \~15 weeks. Monday and Wednesday carry notebook content; **every Friday is a poster and/or competition studio**, the single exception being Fri Aug 28, which carries nb02. nb18 lands early — **Fri Sep 25**, right after the classification arc closes — and is revisited **Fri Oct 23**; nb17 closes the lecture content in week 10, **Mon Oct 26**, so the final poster can be delivered Tue Nov 10 and presented at the Fall Undergraduate Research Conference on Tue Nov 17.
+- **Module 1 — Foundations & Regression (nb01–nb05):** EDA/Splits → Pipelines → Metrics → Features → Regularization
+- **Module 2 — Classification & Cross-Validation (nb06–nb09):** Logistic regression → Classification metrics → Cross-validation → Tuning + leakage detection
+- **Module 3 — Trees, Ensembles & Selection (nb11–nb15):** Trees → Forests + importance → Boosting → Selection + test-set ceremonies → Milestone walkthrough
+- **Module 4 — Delivery & Competition (nb16–nb20):** Time series → Poster design → Competition workflow → Deep learning → Closeout
+
+**Fall delivery order (session by session):**
+
+| Notebook | Session | Note |
+|---|---|---|
+| nb00 | Mon Aug 24 | Launchpad; Kaggle competition opens |
+| nb01 | Wed Aug 26 | |
+| nb02 | **Fri Aug 28** | The one content Friday in the semester |
+| nb03 | Mon Aug 31 | |
+| nb04 | Wed Sep 2 | |
+| nb05 | Wed Sep 9 | Live lecture (Ridge/Lasso benefits from real-time explanation) |
+| nb06 | Mon Sep 14 | |
+| nb07 | Wed Sep 16 | Classification arc closes here |
+| nb08 | Mon Sep 21 | |
+| nb09 | Wed Sep 23 | Single session — the Fri Sep 25 studio is its applied follow-up |
+| **nb18** | **Fri Sep 25** | *Out of conceptual order.* First competition studio, once the classification arc closes and CV + tuning are in hand |
+| nb11 | Mon Sep 28 | |
+| nb12 | Wed Sep 30 | |
+| nb13 | Mon Oct 5 | |
+| nb14 | Wed Oct 7 | Test-set ceremonies — taught in person, deliberately |
+| nb16 | Wed Oct 14 | First session after fall break (Oct 12–13) |
+| nb19 | Mon Oct 19 | |
+| **nb18 revisit** | **Fri Oct 23** | Random forests, boosting, and nb14's champion protocol swapped into the submission pipeline |
+| **nb17** | **Mon Oct 26** | *Out of conceptual order.* Last lecture — every headline number the poster reports already exists |
+| **nb15** | **Fri Oct 30** | *Out of conceptual order.* Milestone walkthrough + structured peer review of poster drafts |
+| **nb20** | **Fri Nov 6** | Closeout brief — all 20 notebooks covered, four days before the poster deadline |
+
+**Why the three deviations are safe.** nb17 has no upstream dependency at all (it forward-references
+nb18 only), so it can sit anywhere; placing it last puts poster design immediately before the poster
+block. nb18 depends on the classification arc for its logistic baseline, which is why Fri Sep 25 is the
+earliest slot it can occupy — its ensemble section (LASSO / random forest / gradient boosting) runs with
+a logistic + LASSO slate on Sep 25 and gets the full roster at the Oct 23 revisit. nb15 depends on nb14,
+which is satisfied by a three-week margin.
+
+**Known drift, flagged not fixed.** nb15's row above references the Summer milestone file
+`milestone_03_complex_model_and_abstract.md`. In the Fall M00–M12 track its content maps by topic to
+**M08** (complex models, `NN_complex_models.pdf`) and **M03** (draft abstract). The notebooks retain
+the Summer's internal "M1–M4" shorthand; that mapping is documented in
+[`MGMT47400_FullSemester_Plan_2026Fall.md`](MGMT47400_FullSemester_Plan_2026Fall.md) and notebook
+content is unchanged this term.
 
 > **Cross-reference:** For full speaking prompts, cell references, and timestamps, see `video_guides/NN_video_lecture_guide.md` Sections 1–3 (Why exists, Why after N-1, Why before N+1).
 
 ---
 
-## Phase 1: Complete Notebook Creation (Days 18-20)
+## Maintenance
 
-### Files to Create
+This course is built; what remains is upkeep. The authoritative procedures live in
+[`../CLAUDE.md`](../CLAUDE.md) — do not duplicate them here. The short version:
 
-#### 1.1 Day 18: `notebooks/nb18_reproducibility_monitoring.ipynb`
-**Source:** MGMT47400_Online4Week_Plan_2026Summer.md lines 812-856
-**Structure:**
-- Header with Colab badge
-- Learning objectives (5 items: packaging, saving/loading, monitoring, checklists, reproducibility)
-- Section 1: Setup (imports: joblib, Pipeline, StandardScaler)
-- Section 2: Refactor notebook into functions
-  - `train_model(config)` → returns pipeline + metrics dict
-  - `predict(model, X)` → returns predictions
-  - `evaluate(model, X, y)` → returns metrics
-- Section 3: Save/load model artifacts
-  - Use joblib to save pipeline
-  - Load and verify reproducibility
-- Section 4: Monitoring plan template
-  - Data drift signals (feature distribution changes)
-  - Performance drift (metric degradation)
-  - Calibration drift
-  - Table with Signal | Threshold | Owner | Action
-- Section 5: "Ready-to-share" notebook hygiene checklist
-- Section 6: PAUSE-AND-DO exercises (2 exercises)
-  - Exercise 1: Implement `train_model(config)` returning pipeline + metrics (10 min)
-  - Exercise 2: Draft monitoring plan with 5-8 signals and owners (10 min)
-- Section 7: Wrap-up (key takeaways, critical rules)
-- Bibliography (Chip Huyen, scikit-learn User Guide, Dataset Shift papers)
+| Trigger | Action |
+|---|---|
+| Any notebook edited | Edit the `*_instructor.ipynb` **first**, regenerate the student copy, update `video_guides/NN_video_lecture_guide.md`, and update the sequencing map above if dependencies or position changed |
+| Any nb09–nb20 evaluation code touched | `python scripts/audit_cv_first.py` — only nb14 cells 30 + 34 (one ceremony per spine) and nb18's Kaggle demo are acceptable |
+| Any student notebook edited | Voice grep for third-person "students" / instructor-voice language |
+| Any quiz or exam CSV touched | `python scripts/audit_answer_length.py --file <csv>` must PASS before Brightspace import |
+| Any content change at all | `quarto render`, commit `docs/`, push — the site is stale otherwise |
+| Instructor notebook, video guide, quiz bank, or `instructor.qmd` changed | `bash _adm_stuff/_instructor_page/scripts/sync_instructor_repo.sh` |
 
-#### 1.2 Day 19: `notebooks/nb19_data_communication_poster.ipynb`
-**Source:** MGMT47400_Online4Week_Plan_2026Summer.md (Day 19 block); mirrors `lecture_slides/09_data_communication_poster/09_data_communication_poster.qmd`
-**Structure:**
-- Header with Colab badge
-- Learning objectives (5 items: apply six principles, diagnose chart failures, raise data-ink ratio, plan poster layout, draft outline + abstract)
-- Why-This-Matters cell (named stakeholder: URC faculty mentor)
-- Section 1: The Forest and the Trees (`floresta.jpg`)
-- Section 2: Six Principles overview table
-- Section 3: Context Matters (`contexto-add.png`, `contexto-obs.png`)
-- Section 4: Visualization Derives From Data (table-vs-plot, scale fail, dual/triple axes, pie-chart abuse, graph galleries)
-- Section 5: Less Is More — eight-step data-ink-ratio cleanup walk-through (`limpeza-1` → `limpeza-8`)
-- Section 6: Hierarchy Among Data (count-the-3s, accent-color highlighting)
-- Section 7: Beauty Counts (emphasis with size + color)
-- Section 8: Telling Your Story — five-pass annotation walk-through (`final-1`→`final-5`) and nine-pass time-series walk-through (`hist-1`→`hist-9`)
-- **PAUSE-AND-DO Exercise 1 (8 min):** Audit one project figure against the six principles; produce a three-bullet rebuild plan
-- Section 9: Why a Poster Presentation? (`project-history.jpg`)
-- Section 10: Designing Objectives (`paper-abstract.jpg`)
-- Section 11: Template & Rubric (URC poster template + course rubric pointer)
-- Sections 12–15: Visual hierarchy, layout & design, content organization (eleven sections), predictive-analytics-specific design
-- Section 16: Crafting a Clear Narrative (`how-to-write-good-02.png`, `thesis_word_count_02.gif`)
-- Section 17: Research Design Flow (`research_design_flow.jpg`)
-- Sections 18–22: Effective figures and tables, results & interpretation, conclusion & future work, final touches, presenting at URC
-- **PAUSE-AND-DO Exercise 2 (15 min):** Eleven-section poster outline + 120–150-word abstract draft
-- Section 23: Additional Material (Flowing Data, Information is Beautiful, The Functional Art, FT COVID coverage)
-- Section 24: Wrap-Up + bridge to nb20
-- Submission Instructions
-- Bibliography (Tufte, Healy, Knaflic, Kastellec & Leoni, URC rubric)
+## Open items
 
-#### 1.3 Day 20: `notebooks/nb20_final_submission_peer_review.ipynb`
-**Source:** `_final_project/2026Summer/milestone_04_final_poster.md` + `_course_case_competition/2026Summer/course_case_competition_instructions.md`
-**Structure (markdown-only milestone walkthrough, nb15 style — no code cells; instructor == student):**
-- Header with Colab badge
-- Learning objectives (5 items: M4 poster + final notebook, the one-shot test ceremony, the 100-pt rubric, the Kaggle final submission, the two individual closeouts)
-- Why This Matters (delivery day; the one authorized opening of the locked test set)
-- Section 1: About the Final Project (45% of course grade — 40% milestones / 20% peer eval / 40% instructor-TA poster; optional PURC)
-- Section 2: What to Submit at M4 (`NN.pdf` poster + `NN_final.ipynb`; -10 filename penalty)
-- Section 3: The Poster — Required Components (10 components, Intro→Methods→Results→Conclusions)
-- Section 4: Required Visualizations (model-comparison-with-CI, test-set verdict, feature importance, regression/classification diagnostics)
-- Section 5: The One-Shot Test-Set Evaluation (reload M3 `champion_pipeline.joblib` → open test once → INSIDE/ABOVE/BELOW verdict → report)
-- Section 6: The M4 Poster Rubric (100 pts across 7 criteria + -10 filename penalty)
-- Section 7: Course Case Competition — Final Kaggle Submission (ROC-AUC, `Group NN` naming, 5 submissions/day, trust the CV CI not the public leaderboard)
-- Section 8: Course Closeout — confidential peer evaluation (20%) + required reflection survey (4 areas)
-- Section 9: Tips and Common Pitfalls
-- Participation Assignment Submission Instructions (+ closeout checklist; terminal — no Next Step notebook)
-- Bibliography (Provost & Fawcett; ISLP; scikit-learn common pitfalls)
-
-**Pattern Consistency:**
-Follows the milestone-walkthrough template established by nb05/nb15:
-- Colab badge in header
-- Markdown only (no code cells, no PAUSE-AND-DO exercises); instructor and student files are identical
-- Walks the milestone rubric in grading order, with point values surfaced
-- Why-This-Matters → numbered rubric sections → Tips → Submission Instructions → Bibliography → Thank you
-- Docstrings for any functions
-- Blockquotes for critical rules
-- ✓ Checkmarks for confirmations
+- **nb15 sequencing.** nb15 is delivered Fri Oct 30, after M03 (Sun Oct 4) and M08 (Sun Oct 25) are
+  already submitted. It functions as a retrospective walkthrough plus the peer-review studio feeding
+  M09 (Sun Nov 1) rather than as a pre-deadline guide. Re-anchoring it earlier, or re-describing the
+  session, is a pedagogical decision that has not been made.
+- **Milestone shorthand.** nb15, nb17, and nb20 speak the Summer "M1–M4" track internally while the
+  official deliverables are M00–M12. The topic mapping is documented; a full re-key has not been done.
 
 ---
 
-## Phase 2: Update Quarto Website Structure
-
-### 2.1 Update `_quarto.yml`
-**File:** `_quarto.yml`
-**Changes:**
-- Keep existing structure (website, docs output)
-- Update title to: "QM47400: Predictive Analytics (Summer 2026 - 4-Week Intensive)"
-- Update GitHub link to new repo name (TBD)
-- Keep sidebar structure (Home, Syllabus, Schedule and Material)
-
-### 2.2 Update `index.qmd` (Homepage)
-**File:** `index.qmd`
-**Changes:**
-- Update course dates: "May 18 - June 12, 2026 (20 business days)"
-- Update format description: "4-week fully online intensive"
-- Update course structure:
-  - 20 business days (Mon-Fri)
-  - 112.5 minutes per day engagement
-  - Micro-videos (≤12 min each) + Google Colab notebooks
-  - Single capstone project with 4 weekly milestones
-- Update instructor info if needed
-- Link to new GitHub repo
-
-### 2.3 Create New `schedule.qmd`
-**File:** `schedule.qmd`
-**Strategy:** Replace 16-week semester schedule with 20-day intensive schedule
-**Structure:**
-- Introduction: 20 business days, May 18 - June 12, 2026
-- Weekly breakdown with daily rows
-- Columns:
-  - **Day** (1-20)
-  - **Date** (May 18 - June 12, business days only)
-  - **Topic** (from course plan)
-  - **Videos** (micro-video count + total time)
-  - **Notebook** (link to Colab-ready notebook on GitHub)
-  - **Quiz/Assessment** (auto-graded quiz or milestone)
-  - **Materials** (bibliography references)
-
-**Table structure:**
-```markdown
-| Day | Date | Topic | Videos | Notebook | Assessment | Materials |
-|-----|------|-------|--------|----------|------------|-----------|
-| 0 | Pre-course | Launchpad: Course Setup, Colab Orientation | 2 videos (10 min) | [00_launchpad](link) | Colab Readiness Check | Colab docs |
-| 1 | Mon May 18 | PA Fundamentals, EDA, Splits | 5 videos (48 min) | [01_eda_splits](link) | Concept Quiz | ISLP Ch2, sklearn |
-| 2 | Tue May 19 | Preprocessing Pipelines | 6 videos (54 min) | [02_preprocessing](link) | Concept Quiz | sklearn Pipelines |
-...
-```
-
-**Project milestones highlighted (groups of four randomly assigned members; canonical reference at `_final_project/2026Summer/final_project_milestone_reference.md`):**
-- Day 5: M1 Initial Project Proposal due
-- Day 10: M2 Simple Model + Performance Evaluation due
-- Day 15: M3 More Complex Model + Tuning + Draft Abstract due
-- Day 20: M4 Final Research Poster + intra-group Peer Evaluation due (`<group-number>.pdf` per Purdue Undergraduate Research Conference poster format; optional Fall 2026 conference presentation)
-
-### 2.4 Update `syllabus.qmd`
-**File:** `syllabus.qmd`
-**Changes:**
-- Update course title: "QM47400 - Predictive Analytics (Summer 2026, 4-Week Online Intensive)"
-- Update dates: May 18 - June 12, 2026
-- Update course description:
-  - 20 business days
-  - 112.5 minutes daily engagement
-  - Micro-videos + Colab notebooks
-  - Single capstone project
-- Update grading breakdown (no midterm — see `DECISIONS.md` Decision 12):
-  - Participation: 5%
-  - Quizzes: 20%
-  - Course Case Competition (Kaggle): 30%
-  - Final Project: 45% (milestones + peer evaluation + poster)
-- Update calendar/schedule section to reference 20-day structure
-- Update textbooks (same: ISLP, ESL, Provost & Fawcett)
-- Update technology requirements:
-  - Google Colab (primary platform)
-  - Google Gemini (AI assistance)
-  - Brightspace LMS
-- Add daily engagement expectations section
-
----
-
-## Phase 3: Git Repository Setup
-
-### 3.1 Initialize Local Git Repository
-**Location:** Current directory
-**Steps:**
-1. Check if `.git/` already exists (it does based on git status output)
-2. If exists, clean up current state
-3. Create comprehensive `.gitignore`
-
-### 3.2 Create/Update `.gitignore`
-**File:** `.gitignore`
-**Content:**
-```gitignore
-# R/RStudio
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-*.Rproj
-
-# Quarto
-/.quarto/
-_freeze/
-
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-.ipynb_checkpoints/
-*.pyc
-.venv/
-venv/
-env/
-
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Admin (keep out of public repo)
-_adm_stuff/
-_grades/
-_students_contact/
-_tas/
-_accomodation/
-_course_eval/
-_reflection_*/
-
-# Large files (exclude from repo, link instead)
-*.zip
-*.mp4
-*.mp3
-*.m4a
-*.mov
-
-# Keep docs for GitHub Pages
-!docs/
-
-# Temporary
-*.tmp
-*.bak
-.scratch/
-```
-
-### 3.3 Initial Commit Structure
-**Strategy:** Atomic commits for different components
-
-**Commit sequence:**
-1. `docs: Add course plan for 2026 Summer intensive`
-   - Add `MGMT47400_Online4Week_Plan_2026Summer.md`
-
-2. `feat: Add Days 1-17 notebooks for 4-week intensive`
-   - Add all 17 existing notebooks in `notebooks/`
-
-3. `feat: Add Days 18-20 notebooks (reproducibility, narrative, final)`
-   - Add three newly created notebooks
-
-4. `docs: Update Quarto website for 2026 Summer format`
-   - Update `_quarto.yml`, `index.qmd`, `schedule.qmd`, `syllabus.qmd`
-
-5. `chore: Add .gitignore for project`
-   - Add `.gitignore`
-
-6. `build: Render Quarto site for GitHub Pages`
-   - Render site with `quarto render`
-   - Commit updated `docs/` directory
-
-**Commit message format:**
-```
-<type>: <subject>
-
-<body>
-
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
-```
-
----
-
-## Phase 4: GitHub Remote Connection
-
-### 4.1 Create GitHub Repository
-**Method:** Use `gh` CLI (GitHub CLI)
-**Steps:**
-1. Check if `gh` is authenticated: `gh auth status`
-2. Create new repo: `gh repo create 2026Summer_predictive_analytics_purdue_MGMT474 --public --description "QM47400 Predictive Analytics - 4-Week Summer Intensive (2026)" --source=. --remote=origin`
-3. Verify remote: `git remote -v`
-
-**Repository settings:**
-- **Visibility:** Public
-- **Description:** "QM47400 - Predictive Analytics | 4-Week Online Intensive | Purdue Daniels School of Business | Python/scikit-learn | Colab notebooks"
-- **Topics:** `predictive-analytics`, `machine-learning`, `python`, `jupyter-notebook`, `scikit-learn`, `data-science`, `mba-course`, `colab`
-- **Homepage:** (Will be set after GitHub Pages is configured)
-
-### 4.2 Push to Remote
-**Steps:**
-1. `git branch -M main` (ensure main branch)
-2. `git push -u origin main` (push with upstream tracking)
-
----
-
-## Phase 5: GitHub Pages Configuration
-
-### 5.1 Repository Settings
-**Method:** Use `gh` CLI or web interface
-**Configuration:**
-- **Source:** Deploy from `docs/` directory on `main` branch
-- **Custom domain:** None (use default `*.github.io`)
-- **HTTPS:** Enforce HTTPS
-
-**CLI command:**
-```bash
-gh repo edit --enable-pages --pages-branch main --pages-path docs
-```
-
-### 5.2 Verify Deployment
-**Expected URL:** `https://davi-moreira.github.io/2026Summer_predictive_analytics_purdue_MGMT474/`
-
-**Verification steps:**
-1. Check GitHub Pages build status: `gh run list --workflow pages-build-deployment`
-2. Wait for deployment (usually 1-2 minutes)
-3. Visit URL and verify:
-   - Homepage loads
-   - Sidebar navigation works
-   - Schedule page shows 20-day structure
-   - Notebook links work (should point to GitHub raw notebooks)
-
-### 5.3 Update Repository Homepage
-**Command:**
-```bash
-gh repo edit --homepage "https://davi-moreira.github.io/2026Summer_predictive_analytics_purdue_MGMT474/"
-```
-
----
-
-## Phase 6: Documentation and Conversation Log
-
-### 6.1 Create `CONVERSATION_LOG.md`
-**File:** `CONVERSATION_LOG.md` (in repository root)
-**Purpose:** Track all work done and decisions made for future session resumption
-
-**Structure:**
-```markdown
-# Conversation Log: 2026 Summer Course Development
-
-## Session 1: January 27, 2026
-
-### Objective
-Transform 2025F semester-based course into 2026 Summer 4-week intensive format (20 business days)
-
-### Context
-- **User:** Professor Davi Moreira
-- **Course:** QM47400 - Predictive Analytics
-- **Institution:** Purdue Daniels School of Business
-- **Old format:** 16-week semester (2025 Fall)
-- **New format:** 4-week intensive (May 18 - June 12, 2026, 20 business days)
-
-### Work Completed
-
-#### 1. Notebooks Created
-- **Days 1-17:** Already existed (created earlier in session)
-- **Days 18-20:** Created new notebooks:
-  - `nb18_reproducibility_monitoring.ipynb` - Deployment thinking, packaging, monitoring
-  - `nb19_data_communication_poster.ipynb` - Six principles of data communication + eleven-section poster architecture (URC template)
-  - `nb20_final_submission_peer_review.ipynb` - M4 poster + one-shot test ceremony, Kaggle final submission, peer evaluation, reflection survey
-
-#### 2. Quarto Website Updated
-- `_quarto.yml` - Updated title and configuration
-- `index.qmd` - Updated for 4-week intensive format
-- `schedule.qmd` - Complete rewrite for 20-day structure
-- `syllabus.qmd` - Updated grading, calendar, format
-
-#### 3. Git Repository
-- Initialized local repository
-- Created comprehensive `.gitignore`
-- Made atomic commits for each component
-
-#### 4. GitHub Connection
-- Created remote repository
-- Pushed all commits to main branch
-- Configured GitHub Pages
-
-### Key Decisions
-
-1. **Notebook organization:** Keep flat structure in `/notebooks/` (01-20), don't nest by week
-2. **Website deployment:** Continue using Quarto → docs/ → GitHub Pages (same as 2025F)
-3. **Git strategy:** Atomic commits by component, maintain clean history
-4. **Admin materials:** Keep `_adm_stuff/` but exclude from git
-5. **Large files:** Link to external storage (Google Drive), don't commit to git
-
-### File Structure
-```
-Repository Root
-├── notebooks/                         # 20 Jupyter notebooks (Days 1-20)
-├── docs/                              # GitHub Pages output (compiled by Quarto)
-├── images/                            # Course logo and assets
-├── _quarto.yml                        # Quarto configuration
-├── index.qmd                          # Homepage
-├── schedule.qmd                       # 20-day schedule table
-├── syllabus.qmd                       # Course syllabus
-├── styles.css                         # Custom styling
-├── MGMT47400_Online4Week_Plan_2026Summer.md  # Master course plan
-├── CONVERSATION_LOG.md                # This file
-├── .gitignore                         # Git ignore rules
-└── 2026Summer_predictive_analytics_purdue_MGMT474.Rproj  # RStudio project file
-```
-```
-
-### 6.2 Create `README.md`
-**File:** `README.md` (in repository root)
-**Purpose:** Public-facing repository documentation
-
----
-
-## Critical Files Summary
-
-### Files to Create (New)
-1. `notebooks/nb18_reproducibility_monitoring.ipynb`
-2. `notebooks/nb19_data_communication_poster.ipynb`
-3. `notebooks/nb20_final_submission_peer_review.ipynb`
-4. `CONVERSATION_LOG.md`
-5. `README.md`
-6. `.gitignore` (update existing or create)
-
-### Files to Update (Existing)
-1. `_quarto.yml` (minimal - update title and GitHub link)
-2. `index.qmd` (update course dates, format, structure)
-3. `schedule.qmd` (complete rewrite for 20-day structure)
-4. `syllabus.qmd` (update grading, calendar, format)
-
-### Files to Keep (No Changes)
-1. All 17 existing notebooks (Days 1-17)
-2. `MGMT47400_Online4Week_Plan_2026Summer.md` (master plan)
-3. `styles.css` (custom CSS)
-4. `images/` directory (logos, assets)
-5. `2026Summer_predictive_analytics_purdue_MGMT474.Rproj`
-
----
-
-## Success Criteria
-
-### Must Have (Blocking)
-- [ ] All 20 notebooks exist and have consistent structure
-- [ ] Git repository initialized with clean history
-- [ ] GitHub remote connected and pushed
-- [ ] GitHub Pages deployed and accessible
-- [ ] Schedule page shows all 20 days with correct dates
-- [ ] Syllabus updated for 4-week format
-- [ ] All Colab badges work in notebooks
-
-### Should Have (High Priority)
-- [ ] Conversation log created for future resumption
-- [ ] README.md with comprehensive documentation
-- [ ] All notebook links tested in Colab
-- [ ] Website responsive on mobile
-
-### Nice to Have (Future Work)
-- [ ] Auto-graded quizzes created in Brightspace
-- [ ] Micro-videos recorded and linked
-- [ ] Sample project deliverable created
-- [ ] All notebooks tested end-to-end in Colab
-
----
-
-## Implementation Order
-
-1. **Complete Notebooks** (Phase 1) - Days 18-20
-2. **Update Quarto Website** (Phase 2) - _quarto.yml, index, schedule, syllabus
-3. **Git Setup** (Phase 3) - .gitignore, commits
-4. **GitHub Connection** (Phase 4) - create repo, push
-5. **GitHub Pages** (Phase 5) - configure, verify
-6. **Documentation** (Phase 6) - conversation log, README
-7. **Verification** - Test everything works
-
----
-
-## End of Plan
-
-This plan provides a complete roadmap for migrating the 2025F semester course to the 2026 Summer 4-week intensive format while maintaining git best practices and GitHub Pages deployment.
+**Last updated:** 2026-08-14 — rewritten from the 2026 Summer migration runbook into the Fall 2026
+notebook-content justification.

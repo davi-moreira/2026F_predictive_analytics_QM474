@@ -116,14 +116,14 @@ The idempotent check (`if 'A question that often comes up' in src`) is critical 
 
 ## 🚨 CRITICAL RULE — CV-First Evaluation + Test-Set Lock
 
-**From nb09 onward, all model-performance claims come from cross-validation.** Before nb14, the test set (`X_test`, `y_test`) is *locked* — no model evaluation touches it. nb14's "Opening the Locked Test Set" ceremony is the one and only authorized test-set opening in the entire course.
+**From nb09 onward, all model-performance claims come from cross-validation.** Before nb14, the test set (`X_test`, `y_test`) is *locked* — no model evaluation touches it. nb14's "Opening the Locked Test Set" ceremony is the only authorized test-set opening in the course. It runs **once per spine** — one ceremony for the classification business case, one for the regression business case — and each test set opens exactly once. The singleness rule holds per case; it is not diluted across spines.
 
 | Where | What to use |
 |---|---|
 | nb01–nb07 | Single train/val/test split is introduced; `X_val` for mid-course evaluation |
 | nb08 | k-fold CV + Student's *t* 95% CI becomes the course's evaluation spine |
 | nb09–nb13, nb15, nb16, nb17 | `cross_val_score`, `cross_val_predict`, `GridSearchCV`, `RandomizedSearchCV` on `X_train`; held-out evaluation uses `X_val`, never `X_test` |
-| **nb14 cell 33 ONLY** | `X_test` / `y_test` opened for the one-shot ceremony (INSIDE/ABOVE/BELOW verdict) |
+| **nb14 cells 30 + 34 ONLY** | `X_test` / `y_test` opened for the one-shot ceremony (INSIDE/ABOVE/BELOW verdict) — cell 30 is the **classification** spine, cell 34 the **regression** spine; one opening per business case |
 | nb18 | `X_test` may appear in the Kaggle-submission demo (production-pipeline pattern, not model evaluation) |
 | nb20 | No model evaluation — peer review + postmortem |
 
@@ -135,7 +135,7 @@ The idempotent check (`if 'A question that often comes up' in src`) is critical 
 python scripts/audit_cv_first.py
 ```
 
-The only acceptable output is hits in `nb14` cell 33 plus `nb18`'s Kaggle-submission demo. Anything else is a regression and must be fixed before commit.
+The only acceptable output is hits in `nb14` cells 30 + 34 (one per spine) plus `nb18`'s Kaggle-submission demo. Anything else is a regression and must be fixed before commit.
 
 **Common CV-first patterns to reach for:**
 
@@ -322,7 +322,7 @@ Before ending any session that touched course content:
 
 - [ ] All changes committed with clear `<type>: <subject>` messages and `Co-Authored-By:` line.
 - [ ] **Voice-check grep run** on any modified student notebook (`grep -iE '\bstudents?\b|\bthe instructor\b|on camera|speaking prompt' notebooks/nbNN_*_student.ipynb` returns zero non-`Student's t` hits). If video guides changed: `python scripts/voice_check_guides.py` is clean.
-- [ ] **CV-first audit run** if any nb09–nb20 evaluation code changed: `python scripts/audit_cv_first.py` returns only the nb14 cell 33 + nb18 Kaggle-submission exceptions.
+- [ ] **CV-first audit run** if any nb09–nb20 evaluation code changed: `python scripts/audit_cv_first.py` returns only the nb14 cells 30 + 34 (one per spine) + nb18 Kaggle-submission exceptions.
 - [ ] **Answer-length audit run** if any quiz/exam CSV was created or edited: `python scripts/audit_answer_length.py --file <csv>` returns PASS for every touched bank.
 - [ ] **Narrative polish applied** if any new or rewritten student markdown cells landed: named stakeholder in Why-This-Matters, narrative prose over bullet lists in Reading-the-output, at least one `"A question that often comes up here"` Q&A, warm wrap-up with bridge to the next notebook.
 - [ ] **`quarto render` run** if ANY content changed (`.qmd`, notebooks, images), AND `docs/` committed.

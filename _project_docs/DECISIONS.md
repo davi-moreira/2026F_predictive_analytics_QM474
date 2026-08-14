@@ -124,7 +124,7 @@ This document records design decisions made during course development and the re
 - Students learn that "I peeked at the test set 30 times before reporting accuracy" is the most common subtle leak in industry.
 
 **Exceptions:**
-- `nb14` cell 33 only — the one authorized test-set opening.
+- `nb14` cells 30 and 34 only — the authorized test-set openings, **one per spine**: cell 30 is the classification business case, cell 34 the regression business case. Each test set still opens exactly ONCE; the singleness rule is preserved per case, not diluted across spines.
 - `nb18` Kaggle-submission demo — uses `X_test` to simulate predicting on a held-out CSV (production-pipeline pattern, not model evaluation).
 
 **Implication:** Before every commit in `nb09`–`nb20`, run `scripts/audit_cv_first.py`. The only acceptable hits are the nb14/nb18 exceptions.

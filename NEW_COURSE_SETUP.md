@@ -38,14 +38,14 @@ different activity spacing. Everything that mentions "4-Week", "20 business days
 ```bash
 cd /Users/dcordeir/Dropbox/academic/cursos/cursos-davi/predictive_analytics/2026Summer_predictive_analytics_purdue_MGMT474
 # dry-run first to see what copies:
-bash scripts/make_seed.sh "../2026F_predictive_analytics__QM474"
+bash scripts/make_seed.sh "../2026F_predictive_analytics_QM474"
 # then for real:
-bash scripts/make_seed.sh "../2026F_predictive_analytics__QM474" --go
+bash scripts/make_seed.sh "../2026F_predictive_analytics_QM474" --go
 ```
 
 ### 2. Rename the operating manual + initialize git
 ```bash
-cd ../2026F_predictive_analytics__QM474
+cd ../2026F_predictive_analytics_QM474
 git mv claude.md CLAUDE.md 2>/dev/null || mv claude.md CLAUDE.md   # canonical, case-sensitive-safe
 git init
 git add -A
@@ -55,10 +55,10 @@ git commit -m "chore: Seed 2026F QM474 from 2026Summer course core"
 ### 3. Create the remote repo and push
 ```bash
 # GitHub CLI (recommended):
-gh repo create 2026F_predictive_analytics__QM474 --public --source=. --remote=origin --push
+gh repo create 2026F_predictive_analytics_QM474 --public --source=. --remote=origin --push
 
 # …or manually, if you create the repo in the GitHub web UI first:
-git remote add origin https://github.com/davi-moreira/2026F_predictive_analytics__QM474.git
+git remote add origin https://github.com/davi-moreira/2026F_predictive_analytics_QM474.git
 git branch -M main
 git push -u origin main
 ```
@@ -72,7 +72,7 @@ git add docs/ && git commit -m "build: Initial render" && git push
 ```
 
 ### 5. Bootstrap the new Claude session
-Open Claude Code in `2026F_predictive_analytics__QM474` and paste:
+Open Claude Code in `2026F_predictive_analytics_QM474` and paste:
 
 > Read `CLAUDE.md`, `_project_docs/MGMT47400_Online4Week_Plan_2026Summer.md`, and this `NEW_COURSE_SETUP.md`. This repo was seeded from a 4-week intensive version of the same course. Your first job is to convert it to a **full-semester QM474** offering. Do NOT touch notebook content yet. Instead: (1) produce a new full-semester course plan that re-paces the same 21 notebooks across ~15 weeks taking into consideration some important dates and activities: 1. the purdue official calendar for the fall semester (start, holidays, breaks, end). 2. Fall Undergraduate Research Conference Posters on Nov. 17 - All my students will be required to present on that day, so we must finish the course content approx. by the end of october to submit the poster 7 days before the event. You find the 2025 Fall schedule here: _syllabus/2025F/mgmt474_fall2025_schedule.md and the 2025 Fall syllabus schedule here: _syllabus/2025F/. 3. I will teach Mondays, Wednesdays, and Fridays; 4. After the poster my students will be submited to the "Poster-to-Product" activity (something i want to discuss with you and that the main info you find at: _adm_stuff/_qm474_poster_product). (2) list every file containing "4-Week", "20 business days", "112.5 minutes", or the old dates so we can rewrite them; (3) update `CLAUDE.md`'s Project Mission, `_quarto.yml` title, `syllabus.qmd`, `schedule.qmd`, and `README.md` to the new format and the new repo URL. Confirm the plan with me before anything. The goal is to not edit the notebooks, but to accomodate them throught the course schedule.
 

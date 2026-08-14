@@ -102,7 +102,7 @@ Common issues encountered while developing or deploying course materials, with p
 
 ## Issue: CV-First Audit Returns Unexpected Hits
 
-**Symptoms:** `python scripts/audit_cv_first.py` returns hits outside `nb14` cell 33 and `nb18` Kaggle-submission demo.
+**Symptoms:** `python scripts/audit_cv_first.py` returns hits outside `nb14` cells 30 + 34 (one ceremony per spine) and the `nb18` Kaggle-submission demo.
 
 **Cause:** Model-evaluation code (e.g., `model.score(X_test, ...)`, `roc_auc_score(y_test, ...)`) snuck into nb09–nb20 evaluation logic.
 
