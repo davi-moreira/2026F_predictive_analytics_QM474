@@ -66,8 +66,8 @@ Collect, per video: the **short title**, the **2–3 sentence summary**, and the
 Once the notebook's materials are final, propagate the change:
 
 - **Video guide** (`video_guides/NN_video_lecture_guide.md`) — keep cell refs, the section map, and the Suggested Video Structure in sync; run `python scripts/voice_check_guides.py`.
-- **Schedule** (`schedule.qmd` **and** the syllabus `_syllabus/2026Summer/…_schedule.docx`) — set the day's **video count to the final segment count** (count "Video N" segments, not clips), then `quarto render` and commit `docs/`.
-- **Planning docs** (`_project_docs/MGMT47400_Online4Week_Plan_2026Summer.md`, `_project_docs/claude_course_plan.md`) — update the sequencing rationale if sections, tools, or dependencies changed.
+- **Schedule** (`schedule.qmd` **and** the syllabus `_syllabus/2026F/2026F_predictive_analytics_QM474_schedule.docx`) — set the day's **video count to the final segment count** (count "Video N" segments, not clips), then `quarto render` and commit `docs/`.
+- **Planning docs** (`_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md`, `_project_docs/claude_course_plan.md`) — update the sequencing rationale if sections, tools, or dependencies changed.
 
 ---
 

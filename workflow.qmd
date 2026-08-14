@@ -290,7 +290,7 @@ Then iterate. Expect month one to feel like overhead and month three to feel lik
 
 # Using this course as a template for your own {#sec-template}
 
-If you would like to use this [repository](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474) as a starting point rather than reinventing the workflow, there are two paths. **Replicate the design** if you teach a course that resembles QM47400 in spirit, meaning a data-skills course delivered online or in a compressed window. **Use it as a reference** if your domain is different, and lift only the patterns that transfer.
+If you would like to use this [repository](https://github.com/davi-moreira/2026F_predictive_analytics_QM474) as a starting point rather than reinventing the workflow, there are two paths. **Replicate the design** if you teach a course that resembles QM47400 in spirit, meaning a data-skills course delivered online or in a compressed window. **Use it as a reference** if your domain is different, and lift only the patterns that transfer.
 
 The seven steps below are the most direct on-ramp. Each step lists **what to do**, the **prompt** you can paste into Claude Code (shown in blockquotes), and the **files in this repository** to point the assistant at (shown as hyperlinks).
 
@@ -299,8 +299,8 @@ The seven steps below are the most direct on-ramp. Each step lists **what to do*
 a. Clone the repo into a sensible working directory:
 
 ```bash
-git clone https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474.git
-cd 2026Summer_predictive_analytics_purdue_MGMT474
+git clone https://github.com/davi-moreira/2026F_predictive_analytics_QM474.git
+cd 2026F_predictive_analytics_QM474
 ```
 
 b. Install [Claude Code](https://www.anthropic.com/claude-code) if you have not yet, then launch it from inside the cloned repo so the working directory is set correctly.
@@ -311,23 +311,23 @@ c. (Optional but recommended.) Open the same directory in your preferred editor 
 
 a. Ask the assistant to read the constitution and the course plan, then describe the project back to you:
 
-> Read [`claude.md`](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/claude.md) and [`_project_docs/MGMT47400_Online4Week_Plan_2026Summer.md`](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/_project_docs/MGMT47400_Online4Week_Plan_2026Summer.md). Describe back to me how this course is structured: the pedagogy, the 21-notebook arc, the source-of-truth files, and the rules that are non-obvious.
+> Read [`CLAUDE.md`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/CLAUDE.md) and [`_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md). Describe back to me how this course is structured: the pedagogy, the 20-notebook arc, the source-of-truth files, and the rules that are non-obvious.
 
 b. Ask for the file map:
 
 > List every kind of source file in this repo and what each one is the source of truth for. Group them by artifact type (notebooks, video guides, brightspace pages, quizzes, exam, and so on).
 
-c. Spot-check by opening one notebook the assistant cites, for example [`notebooks/nb08_cross_validation_model_comparison_student.ipynb`](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/notebooks/nb08_cross_validation_model_comparison_student.ipynb), so you can see what "canonical voice" actually looks like.
+c. Spot-check by opening one notebook the assistant cites, for example [`notebooks/nb08_cross_validation_model_comparison_student.ipynb`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb08_cross_validation_model_comparison_student.ipynb), so you can see what "canonical voice" actually looks like.
 
 ## Step 3. Translate the constitution to your domain
 
-a. Copy [`claude.md`](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/claude.md) into your own repo (rename to `CLAUDE.md` or keep it lowercase, either works), then ask the assistant to adapt it:
+a. Copy [`CLAUDE.md`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/CLAUDE.md) into your own repo (`CLAUDE.md` or `claude.md`, either works), then ask the assistant to adapt it:
 
 > This is the constitution from another course's repo. Adapt it for my course, which is [your course code and topic]. Replace QM47400, swap "predictive analytics" for my subject, and go through each critical rule and anti-pattern one by one. For each, tell me whether it transfers cleanly, needs editing, or does not apply.
 
 b. Keep the **structural elements** even if every concrete rule changes: project mission, the "see also" reference table, critical rules with a 🚨 prefix, style guidelines as a table, anti-patterns, and a session-end checklist.
 
-c. Also copy and adapt the companion files: [`DECISIONS.md`](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/_project_docs/DECISIONS.md), [`TROUBLESHOOTING.md`](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/_project_docs/TROUBLESHOOTING.md), and [`NOTEBOOK_TEMPLATE.md`](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/_project_docs/NOTEBOOK_TEMPLATE.md). They start small and grow alongside the project.
+c. Also copy and adapt the companion files: [`DECISIONS.md`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/_project_docs/DECISIONS.md), [`TROUBLESHOOTING.md`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/_project_docs/TROUBLESHOOTING.md), and [`NOTEBOOK_TEMPLATE.md`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/_project_docs/NOTEBOOK_TEMPLATE.md). They start small and grow alongside the project.
 
 ## Step 4. Adopt one pattern at a time, not all at once
 
@@ -343,8 +343,8 @@ c. After those two are stable, add the **instructor-first notebook workflow** fr
 
 a. Read both audit scripts in this repo:
 
-- [`scripts/audit_cv_first.py`](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/scripts/audit_cv_first.py)
-- [`scripts/voice_check_guides.py`](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/scripts/voice_check_guides.py)
+- [`scripts/audit_cv_first.py`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/scripts/audit_cv_first.py)
+- [`scripts/voice_check_guides.py`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/scripts/voice_check_guides.py)
 
 b. Identify two or three invariants in *your* course that you keep correcting by hand. Then ask the assistant:
 
@@ -355,23 +355,23 @@ c. A few domain-specific invariants worth automating:
 - *Causal inference course:* no causal claim on observational data without a stated identifying assumption.
 - *Writing-intensive course:* passive voice flagged in graded examples and rubrics.
 - *Lab course:* every method section cites the protocol it follows.
-- *Any course with student-facing materials:* a voice check like [`voice_check_guides.py`](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/scripts/voice_check_guides.py).
+- *Any course with student-facing materials:* a voice check like [`voice_check_guides.py`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/blob/main/scripts/voice_check_guides.py).
 
 ## Step 6. Reuse the bulk-CSV pattern for Brightspace quizzes
 
 a. Either export one existing quiz from Brightspace as CSV, or build one by hand in the format Brightspace's Question Library expects.
 
-b. Save that file inside [`_quizzes/`](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/tree/main/_quizzes) in your repo. This becomes your **schema example**.
+b. Save that file inside `_quizzes/` in your repo. This becomes your **schema example**.
 
 c. Generate the next quiz by pointing the assistant at the schema example:
 
-> Use [`_quizzes/<term>/<example-quiz>.csv`](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/tree/main/_quizzes) as the format. Generate a 10-question quiz on [topic], in the same CSV shape, with plausible distractors and one correct answer per question.
+> Use `_quizzes/<term>/<example-quiz>.csv` as the format. Generate a 10-question quiz on [topic], in the same CSV shape, with plausible distractors and one correct answer per question.
 
 d. Review, edit, upload. The hour you invest in step (a) pays back across the entire semester.
 
 ## Step 7. Share what you build (and what failed)
 
-a. Open an issue on the [course repository](https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/issues) describing what you adapted, what worked, and what failed.
+a. Open an issue on the [course repository](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/issues) describing what you adapted, what worked, and what failed.
 
 b. Or just [email me](mailto:dcordeir@purdue.edu) directly. I keep updating this page as I learn, and a sharper version of any of these patterns from a different discipline is genuinely useful to me.
 
@@ -388,7 +388,7 @@ b. Or just [email me](mailto:dcordeir@purdue.edu) directly. I keep updating this
 - Cunningham, S. **Claude Code Changed How I Work.** *Causal Inference* (Substack). <https://causalinf.substack.com/p/claude-code-changed-how-i-work-part>. *(A working economist's account of bringing Claude Code into research and teaching workflows.)*
 - Xu, Y., & Yang, L. Y. (2026). **Scaling Reproducibility: An AI-Assisted Workflow for Large-Scale Reanalysis.** Working paper. *(A complementary view on template-executor architectures for AI-assisted reproducible research.)*
 - Moreira, D. (2025). **QM47400 Predictive Analytics, 2025 Fall (semester-length, in-person).** Course website. <https://davi-moreira.github.io/2025F_predictive_analytics_purdue_MGMT474/>. *(The 16-week course this 4-week intensive was translated from.)*
-- Moreira, D. (2026). **QM47400 Predictive Analytics: Course Repository.** GitHub: <https://github.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474>. *(The repository this page describes. Everything cited above, including `CLAUDE.md`, `scripts/audit_cv_first.py`, `scripts/voice_check_guides.py`, the brightspace source pages, the notebook template, and the conversation log, is open for inspection.)*
+- Moreira, D. (2026). **QM47400 Predictive Analytics: Course Repository.** GitHub: <https://github.com/davi-moreira/2026F_predictive_analytics_QM474>. *(The repository this page describes. Everything cited above, including `CLAUDE.md`, `scripts/audit_cv_first.py`, `scripts/voice_check_guides.py`, the brightspace source pages, the notebook template, and the conversation log, is open for inspection.)*
 :::
 
 ---

@@ -22,7 +22,7 @@ import json
 from pathlib import Path
 
 IMG = ("https://raw.githubusercontent.com/davi-moreira/"
-       "2026Summer_predictive_analytics_purdue_MGMT474/main/notebooks/figures/")
+       "2026F_predictive_analytics_QM474/main/notebooks/figures/")
 
 cells = []
 
@@ -70,7 +70,7 @@ md(r"""# Special Topic — Deep Learning
 
 <center>
 <div>
-<img src="https://raw.githubusercontent.com/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/main/notebooks/figures/mgmt_474_ai_logo_02-modified.png" width="200"/>
+<img src="https://raw.githubusercontent.com/davi-moreira/2026F_predictive_analytics_QM474/main/notebooks/figures/mgmt_474_ai_logo_02-modified.png" width="200"/>
 </div>
 </center>
 
@@ -78,7 +78,7 @@ md(r"""# Special Topic — Deep Learning
 # <center>QM47400 Predictive Analytics</center>
 # <center>Professor: Davi Moreira </center>
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026Summer_predictive_analytics_purdue_MGMT474/blob/main/notebooks/nb19_deep_learning_student.ipynb)""")
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb19_deep_learning_student.ipynb)""")
 
 # ============================================================= OBJECTIVES
 md(r"""## Learning Objectives
