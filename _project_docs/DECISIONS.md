@@ -14,6 +14,8 @@ This document records design decisions made during course development and the re
 - Students navigate linearly through days.
 - GitHub displays flat lists better than nested directories.
 
+*Updated 2026-08-14: the arc is now 20 notebooks — `nb00`–`nb09` and `nb11`–`nb20` — after `nb10` was moved to `_archive/2026F_retired/`; see Decision 12. The flat structure itself is unchanged.*
+
 ---
 
 ## Decision 2: 60/20/20 Split for All Examples
@@ -25,6 +27,8 @@ This document records design decisions made during course development and the re
 - Students learn ONE splitting pattern.
 - Sufficient validation data for tuning.
 - Realistic test set size for course-scale datasets.
+
+*Updated 2026-08-14: the arc is now 20 notebooks, not 21 — see Decision 12. The 60/20/20 split still applies to every one of them.*
 
 ---
 
@@ -91,6 +95,8 @@ This document records design decisions made during course development and the re
 - Emphasizes active learning over passive reading.
 - 10-minute scope — not homework, not a project.
 - Builds an engagement habit across all 21 notebooks.
+
+*Updated 2026-08-14: the arc is now 20 notebooks, not 21 — see Decision 12. PAUSE-AND-DO still runs across all of them.*
 
 ---
 
@@ -170,6 +176,6 @@ This document records design decisions made during course development and the re
 - nb10 existed only to stage the midterm. Without the exam it has no successor to prepare, and its consolidation role is absorbed by nb09's Toolkit Recap and by the Friday studios.
 - Finishing the lecture content on Mon Oct 26 gives every team two clear weeks to build the poster before it is due Tue Nov 10, ahead of the Fall Undergraduate Research Conference presentation on Tue Nov 17 and the Poster-to-Product sprint that follows.
 
-**Exceptions:** none. The nb10 notebook files stay on disk for archival reference but are not taught, scheduled, or assessed in Fall 2026.
+**Exceptions:** none. The nb10 notebook files were moved out of `notebooks/` into `_archive/2026F_retired/` for archival reference — the student copy `git mv`'d and still tracked there, the instructor copy moved alongside it and gitignored by that folder's own `.gitignore` — and are not taught, scheduled, or assessed in Fall 2026.
 
 **Implication:** Decision 11 (MC option-length parity) remains fully in force — it now governs the quizzes and any future exam rather than a midterm. Grade weights are published in `syllabus.qmd`; the session-by-session sequence is in `schedule.qmd` and `_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md`. Milestone due dates are unchanged by this decision (M00 Sep 6 through M11/M12 Nov 15).

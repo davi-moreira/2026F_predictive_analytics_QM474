@@ -28,7 +28,7 @@
 - **Poster-to-Product (P2P) build sprint runs after URC:** Nov 20 – Dec 9, culminating in a showcase (Wed Dec 9); course wrap Fri Dec 11.
 - **Kaggle Case Competition** runs Aug 24 → **online work session Mon Nov 23**, final submission **Sun Nov 29** (concluded over the Thanksgiving-week online session, so December is a clean P2P runway — mirrors Fall 2025, which closed the competition Nov 30).
 
-**Session modality.** Every session meets **in person** (MWF), with one exception: the Thanksgiving-week competition block. **Mon Nov 23** runs **online** as a work session to finalize and conclude the Kaggle competition, and the competition stays open online across the **Nov 25–28** break days through the Sun Nov 29 deadline. Per the design: **nb05 (Ridge/Lasso) is an in-person lecture**, **nb14's test-set ceremony stays in person**, and **nb15 (M3 walkthrough) and nb20 (course wrap) need no standalone lecture** — both are folded into Friday studios.
+**Session modality.** Every session meets **in person** (MWF), with one exception: the Thanksgiving-week competition block. **Mon Nov 23** runs **online** as a work session to finalize and conclude the Kaggle competition, and the competition stays open online across the **Nov 25–28** break days through the Sun Nov 29 deadline. Per the design: **nb05 (Ridge/Lasso) is an in-person lecture**, **nb14's test-set ceremony stays in person**, and **nb15 (M03 walkthrough) and nb20 (course wrap) need no standalone lecture** — both are folded into Friday studios.
 
 ---
 
@@ -52,7 +52,7 @@ Each notebook follows the course loop: **Concept + demo → PAUSE-AND-DO practic
 **Course Case Competition (30%)** — the semester-long Kaggle competition (details below), worked in the Friday studios and concluded over the Thanksgiving-week online block.
 
 **Final Project (45%)** now spans **two integrated stages of one project**:
-1. **Research Poster** — the applied predictive-analytics project (milestones M1–M4), presented at the **URC on Nov 17**.
+1. **Research Poster** — the applied predictive-analytics project (milestones M00–M12), presented at the **URC on Nov 17**.
 2. **Poster-to-Product** — the post-poster, two-week in-class build sprint that converts the validated model into a **stakeholder-ready dashboard/app + executive brief**, with corporate-partner feedback and a final showcase. (P2P is the post-poster phase of the Final Project, not a separate top-level grade.)
 
 Final-project grade composition (see Brightspace syllabus for exact splits): milestone deliverables, poster + P2P deliverables (deployed app + executive brief + showcase), intra-group peer evaluation, and instructor/TA evaluation. P2P is assessed on the **NACE competencies** — Technology, Teamwork, Communication, Critical Thinking — via rubric.
@@ -104,11 +104,11 @@ Orientation
 
 Unit 1 — REGRESSION
   01 EDA/Splits → 02 Pipelines → 03 Metrics/Baselines → 04 Features/Diagnostics → 05 Regularization
-  (M1 Proposal at nb05)
+  (M01 Proposal at nb05)
 
 Unit 2 — CLASSIFICATION
   06 LogReg → 07 Clf Metrics → 08 Cross-Validation → 09 Tuning+FE+Leakage
-  (M2 Baseline in this unit; nb10 retired with the midterm exam)
+  (M06 Baseline in this unit; nb10 retired with the midterm exam)
 
 Unit 3 — ENSEMBLES + SELECTION
   11 Trees → 12 Random Forests → 13 Gradient Boosting → 14 Selection + Test-Set Ceremony → 15 M03 Walkthrough
