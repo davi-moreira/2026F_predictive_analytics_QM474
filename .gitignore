@@ -86,6 +86,21 @@ brightspace/
 *.m4a
 *.mov
 
+# >>> Instructor page (password-gated) >>>
+# instructor.qmd is the PLAINTEXT source of the gated Instructor page: it carries the
+# links to the instructor notebooks (full solutions), the quiz banks, and the midterm
+# cases in the private companion repo. It must NEVER be readable in this public repo.
+# Its backup copy lives in the private companion repo (site/instructor.qmd).
+/instructor.qmd
+# Local clone of that private companion repo (working copy, never public).
+# No trailing slash on purpose: the rule then matches even before the clone
+# exists, so `git check-ignore -v _instructor_repo` confirms the guard is live.
+_instructor_repo
+# NOTE (do not "fix" this): docs/instructor.html is deliberately NOT ignored. That file
+# is the ENCRYPTED build output produced by the post-render step, and publishing it is
+# the whole point. Ignoring it would silently take the Instructor page off the site.
+# <<< Instructor page (password-gated) <<<
+
 # Keep docs for GitHub Pages
 !docs/
 

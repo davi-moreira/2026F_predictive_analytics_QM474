@@ -246,6 +246,18 @@ git push origin main
 
 ---
 
+## 🚨 CRITICAL WORKFLOW — Password-Gated Instructor Tab (added 2026-08-14)
+
+The sidebar's **Instructor** tab (it replaced the old "For Instructors" tab; the AI co-design essay `workflow.qmd` stays published at its URL, unlisted, linked from the gated page) is the instructor's index to the instructor notebooks (full solutions), video guides, quiz banks, and midterm cases. Ported from the qm670 Business Analytics implementation.
+
+- **`instructor.qmd` is gitignored** (plaintext source of the gated page; backup lives at `site/instructor.qmd` in the private repo). **`docs/instructor.html` is NOT ignored** — the encrypted page is what we publish. Do not "fix" either fact.
+- **The page ships ENCRYPTED.** `_adm_stuff/_instructor_page/scripts/encrypt_instructor_page.py` (stdlib-only AES-256-GCM + PBKDF2-SHA256, 250k iterations; `--self-test` runs 22 checks) rewrites `docs/instructor.html` into a self-contained browser-decrypted gate. It runs automatically as a Quarto **post-render** hook (`postrender.sh`, wired in `_quarto.yml`), fail-closed: no password → render aborts, the page never publishes in the clear. Idempotent on the marker `<!-- qm474-encrypted-page v1 -->`. The same step prunes `docs/search.json`.
+- **Password:** gitignored `_adm_stuff/_instructor_page/page_password.txt` (or `$QM474_PAGE_PASSWORD`). NEVER hardcode it, NEVER commit it, never put it in a commit message or announcement.
+- **The actual files live in the private companion repo** `davi-moreira/2026F_predictive_analytics_QM474_instructor`: instructor notebooks → `notebooks/`, `video_guides/` → `video_guides/`, `_quizzes/` → `quizzes/`, `_midterm_exam/` → `midterm_exam/`, `instructor.qmd` → `site/instructor.qmd`. Mirror it with `_adm_stuff/_instructor_page/scripts/sync_instructor_repo.sh` (`--dry-run` supported; hard-stops unless `gh` reports the target repo PRIVATE and `_instructor_repo` is gitignored). The mirror is synced, never edited directly. **Run the sync after changing any instructor notebook, video guide, quiz bank, midterm file, or `instructor.qmd`.**
+- **Guard:** `.git/hooks/pre-commit` refuses to commit `docs/instructor.html` without the marker, `instructor.qmd`, the password file, or any staged file containing the password. `.git/hooks/` is never cloned — the copy of record + install steps live in `_adm_stuff/_instructor_page/` (`pre-commit`, `INSTALL_HOOK.md`).
+
+---
+
 ## Style Guidelines (Load-Bearing Values)
 
 These values are referenced by tooling and student expectations — do not change casually. See `_project_docs/DECISIONS.md` for rationale.
@@ -314,6 +326,7 @@ Before ending any session that touched course content:
 - [ ] **Answer-length audit run** if any quiz/exam CSV was created or edited: `python scripts/audit_answer_length.py --file <csv>` returns PASS for every touched bank.
 - [ ] **Narrative polish applied** if any new or rewritten student markdown cells landed: named stakeholder in Why-This-Matters, narrative prose over bullet lists in Reading-the-output, at least one `"A question that often comes up here"` Q&A, warm wrap-up with bridge to the next notebook.
 - [ ] **`quarto render` run** if ANY content changed (`.qmd`, notebooks, images), AND `docs/` committed.
+- [ ] **Instructor-repo sync run** (`bash _adm_stuff/_instructor_page/scripts/sync_instructor_repo.sh`) if any instructor notebook, video guide, quiz bank, midterm file, or `instructor.qmd` changed.
 - [ ] `CONVERSATION_LOG.md` updated with session summary (appended, not overwritten).
 - [ ] If notebooks changed: tested in Colab.
 - [ ] `git push origin main` (includes BOTH content AND `docs/`).
@@ -323,6 +336,6 @@ Before ending any session that touched course content:
 
 ---
 
-**Last Updated:** 2026-04-28
+**Last Updated:** 2026-08-14
 **Version:** 2.0 — slimmed from 977 lines by extracting reference material into `NOTEBOOK_TEMPLATE.md`, `DECISIONS.md`, `TROUBLESHOOTING.md`, and `scripts/`. Behavior-changing rules and workflows preserved verbatim.
 **Maintained by:** Professor Davi Moreira + AI Assistants
