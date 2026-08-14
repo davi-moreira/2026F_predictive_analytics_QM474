@@ -2,9 +2,11 @@
 
 ### Design Philosophy
 
-The 21 notebooks (NB00–NB20) follow a **single-layer-at-a-time** principle: each notebook introduces exactly one new concept, assumes only what prior notebooks taught, and prepares exactly what the next one needs. No notebook can be skipped without breaking its successor's assumptions.
+The 20 notebooks (NB00–NB09 and NB11–NB20) follow a **single-layer-at-a-time** principle: each notebook introduces exactly one new concept, assumes only what prior notebooks taught, and prepares exactly what the next one needs. No notebook can be skipped without breaking its successor's assumptions.
 
 The course is organized into a **pre-course orientation** and **four weekly arcs**, each ending with a project milestone that forces students to integrate that week's skills.
+
+> **Fall 2026 note.** NB10 (the Midterm Casebook) retired from the arc when the midterm exam was dropped, leaving **20** notebooks. The four arcs below describe the conceptual sequence, not calendar weeks: Fall 2026 re-paces the same arc across \~15 weeks, with Monday and Wednesday carrying content and every Friday reserved as a poster and/or competition studio — the one exception is Fri Aug 28, which carries NB02.
 
 ---
 
@@ -36,7 +38,7 @@ The course is organized into a **pre-course orientation** and **four weekly arcs
 
 ---
 
-### Week 2 — The Classification Arc (NB 06–10)
+### Week 2 — The Classification Arc (NB 06–09)
 
 **Goal:** Pivot to classification, build a richer evaluation toolkit, and learn systematic model comparison.
 
@@ -45,10 +47,11 @@ The course is organized into a **pre-course orientation** and **four weekly arcs
 | **06** Logistic Regression & Pipelines | Predicted probabilities, threshold sensitivity, regularization via C | The regression-to-classification pivot. Reuses the same Pipeline pattern from Week 1, making the transition seamless. Students need probability foundations before NB07's metrics. |
 | **07** Classification Metrics & Thresholding | Precision, recall, F1, ROC/PR curves, cost-based threshold selection | NB06 introduces probabilities informally; NB07 formalizes them into a complete metrics framework. NB08 needs this vocabulary to choose a `scoring` parameter for CV. |
 | **08** Cross-Validation | StratifiedKFold, cross_val_score, cross_validate | Replaces the fragile single train/val split with reliable, low-variance estimates. Students must understand standalone CV before NB09 embeds it inside grid search. |
-| **09** Tuning & Feature Engineering | GridSearchCV, RandomizedSearchCV, project baseline scaffold | Integration notebook — brings together pipelines, metrics, CV, and tuning into a single workflow. Provides the baseline report template needed for the midterm. |
-| **10** Midterm Casebook | Business-case strategy (no new libraries) | Tests *strategic reasoning*, not mechanics: "Given this business problem, what's the target? metric? split? leakage risk?" Creates a natural consolidation pause before Week 3's new algorithms. Project baseline due. |
+| **09** Tuning & Feature Engineering | GridSearchCV, RandomizedSearchCV, project baseline scaffold | Integration notebook — brings together pipelines, metrics, CV, and tuning into a single workflow. Provides the baseline report template the project baseline depends on, and closes the arc. Project baseline due. |
 
-**Arc logic:** New task type → New metrics → Reliable comparison → Integration → Strategic assessment.
+> **NB10 retired.** The Midterm Casebook used to close this arc with a strategic-reasoning assessment — "Given this business problem, what's the target? metric? split? leakage risk?" When the midterm exam was dropped for Fall 2026, the notebook retired with it. NB09's Toolkit Recap now carries the consolidation, and the Friday studios carry the applied strategy practice.
+
+**Arc logic:** New task type → New metrics → Reliable comparison → Integration.
 
 ---
 
@@ -58,7 +61,7 @@ The course is organized into a **pre-course orientation** and **four weekly arcs
 
 | NB | What It Teaches | Why Here |
 |----|----------------|----------|
-| **11** Decision Trees | CART, depth sweep, overfitting demo, tree visualization | The first non-linear model. Students see the bias-variance tradeoff concretely: training accuracy hits 100% while test accuracy degrades. This instability motivates NB12. |
+| **11** Decision Trees | CART, depth sweep, overfitting demo, tree visualization | The first non-linear model, opening on the evaluation skills NB09 consolidated. Students see the bias-variance tradeoff concretely: training accuracy hits 100% while test accuracy degrades. This instability motivates NB12. |
 | **12** Random Forests | Bagging, random feature subsets, permutation importance, OOB | Solves the single tree's variance problem by averaging many decorrelated trees. The "parallel ensemble" concept only lands after students experience NB11's instability firsthand. |
 | **13** Gradient Boosting | Sequential error correction, learning rate, constrained tuning | Completes the ensemble trilogy. The contrast — bagging reduces variance (NB12) vs. boosting reduces bias (NB13) — is the deepest conceptual point in the course. Also provides the likely champion model. |
 | **14** Model Selection Protocol | Formal comparison harness, identical CV folds, test set opened once | Now that the full candidate roster exists (logistic, tree, RF, GBM), a formal protocol replaces the informal "pick the highest number" approach. Premature without all candidates. |
@@ -74,13 +77,13 @@ The course is organized into a **pre-course orientation** and **four weekly arcs
 
 | NB | What It Teaches | Why Here |
 |----|----------------|----------|
-| **16** Decision Thresholds & Calibration | Cost matrices, threshold sweeps, calibration curves, sensitivity analysis | NB15's error analysis reveals *where* the model fails; NB16 teaches how to set thresholds that minimize the *business cost* of those failures. Threshold mechanics are prerequisite for NB17's fairness analysis. |
-| **17** Fairness & Model Cards | Slice-based evaluation, group fairness diagnostics, model card documentation | A model with excellent aggregate metrics can still harm specific groups. Threshold choices from NB16 directly affect group-level outcomes — students need to understand thresholds before analyzing their fairness implications. |
-| **18** Reproducibility & Monitoring | Function refactoring, joblib serialization, monitoring plan (drift signals, owners) | NB17 adds the ethical layer; NB18 adds the operational layer. Together they form the pre-deployment checklist. Artifacts created here become evidence in NB19's narrative. |
-| **19** Executive Narrative & Video Studio | Five-Act Framework (Problem → Approach → Results → Recommendation → Risks), slide storyboard, video script | Translates 18 notebooks of technical work into a compelling non-technical story. Without NB18's artifacts and monitoring vocabulary, the narrative would lack operational credibility. |
+| **16** Decision Thresholds & Calibration | Cost matrices, threshold sweeps, calibration curves, sensitivity analysis | NB15's error analysis reveals *where* the model fails; NB16 teaches how to set thresholds that minimize the *business cost* of those failures. Threshold mechanics are prerequisite for the decision-quality numbers NB17's poster has to report. |
+| **17** Data Communication & Poster Design | Six design principles, chart audit, eleven-section URC poster architecture, 120–150-word abstract | The last content session of the Fall arc, **Mon Oct 26**. Every headline number the poster reports — CV confidence intervals, the locked-test verdict, the forecast comparison — already exists by this point, so the notebook is purely about turning results into a story a conference visitor can read in ninety seconds. Placing it last puts poster design immediately ahead of the Nov 10 poster deadline and the Nov 17 Fall Undergraduate Research Conference. |
+| **18** Competition Workflow & Kaggle Submission | `train_pipeline` / `predict_pipeline` refactor, joblib serialization, `submission.csv` with exact Kaggle column names | The operational layer: everything a team needs to package a model and ship it. In Fall 2026 it is taught **early, on Fri Sep 25**, as the first competition studio — the case competition opens in week 1, so packaging has to arrive as soon as the classification toolkit (NB06–NB09) is complete — and is **revisited Fri Oct 23**, once random forests, gradient boosting, and NB14's selection protocol have produced a champion worth packaging. Artifacts created here become evidence in NB19's narrative. |
+| **19** Executive Narrative & Video Studio | Five-Act Framework (Problem → Approach → Results → Recommendation → Risks), slide storyboard, video script | Translates 18 notebooks of technical work into a compelling non-technical story. Without NB18's competition pipeline and saved artifacts, the narrative would lack operational credibility. |
 | **20** Final Submission & Peer Review | Self-audit checklist, artifact manifest, peer review rubric, postmortem | The capstone: audit your own work, submit the complete package, evaluate a peer's project, and reflect. Closes the course arc from NB00's first Colab session and NB01's first data split to a fully reviewed deliverable. |
 
-**Arc logic:** Better decisions → Ethical audit → Operational readiness → Communication → Delivery and reflection.
+**Arc logic:** Better decisions → Poster design → Competition packaging → Executive narrative → Delivery and reflection. Fall 2026 reorders the middle two: packaging opens the arc on Fri Sep 25 (revisited Fri Oct 23) and poster design closes the lecture content on Mon Oct 26.
 
 ---
 

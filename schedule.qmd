@@ -46,9 +46,9 @@ editor: visual
 
 # Course Schedule
 
-**Fall 2026 — Monday / Wednesday / Friday.** The 20-notebook arc is paced across the semester. **Mondays and Wednesdays carry the course content; every Friday is a studio session dedicated to the final-project poster and/or the Course Case Competition.** Lecture content completes on **Mon Oct 26**, the **Undergraduate Research Conference poster presentation is Tue Nov 17** (all students present, final poster due Tue Nov 10), and the **Poster-to-Product** build sprint runs through early December. Final-project milestone due dates are listed in the table below the schedule.
+**Fall 2026 — Monday / Wednesday / Friday.** The 20-notebook arc is paced across the semester. **Mondays and Wednesdays carry the course content; every Friday is a studio session dedicated to the final-project poster and/or the Course Case Competition** — the single exception is Fri Aug 28, which carries nb02. Lecture content completes on **Mon Oct 26**, the **Undergraduate Research Conference poster presentation is Tue Nov 17** (all students present, final poster due Tue Nov 10), and the **Poster-to-Product** build sprint runs through early December. Final-project milestone due dates are listed in the table below the schedule.
 
-The **Notebook** column names the notebook (`nbNN`) anchored to each session — click the badge to open it in Google Colab. The **Track** column marks what the session is for: *Content* (new notebook material), *Lab* (applied clinic), *Poster* and *Competition* (Friday studios and project work), *P2P* (the post-conference Poster-to-Product sprint). Sessions with `—` in the Notebook column carry no new notebook.
+The **Notebook** column names the notebook (`nbNN`) anchored to each session — click the badge to open it in Google Colab. The **Track** column marks what the session is for: *Content* (new notebook material), *Lab* (applied clinic), *Poster* and *Competition* (Friday studios and project work), *P2P* (the post-conference Poster-to-Product sprint), *URC* (the conference presentation), and *Wrap* (the final session). Sessions with `—` in the Notebook column carry no new notebook.
 
 ::: overflow-table
 | Wk | Date | Track | Topic | Notebook | Assessment / Notes |
@@ -92,7 +92,7 @@ The **Notebook** column names the notebook (`nbNN`) anchored to each session —
 | 13 | Mon Nov 16 | Poster | Final presentation prep | — | *M11 Planning + M12 LinkedIn due Sun Nov 15* |
 | 13 | **Tue Nov 17** | URC | **Undergraduate Research Conference — Poster Presentation (all students present)** | — | **POSTER PRESENTATION** |
 | 13 | Wed Nov 18 | — | *No class — time to rest and catch up on other coursework* | — | — |
-| 13 | Fri Nov 20 | Competition | Poster-to-Product kickoff — scoping, partner framing, AI-assistant assignment · Kaggle leaderboard push | — | P2P scope |
+| 13 | Fri Nov 20 | P2P | Poster-to-Product kickoff — scoping, partner framing, AI-assistant assignment · Kaggle leaderboard push | — | P2P scope |
 | 14 | Mon Nov 23 | Competition | **Course Case Competition — finalize and conclude** (online work session): final push, notebook cleanup, Run-All reproducibility check | — | Competition work session |
 | 14 | Wed Nov 25 | Competition | *No class — Thanksgiving break (Nov 25–28)* · competition stays open, self-paced online work, instructor online office hours | — | — |
 | 14 | Fri Nov 27 | Competition | *No class — Thanksgiving break (Nov 25–28)* · final submission window, online | — | **Kaggle final submission due Sun Nov 29, 11:59 PM** |

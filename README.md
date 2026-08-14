@@ -29,14 +29,14 @@ Master plan and single source of truth for sequencing: [`_project_docs/MGMT47400
 
 ## Course Structure
 
-The same 21-notebook arc is paced across ~15 weeks, organized into four units, with course content completing by the end of October so groups can finalize and present their posters in November.
+The 20-notebook arc (nb00–nb09 and nb11–nb20; nb10, the midterm casebook, is retired) is paced across ~15 weeks, organized into four units, with course content completing by the end of October so groups can finalize and present their posters in November.
 
 - **Unit 1 — Regression (nb00–nb05):** Colab/AI workflow, EDA, preprocessing pipelines, regression metrics, linear regression, Ridge/Lasso. *Milestone 1 (Proposal) at nb05.*
-- **Unit 2 — Classification + Midterm (nb06–nb10):** Logistic regression, classification metrics, cross-validation, hyperparameter tuning + leakage detection, midterm casebook. *Milestone 2 (Baseline); in-person midterm exam in late September.*
+- **Unit 2 — Classification (nb06–nb09):** Logistic regression, classification metrics, cross-validation, hyperparameter tuning + leakage detection. *Milestone 2 (Baseline).*
 - **Unit 3 — Ensembles + Selection (nb11–nb15):** Decision trees, random forests, gradient boosting, model selection + test-set ceremony, interpretation. *Milestone 3 (Complex Model + Abstract) at nb15.*
 - **Unit 4 — Delivery (nb16–nb20):** Time-series forecasting, data communication & poster design, competition workflow, deep learning, course wrap.
 - **Poster → URC (Nov):** poster studios, dry-runs, submission (Nov 10), conference presentation (Nov 17).
-- **Poster-to-Product (Nov 18 – Dec 11):** build sprint → showcase.
+- **Poster-to-Product (Nov 20 – Dec 9):** build sprint → showcase.
 
 ## Learning Approach
 
@@ -74,7 +74,6 @@ All notebooks run in Google Colab with one-click access and follow a standardize
 | 07 | Classification metrics: confusion matrix, ROC/PR, business costs | [nb07_classification_metrics_thresholding_student.ipynb](notebooks/nb07_classification_metrics_thresholding_student.ipynb) |
 | 08 | Resampling and cross-validation: comparing models honestly | [nb08_cross_validation_model_comparison_student.ipynb](notebooks/nb08_cross_validation_model_comparison_student.ipynb) |
 | 09 | Hyperparameter tuning + feature engineering + leakage detection | [nb09_tuning_feature_engineering_project_baseline_student.ipynb](notebooks/nb09_tuning_feature_engineering_project_baseline_student.ipynb) |
-| 10 | Midterm casebook: business-case predictive strategy practicum | [nb10_midterm_casebook_student.ipynb](notebooks/nb10_midterm_casebook_student.ipynb) |
 | 11 | Decision trees: interpretable models with sharp edges | [nb11_decision_trees_student.ipynb](notebooks/nb11_decision_trees_student.ipynb) |
 | 12 | Random forests: bagging, OOB, feature importance | [nb12_random_forests_importance_student.ipynb](notebooks/nb12_random_forests_importance_student.ipynb) |
 | 13 | Gradient boosting: performance with discipline | [nb13_gradient_boosting_student.ipynb](notebooks/nb13_gradient_boosting_student.ipynb) |
@@ -107,9 +106,8 @@ All notebooks run in Google Colab with one-click access and follow a standardize
 |---------------------|--------|
 | Participation | 5% |
 | Quizzes | 20% |
-| Midterm Exam (in person) | 20% |
-| Kaggle Case Competition | 20% |
-| Final Project (Poster → Poster-to-Product) | 35% |
+| Kaggle Case Competition | 30% |
+| Final Project (Poster → Poster-to-Product) | 45% |
 
 ### Project Milestones (groups of four randomly assigned members)
 1. **M1 (Fri Sep 4):** Initial Project Proposal — prediction goal + motivation + data overview + preliminary methods + expected contributions
@@ -121,7 +119,7 @@ All notebooks run in Google Colab with one-click access and follow a standardize
 ### Kaggle Case Competition
 - **Competition:** Fall 2026 QM47400 Case Competition: Bank Churn
 - **Task:** Predict bank customer churn probability (AUC-ROC)
-- **Opens:** Aug 24, 2026 · **Deadline:** Fri Dec 11, 2026 at 11:59 PM (Kaggle + Brightspace code submission)
+- **Opens:** Aug 24, 2026 · **Online work session:** Mon Nov 23 · **Deadline:** Sun Nov 29, 2026 at 11:59 PM (Kaggle + Brightspace code submission)
 
 ## Getting Started
 

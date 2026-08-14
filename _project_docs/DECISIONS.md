@@ -150,3 +150,26 @@ This document records design decisions made during course development and the re
 **Exceptions:** none. Numeric/label options satisfy the band by formatting all options in the same shape (e.g., `k = 2` / `k = 100`).
 
 **Implication:** Before importing any quiz/exam CSV to Brightspace, run `python scripts/audit_answer_length.py --file <csv>` — PASS is mandatory. Authoring spec: `scripts/_distractor_rewrite_instructions.md`; per-bank rules embedded in `_quizzes/2026Summer/quiz_generation_plan.md` §4.5 and `_midterm_exam/2026Summer/midterm_generation_plan.md` §5.6. All 48 quiz CSVs and 14 midterm case CSVs were rewritten to this standard on 2026-06-12.
+
+---
+
+## Decision 12: Fall 2026 — Midterm Dropped, Weights Reallocated, nb10 Retired (2026-08-14)
+
+**Decision:** Effective with the Fall 2026 offering of QM47400:
+
+1. **The midterm exam is dropped.** There is no midterm in Fall 2026.
+2. **Its 20% is reallocated** — +10 points to the Course Case Competition (20% → 30%) and +10 points to the Final Project (35% → 45%). Participation (5%) and Quizzes (20%) are unchanged, so the weights are Participation 5% / Quizzes 20% / Course Case Competition (Kaggle) 30% / Final Project 45%.
+3. **nb10 (the Midterm Casebook + Cheat Sheet) retires from the notebook arc**, which now runs to **twenty** notebooks — nb00–nb09 and nb11–nb20.
+4. **Monday and Wednesday carry content; every Friday is a poster and/or competition studio.** The single exception is Fri Aug 28, which carries nb02.
+5. **Lecture content completes Mon Oct 26** (nb17, Data Communication & Poster Design), leaving the calendar clear for the final poster.
+
+**Rationale:**
+- The full-semester format already assesses the same strategic reasoning the midterm tested — continuously, through the Kaggle competition and the twelve project milestones — so a one-shot in-person exam duplicated evidence the course was collecting anyway.
+- Reallocating the 20% to the two authentic deliverables makes the grade track what the semester is actually built around: a deployed, reproducible predictive model and a poster defended in public.
+- The Friday studio rhythm needs protected, recurring time. A midterm consumed a content session plus the review and consolidation sessions around it; dropping it is what makes the every-Friday studio pattern fit inside the Purdue calendar (Labor Day Sep 7, Fall break Oct 12–13, Thanksgiving break Nov 25–28).
+- nb10 existed only to stage the midterm. Without the exam it has no successor to prepare, and its consolidation role is absorbed by nb09's Toolkit Recap and by the Friday studios.
+- Finishing content on Mon Oct 26 gives every team two clear weeks to build the poster before it is due Tue Nov 10, ahead of the Fall Undergraduate Research Conference presentation on Tue Nov 17 and the Poster-to-Product sprint that follows.
+
+**Exceptions:** none. The nb10 notebook files stay on disk for archival reference but are not taught, scheduled, or assessed in Fall 2026.
+
+**Implication:** Decision 11 (MC option-length parity) remains fully in force — it now governs the quizzes and any future exam rather than a midterm. Grade weights are published in `syllabus.qmd`; the session-by-session sequence is in `schedule.qmd` and `_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md`. Milestone due dates are unchanged by this decision (M00 Sep 6 through M11/M12 Nov 15).

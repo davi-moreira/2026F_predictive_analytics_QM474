@@ -16,9 +16,9 @@
 A **group capstone** (groups of four, randomly assigned) that runs the full semester and unfolds in two integrated stages:
 
 1. **Research Poster** — milestones M00 → M12, culminating in a **required** poster presentation at the **Fall 2026 Purdue Undergraduate Research Conference on Tue Nov 17, 2026** (poster due Tue Nov 10).
-2. **Poster-to-Product** — the post-conference, two-week in-class build sprint (Nov 18 – Dec 11) that converts the validated model into a stakeholder-ready dashboard/app + executive brief, with a showcase (~Dec 9).
+2. **Poster-to-Product** — the post-conference, two-week in-class build sprint (Nov 20 – Dec 9) that converts the validated model into a stakeholder-ready dashboard/app + executive brief, with the showcase on Wed Dec 9.
 
-The Final Project is worth **35% of the course grade**:
+The Final Project is worth **45% of the course grade**:
 
 - **Milestone Deliverables — 40%** of the project grade. Averaged across the graded milestones (M00–M12 set). Graded for clarity, completeness, and timely submission.
 - **Peer Evaluation — 20%** of the project grade. Confidential intra-group ratings collected through a separate Brightspace assignment at the end of the course.

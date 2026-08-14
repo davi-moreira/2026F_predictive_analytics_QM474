@@ -2,7 +2,7 @@
 
 ## About the Final Project
 
-The Final Project is a **group capstone** (groups of four randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes the milestone deliverables **M00 → M12** (numbering follows the reference docs and skips M04/M07/M13); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35% of your overall course grade**, broken down as:
+The Final Project is a **group capstone** (groups of four randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes the milestone deliverables **M00 → M12** (numbering follows the reference docs and skips M04/M07/M13); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **45% of your overall course grade**, broken down as:
 
 - **Milestone Deliverables — 40%** of the project grade. Averaged across the graded milestones (the M00–M12 set; see `final_project_milestone_reference.md`). Graded for clarity, completeness, and timely submission.
 - **Peer Evaluation — 20%** of the project grade. Confidential intra-group ratings collected through a separate Brightspace assignment at the end of the course.

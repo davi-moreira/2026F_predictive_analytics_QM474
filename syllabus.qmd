@@ -70,9 +70,8 @@ As part of a university-wide initiative, the Business School has adopted an **Of
 |-----------------------------------|-----------:|
 | Participation                     |         5% |
 | Quizzes                           |        20% |
-| Midterm Exam (in person)          |        20% |
-| Course Case Competition (Kaggle)  |        20% |
-| Final Project                     |        35% |
+| Course Case Competition (Kaggle)  |        30% |
+| Final Project                     |        45% |
 
 ### Participation (5%)
 
@@ -82,11 +81,7 @@ You are required to complete participation activities (e.g., surveys, instructor
 
 Short quizzes based on lecture and notebook content promote consistent engagement with the course material. Quizzes contribute to the final course grade with no quiz dropped. Due dates are clearly outlined on Brightspace and aligned with the course schedule. Quizzes are designed to reinforce understanding and ensure steady progress through the curriculum.
 
-### Midterm Exam (20%)
-
-The midterm exam wraps up the foundational concepts of the course in a comprehensive assessment delivered **in person, during class time, in late September** (after the classification and cross-validation arc). Students have limited time to complete multiple-choice questions that evaluate their technical abilities and their understanding of core concepts. Only under exceptional circumstances, when legitimate and verifiable reasons are provided, will make-ups be given. *Exceptional circumstances* means a death in the family, a serious personal medical emergency, participation in a conflicting NCAA athletic event, or as otherwise required by University policies. Except for emergencies, requests for a make-up must be made by email with supporting documentation no later than 7 days before the scheduled exam.
-
-### Course Case Competition — Kaggle (20%)
+### Course Case Competition — Kaggle (30%)
 
 A course-long predictive analytics competition hosted on Kaggle. The **Fall 2026 QM47400 Case Competition: Bank Churn** is adapted from the 2024 Kaggle Playground Series, which uses AI-generated synthetic data designed for educational purposes. Your task is to build models that predict whether a customer continues with their account or closes it (churn). **Students are randomly assigned to teams (up to four members)** and have a limit of **five Kaggle submissions per day**. The competition **opens August 24, 2026**; we hold an **online work session on Monday, November 23**, and the **final submission deadline is Sunday, November 29, 2026** (before the Thanksgiving break ends). Kaggle automatically evaluates submissions and maintains the leaderboard throughout the competition period.
 
@@ -105,7 +100,7 @@ Two **−10 point** penalties apply to the team total: a Kaggle team name that i
 
 **Brightspace deliverable:** Submit the complete code for your best-performing model. The code must be fully replicable, allowing the instructor and TA to reproduce the same results and performance metrics. Include all necessary steps: data preprocessing, feature engineering, model training, evaluation, and generation of the submission file.
 
-### Final Project (35%)
+### Final Project (45%)
 
 In **groups of four randomly assigned members**, students complete a practical predictive analytics project that unfolds in **two integrated stages**: a **final research poster** and a **Poster-to-Product** build sprint.
 

@@ -6,7 +6,7 @@ This file documents the rules and workflows that change Claude's behavior in thi
 
 **QM47400 — Predictive Analytics**, a full-semester course for Purdue's Daniels School of Business, **Fall 2026** (Aug 24 – Dec 11, 2026). In-person **Monday / Wednesday / Friday** class meetings, with the course's micro-videos (≤12 min) and Google Colab notebooks as the hands-on spine. Pedagogy: Concept → Demo → PAUSE-AND-DO Practice → Solution → Repeat.
 
-The same **21-notebook arc (nb00–nb20)** from the 4-week intensive offering is **re-paced across ~15 weeks** — notebook content is unchanged; only the calendar and surrounding project/studio structure differ. Two dates dominate the calendar: course content completes by **~Oct 30**, the **Fall Undergraduate Research Conference poster presentation is Tue Nov 17** (all students present; poster due Nov 10), and the post-poster **Poster-to-Product** build sprint (deployed dashboard/app + executive brief, funded by a Daniels Experiential Learning Grant) runs Nov 18 – Dec 11.
+The same **20-notebook arc (nb00–nb09, nb11–nb20 — nb10, the midterm casebook, is retired: Fall 2026 has no midterm exam)** from the 4-week intensive offering is **re-paced across ~15 weeks** — notebook content is unchanged; only the calendar and surrounding project/studio structure differ. Two dates dominate the calendar: course content completes by **~Oct 30**, the **Fall Undergraduate Research Conference poster presentation is Tue Nov 17** (all students present; poster due Nov 10), and the post-poster **Poster-to-Product** build sprint (deployed dashboard/app + executive brief, funded by a Daniels Experiential Learning Grant) runs Nov 18 – Dec 11.
 
 - **Instructor:** Professor Davi Moreira
 - **Repository:** https://github.com/davi-moreira/2026F_predictive_analytics_QM474
@@ -66,7 +66,7 @@ Hits in wrapper prose (lines not starting with `>`) are fine — only blockquote
 
 ## 🚨 CRITICAL RULE — Narrative Polish Pattern (nb08 Style)
 
-Every student-notebook markdown cell follows the nb08 narrative style. This is the course's voice — applied consistently across all 21 notebooks.
+Every student-notebook markdown cell follows the nb08 narrative style. This is the course's voice — applied consistently across all 20 notebooks.
 
 **Five structural elements every student notebook has:**
 
@@ -150,7 +150,7 @@ The only acceptable output is hits in `nb14` cell 33 plus `nb18`'s Kaggle-submis
 
 **The correct answer must not be identifiable by its length or elaboration.** This actually happened in the 2026Summer offering: correct options were authored as full decisions-with-rationale while distractors stayed terse one-liners. Students discovered that "always pick the longest option" scored \~100% (correct-is-longest in 96% of quiz questions and 99.5% of midterm questions vs. 25% chance — hypothesis-tested at p < 10⁻¹²³; see `_project_docs/DECISIONS.md` Decision 11). All inherited banks were rewritten on 2026-06-12; this rule keeps it fixed.
 
-**Hard rules for every multiple-choice question (quizzes, midterm, any future exam):**
+**Hard rules for every multiple-choice question (quizzes and any future exam):**
 
 1. **Every option ≥ 60% of the length of that question's longest option.** Distractors carry their own flawed-but-specific rationale at the same elaboration and connector-word density as the correct option — wrongness comes from a real misconception, never from brevity, vagueness, or "always/never" tells.
 2. **Per bank, the correct option is strictly longest in ≤ 40% of questions** (target \~25%, chance). Vary the correct option's length rank — it must land at longest, middle, and shortest across the bank, and the longest option's position must vary.
