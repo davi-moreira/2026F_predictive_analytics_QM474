@@ -104,10 +104,13 @@ All notebooks run in Google Colab with one-click access and follow a standardize
 
 | Assessment Component | Weight |
 |---------------------|--------|
-| Participation | 5% |
-| Quizzes | 20% |
-| Kaggle Case Competition | 30% |
-| Final Project (Poster → Poster-to-Product) | 45% |
+| Attendance | 1% |
+| Participation | 4% |
+| Quizzes | 15% |
+| Midterm Exam (in class, Fri Sep 25) | 20% |
+| Kaggle Case Competition | 20% |
+| Final Project (Research Poster) | 35% |
+| Poster-to-Product | 5% |
 
 ### Project Milestones (groups of four randomly assigned members)
 

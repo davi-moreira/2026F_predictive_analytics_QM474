@@ -13,16 +13,18 @@
 
 ## The Final Project at a glance
 
-A **group capstone** (groups of four, randomly assigned) that runs the full semester and unfolds in two integrated stages:
+A **group capstone** (groups of four, randomly assigned) that runs the full semester and produces two graded deliverables:
 
-1. **Research Poster** — milestones M00 → M12, culminating in a **required** poster presentation at the **Fall 2026 Purdue Undergraduate Research Conference on Tue Nov 17, 2026** (poster due Tue Nov 10).
-2. **Poster-to-Product** — the post-conference, two-week in-class build sprint (Nov 20 – Dec 9) that converts the validated model into a stakeholder-ready dashboard/app + executive brief, with the showcase on Wed Dec 9.
+1. **Research Poster** — milestones M00 → M12, culminating in a **required** poster presentation at the **Fall 2026 Purdue Undergraduate Research Conference on Tue Nov 17, 2026** (poster due Tue Nov 10). This is the **Final Project**, 35% of the course grade.
+2. **Poster-to-Product** — the post-conference, two-week in-class build sprint (Nov 20 – Dec 9) that converts the validated model into a stakeholder-ready dashboard/app + executive brief, with the showcase on Wed Dec 9. Graded **separately** as its own 5% of the course grade.
 
-The Final Project is worth **45% of the course grade**:
+The Final Project is worth **35% of the course grade**:
 
 - **Milestone Deliverables — 40%** of the project grade. Averaged across the graded milestones (M00–M12 set). Graded for clarity, completeness, and timely submission.
 - **Peer Evaluation — 20%** of the project grade. Confidential intra-group ratings collected through a separate Brightspace assignment at the end of the course.
-- **Instructor / TA Evaluation — 40%** of the project grade. The final research poster (M10) graded against the poster rubric, together with the Poster-to-Product deliverables.
+- **Instructor / TA Evaluation — 40%** of the project grade. The final research poster (M10) graded against the poster rubric, together with the conference presentation.
+
+**Poster-to-Product** is worth **5% of the course grade**, graded 80% on the deliverables and showcase (assessed on the NACE competencies — Technology, Teamwork, Communication, Critical Thinking) and 20% on intra-group peer evaluation.
 
 **Conference presentation is required for all students** (Tue Nov 17). Professor Moreira serves as faculty mentor. Award-winning prior posters: <https://davi-moreira.github.io/applied_projects.html>. URC info: <https://www.purdue.edu/undergrad-research/conferences/index.php>.
 

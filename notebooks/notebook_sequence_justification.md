@@ -6,7 +6,7 @@ The 20 notebooks (NB00–NB09 and NB11–NB20) follow a **single-layer-at-a-time
 
 The course is organized into a **pre-course orientation** and **four weekly arcs**, each ending with a project milestone that forces students to integrate that week's skills.
 
-> **Fall 2026 note.** NB10 (the Midterm Casebook) retired from the arc when the midterm exam was dropped, leaving **20** notebooks. The four arcs below describe the conceptual sequence, not calendar weeks: Fall 2026 re-paces the same arc across \~15 weeks, with Monday and Wednesday carrying content and every Friday reserved as a poster and/or competition studio — the one exception is Fri Aug 28, which carries NB02.
+> **Fall 2026 note.** NB10 (the Midterm Casebook) stays retired from the arc — the Fall 2026 midterm is an in-class paper exam (Fri Sep 25) built directly from the 2026Summer case bank, so no casebook notebook stages it — leaving **20** notebooks. The four arcs below describe the conceptual sequence, not calendar weeks: Fall 2026 re-paces the same arc across \~15 weeks, with Monday and Wednesday carrying content and every Friday reserved as a poster and/or competition studio — the exceptions are Fri Aug 28, which carries NB02, and Fri Sep 25, which hosts the in-class midterm exam.
 
 ---
 
@@ -49,7 +49,7 @@ The course is organized into a **pre-course orientation** and **four weekly arcs
 | **08** Cross-Validation | StratifiedKFold, cross_val_score, cross_validate | Replaces the fragile single train/val split with reliable, low-variance estimates. Students must understand standalone CV before NB09 embeds it inside grid search. |
 | **09** Tuning & Feature Engineering | GridSearchCV, RandomizedSearchCV, project baseline scaffold | Integration notebook — brings together pipelines, metrics, CV, and tuning into a single workflow. Provides the baseline report template the project baseline depends on, and closes the arc. Project baseline due. |
 
-> **NB10 retired.** The Midterm Casebook used to close this arc with a strategic-reasoning assessment — "Given this business problem, what's the target? metric? split? leakage risk?" When the midterm exam was dropped for Fall 2026, the notebook retired with it. NB09's Toolkit Recap now carries the consolidation, and the Friday studios carry the applied strategy practice.
+> **NB10 retired.** The Midterm Casebook used to close this arc with a strategic-reasoning assessment — "Given this business problem, what's the target? metric? split? leakage risk?" For Fall 2026 that assessment is the in-class paper midterm (Fri Sep 25), administered directly from the 2026Summer case bank, so the casebook stays retired. NB09's Toolkit Recap carries the consolidation, and the exam carries the applied strategy assessment.
 
 **Arc logic:** New task type → New metrics → Reliable comparison → Integration.
 

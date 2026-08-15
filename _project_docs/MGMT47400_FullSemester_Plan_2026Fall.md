@@ -8,7 +8,7 @@
 **AI support:** students use **Gemini inside Colab** for guided "vibe coding" (draft → verify → document).
 **Course center of gravity:** supervised predictive modeling in Python (ISLP-with-Python style), delivered through an applied team project that culminates in a **research poster** and a **Poster-to-Product** build sprint.
 
-> **Re-pacing note.** This plan re-paces **20 notebooks** (nb00–nb09 and nb11–nb20) from the 4-week intensive offering across a **full ~15-week Fall semester**. **nb10 (the midterm casebook) retires from the arc together with the midterm exam**, which Fall 2026 does not administer. The notebook *content is unchanged* — only the calendar anchoring and the surrounding studio/milestone/project structure are new. **Mondays and Wednesdays carry the course content; every Friday is a studio session for the poster and/or the Course Case Competition** — the one exception is Fri Aug 28, which carries nb02. Everything the 4-week plan expressed as "Day N / 112.5 min/day / 20 business days" is replaced by Fall MWF sessions.
+> **Re-pacing note.** This plan re-paces **20 notebooks** (nb00–nb09 and nb11–nb20) from the 4-week intensive offering across a **full ~15-week Fall semester**. **nb10 (the midterm casebook) stays retired from the arc** — Fall 2026 administers an **in-class paper midterm exam (Fri Sep 25, 20%)** built directly from the 2026Summer case bank, so no casebook notebook stages it. The notebook *content is unchanged* — only the calendar anchoring and the surrounding studio/milestone/project structure are new. **Mondays and Wednesdays carry the course content; every Friday is a studio session for the poster and/or the Course Case Competition** — the exceptions are Fri Aug 28, which carries nb02, and Fri Sep 25, which hosts the in-class midterm exam. Everything the 4-week plan expressed as "Day N / 112.5 min/day / 20 business days" is replaced by Fall MWF sessions.
 
 ---
 
@@ -42,20 +42,21 @@ Each notebook follows the course loop: **Concept + demo → PAUSE-AND-DO practic
 
 | Assessment | Weight |
 |---|---:|
-| Participation | 5% |
-| Quizzes | 20% |
-| Course Case Competition (Kaggle) | 30% |
-| Final Project (Poster → Poster-to-Product) | 45% |
+| Attendance | 1% |
+| Participation | 4% |
+| Quizzes | 15% |
+| Midterm Exam (in class, Fri Sep 25) | 20% |
+| Course Case Competition (Kaggle) | 20% |
+| Final Project (Research Poster) | 35% |
+| Poster-to-Product | 5% |
 
-**There is no midterm and no final exam in Fall 2026.** The 20% the midterm carried in earlier offerings is redistributed to the two applied assessments — **+10 points to the Course Case Competition** and **+10 points to the Final Project** — so the semester is evaluated on work students actually build. Participation and Quizzes are unchanged.
+**Fall 2026 administers an in-class midterm and no final exam.** The **Midterm Exam (20%)** is a paper exam held during class on **Fri Sep 25**, covering nb00–nb09; it is built directly from the 2026Summer 14-case bank (per case form: 14 MC questions, five alternatives each, \~42 minutes at 3 min/question). The applied assessments carry the rest of the semester: **Course Case Competition 20%** and **Final Project 35%**, with **Poster-to-Product graded as its own 5% line**, plus Attendance 1%, Participation 4%, and Quizzes 15%.
 
-**Course Case Competition (30%)** — the semester-long Kaggle competition (details below), worked in the Friday studios and concluded over the Thanksgiving-week online block.
+**Course Case Competition (20%)** — the semester-long Kaggle competition (details below), worked in the Friday studios and concluded over the Thanksgiving-week online block; graded 20/60/20 (team participation / leaderboard / intra-team peer evaluation — the peer-evaluation slice is 4 points of the course grade).
 
-**Final Project (45%)** now spans **two integrated stages of one project**:
-1. **Research Poster** — the applied predictive-analytics project (milestones M00–M12), presented at the **URC on Nov 17**.
-2. **Poster-to-Product** — the post-poster, two-week in-class build sprint that converts the validated model into a **stakeholder-ready dashboard/app + executive brief**, with corporate-partner feedback and a final showcase. (P2P is the post-poster phase of the Final Project, not a separate top-level grade.)
+**Final Project (35%)** — the applied predictive-analytics project (milestones M00–M12), presented as a **research poster at the URC on Nov 17**. Graded 40/20/40 as in the Summer offering: milestone deliverables / intra-group peer evaluation (7 points of the course grade) / instructor–TA evaluation of the poster and presentation.
 
-Final-project grade composition (see Brightspace syllabus for exact splits): milestone deliverables, poster + P2P deliverables (deployed app + executive brief + showcase), intra-group peer evaluation, and instructor/TA evaluation. P2P is assessed on the **NACE competencies** — Technology, Teamwork, Communication, Critical Thinking — via rubric.
+**Poster-to-Product (5%)** — the post-poster, two-week in-class build sprint that converts the validated model into a **stakeholder-ready dashboard/app + executive brief**, with corporate-partner feedback and a final showcase. Now a **separate top-level grade line**: 80% deliverables + showcase assessed on the **NACE competencies** — Technology, Teamwork, Communication, Critical Thinking — via rubric, and 20% intra-group peer evaluation (1 point of the course grade).
 
 ---
 
@@ -108,7 +109,7 @@ Unit 1 — REGRESSION
 
 Unit 2 — CLASSIFICATION
   06 LogReg → 07 Clf Metrics → 08 Cross-Validation → 09 Tuning+FE+Leakage
-  (M06 Baseline in this unit; nb10 retired with the midterm exam)
+  (M06 Baseline in this unit; the in-class midterm — Fri Sep 25 — closes this unit's toolkit; nb10, the old midterm casebook, stays retired)
 
 Unit 3 — ENSEMBLES + SELECTION
   11 Trees → 12 Random Forests → 13 Gradient Boosting → 14 Selection + Test-Set Ceremony → 15 M03 Walkthrough
@@ -118,7 +119,7 @@ Unit 4 — DELIVERY
   16 Time Series → 17 Communication/Poster Design → 18 Competition Workflow → 19 Deep Learning → 20 Course Wrap
 ```
 
-**Delivery is sequenced out of diagram order to serve the calendar.** The *conceptual* dependency chain above is unchanged, but the delivery notebooks move: **nb18 (Competition Workflow) is pulled forward to Fri Sep 25**, right after nb09, so the Kaggle competition has a real submission pipeline from week 5 — then **revisited Fri Oct 23**, once random forests, gradient boosting, and the nb14 selection protocol are taught and the champion model can be pushed through that pipeline. **nb17 (Communication & Poster Design) lands in week 10 (Mon Oct 26)**, immediately before poster production begins, and **nb15 (M03 walkthrough, Fri Oct 30) and nb20 (course wrap, Fri Nov 6)** are folded into Friday studios. **nb14 keeps its in-person Wed Oct 7 slot** — the test-set ceremony is a live event.
+**Delivery is sequenced out of diagram order to serve the calendar.** The *conceptual* dependency chain above is unchanged, but the delivery notebooks move: **nb18 (Competition Workflow) lands on Mon Oct 19**, once random forests, gradient boosting, and the nb14 selection protocol are taught and the champion model can be pushed through the submission pipeline — while **Fri Sep 25, right after nb09 closes the mid-course toolkit, hosts the in-class midterm exam**. **nb17 (Communication & Poster Design) lands in week 10 (Mon Oct 26)**, immediately before poster production begins, and **nb15 (M03 walkthrough, Fri Oct 30) and nb20 (course wrap, Fri Nov 6)** are folded into Friday studios. **nb14 keeps its in-person Wed Oct 7 slot** — the test-set ceremony is a live event.
 
 The CV-first / test-set-lock discipline is preserved exactly: cross-validation is the evaluation spine from nb08 onward, the test set stays locked until nb14's one-shot ceremony, and nb18's Kaggle-submission demo is the only other authorized use of a locked test file. *(See `CLAUDE.md` for the full CV-first rule and `scripts/audit_cv_first.py`.)*
 
@@ -161,7 +162,7 @@ Legend: **nbNN** = notebook anchored that session · Mode = *In person* / *Studi
 |---|---|---|
 | Mon Sep 21 | In person | **nb08** Cross-Validation & Model Comparison |
 | Wed Sep 23 | In person | **nb09** Tuning + Feature Engineering + Leakage Detection |
-| Fri Sep 25 | Studio | **nb18** Competition Workflow & Kaggle Submission — competition studio · **M02 Outline due Sun Sep 27** |
+| Fri Sep 25 | In person | **MIDTERM EXAM** — on paper, during class time, covering nb00–nb09 · **M02 Outline due Sun Sep 27** |
 
 ### Week 6 — Sep 28–Oct 2 · Ensembles I
 | Date | Mode | Session |
@@ -187,7 +188,7 @@ Legend: **nbNN** = notebook anchored that session · Mode = *In person* / *Studi
 ### Week 9 — Oct 19–23 · Competition packaging + deep learning
 | Date | Mode | Session |
 |---|---|---|
-| Mon Oct 19 | In person | **nb18 second pass (full coverage)** — random forest / gradient boosting / nb14's champion protocol into the submission pipeline |
+| Mon Oct 19 | In person | **nb18 (full coverage)** — random forest / gradient boosting / nb14's champion protocol into the submission pipeline |
 | Wed Oct 21 | In person | **nb19** Deep Learning |
 | Fri Oct 23 | Group Work | Group Work: Final Project/Competition · **M08 Complex Models due Sun Oct 25** |
 
@@ -203,7 +204,7 @@ Legend: **nbNN** = notebook anchored that session · Mode = *In person* / *Studi
 |---|---|---|
 | Mon Nov 2 | Studio | Poster production — figure revision from peer feedback |
 | Wed Nov 4 | Studio | Poster production — narrative and assembly |
-| Fri Nov 6 | Studio | **nb20** course closeout brief + final poster QA + Kaggle leaderboard push — **all 20 notebooks covered** |
+| Fri Nov 6 | Studio | Final poster QA + Kaggle leaderboard push |
 
 ### Week 12 — Nov 9–13 · Poster submission + presentation prep
 | Date | Mode | Session |
@@ -241,7 +242,7 @@ Legend: **nbNN** = notebook anchored that session · Mode = *In person* / *Studi
 | Wed Dec 9 | Showcase | **P2P SHOWCASE** — partners + feedback |
 | Fri Dec 11 | In person | Course wrap — peer evaluation + reflection survey (Kaggle already concluded Nov 29) |
 
-**Finals week (Dec 14–19):** no final exam and no midterm in Fall 2026; the week is a buffer for late deliverables and grading.
+**Finals week (Dec 14–19):** no final exam in Fall 2026 (the midterm was held in class on Fri Sep 25); the week is a buffer for late deliverables and grading.
 
 ### Comparison with Fall 2025 pacing (what changed and why)
 
@@ -249,10 +250,10 @@ The Fall 2025 offering (`_syllabus/2025F/mgmt474_fall2025_schedule.md`) spread ~
 
 - **All content finishes before the conference** — lecture content completes **Mon Oct 26** (nb17) and the last notebook, **nb20**, lands in the **Fri Nov 6** studio, instead of running into December. The poster needs the full toolkit (incl. nb19 deep learning) in hand by early November.
 - **Kaggle concludes Nov 29** (≈ 2025F's Nov 30) via an **online work session on Mon Nov 23** before Thanksgiving, so December is a clean Poster-to-Product runway.
-- **No midterm.** Fall 2026 drops the midterm exam and retires **nb10 (the midterm casebook)** with it, leaving a **20-notebook arc**. The exam's 20% moves to the applied work: **Course Case Competition 30%**, **Final Project 45%**.
-- **Every Friday is a studio.** Mondays and Wednesdays carry the content; Fridays are dedicated poster and/or competition working sessions (the one exception is Fri Aug 28, which carries nb02). That guarantees the project and the competition weekly class time instead of leaving them to homework — and it is what the dropped midterm slots paid for.
+- **An in-class midterm, one Friday.** Fall 2026 administers a **paper midterm (20%) on Fri Sep 25**, built directly from the 2026Summer 14-case bank; **nb10 (the midterm casebook) stays retired** — the exam needs no staging notebook. Weights: Attendance 1% / Participation 4% / Quizzes 15% / Midterm 20% / Competition 20% / Final Project 35% / Poster-to-Product 5%.
+- **Every Friday is a studio.** Mondays and Wednesdays carry the content; Fridays are dedicated poster and/or competition working sessions (the exceptions are Fri Aug 28, which carries nb02, and Fri Sep 25, which hosts the midterm). That guarantees the project and the competition weekly class time instead of leaving them to homework.
 - **Modality is simple:** every session meets **in person** except the Thanksgiving-week competition block (**Mon Nov 23** online, competition open online across the Nov 25–28 break). **nb05 stays a live lecture** (Ridge/Lasso benefits from real-time explanation) and **nb14 stays in person** (the test-set ceremony is a live event).
-- **No-lecture notebooks reclaimed for pacing:** **nb15** (M03 walkthrough) and **nb20** (course wrap) need no standalone lecture and ride inside Friday studios (Oct 30 and Nov 6), while **nb18** is pulled forward to **Fri Sep 25** and revisited **Fri Oct 23** — so the competition has a working submission pipeline early and a champion-model push late, and the heaviest notebooks breathe instead of one-per-session cramming.
+- **No-lecture notebooks reclaimed for pacing:** **nb15** (M03 walkthrough) and **nb20** (course wrap) need no standalone lecture and ride inside Friday studios (Oct 30 and Nov 6), while **nb18** lands on **Mon Oct 19**, once the ensembles and nb14's protocol give each team a champion worth packaging — so the heaviest notebooks breathe instead of one-per-session cramming.
 - **Milestone track follows the 2026F reference numbering (M00–M12)** with Fall-2025-style Sunday due dates, replacing the notebooks' internal "M1–M4" shorthand.
 
 ---

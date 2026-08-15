@@ -6,7 +6,9 @@ This file documents the rules and workflows that change Claude's behavior in thi
 
 **QM47400 — Predictive Analytics**, a full-semester course for Purdue's Daniels School of Business, **Fall 2026** (Aug 24 – Dec 11, 2026). In-person **Monday / Wednesday / Friday** class meetings, with the course's micro-videos (≤12 min) and Google Colab notebooks as the hands-on spine. Pedagogy: Concept → Demo → PAUSE-AND-DO Practice → Solution → Repeat.
 
-The same **18-notebook arc (nb00–nb09, nb11–nb14, nb16–nb19 — nb10 the midterm casebook, nb15 the milestone walkthrough, and nb20 the final-submission notebook are all retired: Fall 2026 has no midterm exam, and nb15/nb20 were dropped from delivery on 2026-08-14)** from the 4-week intensive offering is **re-paced across ~15 weeks** — notebook content is unchanged; only the calendar and surrounding project/studio structure differ. **Mondays and Wednesdays carry the notebook content; every Friday is a Group Work session for the final project and the Course Case Competition** — the only Fridays carrying a notebook are Fri Aug 28 (nb02) and Fri Sep 25 (nb18, first pass). Three anchors dominate the calendar: the last **lecture** session is **nb17 on Mon Oct 26** (nb18 is taught twice — Fri Sep 25 with linear models only and Mon Oct 19 in full — and nb19 follows on Wed Oct 21, so all eighteen are covered by Mon Oct 26), the **Fall Undergraduate Research Conference poster presentation is Tue Nov 17** (all students present; poster due Nov 10), and the post-poster **Poster-to-Product** build sprint (deployed dashboard/app + executive brief, funded by a Daniels Experiential Learning Grant) runs **Fri Nov 20 – Wed Dec 9** (Wed Nov 18 is a no-class rest day; the course wraps Fri Dec 11).
+The same **18-notebook arc (nb00–nb09, nb11–nb14, nb16–nb19 — nb10 the midterm casebook, nb15 the milestone walkthrough, and nb20 the final-submission notebook are all retired: nb10 has no staging role now that the midterm is administered from the case bank, and nb15/nb20 were dropped from delivery on 2026-08-14)** from the 4-week intensive offering is **re-paced across ~15 weeks** — notebook content is unchanged; only the calendar and surrounding project/studio structure differ. **Mondays and Wednesdays carry the notebook content; every Friday is a Group Work session for the final project and the Course Case Competition** — the only Friday carrying a notebook is Fri Aug 28 (nb02), and **Fri Sep 25 hosts the in-class paper Midterm Exam**. Three anchors dominate the calendar: the last **lecture** session is **nb17 on Mon Oct 26** (nb18 is taught once, in full, on Mon Oct 19, and nb19 follows on Wed Oct 21, so all eighteen are covered by Mon Oct 26), the **Fall Undergraduate Research Conference poster presentation is Tue Nov 17** (all students present; poster due Nov 10), and the post-poster **Poster-to-Product** build sprint (deployed dashboard/app + executive brief, funded by a Daniels Experiential Learning Grant) runs **Fri Nov 20 – Wed Dec 9** (Wed Nov 18 is a no-class rest day; the course wraps Fri Dec 11).
+
+**Assessment weights (2026-08-15):** Attendance 1% · Participation 4% · Quizzes 15% · **Midterm Exam 20%** · Course Case Competition 20% (peer evaluation is 20% of that) · Final Project 35% (peer evaluation 20% of that) · Poster-to-Product 5% (peer evaluation 20% of that). No final exam. Published in `syllabus.qmd`; rationale in `_project_docs/DECISIONS.md` Decision 13.
 
 - **Instructor:** Professor Davi Moreira
 - **Repository:** https://github.com/davi-moreira/2026F_predictive_analytics_QM474
@@ -28,6 +30,7 @@ The same **18-notebook arc (nb00–nb09, nb11–nb14, nb16–nb19 — nb10 the m
 | `scripts/audit_cv_first.py` | Run before every commit in nb09–nb19 |
 | `scripts/voice_check_guides.py` | Run before every video-guide edit |
 | `scripts/audit_answer_length.py` | Run before importing ANY quiz/exam CSV to Brightspace (MC answer-length cue gate) |
+| `_midterm_exam/2026F/README.md` | Working on the in-class paper midterm (Fri Sep 25) — bank JSON, CSVs, LaTeX sources, build script, PDFs |
 | `scripts/_distractor_rewrite_instructions.md` | Authoring/rewriting MC distractors — the full length-parity spec |
 
 **Canonical notebook reference:** `notebooks/nb01_eda_splits_student.ipynb`. Match its formatting exactly.
@@ -151,7 +154,7 @@ The only acceptable output is hits in `nb14` cells 30 + 34 (one per spine) plus 
 
 **Hard rules for every multiple-choice question (quizzes and any future exam):**
 
-1. **Every option ≥ 60% of the length of that question's longest option.** Distractors carry their own flawed-but-specific rationale at the same elaboration and connector-word density as the correct option — wrongness comes from a real misconception, never from brevity, vagueness, or "always/never" tells.
+1. **Every option ≥ 60% of the length of that question's longest option.** (Quizzes use four options; the **2026F paper midterm uses five**, so chance is 20% there and the per-bank correct-is-longest budget is measured against that.) Distractors carry their own flawed-but-specific rationale at the same elaboration and connector-word density as the correct option — wrongness comes from a real misconception, never from brevity, vagueness, or "always/never" tells.
 2. **Per bank, the correct option is strictly longest in ≤ 40% of questions** (target \~25%, chance). Vary the correct option's length rank — it must land at longest, middle, and shortest across the bank, and the longest option's position must vary.
 3. **Full authoring spec:** `scripts/_distractor_rewrite_instructions.md` (also embedded in the quiz and midterm generation plans, §4.5 and §5.6).
 
@@ -335,6 +338,6 @@ Before ending any session that touched course content:
 
 ---
 
-**Last Updated:** 2026-08-14
-**Version:** 2.0 — slimmed from 977 lines by extracting reference material into `NOTEBOOK_TEMPLATE.md`, `DECISIONS.md`, `TROUBLESHOOTING.md`, and `scripts/`. Behavior-changing rules and workflows preserved verbatim.
+**Last Updated:** 2026-08-15
+**Version:** 2.1 — slimmed from 977 lines by extracting reference material into `NOTEBOOK_TEMPLATE.md`, `DECISIONS.md`, `TROUBLESHOOTING.md`, and `scripts/`. Behavior-changing rules and workflows preserved verbatim.
 **Maintained by:** Professor Davi Moreira + AI Assistants

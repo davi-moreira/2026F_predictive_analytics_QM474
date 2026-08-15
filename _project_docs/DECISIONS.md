@@ -161,6 +161,8 @@ This document records design decisions made during course development and the re
 
 ## Decision 12: Fall 2026 — Midterm Dropped, Weights Reallocated, nb10 Retired (2026-08-14)
 
+> **Superseded in part by Decision 13 (2026-08-15):** items 1, 2, 4, and 5 below no longer hold — the midterm is reinstated in class on paper, the weights are restructured, and nb18 runs once. Item 3 (nb10/nb15/nb20 retired) and the archival mechanics stand.
+
 **Decision:** Effective with the Fall 2026 offering of QM47400:
 
 1. **The midterm exam is dropped.** There is no midterm in Fall 2026.
@@ -179,3 +181,18 @@ This document records design decisions made during course development and the re
 **Exceptions:** none. The nb10 notebook files were moved out of `notebooks/` into `_archive/2026F_retired/` for archival reference — the student copy `git mv`'d and still tracked there, the instructor copy moved alongside it and gitignored by that folder's own `.gitignore` — and are not taught, scheduled, or assessed in Fall 2026.
 
 **Implication:** Decision 11 (MC option-length parity) remains fully in force — it now governs the quizzes and any future exam rather than a midterm. Grade weights are published in `syllabus.qmd`; the session-by-session sequence is in `schedule.qmd` and `_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md`. Milestone due dates are unchanged by this decision (M00 Sep 6 through M11/M12 Nov 15).
+
+---
+
+## Decision 13: Fall 2026 — Midterm Reinstated In Class (Paper), Weights Restructured, nb18 Single Session (2026-08-15)
+
+**Decision:** Effective 2026-08-15, superseding Decision 12 items 1, 2, 4, and 5 (item 3 — nb10/nb15/nb20 retired — and the archival mechanics stand):
+
+1. **The midterm exam is reinstated** as an **in-person, on-paper exam during class time on Fri Sep 25**, covering nb00–nb09. It is built **directly from the 2026Summer 14-case bank** (`_midterm_exam/2026F/`): per case form, **14 MC questions** (one of the Summer fifteen dropped per case), **five alternatives each** (a fifth length-parity distractor authored per question), 3 min/question ≈ 42 minutes — under a 45-minute window. nb10 (the Midterm Casebook) **stays retired**: the exam is administered from the case bank without a staging notebook.
+2. **Weights:** Attendance 1% / Participation 4% / Quizzes 15% / **Midterm Exam 20%** / Course Case Competition 20% (20/60/20 internal split as in Summer; the peer-evaluation slice is 4 course points) / Final Project 35% (40/20/40 as in Summer; peer evaluation 7 course points) / **Poster-to-Product 5%** (80/20; peer evaluation 1 course point). Poster-to-Product becomes its own top-level grade line.
+3. **nb18 is taught once, Mon Oct 19** — the full four-model pipeline in one session. The Round 01/Round 02 split (2026-08-14) is reverted in the notebook, the schedule, nb00/nb16/nb19 bridges, and the Brightspace pages (single `18_competition_workflow.md`).
+4. **Fridays:** every Friday remains a Group Work session, with two exceptions — Fri Aug 28 (nb02) and **Fri Sep 25 (midterm exam)**.
+
+**Rationale:** instructor decision to restore a summative in-person checkpoint on the mid-course toolkit while keeping the applied-work spine. The paper format avoids the online-integrity constraints Decision 11 documented, and five alternatives per question lower the guessing floor from 25% to 20%.
+
+**Implication:** Decision 11 (MC option-length parity) applies to the 2026F midterm banks — every option ≥ 60% of the question's longest and correct-strictly-longest ≤ 40% per bank (chance is now 1/5). Grade weights are published in `syllabus.qmd`; the exam material lives in gitignored `_midterm_exam/2026F/` and syncs to the private instructor repo.

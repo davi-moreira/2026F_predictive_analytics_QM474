@@ -2,11 +2,13 @@
 
 ## About the Final Project
 
-The Final Project is a **group capstone** (groups of four randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes the milestone deliverables **M00 → M12** (numbering follows the reference docs and skips M04/M07/M13); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **45% of your overall course grade**, broken down as:
+The Final Project is a **group capstone** (groups of four randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes the milestone deliverables **M00 → M12** (numbering follows the reference docs and skips M04/M07/M13); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35% of your overall course grade**, broken down as:
 
 - **Milestone Deliverables — 40%** of the project grade. Averaged across the graded milestones (the M00–M12 set; see `final_project_milestone_reference.md`). Graded for clarity, completeness, and timely submission.
 - **Peer Evaluation — 20%** of the project grade. Confidential intra-group ratings collected through a separate Brightspace assignment at the end of the course.
-- **Instructor / TA Evaluation — 40%** of the project grade. The final research poster (Milestone 10), graded against the poster rubric, together with the Poster-to-Product deliverables.
+- **Instructor / TA Evaluation — 40%** of the project grade. The final research poster (Milestone 10) and the conference presentation, graded against the poster rubric.
+
+The post-conference **Poster-to-Product** build sprint is a separate **5%** of the course grade (80% deliverables + showcase on the NACE competencies, 20% intra-group peer evaluation).
 
 Presentation at the **Fall 2026 Purdue Undergraduate Research Conference (Tue Nov 17)** is **required for all students** (poster due Tue Nov 10). Professor Moreira serves as faculty mentor. Award-winning prior posters from this course: <https://davi-moreira.github.io/applied_projects.html>. Additional information about Purdue undergraduate research conferences: <https://www.purdue.edu/undergrad-research/conferences/index.php>.
 

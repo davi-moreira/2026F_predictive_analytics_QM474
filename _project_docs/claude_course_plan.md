@@ -26,9 +26,9 @@ in person **Monday / Wednesday / Friday**.
 
 | | |
 |---|---|
-| **Arc** | **20 notebooks** — nb00–nb09 and nb11–nb20. nb10 (Midterm Casebook) retired with the midterm. |
+| **Arc** | **20 notebooks** — nb00–nb09 and nb11–nb20. nb10 (Midterm Casebook) stays retired — the Fall 2026 midterm is an in-class paper exam built directly from the 2026Summer case bank. |
 | **Session structure** | Monday and Wednesday carry notebook content. **Every Friday is a poster and/or Course Case Competition studio** — the single exception is **Fri Aug 28**, which carries nb02. |
-| **Assessment** | Participation 5% · Quizzes 20% · Course Case Competition (Kaggle) 30% · Final Project 45%. **No midterm, no final exam.** |
+| **Assessment** | Attendance 1% · Participation 4% · Quizzes 15% · Midterm Exam 20% (in class, Fri Sep 25) · Course Case Competition (Kaggle) 20% · Final Project 35% · Poster-to-Product 5%. **No final exam.** |
 | **Last lecture** | **Mon Oct 26** (nb17). The remaining two notebooks, nb15 and nb20, are delivered inside the Friday poster studios on **Oct 30** and **Nov 6**. |
 | **Two fixed dates** | Final poster (M10) due **Tue Nov 10**; Undergraduate Research Conference presentation **Tue Nov 17**, required of every student. |
 | **After the conference** | Poster-to-Product build sprint **Fri Nov 20 – Wed Dec 9**; Kaggle closes **Sun Nov 29**; course wrap **Fri Dec 11**. |
@@ -63,11 +63,11 @@ Each notebook builds exactly one conceptual layer, assumes only what prior noteb
 | 15 | Final Project Milestone 03 Walkthrough — Complex Model + Hyperparameter Tuning + Draft Abstract | **Markdown-only walkthrough** (no code, no PAUSE-AND-DO) — companion read for the `milestone_03_complex_model_and_abstract.md` rubric | 14 (champion committed), 09 (hyperparameter tuning), 08 (CI-overlap rule) | 16 (time-series CV splitter pivot) | Same shape as nb05 §6/§7. Sections map directly to the M3 rubric: §0 Prediction Goals, §1a Baseline Replication (M2) with 95% CI, §1b Complex Model + Tuning + CI-overlap rule + final-training step on the full training fold (with random_state locked so M4 reproduces the same fitted Pipeline), §1c Required Visualizations, §2 Draft Abstract (~250 words), Course Case Competition (Kaggle Bank Churn) alignment, and Tips and Common Pitfalls. **No Interpretation, Calibration, or Decision-Quality content.** |
 | 16 | Time-Series Forecasting | TimeSeriesSplit, lag features (`pd.shift`), LinearRegression | 15 (closes static-classification arc), 08 (CV CIs), 14 (locked-test ceremony pattern) | 17 (forecast as a candidate poster figure) | Forecasting ≠ generic supervised: never shuffle, walk-forward CV, lag features, three-baseline comparison (naive / seasonal-naive / linear-with-lags) on identical CV folds, one-shot opening of the locked test window. |
 | 17 | Data Communication & Poster Design (formerly nb19) | — (markdown/narrative, no new libraries) | 15+16 (headline numbers, CV-CI, locked-test verdict, forecast comparison) | 20 (poster + abstract feed M4) | Six principles applied to the eleven-section URC poster architecture; chart audit + outline + 120–150-word abstract drafted in studio. **Fall 2026:** taught in week 10, Mon Oct 26, as the last content session — every headline number the poster reports already exists by then, and the deadline (M10, Tue Nov 10) and the URC presentation (Tue Nov 17) follow immediately. |
-| 18 | Competition Workflow & Kaggle Submission | ColumnTransformer, Pipeline, GradientBoostingClassifier, joblib, pandas.to_csv | 09 (full pipeline + tuning template) | 19 (gradient-boosted tabular champion as the comparison anchor for DL) | End-to-end production pipeline for the Bank Churn case competition: `train_pipeline` / `predict_pipeline` refactor → `joblib` save/load → `submission.csv` with exact Kaggle column names. The Kaggle test set is unlabeled — `predict_proba(X_test)` is production prediction, not model evaluation (audit_cv_first.py exception). **Fall 2026:** taught early, Fri Sep 25, as the first competition studio once the classification arc closes, then revisited Fri Oct 23 once random forests, gradient boosting, and nb14's selection protocol give each team a champion worth packaging. |
+| 18 | Competition Workflow & Kaggle Submission | ColumnTransformer, Pipeline, GradientBoostingClassifier, joblib, pandas.to_csv | 09 (full pipeline + tuning template) | 19 (gradient-boosted tabular champion as the comparison anchor for DL) | End-to-end production pipeline for the Bank Churn case competition: `train_pipeline` / `predict_pipeline` refactor → `joblib` save/load → `submission.csv` with exact Kaggle column names. The Kaggle test set is unlabeled — `predict_proba(X_test)` is production prediction, not model evaluation (audit_cv_first.py exception). **Fall 2026:** taught Mon Oct 19, once random forests, gradient boosting, and nb14's selection protocol give each team a champion worth packaging; the Fri Sep 25 slot right after nb09 hosts the in-class midterm exam. |
 | 19 | Deep Learning | PyTorch (`torch`/`torchvision`) for the §4 FashionMNIST lab; `sklearn.neural_network.MLPClassifier`/`MLPRegressor` for the §5 comparison against nb14's champions; **Hugging Face `transformers`** for the §6 LLM lab (sentiment + zero-shot pipelines); `requests` for the optional Purdue GenAI Studio API call; figures from `notebooks/figures/` | 18 (gradient-boosted tabular champion) | 20 (course-end horizon module) | Awareness + hands-on module: historical arc, frameworks, MLP / CNN / RNN / Transformer structural inventions, **end-to-end PyTorch training on FashionMNIST**, four-question rubric for "is DL right for this problem?", an honest deep-learning-vs-nb14-champion comparison on both business cases (Breast Cancer classification and California Housing regression) with cross-validation confidence-interval plots and per-case verdicts, and a **special topic + hands-on lab on Large Language Models (LLMs)** — run a sentiment classifier and a zero-shot ticket router with no API key, then optionally call a hosted model via Purdue GenAI Studio. Designed for business-undergrad audience. |
 | 20 | Course End and Reflection | — (audit + review + survey link) | 19 (awareness arc closed) | — (last) | Self-audit, M4 poster + Kaggle submission + intra-group peer evaluation, postmortem, **course-end Reflection Survey** (10–15 min on Brightspace, required for completion). |
 
-> **NB10 retired (Fall 2026).** The Midterm Casebook + Cheat Sheet left the arc when the midterm exam was dropped. The Fall course covers **twenty** notebooks — nb00–nb09 and nb11–nb20.
+> **NB10 retired (Fall 2026).** The Midterm Casebook + Cheat Sheet stays out of the arc: the Fall midterm (in class, Fri Sep 25) is administered directly from the 2026Summer case bank, so no casebook notebook stages it. The Fall course covers **twenty** notebooks — nb00–nb09 and nb11–nb20.
 
 ### Conceptual order vs. Fall delivery order
 
@@ -96,22 +96,22 @@ and therefore belong on Fridays.
 | nb06 | Mon Sep 14 | |
 | nb07 | Wed Sep 16 | Classification arc closes here |
 | nb08 | Mon Sep 21 | |
-| nb09 | Wed Sep 23 | Single session — the Fri Sep 25 studio is its applied follow-up |
-| **nb18** | **Fri Sep 25** | *Out of conceptual order.* First pass — competition workflow with linear models only, once the classification arc closes and CV + tuning are in hand |
+| nb09 | Wed Sep 23 | Single session — the Fri Sep 25 midterm covers the toolkit it closes |
+| **Midterm Exam** | **Fri Sep 25** | In class, on paper — 14 MC questions per case form on nb00–nb09, built from the 2026Summer case bank |
 | nb11 | Mon Sep 28 | |
 | nb12 | Wed Sep 30 | |
 | nb13 | Mon Oct 5 | |
 | nb14 | Wed Oct 7 | Test-set ceremonies — taught in person, deliberately |
 | nb16 | Wed Oct 14 | First session after fall break (Oct 12–13) |
-| **nb18 second pass** | **Mon Oct 19** | Full coverage — random forests, boosting, and nb14's champion protocol swapped into the submission pipeline |
+| **nb18** | **Mon Oct 19** | *Out of conceptual order.* Full coverage — random forests, boosting, and nb14's champion protocol in the submission pipeline |
 | nb19 | Wed Oct 21 | |
 | **nb17** | **Mon Oct 26** | *Out of conceptual order.* Last lecture — every headline number the poster reports already exists |
 
 **Why the three deviations are safe.** nb17 has no upstream dependency at all (it forward-references
 nb18 only), so it can sit anywhere; placing it last puts poster design immediately before the poster
-block. nb18 depends on the classification arc for its logistic baseline, which is why Fri Sep 25 is the
-earliest slot it can occupy — its ensemble section (LASSO / random forest / gradient boosting) runs with
-a logistic + LASSO slate on Sep 25 and gets the full roster at the Oct 23 revisit. nb15 depends on nb14,
+block. nb18 depends on the classification arc for its logistic baseline and on nb11–nb14 for its ensemble
+section (LASSO / random forest / gradient boosting) and champion protocol, which is why Mon Oct 19 —
+after nb14 and nb16 — is its slot: the full roster runs in a single session. nb15 depends on nb14,
 which is satisfied by a three-week margin.
 
 **Known drift, flagged not fixed.** nb15's row above references the Summer milestone file

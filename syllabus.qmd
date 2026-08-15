@@ -68,20 +68,35 @@ As part of a university-wide initiative, the Business School has adopted an **Of
 
 | **Assessment**                    | **Weight** |
 |-----------------------------------|-----------:|
-| Participation                     |         5% |
-| Quizzes                           |        20% |
-| Course Case Competition (Kaggle)  |        30% |
-| Final Project                     |        45% |
+| Attendance                        |         1% |
+| Participation                     |         4% |
+| Quizzes                           |        15% |
+| Midterm Exam                      |        20% |
+| Course Case Competition (Kaggle)  |        20% |
+| Final Project                     |        35% |
+| Poster-to-Product                 |         5% |
 
-### Participation (5%)
+### Attendance (1%)
+
+Attendance is essential for success in this course. If you do not attend class regularly, you are unlikely to succeed. According to the [University regulations](https://catalog.purdue.edu/content.php?catoid=15&navoid=18634#classes){target="_blank"}, "Scheduled courses allow students to avoid conflicts and reflect the University's expectation that students should be present for every meeting of a class/laboratory for which they are registered." Attendance is recorded in class, and these records are reflected in your gradebook at the end of the semester. A minimum attendance rate of **85%** is required to meet the expectations of this course.
+
+### Participation (4%)
 
 You are required to complete participation activities (e.g., surveys, instructor requests) and all participatory PAUSE-AND-DO exercises embedded in the lecture materials. You must submit the corresponding Jupyter Notebook (`.ipynb`) containing your completed work to the course Brightspace site by the stated deadline. Your participation grade is assessed based on completeness and timeliness of these notebook submissions, with no participatory activity dropped.
 
-### Quizzes (20%)
+### Quizzes (15%)
 
 Short quizzes based on lecture and notebook content promote consistent engagement with the course material. Quizzes contribute to the final course grade with no quiz dropped. Due dates are clearly outlined on Brightspace and aligned with the course schedule. Quizzes are designed to reinforce understanding and ensure steady progress through the curriculum.
 
-### Course Case Competition — Kaggle (30%)
+### Midterm Exam (20%)
+
+The midterm exam wraps up the foundational concepts of the course in a comprehensive assessment. It is held **in person, on paper, during class time on Friday, September 25, 2026**, and covers the material through `nb09` — problem framing, exploratory data analysis, data splitting, preprocessing pipelines, regression and classification metrics, baselines, regularization, logistic regression, cost-based thresholds, cross-validation with 95% confidence intervals, hyperparameter tuning, and leakage detection.
+
+The exam is a **business case**: you take the role of the manager responsible for a predictive model, and each question puts you inside a decision that arises during model development — an analyst proposes a feature, a cross-validation result lands, a metric drops, a leakage signature appears. You have **14 multiple-choice questions with five alternatives each**, and **45 minutes** of class time to complete them (about 3 minutes per question). The exam is **closed book**, and **no AI tools, notes, or electronic devices** are permitted.
+
+Only under exceptional circumstances, when legitimate and verifiable reasons are provided, will make-ups be given. "Exceptional circumstances" means a death in the family, a serious personal medical emergency, participation in a conflicting NCAA athletic event, or as otherwise required by University policies. *Except for emergencies, requests for a makeup must be made by email with supporting documentation no later than 7 days before the scheduled exam.*
+
+### Course Case Competition — Kaggle (20%)
 
 A course-long predictive analytics competition hosted on Kaggle. The **Fall 2026 QM47400 Case Competition: Bank Churn** is adapted from the 2024 Kaggle Playground Series, which uses AI-generated synthetic data designed for educational purposes. Your task is to build models that predict whether a customer continues with their account or closes it (churn). **Students are randomly assigned to teams (up to four members)** and have a limit of **five Kaggle submissions per day**. The competition **opens August 24, 2026**; we hold an **online work session on Monday, November 23**, and the **final submission deadline is Sunday, November 29, 2026** (before the Thanksgiving break ends). Kaggle automatically evaluates submissions and maintains the leaderboard throughout the competition period.
 
@@ -100,22 +115,28 @@ Two **−10 point** penalties apply to the team total: a Kaggle team name that i
 
 **Brightspace deliverable:** Submit the complete code for your best-performing model. The code must be fully replicable, allowing the instructor and TA to reproduce the same results and performance metrics. Include all necessary steps: data preprocessing, feature engineering, model training, evaluation, and generation of the submission file.
 
-### Final Project (45%)
+### Final Project (35%)
 
-In **groups of four randomly assigned members**, students complete a practical predictive analytics project that unfolds in **two integrated stages**: a **final research poster** and a **Poster-to-Product** build sprint.
+In **groups of four randomly assigned members**, students complete a practical predictive analytics project culminating in a **research poster** presented at the Undergraduate Research Conference. The post-conference **Poster-to-Product** build sprint is graded separately (see below).
 
-**Stage 1 — Research Poster.** Each group builds an end-to-end predictive analytics project across the M00–M12 milestone track and presents the resulting poster at the **Fall 2026 Purdue Undergraduate Research Conference on Tuesday, November 17, 2026**. **Presentation at the conference is required for all students.** The final poster is due **one week before the conference (Tuesday, November 10, 2026)**. Professor Moreira serves as faculty mentor throughout.
+Each group builds an end-to-end predictive analytics project across the M00–M12 milestone track and presents the resulting poster at the **Fall 2026 Purdue Undergraduate Research Conference on Tuesday, November 17, 2026**. **Presentation at the conference is required for all students.** The final poster is due **one week before the conference (Tuesday, November 10, 2026)**. Professor Moreira serves as faculty mentor throughout.
 
-**Stage 2 — Poster-to-Product.** After the conference, groups enter a **two-week in-class build sprint** that converts the validated model into a **stakeholder-ready dashboard/app plus an executive brief**, following an industry product workflow (scope → data engineering → model validation → UX → deployment → usability test → showcase). Each team works with an assigned AI assistant under human-in-the-loop sign-offs and receives feedback from industry/nonprofit partners, culminating in a **showcase (early December)**. Poster-to-Product is assessed on the **NACE competencies** — Technology, Teamwork, Communication, and Critical Thinking — via rubric. *(This experiential capstone is supported by a Daniels School Experiential Learning Grant.)*
+**Grading breakdown (of the final-project grade):**
 
-**Grading breakdown (of the final-project grade):** Review the course syllabus available on the Course Brightspace page for details.
-
-1.  **Milestone Deliverables** (M00–M12; numbering follows the [Final Project milestone reference](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/tree/main/_final_project/2026F) and skips M04/M07/M13). Due dates are listed on the [Schedule](./schedule.qmd).
-2.  **Poster + Poster-to-Product deliverables** (deployed app + executive brief + showcase).
-3.  **Peer Evaluation.**
-4.  **Instructor / TA Evaluation.**
+1.  **Milestone Deliverables (40%):** Incremental submissions across the M00–M12 milestone track (numbering follows the [Final Project milestone reference](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/tree/main/_final_project/2026F) and skips M04/M07/M13). Due dates are listed on the [Schedule](./schedule.qmd).
+2.  **Peer Evaluation (20%):** A confidential intra-group evaluation of each member's contribution, ensuring balanced participation and collaborative accountability.
+3.  **Instructor / TA Evaluation (40%):** Evaluation of the final poster and the conference presentation.
 
 Additional information about Purdue undergraduate research conferences: <https://www.purdue.edu/undergrad-research/conferences/index.php>{target="_blank"}.
+
+### Poster-to-Product (5%)
+
+After the conference, groups enter a **two-week in-class build sprint** that converts the validated model into a **stakeholder-ready dashboard/app plus an executive brief**, following an industry product workflow (scope → data engineering → model validation → UX → deployment → usability test → showcase). Each team works with an assigned AI assistant under human-in-the-loop sign-offs and receives feedback from industry/nonprofit partners, culminating in a **showcase on Wednesday, December 9, 2026**. *(This experiential capstone is supported by a Daniels School Experiential Learning Grant.)*
+
+**Grading breakdown (of the Poster-to-Product grade):**
+
+1.  **Deliverables and Showcase (80%):** The deployed dashboard/app, the executive brief, and the showcase presentation, assessed on the **NACE competencies** — Technology, Teamwork, Communication, and Critical Thinking — via rubric.
+2.  **Peer Evaluation (20%):** A confidential intra-group evaluation of each member's contribution to the sprint.
 
 ### Grade Challenges
 
@@ -143,7 +164,7 @@ To challenge an assignment score:
 
 I encourage you to use AI tools you believe will enhance your individual or group learning performance. Learning to use AI is a valuable and emerging skill, and I am available to provide support during office hours or by appointment. Be aware of the following guidelines:
 
--   You are **not allowed to use AI tools while taking quizzes**.
+-   You are **not allowed to use AI tools while taking quizzes or the midterm exam**. The midterm is a closed-book, in-person paper exam: no AI tools, notes, or electronic devices.
 -   Providing low-effort prompts will result in low-quality outputs. Refine your prompts to achieve desirable outcomes — use the course knowledge for that.
 -   Use AI to **support your learning**: ask for explanations, examples, or clarifications of doubts; **do not** simply ask for solutions.
 -   **Do not blindly trust the information** provided by the output. Any errors or omissions resulting from your use of an AI tool are your responsibility. AI works better for topics you already understand.
