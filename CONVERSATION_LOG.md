@@ -2207,3 +2207,55 @@ All committed + pushed. Left untouched: user's in-progress `_final_project/2026S
 - Gate machinery under gitignored `_adm_stuff/_instructor_page/`: `encrypt_instructor_page.py` (stdlib AES-256-GCM + PBKDF2 250k, 22-check self-test PASSED), `postrender.sh` (fail-closed Quarto post-render, wired in `_quarto.yml`), `sync_instructor_repo.sh` (mirrors material; hard-stops unless target PRIVATE), `pre-commit` guard (installed to .git/hooks; blocks plaintext instructor.html, the source qmd, the password file, or any staged file containing the password), `page_password.txt` (chmod 600).
 - Verified end-to-end: rendered gate carries the `qm474-encrypted-page v1` marker with zero plaintext instructor strings; correct password decrypts (Python replay of the WebCrypto path), wrong password rejected by the GCM tag; `docs/search.json` has zero gated-page entries; sync pushed 201 files to the private repo.
 - CLAUDE.md: new CRITICAL WORKFLOW section + session-end checklist item (sync after instructor-material edits).
+
+## Session — 2026-08-15: Reinstate in-class midterm, restructure weights, correct the CV-inference spine
+
+**Midterm reinstated.** Fri Sep 25 becomes an in-person paper exam (20%), built from the 2026Summer
+14-case bank into gitignored `_midterm_exam/2026F/`: **15 MC questions per case form, five
+alternatives each, 45 min**, print-ready PDFs (student paper + instructor key with per-question
+rationales). New tooling: `build_midterm.py` (JSON → CSV + LaTeX + PDF, seeded balanced option
+re-deal so no letter or length rank is over-represented), `validate_banks.py`, `check_pdfs.py`,
+`apply_corrections.py`. nb18 reverts to a single full session on Mon Oct 19 (the Round 01/02 split of
+2026-08-14 is undone in the notebook, schedule, nb00/nb16/nb19 bridges, and Brightspace — 18a+18b
+merged into one page).
+
+**Weights restructured** (Decision 13, supersedes Decision 12 items 1/2/4/5): Attendance 1 /
+Participation 4 / Quizzes 15 / Midterm 20 / Competition 20 / Final Project 35 / Poster-to-Product 5.
+P2P becomes its own top-level line, so the 12 milestone docs, the milestone reference, README, master
+plan, course plan, CLAUDE.md and nb00's grade table all follow. Summer's internal peer-eval
+proportions preserved (20% of each component). `_syllabus/2026F/…QM474.docx` generated from the
+Summer docx with 2025F attendance language.
+
+**Review found three classes of defect.** An adversarial verification pass over all 14 banks (67
+corrections applied, 0 rejected by the guard) plus a Codex `ultra` review
+(`~/.claude/codex-reviews/…/2026-08-15_midterm-2026f-exam-material/`) surfaced: (a) mechanical —
+LaTeX macro debris in 30 questions from a two-stage escape, 36 options split across page breaks,
+non-blocking gates, a 42-vs-45-minute contradiction, all now fixed and gated; (b) content — ~39
+untaught items (nb14 ceremony on every form, nb16 time-series), ~16 false keys, no EDA item on any
+form, and the key second-longest in 108/196 items; (c) **the course's CV-inference spine is
+invalid** — nb08 claims Student's *t* compensates for dependent folds, teaches CI-overlap as a test
+of equivalence, and treats a test score inside the CV interval as proof of generalisation. Corrected
+doctrine written to `_project_docs/CV_INFERENCE_DOCTRINE.md` (paired per-fold differences,
+predeclared practical-equivalence margin, descriptive intervals); it propagates through 10 notebooks
+and 17 quiz banks.
+
+**Two unrelated teaching bugs found and fixed** (nb06, nb07): `load_breast_cancer` labels benign = 1,
+so benign is the positive class, but the prose was written as though malignant were. nb06 had the
+threshold direction reversed, a Why-This-Matters paragraph contradicting its own cell, and the
+printed confusion-matrix glosses attached to the wrong quantities. nb07 priced a false negative at
+\$50,000 as "missed cancer" and a false positive at \$1,000 — exactly reversed — and carried that into
+the Gemini prompt, so Exercise 1's cost-optimal threshold came out backwards. Both fixed
+instructor-copy-first via the new `scripts/apply_instructor_first.py`, which rejects any edit whose
+text is not found in the instructor notebook.
+
+**Instructor-first generalised.** At Davi's direction the rule in CLAUDE.md now covers every paired
+surface — notebooks, video guides, `instructor.qmd`, quiz/exam banks, Brightspace pages — each with
+its derived student artifact and the sync step. `instructor.qmd` rewritten: the midterm is no longer
+"RETIRED", with a Fall 2026 section (14 forms, PDFs, keys, build + the three gates, the
+not-equated caveat) and a CV-doctrine section. Rendered, re-encrypted, synced to the private repo.
+
+**Left for next session:** the CV-doctrine prose for the remaining 8 notebooks (294 edits authored;
+verification caught false empirical numbers in several, so they need a repair pass — and the
+notebooks discard per-fold arrays, so the new rule needs code cells, not just prose); the 17 quiz
+banks; the midterm content rebuild to 15 taught items per form (workflow killed by a session limit);
+video guides and Brightspace pages; Decision 9.
