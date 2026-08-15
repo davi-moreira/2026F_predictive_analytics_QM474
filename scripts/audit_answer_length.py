@@ -104,6 +104,13 @@ def check_file(path):
     option (so length alone can't separate options).
     """
     qs = parse_bank(path)
+    if not qs:
+        print(f"  -> FAIL: {path} parsed to zero questions")
+        sys.exit(1)
+    unkeyed = [i for i, q in enumerate(qs, 1) if not any(w > 0 for w, _ in q["options"])]
+    if unkeyed:
+        print(f"  -> FAIL: {path} has no keyed option in question(s) {unkeyed}")
+        sys.exit(1)
     fails, longest_hits = [], 0
     for i, q in enumerate(qs, 1):
         lens = [len(t) for w, t in q["options"]]
