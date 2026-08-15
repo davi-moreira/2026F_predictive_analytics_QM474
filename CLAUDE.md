@@ -167,7 +167,19 @@ python scripts/audit_answer_length.py                        # corpus-wide stati
 
 ---
 
-## 🚨 CRITICAL WORKFLOW — Instructor-First Notebook Editing
+## 🚨 CRITICAL WORKFLOW — Instructor-First Editing (ALL material)
+
+**The instructor artifact is always edited FIRST; the student-facing artifact is derived from it afterwards.** This is not a notebooks-only rule — it governs every paired surface in the course:
+
+| Edit this first | Then update this from it |
+|---|---|
+| `notebooks/nbNN_*_instructor.ipynb` | `notebooks/nbNN_*_student.ipynb` |
+| `video_guides/NN_video_lecture_guide.md` | the notebook prose it narrates |
+| `instructor.qmd` (the gated **Instructor** tab) | the public pages that link into it |
+| `_quizzes/`, `_midterm_exam/` banks + keys | the Brightspace import / printed student copy |
+| `brightspace/NN_*.md` instructor-facing plan | the published module page |
+
+After any of these, run `bash _adm_stuff/_instructor_page/scripts/sync_instructor_repo.sh` so the private companion repo matches. A student-facing file that changed without its instructor source changing first is a bug, not a shortcut.
 
 **ALWAYS edit `notebooks/nbNN_*_instructor.ipynb` FIRST, then generate the student file.**
 
