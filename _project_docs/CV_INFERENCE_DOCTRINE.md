@@ -95,3 +95,44 @@ Also carried in: `CLAUDE.md` (the CV-first rule), `_project_docs/DECISIONS.md`
 - Schenker, N., & Gentleman, J. F. (2001). On judging the significance of
   differences by examining the overlap between confidence intervals.
   *The American Statistician* 55(3). https://doi.org/10.1198/000313001317097960
+
+---
+
+## Authoring rules for anyone applying this correction
+
+A first pass at rewriting the notebooks produced 294 edits, and verification — which *executed* the
+notebooks rather than only reading them — rejected a large fraction. Every rejection fell into one of
+five patterns. Do not repeat them.
+
+**A1 — Never assert a number you have not computed.** The failed pass wrote sentences like "the
+paired fold differences never favour the forest" and "the random forest gives back about 0.007
+ROC-AUC". Both were false against the notebook's own output. If a replacement needs a specific
+figure, run the cell and read it; if you cannot run it, write the sentence so it does not depend on
+the figure ("whether the differences all point the same way is the thing to check in the output
+below"). Qualitative and correct beats quantitative and wrong.
+
+**A2 — Keep the three outcomes distinct.** C2/C3 have three, not two:
+*same sign and the gap clears the margin* = a real difference;
+*signs disagree across folds* = the comparison does not support a winner (inconclusive);
+*signs agree but the gap is under the margin* = practically equivalent, simpler model wins.
+Collapsing the middle case into "practically equivalent" rebuilds W2 in new words.
+
+**A3 — Declare the margin before the results, once, in one form.** The failed pass routed decisions
+through a "business tolerance" that appeared nowhere in the notebook, and stated the rule in three
+incompatible ways across cells. Pick one wording, introduce the margin *before* the first comparison
+that uses it, and use that same wording everywhere.
+
+**A4 — Prose and code must move together.** The notebooks keep only means and CI half-widths; the
+per-fold arrays are discarded. A rule the student cannot execute from any cell's output is not a
+rule, it is a slogan. Any notebook whose prose adopts the paired comparison must also expose the
+fold arrays and compute the differences — that is a code edit, not only a markdown edit.
+
+**A5 — Sweep the whole notebook, not the mapped cells.** W2 survived in Gemini verify checklists,
+wrap-up bullets, and monitoring cards the map did not list, one cell away from an edited paragraph.
+Search for the *wording* — overlap, statistically tied, indistinguishable, INSIDE, CI lower bound as
+a gate — and fix every instance or none.
+
+**A6 — Instructor copy first.** Per `CLAUDE.md`, the instructor notebook is the source of truth. Use
+`scripts/apply_instructor_first.py`, which applies each edit to `*_instructor.ipynb` and refuses the
+edit outright if the text is not found there. Instructor solution cells also *print* verdicts
+("CIs OVERLAP — not statistically significant"); those need the same correction as the prose.
