@@ -196,3 +196,21 @@ This document records design decisions made during course development and the re
 **Rationale:** instructor decision to restore a summative in-person checkpoint on the mid-course toolkit while keeping the applied-work spine. The paper format avoids the online-integrity constraints Decision 11 documented, and five alternatives per question lower the guessing floor from 25% to 20%.
 
 **Implication:** Decision 11 (MC option-length parity) applies to the 2026F midterm banks — every option ≥ 60% of the question's longest and correct-strictly-longest ≤ 40% per bank (chance is now 1/5). Grade weights are published in `syllabus.qmd`; the exam material lives in gitignored `_midterm_exam/2026F/` and syncs to the private instructor repo.
+
+---
+
+## Decision 14: Corrected CV-Inference Doctrine (2026-08-15)
+
+**Decision:** The course's model-comparison rule changes. Three claims previously taught from `nb08` outward are retired as false: (1) that Student's *t* compensates for dependent folds — it only corrects for estimating the SD from few samples, and because folds share training rows the naive `s/sqrt(k)` interval is *optimistic*; (2) that overlapping marginal 95% CIs show two models are statistically indistinguishable — marginal-interval overlap is not a test of the paired difference; (3) that a test score landing INSIDE the CV interval confirms generalisation — a fold-mean interval is not a prediction interval for a different statistic on a different sample.
+
+**What replaces them** (full spec, references, and authoring rules: `_project_docs/CV_INFERENCE_DOCTRINE.md` — binding):
+
+1. The `mean ± t·s/√k` arithmetic stays, relabelled a **descriptive / approximate 95% interval**, with the dependence caveat stated once per notebook.
+2. Model comparison = **paired per-fold differences on identical folds** (same splitter object, same seed) judged against a **predeclared practical-equivalence margin**, with three distinct outcomes: same sign + clears margin → real difference; signs flip → the comparison does not support a winner; same sign under the margin → practically equivalent, the simpler model wins (the parsimony tiebreak survives on honest grounds).
+3. The nb14 ceremony's INSIDE/ABOVE/BELOW vocabulary survives as *description only*; deployment is judged against the predeclared business tolerance, never against the CV interval.
+
+**Trigger:** An independent Codex `ultra` review of the Fall 2026 midterm traced invalid exam items to the teaching material itself (Bengio & Grandvalet 2004; Nadeau & Bengio 2003; Schenker & Gentleman 2001).
+
+**Scope:** the 2026F midterm banks (rebuilt to the doctrine), 10 notebooks (nb02, nb06, nb08, nb09, nb11–nb14, nb16, nb18 — instructor copy first, per the instructor-first rule), 17 quiz banks with keyed options asserting the overlap rule, the video guides, and the Brightspace pages. Decision 9 (test-set lock) is unaffected and stands.
+
+**Implication:** any new material that states a CV comparison rule must follow the doctrine file; its "Authoring rules" section (A1–A6: never assert an uncomputed number; keep the three outcomes distinct; declare the margin before results, once; prose and code move together; sweep whole notebooks, not mapped cells; instructor copy first) is part of the decision.

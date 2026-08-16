@@ -124,7 +124,7 @@ The idempotent check (`if 'A question that often comes up' in src`) is critical 
 | Where | What to use |
 |---|---|
 | nb01–nb07 | Single train/val/test split is introduced; `X_val` for mid-course evaluation |
-| nb08 | k-fold CV + Student's *t* 95% CI becomes the course's evaluation spine |
+| nb08 | k-fold CV + Student's *t* **descriptive** \~95% interval becomes the course's evaluation spine (see the CV-inference doctrine below) |
 | nb09–nb13, nb16, nb17 | `cross_val_score`, `cross_val_predict`, `GridSearchCV`, `RandomizedSearchCV` on `X_train`; held-out evaluation uses `X_val`, never `X_test` |
 | **nb14 cells 30 + 34 ONLY** | `X_test` / `y_test` opened for the one-shot ceremony (INSIDE/ABOVE/BELOW verdict) — cell 30 is the **classification** spine, cell 34 the **regression** spine; one opening per business case |
 | nb18 | `X_test` may appear in the Kaggle-submission demo (production-pipeline pattern, not model evaluation) |
@@ -141,7 +141,7 @@ The only acceptable output is hits in `nb14` cells 30 + 34 (one per spine) plus 
 
 **Common CV-first patterns to reach for:**
 
-- Classifier comparison: `cross_val_score(model, X_train, y_train, cv=StratifiedKFold(5, ...), scoring='roc_auc')`, then report `mean ± (t_crit * sd / sqrt(k))` as a 95% CI.
+- Classifier comparison: `cross_val_score(model, X_train, y_train, cv=StratifiedKFold(5, ...), scoring='roc_auc')`, then report `mean ± (t_crit * sd / sqrt(k))` as an **approximate 95% interval** — descriptive, since the folds share training rows. **Model-vs-model verdicts come from paired per-fold differences on identical folds against a predeclared margin, never from whether two marginal intervals overlap** — the full rule, its three outcomes, and its authoring rules are binding in `_project_docs/CV_INFERENCE_DOCTRINE.md`.
 - `classification_report` on held-out predictions: `y_pred = cross_val_predict(model, X_train, y_train, cv=cv_strat)` — every prediction comes from a fold that never saw it during fitting.
 - Permutation importance that would otherwise touch `X_test`: split `X_train` further (e.g., 75/25 inside the cell), fit on the 75% slice, measure permutation importance on the 25% slice. Test set stays locked.
 - Calibration that needs a held-out sample: use `CalibratedClassifierCV(base, cv=5)` fit on `X_train` (internal CV handles the calibrator fit), evaluate Brier on `X_val`.
