@@ -24,16 +24,13 @@ editor: visual
     width: 9%; /* Date column */
   }
   .overflow-table th:nth-child(3), .overflow-table td:nth-child(3) {
-    width: 8%; /* Track column */
+    width: 42%; /* Topic column */
   }
   .overflow-table th:nth-child(4), .overflow-table td:nth-child(4) {
-    width: 34%; /* Topic column */
-  }
-  .overflow-table th:nth-child(5), .overflow-table td:nth-child(5) {
     width: 13%; /* Notebook column */
     text-align: center;
   }
-  .overflow-table th:nth-child(6), .overflow-table td:nth-child(6) {
+  .overflow-table th:nth-child(5), .overflow-table td:nth-child(5) {
     width: 32%; /* Assessment / Notes column */
   }
   .below-table {
@@ -47,57 +44,57 @@ editor: visual
 # Course Schedule
 
 ::: overflow-table
-| Wk | Date | Track | Topic | Notebook | Assessment / Notes |
-|----|------|-------|-------|----------|--------------------|
-| 1 | Mon Aug 24 | Content | Course launch + Launchpad (setup, Colab, Gemini, AI policy, Kaggle launch, Poster-to-Product preview) | **nb00**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb00_launchpad_course_setup_student.ipynb){target="_blank"} |  |
-| 1 | Wed Aug 26 | Content | Predictive analytics fundamentals, EDA, and data splitting | **nb01**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb01_eda_splits_student.ipynb){target="_blank"} |  |
-| 1 | Fri Aug 28 | Content | Data setup and preprocessing pipelines | **nb02**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb02_preprocessing_pipelines_student.ipynb){target="_blank"} |  |
-| 2 | Mon Aug 31 | Content | Regression metrics and baseline modeling | **nb03**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb03_regression_metrics_baselines_student.ipynb){target="_blank"} |  |
-| 2 | Wed Sep 2 | Content | Linear regression: features, interactions, diagnostics | **nb04**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb04_linear_features_diagnostics_student.ipynb){target="_blank"} |  |
-| 2 | Fri Sep 4 | Group Work | Group Work: Final Project/Competition | — |  |
-| 3 | Mon Sep 7 | — | *No class — Labor Day* | — |  |
-| 3 | Wed Sep 9 | Content | **Lecture — Regularization (Ridge & Lasso)** | **nb05**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb05_regularization_project_proposal_student.ipynb){target="_blank"} |  |
-| 3 | Fri Sep 11 | Group Work | Group Work: Final Project/Competition | — |  |
-| 4 | Mon Sep 14 | Content | Logistic regression: probabilities, boundaries, pipelines | **nb06**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb06_logistic_pipelines_student.ipynb){target="_blank"} |  |
-| 4 | Wed Sep 16 | Content | Classification metrics: confusion matrix, ROC/PR, business costs | **nb07**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb07_classification_metrics_thresholding_student.ipynb){target="_blank"} |  |
-| 4 | Fri Sep 18 | Group Work | Group Work: Final Project/Competition | — |  |
-| 5 | Mon Sep 21 | Content | Resampling and cross-validation (k-fold + Student's *t* CIs) | **nb08**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb08_cross_validation_model_comparison_student.ipynb){target="_blank"} |  |
-| 5 | Wed Sep 23 | Content | Hyperparameter tuning + feature engineering + leakage detection | **nb09**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb09_tuning_feature_engineering_project_baseline_student.ipynb){target="_blank"} |  |
-| 5 | Fri Sep 25 | Exam | **MIDTERM EXAM — in class, on paper.** Covers nb00–nb09: framing, EDA, splits, preprocessing pipelines, regression + classification metrics, baselines, regularization, logistic regression, thresholds and costs, cross-validation with 95% CIs, tuning, and leakage detection | — | **MIDTERM EXAM (20%)** — 15 multiple-choice questions, 45 minutes, closed book, no AI tools |
-| 6 | Mon Sep 28 | Content | Decision trees: interpretable models with sharp edges | **nb11**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb11_decision_trees_student.ipynb){target="_blank"} |  |
-| 6 | Wed Sep 30 | Content | Random forests: bagging, OOB, feature importance | **nb12**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb12_random_forests_importance_student.ipynb){target="_blank"} |  |
-| 6 | Fri Oct 2 | Group Work | Group Work: Final Project/Competition | — |  |
-| 7 | Mon Oct 5 | Content | Gradient boosting: performance with discipline | **nb13**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb13_gradient_boosting_student.ipynb){target="_blank"} |  |
-| 7 | Wed Oct 7 | Content | Model selection + test-set ceremony + monitoring | **nb14**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb14_model_selection_protocol_student.ipynb){target="_blank"} |  |
-| 7 | Fri Oct 9 | Group Work | Group Work: Final Project/Competition | — |  |
-| 8 | Mon Oct 12 | — | *No class — Fall Break (Oct 12–13)* | — |  |
-| 8 | Wed Oct 14 | Content | Time-series forecasting: walk-forward CV, lag features | **nb16**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb16_time_series_forecasting_student.ipynb){target="_blank"} |  |
-| 8 | Fri Oct 16 | Group Work | Group Work: Final Project/Competition | — |  |
-| 9 | Mon Oct 19 | Content | Competition workflow: from notebook to `submission.csv` — the full pipeline, tree ensembles, and the champion model | **nb18**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb18_competition_workflow_student.ipynb){target="_blank"} |  |
-| 9 | Wed Oct 21 | Content | Deep learning (PyTorch + when-to-use + LLM lab) | **nb19**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb19_deep_learning_student.ipynb){target="_blank"} |  |
-| 9 | Fri Oct 23 | Group Work | Group Work: Final Project/Competition | — |  |
-| 10 | Mon Oct 26 | Content | Data communication and poster design | **nb17**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb17_data_communication_poster_student.ipynb){target="_blank"} |  |
-| 10 | Wed Oct 28 | Group Work | Group Work: Final Project | — |  |
-| 10 | Fri Oct 30 | Group Work | Group Work: Final Project | — |  |
-| 11 | Mon Nov 2 | Group Work | Group Work: Final Project | — |  |
-| 11 | Wed Nov 4 | Group Work | Group Work: Final Project | — |  |
-| 11 | Fri Nov 6 | Group Work | Group Work: Final Project | — |  |
-| 12 | Mon Nov 9 | Group Work | Group Work: Final Project | — |  |
-| 12 | Wed Nov 11 | Group Work | Group Work: Final Project | — |  |
-| 12 | Fri Nov 13 | Group Work | Group Work: Final Project | — |  |
-| 13 | Mon Nov 16 | Group Work | Group Work: Final Project | — |  |
-| 13 | **Tue Nov 17** | URC | **Undergraduate Research Conference — Poster Presentation (all students present)** | — | **POSTER PRESENTATION** |
-| 13 | Wed Nov 18 | — | *No class — time to rest and catch up on other coursework* | — |  |
-| 13 | Fri Nov 20 | P2P | Poster-to-Product kickoff — scoping, partner framing, AI-assistant assignment | — |  |
-| 14 | Mon Nov 23 | Group Work | Group Work: Competition | — |  |
-| 14 | Wed Nov 25 | — | *No class — Thanksgiving break (Nov 25–28)* | — |  |
-| 14 | Fri Nov 27 | Competition | *No class — Thanksgiving break (Nov 25–28)* · final submission window, online | — | **Kaggle final submission due Sun Nov 29, 11:59 PM** |
-| 15 | Mon Nov 30 | P2P | Poster-to-Product — data engineering + model validation | — |  |
-| 15 | Wed Dec 2 | P2P | Poster-to-Product — deployment + partner checkpoint | — |  |
-| 15 | Fri Dec 4 | P2P | Poster-to-Product — usability testing + iteration | — |  |
-| 16 | Mon Dec 7 | P2P | Poster-to-Product — executive brief drafting + showcase preparation | — |  |
-| 16 | Wed Dec 9 | P2P | **Poster-to-Product SHOWCASE** (partners + feedback) | — |  |
-| 16 | Fri Dec 11 | Wrap | Course wrap — peer evaluation, reflection survey, competition results | — |  |
+| Wk | Date | Topic | Notebook | Assessment / Notes |
+|----|------|-------|----------|--------------------|
+| 1 | Mon Aug 24 | Course launch + Launchpad (setup, Colab, Gemini, AI policy, Kaggle launch, Poster-to-Product preview) | **nb00**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb00_launchpad_course_setup_student.ipynb){target="_blank"} |  |
+| 1 | Wed Aug 26 | Predictive analytics fundamentals, EDA, and data splitting | **nb01**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb01_eda_splits_student.ipynb){target="_blank"} |  |
+| 1 | Fri Aug 28 | Data setup and preprocessing pipelines | **nb02**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb02_preprocessing_pipelines_student.ipynb){target="_blank"} |  |
+| 2 | Mon Aug 31 | Regression metrics and baseline modeling | **nb03**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb03_regression_metrics_baselines_student.ipynb){target="_blank"} |  |
+| 2 | Wed Sep 2 | Linear regression: features, interactions, diagnostics | **nb04**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb04_linear_features_diagnostics_student.ipynb){target="_blank"} |  |
+| 2 | Fri Sep 4 | Group Work: Final Project/Competition | — |  |
+| 3 | Mon Sep 7 | *No class — Labor Day* | — |  |
+| 3 | Wed Sep 9 | **Lecture — Regularization (Ridge & Lasso)** | **nb05**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb05_regularization_project_proposal_student.ipynb){target="_blank"} |  |
+| 3 | Fri Sep 11 | Group Work: Final Project/Competition | — |  |
+| 4 | Mon Sep 14 | Logistic regression: probabilities, boundaries, pipelines | **nb06**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb06_logistic_pipelines_student.ipynb){target="_blank"} |  |
+| 4 | Wed Sep 16 | Classification metrics: confusion matrix, ROC/PR, business costs | **nb07**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb07_classification_metrics_thresholding_student.ipynb){target="_blank"} |  |
+| 4 | Fri Sep 18 | Group Work: Final Project/Competition | — |  |
+| 5 | Mon Sep 21 | Resampling and cross-validation (k-fold + Student's *t* CIs) | **nb08**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb08_cross_validation_model_comparison_student.ipynb){target="_blank"} |  |
+| 5 | Wed Sep 23 | Hyperparameter tuning + feature engineering + leakage detection | **nb09**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb09_tuning_feature_engineering_project_baseline_student.ipynb){target="_blank"} |  |
+| 5 | Fri Sep 25 | **MIDTERM EXAM — in class, on paper.** Covers nb00–nb09: framing, EDA, splits, preprocessing pipelines, regression + classification metrics, baselines, regularization, logistic regression, thresholds and costs, cross-validation with 95% CIs, tuning, and leakage detection | — | **MIDTERM EXAM (20%)** — 15 multiple-choice questions, 45 minutes, closed book, no AI tools |
+| 6 | Mon Sep 28 | Decision trees: interpretable models with sharp edges | **nb11**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb11_decision_trees_student.ipynb){target="_blank"} |  |
+| 6 | Wed Sep 30 | Random forests: bagging, OOB, feature importance | **nb12**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb12_random_forests_importance_student.ipynb){target="_blank"} |  |
+| 6 | Fri Oct 2 | Group Work: Final Project/Competition | — |  |
+| 7 | Mon Oct 5 | Gradient boosting: performance with discipline | **nb13**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb13_gradient_boosting_student.ipynb){target="_blank"} |  |
+| 7 | Wed Oct 7 | Model selection + test-set ceremony + monitoring | **nb14**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb14_model_selection_protocol_student.ipynb){target="_blank"} |  |
+| 7 | Fri Oct 9 | Group Work: Final Project/Competition | — |  |
+| 8 | Mon Oct 12 | *No class — Fall Break (Oct 12–13)* | — |  |
+| 8 | Wed Oct 14 | Time-series forecasting: walk-forward CV, lag features | **nb16**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb16_time_series_forecasting_student.ipynb){target="_blank"} |  |
+| 8 | Fri Oct 16 | Group Work: Final Project/Competition | — |  |
+| 9 | Mon Oct 19 | Competition workflow: from notebook to `submission.csv` — the full pipeline, tree ensembles, and the champion model | **nb18**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb18_competition_workflow_student.ipynb){target="_blank"} |  |
+| 9 | Wed Oct 21 | Deep learning (PyTorch + when-to-use + LLM lab) | **nb19**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb19_deep_learning_student.ipynb){target="_blank"} |  |
+| 9 | Fri Oct 23 | Group Work: Final Project/Competition | — |  |
+| 10 | Mon Oct 26 | Data communication and poster design | **nb17**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb17_data_communication_poster_student.ipynb){target="_blank"} |  |
+| 10 | Wed Oct 28 | Group Work: Final Project | — |  |
+| 10 | Fri Oct 30 | Group Work: Final Project | — |  |
+| 11 | Mon Nov 2 | Group Work: Final Project | — |  |
+| 11 | Wed Nov 4 | Group Work: Final Project | — |  |
+| 11 | Fri Nov 6 | Group Work: Final Project | — |  |
+| 12 | Mon Nov 9 | Group Work: Final Project | — |  |
+| 12 | Wed Nov 11 | Group Work: Final Project | — |  |
+| 12 | Fri Nov 13 | Group Work: Final Project | — |  |
+| 13 | Mon Nov 16 | Group Work: Final Project | — |  |
+| 13 | **Tue Nov 17** | **Undergraduate Research Conference — Poster Presentation (all students present)** | — | **POSTER PRESENTATION** |
+| 13 | Wed Nov 18 | *No class — time to rest and catch up on other coursework* | — |  |
+| 13 | Fri Nov 20 | Poster-to-Product kickoff — scoping, partner framing, AI-assistant assignment | — |  |
+| 14 | Mon Nov 23 | Group Work: Competition | — |  |
+| 14 | Wed Nov 25 | *No class — Thanksgiving break (Nov 25–28)* | — |  |
+| 14 | Fri Nov 27 | *No class — Thanksgiving break (Nov 25–28)* · final submission window, online | — | **Kaggle final submission due Sun Nov 29, 11:59 PM** |
+| 15 | Mon Nov 30 | Poster-to-Product — data engineering + model validation | — |  |
+| 15 | Wed Dec 2 | Poster-to-Product — deployment + partner checkpoint | — |  |
+| 15 | Fri Dec 4 | Poster-to-Product — usability testing + iteration | — |  |
+| 16 | Mon Dec 7 | Poster-to-Product — executive brief drafting + showcase preparation | — |  |
+| 16 | Wed Dec 9 | **Poster-to-Product SHOWCASE** (partners + feedback) | — |  |
+| 16 | Fri Dec 11 | Course wrap — peer evaluation, reflection survey, competition results | — |  |
 
 :::
 
