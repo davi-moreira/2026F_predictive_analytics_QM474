@@ -2410,3 +2410,74 @@ written and are Davi's call):
 - The Netiquette heading still reads "Zoom Classes / Office Hours" although the
   office-hours line no longer mentions Zoom (the "Zoom Classes" half predates
   this change).
+
+---
+
+## 2026-08-17 (later) — Official syllabus docx absorbed; schedule handout regenerated
+
+Davi designated `_syllabus/2026F/2026F_predictive_analytics_purdue_QM474.docx`
+(updated 16:54 that day) as the **main syllabus file**. `_syllabus/` is
+gitignored, so the docx itself is local-only.
+
+**Records created/updated**
+
+- **`_project_docs/SYLLABUS_OF_RECORD_2026F.md` (new, tracked)** — extracted
+  facts of record plus an 8-item discrepancy register. Establishes the
+  precedence rule: when the docx and any other artifact disagree, **the docx
+  wins and the other artifact is the bug.**
+- **`CLAUDE.md`** — mission block now carries the official logistics (office
+  hours Mon 2:30–3:30 EST/Zoom, Sections 001 & 002 in WTHR 114, prerequisite
+  MGMT 305), the syllabus-of-record precedence rule, and the note that the
+  schedule handout is generated. New See Also row.
+- **Memory** — `qm474-syllabus-of-record`, `qm474-schedule-docx-generated`.
+
+**New facts not previously in any record:** Sections 001/002 in WTHR 114 ·
+office hours Mondays 2:30–3:30 p.m. EST with a Zoom link · prerequisite MGMT 305
+· Kaggle invitation link · poster-examples link
+(davi-moreira.github.io/applied_projects.html) · the entire extra-credit regime
+(course evaluations +0.5% Participation; material issues +0.25% each; **DataCamp
+up to 5% of the overall grade**, six-month subscription, SOA PDFs due Fri Dec 4,
+2026) — none of which appears on the public website.
+
+**Discrepancies logged for Davi (not auto-fixed):**
+
+1. **The docx's embedded "TENTATIVE COURSE SCHEDULE" is the Summer 2026 4-week
+   intensive table** — May 18 – Jun 12, Day 0–20, Colab links pointing at the
+   `2026Summer_..._MGMT474` repo. Wrong offering, dead links. Highest-impact
+   item.
+2. **Two contradictory Final Project sections** — the first requires the
+   conference presentation with a 40/20/40 split; the second calls presenting
+   "not required" and uses 30/20/10/20/20. The website publishes the second.
+3. Kaggle opens **Aug 28** in the docx vs **Aug 24** on the site/plan.
+4. Typo "after August 248, 2026" (DataCamp eligibility start).
+5. Typo "within 1 calendar days" (grade challenges).
+6–8. Intentional or informational: office hours and the two grading breakdowns
+   now live only in the docx by design; prerequisite/room/links are docx-only.
+
+**Schedule handout rebuilt** —
+`_syllabus/2026F/2026F_predictive_analytics_QM474_schedule.docx` was stale since
+Jun 4 (midterm on Wed Sep 23, a "Mode" column, instructor-travel notes, P2P
+kickoff Nov 18). It is now **generated from `schedule.qmd`** by the new
+`scripts/build_schedule_docx.py`, carrying the exact 49-row website table
+(Wk · Date · Topic · Notebook · Assessment / Notes) plus the Final Project
+Milestones table, which is preserved here because the website no longer
+publishes milestone due dates anywhere. Landscape, 0.5" margins, Calibri/Cambria
+to match the syllabus theme, black/Old-Gold repeating header, week banding with
+a rule at each week boundary, grey no-class rows, gold-tinted marquee rows
+(midterm, URC, showcase), 18 real Colab hyperlinks, page-number footer. The
+`.md` sibling was regenerated from the same source and both now carry a
+"GENERATED FILE — do not hand-edit" banner.
+
+**Two bugs the verification pass caught in the generator**, both fixed:
+
+- The Colab badge markdown holds **two** URLs; the naive regex matched the badge
+  `.svg` image, so all 18 links pointed at `colab-badge.svg`. Anchored on
+  `/github/`.
+- The hand-rolled `w:rPr` for hyperlink runs had children in an order that
+  violates the ECMA-376 `CT_RPr` sequence, which makes Word prompt to repair the
+  file. Runs are now built through python-docx and moved into `w:hyperlink`
+  afterwards; a schema-order assertion is part of the verification.
+
+Verified after rebuild: 0 content mismatches against `schedule.qmd`, 18 unique
+notebook links each resolving to its own row's notebook, 0 out-of-order `w:rPr`,
+columns summing to the 10.00" usable width.
