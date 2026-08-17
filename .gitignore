@@ -73,6 +73,9 @@ video_guides/
 # Instructor production templates (poster/video/competition aids, local only)
 _production_kit/
 
+# Admin inbox and working files (Decision 5 — admin materials stay out of git)
+_adm/
+
 # Notebook datasets (downloaded locally; link externally instead of committing)
 notebooks/data/
 
