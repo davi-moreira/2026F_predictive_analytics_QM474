@@ -2259,3 +2259,63 @@ verification caught false empirical numbers in several, so they need a repair pa
 notebooks discard per-fold arrays, so the new rule needs code cells, not just prose); the 17 quiz
 banks; the midterm content rebuild to 15 taught items per form (workflow killed by a session limit);
 video guides and Brightspace pages; Decision 9.
+
+## Session — 2026-08-16/17: Rebuild the midterm to 15 items; correct the CV-inference spine course-wide
+
+**Midterm rebuilt to 15 questions per form** (Davi: 45 min ÷ 3 min = 15, not 14). The Summer banks
+hold exactly 15 per case, so nothing is dropped — every question is carried forward and tagged
+**kept / repaired / replaced** (≈67/92/51 across the 14 forms). Post-Codex fixes landed: ~39 untaught
+items (nb14 ceremony, nb16 time-series) replaced with taught content, **EDA restored on all 14 forms**
+(Codex found none had any), false keys repaired with the verbatim-freeze lifted for exactly those, and
+items trimmed to 200–300 words. Results: form length **3,569–4,051 words** (median 3,766, down from
+4,583 at 14 items) — 15.8 min of reading at 238 wpm, leaving ~117 s/item to decide; key letters
+**42/42/42/42/42**; key length **rank** now 20/19/20/20/20 across the five positions, killing the
+second-longest cue Codex measured at 108/196. Then 41 verifier corrections applied.
+
+**Exam tooling hardened.** `tex_escape` rewritten single-pass (the two-stage escape had printed
+`50$\{}times$` in 30 questions); per-option `minipage` so no option splits across a page (was 36);
+form codes (`MEDS`) in header, name line, and answer grid; new `check_pdfs.py` print-fidelity gate;
+`validate_banks.py` rewritten for the rebuilt schema and made **fail-closed**, including a guard that
+reads the item count from the README so docs and banks cannot drift; `audit_answer_length.py` now
+rejects empty/unkeyed banks. All three gates green, 8 pages per form.
+
+**The CV-inference spine was invalid, and is now corrected everywhere.** Codex traced bad exam items
+to `nb08` itself: (W1) Student's *t* does not compensate for dependent folds — shared training rows
+make `s/√k` *optimistic*; (W2) overlapping marginal CIs are not a test of the difference; (W3) a test
+score INSIDE the CV interval is not proof of generalisation. `_project_docs/CV_INFERENCE_DOCTRINE.md`
+specifies the replacement (descriptive intervals with the dependence caveat; **paired per-fold
+differences on identical folds** against a **predeclared margin**, with three distinct outcomes; the
+ceremony judged against a business tolerance) plus **authoring rules A1–A6** written from the first
+attempt's failures — chiefly A1, *never assert a number you have not computed*, after verifiers
+executed the notebooks and caught confident-but-false claims.
+
+Applied instructor-copy-first via the new `scripts/apply_instructor_first.py`, which **rejects** any
+edit whose text is not in the instructor file: **516 edits across nine notebooks** (nb02 2, nb08 62,
+nb09 72, nb11 29, nb12 64, nb13 67, nb14 118, nb16 60, nb18 42), including six nb08 instructor
+solution cells rewritten to compute and print paired verdicts. Every numeric claim re-executed before
+commit — e.g. tuned GBM 0.8117 vs RF 0.8038, paired differences +0.011/+0.010/+0.006/+0.002/+0.011
+(mean +0.0079, clears the 0.005 margin), and the forest's single fold win over LogReg is 0.00092, so
+"less than a thousandth of a point" is exact. Also **69 edits across 17 quiz banks** (30 keyed options
+had taught the retired rule; all 48 banks still PASS the length gate) and **159 edits across 12 video
+guides and Brightspace pages**, voice-check clean.
+
+**Two unrelated teaching bugs fixed** (separate from CV): `load_breast_cancer` labels benign = 1, so
+benign is the positive class, but nb06/nb07 prose read as though malignant were. nb06 had the
+threshold direction reversed, a self-contradicting cell, and confusion-matrix glosses on the wrong
+quantities; **nb07 priced a false negative at \$50,000 as "missed cancer" and a false positive at
+\$1,000 — reversed — and carried that into the Gemini prompt, so Exercise 1's cost-optimal threshold
+came out backwards.**
+
+**Instructor-first generalised** at Davi's direction: `CLAUDE.md` now states the rule for every paired
+surface (notebooks, guides, `instructor.qmd`, quiz/exam banks, Brightspace pages) with the sync step
+attached. `instructor.qmd` rewritten — the midterm is no longer "RETIRED", with a Fall 2026 section
+(14 forms, PDFs, keys, the three gates, the not-equated caveat) and a CV-doctrine section. Decision 14
+records the doctrine; Decision 9 (test-set lock) stands, and `audit_cv_first.py` still reports only the
+authorized nb14 cells 30/34 plus the nb18 Kaggle demo.
+
+**Codex review** (`gpt-5.6-sol`, effort `ultra`, read-only, 43 min, 5 lanes) is archived at
+`~/.claude/codex-reviews/2026F_predictive_analytics_QM474/2026-08-15_midterm-2026f-exam-material/`.
+Its verdict was *do not print* the first build; every mechanical finding is fixed and gated, the
+content findings drove the rebuild. **Its #1 finding is deliberately NOT fixed:** the 14 forms remain
+**unequated** — Davi chose to keep 14 case forms rather than move to one common form. The instructor
+page and the exam README both carry that caveat for curve decisions.
