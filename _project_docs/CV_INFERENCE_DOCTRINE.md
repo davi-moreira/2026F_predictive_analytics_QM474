@@ -74,17 +74,45 @@ for "close to what CV suggested / better / worse", but it is a **sanity check an
 a description**, never a statistical proof of generalisation and never a
 deployment gate on its own.
 
-## Where this must be applied
+## Where this was applied — status 2026-08-17
 
-`nb02` (14, 48) · `nb06` (25, 58) · `nb08` (6, 9, 10, 13, 14, 15, 23) ·
-`nb09` (10, 11, 13, 17) · `nb11` (11, 28, 29) · `nb12` (19, 35, 38, 45) ·
-`nb13` (19, 37) · `nb14` (20, 21, 24, 37) · `nb16` (52, 54, 60, 61) ·
-`nb18` (34, 38, 56, 59)
+**Notebooks — DONE** (instructor copy first via `scripts/apply_instructor_first.py`,
+then the student copy; every numeric claim re-executed before commit):
 
-Cell indices are from the **student** notebooks as of 2026-08-15 and are a
-starting map, not a guarantee — locate the claim by its wording, not its index.
-Also carried in: `CLAUDE.md` (the CV-first rule), `_project_docs/DECISIONS.md`
-(Decision 9), the video guides, and the Brightspace pages.
+| Notebook | Edits | Note |
+|---|---:|---|
+| `nb02` | 2 | exercise comparison gains the predeclared-margin step |
+| `nb08` | 62 | the origin; six instructor solution cells rewritten to print paired verdicts |
+| `nb09` | 72 | objectives, workflow slogan, `cv_results_` reading, both plan bullets, Q&A |
+| `nb11` | 29 | margins predeclared upstream; three-panel comparison figure |
+| `nb12` | 64 | verdicts re-grounded; stale section pointer and depth-gap figure fixed |
+| `nb13` | 67 | |
+| `nb14` | 118 | the ceremony: CI-overlap tie, CV-CI-lower-bound "dominance tiebreaker", interval-as-gate, and the monitoring trigger all replaced |
+| `nb16` | 60 | retrain trigger now judges the deployment tolerance |
+| `nb18` | 42 | |
+
+`nb06` needed no CV edits (it predates the nb08 spine) — but a **separate**
+positive-class defect was found and fixed there and in `nb07`; see the commit
+`Correct inverted positive-class reasoning in nb06/nb07`.
+
+**Quiz banks — DONE.** 69 edits across 17 of 20 flagged banks; 3 banks were
+keyword false positives. All 48 banks still PASS
+`scripts/audit_answer_length.py`, and zero stems or keyed options assert the
+retired rule.
+
+**Midterm — DONE.** The 2026F banks were rebuilt to the doctrine (see
+`_midterm_exam/2026F/README.md`).
+
+**Video guides and Brightspace pages — DONE.** 159 edits across 12 files plus a
+final pass over `nb08`/`nb09`/`nb13`/`nb14` guides and the `13`/`14` pages.
+`scripts/voice_check_guides.py` clean on every touched guide.
+
+**Records — DONE.** `CLAUDE.md` (CV-first rule + comparison pattern),
+`_project_docs/DECISIONS.md` Decision 14. Decision 9 (test-set lock) stands
+unchanged, and `scripts/audit_cv_first.py` still reports only the authorized
+`nb14` cells 30/34 and the `nb18` Kaggle demo.
+
+Locate any future instance by its **wording**, not by cell index — indices move.
 
 ## References
 

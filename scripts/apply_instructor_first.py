@@ -75,6 +75,13 @@ def main():
                       f' — instructor copy: {err}')
                 rejected += 1
                 continue
+            # scope 'instructor-only' marks solution cells that exist only in the
+            # instructor file (INSTRUCTOR SOLUTION blocks); a student-copy miss is
+            # expected there, not a warning.
+            if e.get('scope') == 'instructor-only':
+                ok += 1
+                applied += 1
+                continue
             s_idx, serr = apply_one(stu, old, new)
             if serr:
                 print(f'  WARN   {r["notebook"]} cell~{e.get("cell_index")} — applied to instructor'
