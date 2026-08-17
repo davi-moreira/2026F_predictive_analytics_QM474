@@ -40,7 +40,9 @@ VIOLATION_PATTERNS = [
 
 # False positive — Student's t (the statistical test) is allowed, including
 # markdown italics around the t (e.g., "Student's *t*").
-WHITELIST = re.compile(r"Student'?s \*?t\*?", re.IGNORECASE)
+WHITELIST = re.compile(r"Student'?s\s+(?:\\?\$)?\*?t\*?(?:\\?\$)?", re.IGNORECASE)
+# Student's t appears as "Student's t", "Student's *t*", "Student's $t$" and
+# "Student's \$t\$" (escaped for Quarto) — all four are the statistic, not the audience.
 
 
 def audit_file(path: Path) -> list[tuple[int, str]]:
