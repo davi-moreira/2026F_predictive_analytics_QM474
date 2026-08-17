@@ -2319,3 +2319,22 @@ Its verdict was *do not print* the first build; every mechanical finding is fixe
 content findings drove the rebuild. **Its #1 finding is deliberately NOT fixed:** the 14 forms remain
 **unequated** — Davi chose to keep 14 case forms rather than move to one common form. The instructor
 page and the exam README both carry that caveat for curve decisions.
+
+**Close-out addendum (2026-08-17).** The guide/page pass finished: 387 edits across 18 files (159 in
+the first batch, 228 in the final one covering the nb08/nb09/nb13/nb14 guides and the 13/14 pages).
+Zero live retired-rule assertions remain in `video_guides/` or `brightspace/`. Three loose ends closed:
+the nb12 page still credited the retired "dominance tiebreaker" and contradicted corrected nb11 (the
+regression signs disagree, so OLS keeps the slot); `nb15`/`nb20` guides — retired notebooks — got a
+banner rather than a rewrite; and the two 2026-05 changelog lines in the Brightspace plan are marked
+historical.
+
+**`scripts/voice_check_guides.py` had two false-positive classes**, both fixed and self-tested: its
+whitelist missed `Student's \$t\$` (the LaTeX-escaped form the guides actually use), and it audited
+*every* blockquote line rather than only read-aloud scripts, so instructor stage directions
+("> **Show:** Cell 57 … student response placeholder") counted as violations. Nine such hits across
+nb01/nb04/nb06/nb07 were pre-existing noise. All **21 guides now report clean**, and a real "students"
+inside a `> *"..."*` script is still caught.
+
+**Final gate state:** midterm `validate_banks` 0, `check_pdfs` 0, answer-length 14/14; quizzes 48/48;
+guides 21/21 voice-clean; `audit_cv_first` only nb14 cells 30/34 + nb18. Rendered, encrypted, mirrored,
+pushed. Working tree clean.
