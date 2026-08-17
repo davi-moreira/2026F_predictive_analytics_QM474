@@ -2338,3 +2338,75 @@ inside a `> *"..."*` script is still caught.
 **Final gate state:** midterm `validate_banks` 0, `check_pdfs` 0, answer-length 14/14; quizzes 48/48;
 guides 21/21 voice-clean; `audit_cv_first` only nb14 cells 30/34 + nb18. Rendered, encrypted, mirrored,
 pushed. Working tree clean.
+
+---
+
+## 2026-08-17 — Public syllabus and schedule trimmed to essentials
+
+Eleven requested edits to the two student-facing pages. **No instructor material
+was touched** (`instructor.qmd`, `_project_docs/`, `_final_project/`,
+`_midterm_exam/`, quiz banks and video guides are all unchanged) — the private
+plan documents remain the source of truth for the details removed from the
+public pages.
+
+**`syllabus.qmd`**
+
+1. Office hours no longer name a time — the line reads "Office Hours: details on
+   the course Brightspace". `index.qmd` carried the identical line and was
+   synced to match, so the two public pages do not disagree.
+2. The midterm section drops "on Friday, September 25, 2026"; it now reads "in
+   person, on paper, during class time". The schedule table still pins the exam
+   to Fri Sep 25, and `_midterm_exam/2026F/` is unchanged.
+3. Course Case Competition cut to a three-sentence summary (semester-long,
+   team-based, hosted on Kaggle, five submissions/day, automatic leaderboard).
+   Removed: the Bank Churn description, the metric/task bullets, the 20/60/20
+   grading breakdown, the two −10 point penalties, the Brightspace deliverable.
+4. Final Project replaced with a five-criterion structure — Milestone
+   Deliverables 30%, Peer Evaluation 20%, **Peer Review 10% (new)**, Poster
+   Presentation at the URC 20%, Instructor/TA Evaluation 20% (sums to 100%).
+   This supersedes the previous 40/20/40 split. Peer evaluation stays at 20% of
+   the final-project grade, so Decision 13's weights still hold.
+5. Poster-to-Product cut to the build-sprint sentence; the 80/20 breakdown, the
+   Dec 9 showcase date, and the Daniels grant note are no longer public.
+
+**`schedule.qmd`**
+
+6. Both intro paragraphs removed — the calendar-anchor summary and the
+   Notebook/Track column legend.
+7. Wed Oct 28 → Mon Nov 16 (nine sessions) collapsed to "Group Work: Final
+   Project"; Track changed from Poster to Group Work.
+8. Fri Nov 20 drops "· Kaggle leaderboard push".
+9. Mon Nov 23 is now "Group Work: Competition" (Track: Group Work).
+10. Wed Nov 25 keeps only the Thanksgiving no-class note; Track set to `—` to
+    match the other no-class rows.
+11. The "Final Project Milestones" (M00–M12 due dates) and "Course Case
+    Competition" sections were deleted. "Core Course References" survives.
+
+**Verification.** An 8-agent workflow ran 66 adversarial checks over the diff —
+per-instruction fidelity, stale cross-references across the public `.qmd` files
+and `_quarto.yml`, and the CLAUDE.md render-safety gates (escaped `$`/`~`,
+balanced emphasis, 6-column table integrity, list style, ASCII apostrophes).
+All eleven instructions verified as applied exactly; the site renders clean and
+the instructor page re-encrypted with its marker intact.
+
+**Consequences flagged, not fixed** (they follow from the instructions as
+written and are Davi's call):
+
+- The **Track column has no legend** now that the second intro paragraph is
+  gone. `Exam`, `P2P`, `URC`, `Wrap`, and the bare `—` are unexplained on the
+  page. Either a one-line key or dropping the Track column would resolve it.
+- The new Final Project text says the poster is due "by the due date indicated
+  in the syllabus" and refers to a "dedicated Poster Presentation Preparation
+  class" — but the Nov 10 poster deadline left with the milestones table, and
+  the poster-prep sessions were relabeled to generic Group Work. **No
+  milestone due date is published anywhere on the public site anymore.**
+- The midterm make-up rule still counts back "7 days before the scheduled
+  exam", but the syllabus no longer states the exam date.
+- `Sun Nov 29, 11:59 PM` (Kaggle deadline) now survives only as a single table
+  cell, with no section explaining the competition it belongs to.
+- Fri Nov 27 keeps Track `Competition` while its sibling break day Wed Nov 25
+  is now `—`; Nov 27 still carries the submission-window note, so the two rows
+  are not identical, but the asymmetry is visible.
+- The Netiquette heading still reads "Zoom Classes / Office Hours" although the
+  office-hours line no longer mentions Zoom (the "Zoom Classes" half predates
+  this change).
