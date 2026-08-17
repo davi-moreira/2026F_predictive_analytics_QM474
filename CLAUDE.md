@@ -10,11 +10,15 @@ The same **18-notebook arc (nb00–nb09, nb11–nb14, nb16–nb19 — nb10 the m
 
 **Assessment weights (2026-08-15):** Attendance 1% · Participation 4% · Quizzes 15% · **Midterm Exam 20%** · Course Case Competition 20% (peer evaluation is 20% of that) · Final Project 35% (peer evaluation 20% of that) · Poster-to-Product 5% (peer evaluation 20% of that). No final exam. Published in `syllabus.qmd`; rationale in `_project_docs/DECISIONS.md` Decision 13.
 
-- **Instructor:** Professor Davi Moreira
+- **Instructor:** Professor Davi Moreira — office hours **Mondays 2:30–3:30 p.m. EST** (Zoom)
+- **Meetings:** Sections **001 and 002**, Monday / Wednesday / Friday, **WTHR 114**
+- **Prerequisite:** MGMT 305 Business Analytics or similar
 - **Repository:** https://github.com/davi-moreira/2026F_predictive_analytics_QM474
 - **Website:** https://davi-moreira.github.io/2026F_predictive_analytics_QM474/
 - **Deployment:** Quarto → `docs/` → GitHub Pages
 - **Master plan:** `_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md`
+- **Official syllabus:** `_syllabus/2026F/2026F_predictive_analytics_purdue_QM474.docx` (gitignored). It is the **source of record for course policy** — when it disagrees with `syllabus.qmd`, the website is what gets fixed. Facts and open contradictions are tracked in `_project_docs/SYLLABUS_OF_RECORD_2026F.md`.
+- **Schedule handout:** `_syllabus/2026F/2026F_predictive_analytics_QM474_schedule.docx` is **generated** from `schedule.qmd` by `scripts/build_schedule_docx.py` — never hand-edit it; change `schedule.qmd` and re-run.
 
 ## See Also (Reference Files)
 
@@ -22,6 +26,7 @@ The same **18-notebook arc (nb00–nb09, nb11–nb14, nb16–nb19 — nb10 the m
 |---|---|
 | `_project_docs/COURSE_MATERIAL_WORKFLOW.md` | Producing a notebook's full material set end-to-end — notebook → videos → Brightspace page → NotebookLM splits → quizzes (the per-notebook production pipeline + dependency order) |
 | `_project_docs/NOTEBOOK_TEMPLATE.md` | Creating or restructuring a notebook — full 8-section templates |
+| `_project_docs/SYLLABUS_OF_RECORD_2026F.md` | Any question about official course policy, dates, weights, office hours, extra credit — and the open discrepancy register |
 | `_project_docs/DECISIONS.md` | Before proposing changes to conventions (seeds, splits, format) |
 | `_project_docs/TROUBLESHOOTING.md` | Render fails, GitHub Pages stale, Colab errors, leaked solutions |
 | `CONVERSATION_LOG.md` | Project history and prior decisions |
