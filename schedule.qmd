@@ -46,10 +46,6 @@ editor: visual
 
 # Course Schedule
 
-**Fall 2026 — Monday / Wednesday / Friday.** The 18-notebook arc is paced across the semester. **Mondays and Wednesdays carry the course content; every Friday is a group work session for the final project and the Course Case Competition.** Two Fridays are the exceptions: Fri Aug 28 carries `nb02`, and **Fri Sep 25 hosts the in-class Midterm Exam** — on paper, during class time, covering everything taught through `nb09`. Lecture content completes on **Mon Oct 26**, the **Undergraduate Research Conference poster presentation is Tue Nov 17** (all students present, final poster due Tue Nov 10), and the **Poster-to-Product** build sprint runs through early December. Final-project milestone due dates are listed in the table below the schedule.
-
-The **Notebook** column names the notebook (`nbNN`) anchored to each session — click the badge to open it in Google Colab. The **Track** column marks what the session is for: *Content* (new notebook material), *Group Work* (Friday sessions for the final project and the Course Case Competition), *Exam* (the in-class midterm), *Poster* (poster production and presentation prep), *Competition* (dedicated competition work sessions), *P2P* (the post-conference Poster-to-Product sprint), *URC* (the conference presentation), and *Wrap* (the final session). Sessions with `—` in the Notebook column carry no new notebook. Milestone due dates live in the **Final Project Milestones** table below rather than in this schedule.
-
 ::: overflow-table
 | Wk | Date | Track | Topic | Notebook | Assessment / Notes |
 |----|------|-------|-------|----------|--------------------|
@@ -81,20 +77,20 @@ The **Notebook** column names the notebook (`nbNN`) anchored to each session —
 | 9 | Wed Oct 21 | Content | Deep learning (PyTorch + when-to-use + LLM lab) | **nb19**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb19_deep_learning_student.ipynb){target="_blank"} |  |
 | 9 | Fri Oct 23 | Group Work | Group Work: Final Project/Competition | — |  |
 | 10 | Mon Oct 26 | Content | Data communication and poster design | **nb17**<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/davi-moreira/2026F_predictive_analytics_QM474/blob/main/notebooks/nb17_data_communication_poster_student.ipynb){target="_blank"} |  |
-| 10 | Wed Oct 28 | Poster | Poster production — figures built to the nb17 standard | — |  |
-| 10 | Fri Oct 30 | Poster | Poster studio — structured peer review of poster drafts | — |  |
-| 11 | Mon Nov 2 | Poster | Poster production — figure revision from peer feedback | — |  |
-| 11 | Wed Nov 4 | Poster | Poster production — narrative and assembly | — |  |
-| 11 | Fri Nov 6 | Poster | Poster studio — final poster QA + Kaggle leaderboard push | — |  |
-| 12 | Mon Nov 9 | Poster | Final poster QA → submission | — |  |
-| 12 | Wed Nov 11 | Poster | Dry-run presentations | — |  |
-| 12 | Fri Nov 13 | Poster | Presentation coaching + logistics | — |  |
-| 13 | Mon Nov 16 | Poster | Final presentation prep | — |  |
+| 10 | Wed Oct 28 | Group Work | Group Work: Final Project | — |  |
+| 10 | Fri Oct 30 | Group Work | Group Work: Final Project | — |  |
+| 11 | Mon Nov 2 | Group Work | Group Work: Final Project | — |  |
+| 11 | Wed Nov 4 | Group Work | Group Work: Final Project | — |  |
+| 11 | Fri Nov 6 | Group Work | Group Work: Final Project | — |  |
+| 12 | Mon Nov 9 | Group Work | Group Work: Final Project | — |  |
+| 12 | Wed Nov 11 | Group Work | Group Work: Final Project | — |  |
+| 12 | Fri Nov 13 | Group Work | Group Work: Final Project | — |  |
+| 13 | Mon Nov 16 | Group Work | Group Work: Final Project | — |  |
 | 13 | **Tue Nov 17** | URC | **Undergraduate Research Conference — Poster Presentation (all students present)** | — | **POSTER PRESENTATION** |
 | 13 | Wed Nov 18 | — | *No class — time to rest and catch up on other coursework* | — |  |
-| 13 | Fri Nov 20 | P2P | Poster-to-Product kickoff — scoping, partner framing, AI-assistant assignment · Kaggle leaderboard push | — |  |
-| 14 | Mon Nov 23 | Competition | **Course Case Competition — finalize and conclude** (online work session): final push, notebook cleanup, Run-All reproducibility check | — |  |
-| 14 | Wed Nov 25 | Competition | *No class — Thanksgiving break (Nov 25–28)* · competition stays open, self-paced online work, instructor online office hours | — |  |
+| 13 | Fri Nov 20 | P2P | Poster-to-Product kickoff — scoping, partner framing, AI-assistant assignment | — |  |
+| 14 | Mon Nov 23 | Group Work | Group Work: Competition | — |  |
+| 14 | Wed Nov 25 | — | *No class — Thanksgiving break (Nov 25–28)* | — |  |
 | 14 | Fri Nov 27 | Competition | *No class — Thanksgiving break (Nov 25–28)* · final submission window, online | — | **Kaggle final submission due Sun Nov 29, 11:59 PM** |
 | 15 | Mon Nov 30 | P2P | Poster-to-Product — data engineering + model validation | — |  |
 | 15 | Wed Dec 2 | P2P | Poster-to-Product — deployment + partner checkpoint | — |  |
@@ -106,30 +102,6 @@ The **Notebook** column names the notebook (`nbNN`) anchored to each session —
 :::
 
 ::: below-table
-
-## Final Project Milestones
-
-Group capstone (groups of four). Deliverables are due **Sundays, 11:59 PM** (the project track runs alongside the MWF sessions), except the final poster, pinned to **Tue Nov 10** — 7 days before the conference. Full instructions and rubrics: [`_final_project/2026F/`](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/tree/main/_final_project/2026F). *(Milestone numbering follows the reference documents; M04 / M07 / M13 are intentionally unused.)*
-
-| # | Milestone | Due |
-|---|-----------|-----|
-| M00 | Group Contact Confirmation | Sun Sep 6 |
-| M01 | Initial Project Proposal | Sun Sep 20 |
-| M02 | Expanded Project Outline | Sun Sep 27 |
-| M03 | Project Draft Abstract | Sun Oct 4 |
-| M05 | Applying to the Conference | Sun Oct 11 |
-| M06 | Simple Model & Performance Evaluation | Sun Oct 18 |
-| M08 | More Complex Models & Performance Evaluation | Sun Oct 25 |
-| M09 | Poster First Draft | Sun Nov 1 |
-| M10 | Final Poster Submission (`NN.pdf`) | **Tue Nov 10** |
-| M11 | Poster Presentation Planning | Sun Nov 15 |
-| M12 | LinkedIn Post Invitation | Sun Nov 15 |
-| — | **URC Poster Presentation (required)** | **Tue Nov 17** |
-| — | Intra-group Peer Evaluation | Fri Dec 11 |
-
-## Course Case Competition
-
-The **Fall 2026 QM47400 Case Competition (Bank Churn)** on Kaggle opens **Mon Aug 24** and runs the whole semester alongside the course. Friday **Group Work** sessions are dedicated time for the competition and the final project; the competition concludes with an **online work session on Mon Nov 23** and a **final submission deadline of Sun Nov 29, 11:59 PM** — the Sunday of Thanksgiving week, and the last day submissions are accepted on the platform.
 
 ## Core Course References
 

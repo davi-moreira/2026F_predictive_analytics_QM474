@@ -29,7 +29,7 @@ The course enables students to navigate the entire predictive analytics pipeline
 -   Email: [dcordeir\@purdue.edu](mailto:dcordeir@purdue.edu)
 -   Office: Young Hall 1019
 -   Class meetings: **Monday / Wednesday / Friday, in person** (room and time on Brightspace), Fall 2026 (Aug 24 -- Dec 11, 2026)
--   Office Hours: **Tuesdays 11:00 am -- 12:00 pm EST** (in person or Zoom; link on Brightspace)
+-   Office Hours: details on the course Brightspace
 -   Individual Appointments: *Book time with me through the link in the course syllabus on your Course Brightspace Page, or by appointment.*
 
 > **Note:** Email responses are typically within 24 business hours. If you do not receive a response by the 24-hour mark, please email me again.
@@ -90,7 +90,7 @@ Short quizzes based on lecture and notebook content promote consistent engagemen
 
 ### Midterm Exam (20%)
 
-The midterm exam wraps up the foundational concepts of the course in a comprehensive assessment. It is held **in person, on paper, during class time on Friday, September 25, 2026**, and covers the material through `nb09` — problem framing, exploratory data analysis, data splitting, preprocessing pipelines, regression and classification metrics, baselines, regularization, logistic regression, cost-based thresholds, cross-validation with 95% confidence intervals, hyperparameter tuning, and leakage detection.
+The midterm exam wraps up the foundational concepts of the course in a comprehensive assessment. It is held **in person, on paper, during class time**, and covers the material through `nb09` — problem framing, exploratory data analysis, data splitting, preprocessing pipelines, regression and classification metrics, baselines, regularization, logistic regression, cost-based thresholds, cross-validation with 95% confidence intervals, hyperparameter tuning, and leakage detection.
 
 The exam is a **business case**: you take the role of the manager responsible for a predictive model, and each question puts you inside a decision that arises during model development — an analyst proposes a feature, a cross-validation result lands, a metric drops, a leakage signature appears. You have **15 multiple-choice questions with five alternatives each**, and **45 minutes** of class time to complete them (about 3 minutes per question). The exam is **closed book**, and **no AI tools, notes, or electronic devices** are permitted.
 
@@ -98,45 +98,21 @@ Only under exceptional circumstances, when legitimate and verifiable reasons are
 
 ### Course Case Competition — Kaggle (20%)
 
-A course-long predictive analytics competition hosted on Kaggle. The **Fall 2026 QM47400 Case Competition: Bank Churn** is adapted from the 2024 Kaggle Playground Series, which uses AI-generated synthetic data designed for educational purposes. Your task is to build models that predict whether a customer continues with their account or closes it (churn). **Students are randomly assigned to teams (up to four members)** and have a limit of **five Kaggle submissions per day**. The competition **opens August 24, 2026**; we hold an **online work session on Monday, November 23**, and the **final submission deadline is Sunday, November 29, 2026** (before the Thanksgiving break ends). Kaggle automatically evaluates submissions and maintains the leaderboard throughout the competition period.
-
--   **Competition:** Fall 2026 QM47400 Case Competition: Bank Churn
--   **Task:** Predict the probability that a customer will churn (`Exited` = 1)
--   **Metric:** AUC-ROC
--   **Max submissions:** 5 per day on Kaggle
-
-**Grading breakdown (of the competition grade):**
-
-1.  **Team Participation (20%):** An evaluation of your submitted, reproducible notebook — a clean Run-All in Colab, a leakage-safe pipeline, cross-validated ROC-AUC with 95% confidence intervals for a baseline and a more complex model, systematic hyperparameter tuning, the required visualizations, and a brief write-up. Earned with at least one valid Kaggle submission plus the notebook, and **not** conditioned on leaderboard rank.
-2.  **Leaderboard Performance (60%):** Your team's final standing on the **private** Kaggle leaderboard at the close, scored by **rank** on a scale anchored so that a model no better than random guessing (AUC = 0.5) earns zero credit.
-3.  **Peer Evaluation (20%):** A confidential intra-team evaluation of each member's contribution; this is the individual portion of the competition grade.
-
-Two **−10 point** penalties apply to the team total: a Kaggle team name that is not `Group NN` at the deadline, and a submitted notebook filename that is not `NN_kaggle_code.ipynb`.
-
-**Brightspace deliverable:** Submit the complete code for your best-performing model. The code must be fully replicable, allowing the instructor and TA to reproduce the same results and performance metrics. Include all necessary steps: data preprocessing, feature engineering, model training, evaluation, and generation of the submission file.
+We will have a semester-long, team-based predictive analytics competition hosted on Kaggle. Students must work in teams and will be allowed up to five submissions per day. The Kaggle platform will automatically evaluate submissions and maintain a leaderboard throughout the competition period.
 
 ### Final Project (35%)
 
-In **groups of four randomly assigned members**, students complete a practical predictive analytics project culminating in a **research poster** presented at the Undergraduate Research Conference. The post-conference **Poster-to-Product** build sprint is graded separately (see below).
+In groups, students will complete a practical predictive analytics project culminating in a poster presentation at the Undergraduate Research Conference. A comprehensive set of project guidelines will be provided, and the assessment structure will adhere to the following criteria:
 
-Each group builds an end-to-end predictive analytics project across the M00–M12 milestone track and presents the resulting poster at the **Fall 2026 Purdue Undergraduate Research Conference on Tuesday, November 17, 2026**. **Presentation at the conference is required for all students.** The final poster is due **one week before the conference (Tuesday, November 10, 2026)**. Professor Moreira serves as faculty mentor throughout.
-
-**Grading breakdown (of the final-project grade):**
-
-1.  **Milestone Deliverables (40%):** Incremental submissions across the M00–M12 milestone track (numbering follows the [Final Project milestone reference](https://github.com/davi-moreira/2026F_predictive_analytics_QM474/tree/main/_final_project/2026F) and skips M04/M07/M13). Due dates are listed on the [Schedule](./schedule.qmd).
-2.  **Peer Evaluation (20%):** A confidential intra-group evaluation of each member's contribution, ensuring balanced participation and collaborative accountability.
-3.  **Instructor / TA Evaluation (40%):** Evaluation of the final poster and the conference presentation.
-
-Additional information about Purdue undergraduate research conferences: <https://www.purdue.edu/undergrad-research/conferences/index.php>{target="_blank"}.
+1.  **Milestone Deliverables (30%):** Students will submit incremental project components on specific due dates. These deliverables allow for early feedback and ensure steady progress throughout the semester. Grades will reflect each milestone's clarity, completeness, and timely submission.
+2.  **Peer Evaluation (20%):** To encourage accountability and productive teamwork, students will evaluate their peers' contributions. These assessments help ensure balanced participation and measure collaborative effectiveness.
+3.  **Peer Review (10%):** Each group will review and provide constructive feedback on other teams' posters. This process encourages engagement, enhances critical analysis skills, and promotes a culture of constructive critique.
+4.  **Poster Presentation at the Purdue Undergraduate Research Conference (20%):** A poster template and assessment rubric will be shared, and you are encouraged to review previous award-winning student posters for inspiration. Your final posters must be submitted by the due date indicated in the syllabus, after which they will be printed and distributed during a dedicated Poster Presentation Preparation class. Additional details on the conference can be found at <https://www.purdue.edu/undergrad-research/conferences/index.php>{target="_blank"}. As the event may not coincide with our regular class time, please communicate with your other course instructors in advance regarding potential scheduling conflicts. If any issues arise, please let me know. We will not hold our usual class immediately following the Poster Presentation, allowing you time to rest and catch up on other coursework. Consult the course schedule for further details.
+5.  **Instructor/TA Evaluation (20%):** After the Undergraduate Research Conference your instructor and the TA will evaluate your final submission based on a rubric that will be shared.
 
 ### Poster-to-Product (5%)
 
-After the conference, groups enter a **two-week in-class build sprint** that converts the validated model into a **stakeholder-ready dashboard/app plus an executive brief**, following an industry product workflow (scope → data engineering → model validation → UX → deployment → usability test → showcase). Each team works with an assigned AI assistant under human-in-the-loop sign-offs and receives feedback from industry/nonprofit partners, culminating in a **showcase on Wednesday, December 9, 2026**. *(This experiential capstone is supported by a Daniels School Experiential Learning Grant.)*
-
-**Grading breakdown (of the Poster-to-Product grade):**
-
-1.  **Deliverables and Showcase (80%):** The deployed dashboard/app, the executive brief, and the showcase presentation, assessed on the **NACE competencies** — Technology, Teamwork, Communication, and Critical Thinking — via rubric.
-2.  **Peer Evaluation (20%):** A confidential intra-group evaluation of each member's contribution to the sprint.
+After the conference, groups enter a **two-week in-class build sprint** that converts the validated model into a **stakeholder-ready dashboard/app plus an executive brief**, following an industry product workflow (scope → data engineering → model validation → UX → deployment → usability test → showcase).
 
 ### Grade Challenges
 
