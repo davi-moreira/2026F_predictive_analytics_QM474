@@ -147,7 +147,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#course-schedule" id="toc-course-schedule" class="nav-link active" data-scroll-target="#course-schedule">Course Schedule</a></li>
+  <li><a href="#course-schedule" id="toc-course-schedule" class="nav-link active" data-scroll-target="#course-schedule">Course Schedule</a>
+  <ul class="collapse">
+  <li><a href="#core-course-references" id="toc-core-course-references" class="nav-link" data-scroll-target="#core-course-references">Core Course References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -218,8 +221,6 @@ ul.task-list li input[type="checkbox"] {
 </style>
 <section id="course-schedule" class="level1">
 <h1>Course Schedule</h1>
-<p><strong>Fall 2026 — Monday / Wednesday / Friday.</strong> The 18-notebook arc is paced across the semester. <strong>Mondays and Wednesdays carry the course content; every Friday is a group work session for the final project and the Course Case Competition.</strong> Two Fridays are the exceptions: Fri Aug 28 carries <code>nb02</code>, and <strong>Fri Sep 25 hosts the in-class Midterm Exam</strong> — on paper, during class time, covering everything taught through <code>nb09</code>. Lecture content completes on <strong>Mon Oct 26</strong>, the <strong>Undergraduate Research Conference poster presentation is Tue Nov 17</strong> (all students present, final poster due Tue Nov 10), and the <strong>Poster-to-Product</strong> build sprint runs through early December. Final-project milestone due dates are listed in the table below the schedule.</p>
-<p>The <strong>Notebook</strong> column names the notebook (<code>nbNN</code>) anchored to each session — click the badge to open it in Google Colab. The <strong>Track</strong> column marks what the session is for: <em>Content</em> (new notebook material), <em>Group Work</em> (Friday sessions for the final project and the Course Case Competition), <em>Exam</em> (the in-class midterm), <em>Poster</em> (poster production and presentation prep), <em>Competition</em> (dedicated competition work sessions), <em>P2P</em> (the post-conference Poster-to-Product sprint), <em>URC</em> (the conference presentation), and <em>Wrap</em> (the final session). Sessions with <code>—</code> in the Notebook column carry no new notebook. Milestone due dates live in the <strong>Final Project Milestones</strong> table below rather than in this schedule.</p>
 <div class="overflow-table">
 <table class="caption-top table">
 <thead>
@@ -460,72 +461,72 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>10</td>
 <td>Wed Oct 28</td>
-<td>Poster</td>
-<td>Poster production — figures built to the nb17 standard</td>
+<td>Group Work</td>
+<td>Group Work: Final Project</td>
 <td>—</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>10</td>
 <td>Fri Oct 30</td>
-<td>Poster</td>
-<td>Poster studio — structured peer review of poster drafts</td>
+<td>Group Work</td>
+<td>Group Work: Final Project</td>
 <td>—</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>11</td>
 <td>Mon Nov 2</td>
-<td>Poster</td>
-<td>Poster production — figure revision from peer feedback</td>
+<td>Group Work</td>
+<td>Group Work: Final Project</td>
 <td>—</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>11</td>
 <td>Wed Nov 4</td>
-<td>Poster</td>
-<td>Poster production — narrative and assembly</td>
+<td>Group Work</td>
+<td>Group Work: Final Project</td>
 <td>—</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>11</td>
 <td>Fri Nov 6</td>
-<td>Poster</td>
-<td>Poster studio — final poster QA + Kaggle leaderboard push</td>
+<td>Group Work</td>
+<td>Group Work: Final Project</td>
 <td>—</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>12</td>
 <td>Mon Nov 9</td>
-<td>Poster</td>
-<td>Final poster QA → submission</td>
+<td>Group Work</td>
+<td>Group Work: Final Project</td>
 <td>—</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>12</td>
 <td>Wed Nov 11</td>
-<td>Poster</td>
-<td>Dry-run presentations</td>
+<td>Group Work</td>
+<td>Group Work: Final Project</td>
 <td>—</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>12</td>
 <td>Fri Nov 13</td>
-<td>Poster</td>
-<td>Presentation coaching + logistics</td>
+<td>Group Work</td>
+<td>Group Work: Final Project</td>
 <td>—</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>13</td>
 <td>Mon Nov 16</td>
-<td>Poster</td>
-<td>Final presentation prep</td>
+<td>Group Work</td>
+<td>Group Work: Final Project</td>
 <td>—</td>
 <td></td>
 </tr>
@@ -549,23 +550,23 @@ ul.task-list li input[type="checkbox"] {
 <td>13</td>
 <td>Fri Nov 20</td>
 <td>P2P</td>
-<td>Poster-to-Product kickoff — scoping, partner framing, AI-assistant assignment · Kaggle leaderboard push</td>
+<td>Poster-to-Product kickoff — scoping, partner framing, AI-assistant assignment</td>
 <td>—</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>14</td>
 <td>Mon Nov 23</td>
-<td>Competition</td>
-<td><strong>Course Case Competition — finalize and conclude</strong> (online work session): final push, notebook cleanup, Run-All reproducibility check</td>
+<td>Group Work</td>
+<td>Group Work: Competition</td>
 <td>—</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>14</td>
 <td>Wed Nov 25</td>
-<td>Competition</td>
-<td><em>No class — Thanksgiving break (Nov 25–28)</em> · competition stays open, self-paced online work, instructor online office hours</td>
+<td>—</td>
+<td><em>No class — Thanksgiving break (Nov 25–28)</em></td>
 <td>—</td>
 <td></td>
 </tr>
@@ -628,92 +629,7 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </div>
-<div class="below-table">
-<section id="final-project-milestones" class="level2">
-<h2 class="anchored" data-anchor-id="final-project-milestones">Final Project Milestones</h2>
-<p>Group capstone (groups of four). Deliverables are due <strong>Sundays, 11:59 PM</strong> (the project track runs alongside the MWF sessions), except the final poster, pinned to <strong>Tue Nov 10</strong> — 7 days before the conference. Full instructions and rubrics: <a href="https://github.com/davi-moreira/2026F_predictive_analytics_QM474/tree/main/_final_project/2026F"><code>_final_project/2026F/</code></a>. <em>(Milestone numbering follows the reference documents; M04 / M07 / M13 are intentionally unused.)</em></p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>#</th>
-<th>Milestone</th>
-<th>Due</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>M00</td>
-<td>Group Contact Confirmation</td>
-<td>Sun Sep 6</td>
-</tr>
-<tr class="even">
-<td>M01</td>
-<td>Initial Project Proposal</td>
-<td>Sun Sep 20</td>
-</tr>
-<tr class="odd">
-<td>M02</td>
-<td>Expanded Project Outline</td>
-<td>Sun Sep 27</td>
-</tr>
-<tr class="even">
-<td>M03</td>
-<td>Project Draft Abstract</td>
-<td>Sun Oct 4</td>
-</tr>
-<tr class="odd">
-<td>M05</td>
-<td>Applying to the Conference</td>
-<td>Sun Oct 11</td>
-</tr>
-<tr class="even">
-<td>M06</td>
-<td>Simple Model &amp; Performance Evaluation</td>
-<td>Sun Oct 18</td>
-</tr>
-<tr class="odd">
-<td>M08</td>
-<td>More Complex Models &amp; Performance Evaluation</td>
-<td>Sun Oct 25</td>
-</tr>
-<tr class="even">
-<td>M09</td>
-<td>Poster First Draft</td>
-<td>Sun Nov 1</td>
-</tr>
-<tr class="odd">
-<td>M10</td>
-<td>Final Poster Submission (<code>NN.pdf</code>)</td>
-<td><strong>Tue Nov 10</strong></td>
-</tr>
-<tr class="even">
-<td>M11</td>
-<td>Poster Presentation Planning</td>
-<td>Sun Nov 15</td>
-</tr>
-<tr class="odd">
-<td>M12</td>
-<td>LinkedIn Post Invitation</td>
-<td>Sun Nov 15</td>
-</tr>
-<tr class="even">
-<td>—</td>
-<td><strong>URC Poster Presentation (required)</strong></td>
-<td><strong>Tue Nov 17</strong></td>
-</tr>
-<tr class="odd">
-<td>—</td>
-<td>Intra-group Peer Evaluation</td>
-<td>Fri Dec 11</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="course-case-competition" class="level2">
-<h2 class="anchored" data-anchor-id="course-case-competition">Course Case Competition</h2>
-<p>The <strong>Fall 2026 QM47400 Case Competition (Bank Churn)</strong> on Kaggle opens <strong>Mon Aug 24</strong> and runs the whole semester alongside the course. Friday <strong>Group Work</strong> sessions are dedicated time for the competition and the final project; the competition concludes with an <strong>online work session on Mon Nov 23</strong> and a <strong>final submission deadline of Sun Nov 29, 11:59 PM</strong> — the Sunday of Thanksgiving week, and the last day submissions are accepted on the platform.</p>
-</section>
-<section id="core-course-references" class="level2">
+<section id="core-course-references" class="level2 below-table">
 <h2 class="anchored" data-anchor-id="core-course-references">Core Course References</h2>
 <ul>
 <li><strong>James, Witten, Hastie, Tibshirani.</strong> <em>An Introduction to Statistical Learning</em> (ISLP) + Python labs. Download: <a href="https://www.statlearning.com/" target="_blank">https://www.statlearning.com/</a></li>
@@ -724,7 +640,6 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Chip Huyen.</strong> <em>Designing Machine Learning Systems</em> (deployment thinking, monitoring).</li>
 </ul>
 </section>
-</div>
 
 
 </section>
