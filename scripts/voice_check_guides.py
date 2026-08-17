@@ -45,12 +45,31 @@ WHITELIST = re.compile(r"Student'?s\s+(?:\\?\$)?\*?t\*?(?:\\?\$)?", re.IGNORECAS
 # "Student's \$t\$" (escaped for Quarto) — all four are the statistic, not the audience.
 
 
+# CLAUDE.md scopes the audience rule to READ-ALOUD SCRIPTS — blockquotes whose body
+# is quoted, usually italicised: `> *"..."*`. A blockquote is also used in these
+# guides for instructor stage directions ("> **Show:** Cell 57 ... student response
+# placeholder") and for callouts; those are read silently by the instructor, so
+# third-person "students" is correct there and must not be flagged.
+READ_ALOUD = re.compile(r'^\s*>\s*\**\s*[\u201c"]')
+
+
+def is_read_aloud(raw: str) -> bool:
+    """True only for a blockquote line that opens a spoken script."""
+    return bool(READ_ALOUD.match(raw))
+
+
 def audit_file(path: Path) -> list[tuple[int, str]]:
     hits: list[tuple[int, str]] = []
+    in_script = False
     for lineno, raw in enumerate(path.read_text().splitlines(), start=1):
         stripped = raw.lstrip()
         if not stripped.startswith(">"):
+            in_script = False          # blockquote ended
             continue
+        if is_read_aloud(raw):
+            in_script = True           # a spoken script starts here
+        elif not in_script:
+            continue                   # stage direction or callout — instructor-facing
         if WHITELIST.search(raw):
             continue
         for pat in VIOLATION_PATTERNS:
