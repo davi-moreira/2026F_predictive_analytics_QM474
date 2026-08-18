@@ -2481,3 +2481,54 @@ a rule at each week boundary, grey no-class rows, gold-tinted marquee rows
 Verified after rebuild: 0 content mismatches against `schedule.qmd`, 18 unique
 notebook links each resolving to its own row's notebook, 0 out-of-order `w:rPr`,
 columns summing to the 10.00" usable width.
+
+---
+
+## 2026-08-18 — nb00 trim: setup essentials only
+
+**Scope set by Davi:** drop the Fall 2026 Calendar section, move PAUSE-AND-DO
+Exercise 1 to just after "Welcome and Introductions", and strip the
+participation-quiz sentence + grade table + midterm paragraph from "Course
+Syllabus and Logistics" — then fix whatever of the audit findings still applied
+to what remained.
+
+**Audit findings before the trim** (nb00 vs. schedule.qmd, the syllabus of
+record, `_midterm_exam/2026F/README.md`, and CV_INFERENCE_DOCTRINE.md):
+
+1. Midterm stated as **14** MC questions; both sources of record say **15**,
+   five alternatives each. — resolved by deletion.
+2. Course Map advertised nb08 as "95% CI; the CI-overlap rule" and Module 2 as
+   "k-fold CV with 95% confidence intervals" — retired doctrine W1/W2. — fixed.
+3. Key-dates bullets out of chronological order. — resolved by deletion.
+4. Vestigial "Track" column (schedule.qmd dropped its own in 0338195). —
+   resolved by deletion.
+5–9. Day-one content the schedule promises but nb00 never delivered (Kaggle
+   launch, Poster-to-Product preview, the AI-use citation rule, data access,
+   DataCamp extra credit). **Not addressed** — the trim moved nb00 in the
+   opposite direction, deferring policy to Brightspace. Still open if Davi wants
+   day-one coverage of the competition and the 5% DataCamp credit.
+
+**Kaggle open-date question** (discrepancy #3 in SYLLABUS_OF_RECORD_2026F.md:
+docx says Aug 28, site/plans said Aug 24): Davi chose **neither** — nb00 defers
+to Brightspace. The docx/site contradiction itself is still open.
+
+**Changes:** nb00 17 → 16 cells. Instructor edited first, student regenerated
+(no solution cells; files identical). Video guide re-synced — its cell index was
+already stale, and sections 1–9 still described the Summer 4-week/20-day format,
+`nb20` as the final notebook, and nb00 as a "Day 0 pre-course activity".
+`voice_check_guides.py` clean. Instructor companion repo synced.
+
+**No quarto render:** no `.qmd` changed, and the site links nb00 only by Colab
+badge — it does not render notebook content into `docs/`.
+
+**Left open for a later session:**
+- `schedule.qmd:63` still describes the midterm as covering "cross-validation
+  with **95% CIs**" — the same retired W1 language just removed from nb00, on a
+  published page. Fixing it needs a render + `docs/` commit.
+- `CLAUDE.md` still documents the instructor-page scripts under
+  `_adm_stuff/_instructor_page/`; they now live at `_adm/_instructor_page/`.
+- `scripts/sync_instructor_md.sh` skips silently — no `.venv` with `nbconvert`,
+  so `_notebook_lm/` has no nb00 markdown for NotebookLM.
+- nb01–nb07 and nb00 still carry zero `"A question that often comes up here"`
+  Q&A blocks; the narrative-polish batch only ever reached nb08+.
+
