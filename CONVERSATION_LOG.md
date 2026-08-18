@@ -2532,3 +2532,35 @@ badge — it does not render notebook content into `docs/`.
 - nb01–nb07 and nb00 still carry zero `"A question that often comes up here"`
   Q&A blocks; the narrative-polish batch only ever reached nb08+.
 
+### Same session, second pass on nb00
+
+Davi asked for four further changes, all applied:
+
+1. **Calendar dates removed.** The Course Map still pinned the Poster-to-Product
+   window, the Friday carrying nb02, and the midterm Friday. The MWF rhythm is
+   kept (structure, not a date); the two Fridays that break it are described
+   without being named, and Brightspace is where they are looked up.
+2. **Em dashes removed** (17 of them). Module labels became colons; the rest
+   were rewritten into separate sentences or parentheses, not swapped for
+   another dash. A gate in the edit script asserts zero remain.
+3. **The course-schedule link dropped** from section 2, so dates have exactly
+   one source of truth (Brightspace) rather than two.
+4. **New section 3, "Finding Your Group in Brightspace"**, built from
+   <https://www.purdue.edu/brightspace/Docs/LearnerResources/AccessBrightspaceGroups.php>:
+   the Course Tools -> Groups path, the View Available Groups / Join Group
+   self-enrollment flow, the group-area feature table, and the two failure modes
+   worth front-loading (a group assignment stays invisible in the gradebook
+   until enrollment exists; leaving a group late costs teammates work). Carries
+   an nb09-format Q&A for the empty-Groups-page case.
+
+Colab/wrap-up/submission renumbered to sections 4/5/6 with the 4.x cross-ref
+moved. nb00 is now 18 cells. Guide re-synced (cell index, a groups segment in
+both video plans, new key-concept 5.3, new common question). An announcement
+message for Brightspace was drafted for Davi in-session; it is not stored in the
+repo.
+
+**Still open** from the first-pass audit, unchanged: the Kaggle competition
+launch, Poster-to-Product preview, the AI-use citation rule, data access, and
+the DataCamp extra credit are all absent from nb00. `schedule.qmd:63` still says
+"95% CIs".
+
