@@ -1,10 +1,10 @@
-# Milestone 12 — LinkedIn Post Invitation
+# Final Project Milestone 12 — Post Invitation for Poster Presentation
 
 **Due:** Sun Nov 15, 2026 (11:59 PM) · **Grading:** completion · **Submit:** `NN_linkedin.pdf` (screenshot)
 
 ## About the Final Project
 
-The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 → M12** (numbering follows the reference documents and skips M04/M07/M13); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 40%, Peer Evaluation 20%, Instructor/TA Evaluation (poster + presentation) 40%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Fall 2026 Purdue Undergraduate Research Conference (Tue Nov 17) is required for all students.** Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 → M12** (M00 through M13, with no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Fall 2026 Purdue Undergraduate Research Conference (Tue Nov 17) is required for all students.** Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
 
 ---
 
