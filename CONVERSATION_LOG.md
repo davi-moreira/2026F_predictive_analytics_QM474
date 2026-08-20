@@ -2564,3 +2564,54 @@ launch, Poster-to-Product preview, the AI-use citation rule, data access, and
 the DataCamp extra credit are all absent from nb00. `schedule.qmd:63` still says
 "95% CIs".
 
+
+---
+
+## 2026-08-20 — Brightspace alignment: adjudication and execution
+
+Davi adjudicated all 26 register items. Everything actionable was executed in
+one pass; `_project_docs/DISCREPANCY_REGISTER_2026F.md` carries the per-item
+status table.
+
+**Final Project (A1-A5, A10).** The track went from 13 documented items to the
+real 16. M00 now carries both the Round 01 meeting scheduling emails and a new
+Group Contract (fillable .docx built by `scripts/build_group_contract_docx.py`),
+and moves from Sep 6 to Sep 20. M04/M07/M13 restored. Grade split corrected to
+30/20/10/20/20 across 12 files. Five missing instruction files authored from
+Davi's verbatim text. M12 renamed to the Brightspace title. Peer-evaluation
+instrument carried forward from Summer.
+
+**The build was broken and nobody knew.** `_quarto.yml` pointed its post-render
+hook at `_adm_stuff/_instructor_page/scripts/postrender.sh`, a path that stopped
+existing at the rename, so `quarto render` aborted every time. Two further stale
+paths were security-relevant: the encrypt script resolved the page password from
+the dead path, and the pre-commit guard read the same dead path to detect a
+staged file containing the password, which means that guard had been silently
+passing. All fixed, including `.git/hooks/pre-commit`.
+
+**B1 was in three places, not one.** `schedule.qmd`, `syllabus.qmd`, and the
+midterm README all said "cross-validation with 95% CIs"; `schedule.qmd` also
+called it a "Student's t CI" on the nb08 row. All corrected, site re-rendered,
+instructor page re-encrypted, schedule handout regenerated.
+
+**`_participation/` is gitignored.** It holds the syllabus-quiz answer key and
+two keyed confirmation quizzes, and this repo is public. It mirrors to the
+private instructor repo instead; the sync script was extended to carry it.
+
+**D2 fixed, not just answered.** `sync_instructor_md.sh` hardcoded a `.venv`
+that never existed; `/usr/local/bin/python3` had nbconvert all along. It now
+discovers an interpreter and fails loudly. All 20 notebooks converted.
+
+**New:** `_quizzes/2026F/` (copy of Summer, review tracked as #36),
+`_extra_credit/2026F/extra_credit.md` (verbatim from the docx),
+`_participation/2026F/` (6 items + a 14-question edition-agnostic Syllabus Quiz,
+audit PASS at 29% correct-is-longest).
+
+**Tasks:** #10 corrected (midterm is Fri Sep 25, nb00-nb09), #19 rebuilt to the
+16-item track, #3 closed, #36 and #37 created at High.
+
+**Still open:** the docx alone still says "95% confidence intervals"; the
+peer-review matrix assigns 33 groups against a 26-group roster; two `[TBD]`
+survey links and two peer-review placeholders; Round 01 meeting windows are
+inferred. Next up: A11 (competition Rank Code Submission coverage).
+
