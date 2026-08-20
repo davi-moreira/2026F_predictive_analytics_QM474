@@ -85,6 +85,52 @@ of record, or between it and the site.
 
 ---
 
+---
+
+## Resolution pass — 2026-08-20
+
+Davi adjudicated every item on 2026-08-20. Status of each:
+
+| ID | Decision | Status |
+|---|---|:--|
+| A1 | M00 now does **both** jobs: Round 01 meeting scheduling **and** a new Group Contract. Due date moves to Sep 20. | ✅ done |
+| A2 | Brightspace is correct; M04/M07/M13 restored as real milestones. | ✅ done |
+| A3 | Grade split is **30/20/10/20/20**, per Davi's verbatim text. Corrected across 12 files. | ✅ done |
+| A4 | Brightspace title wins; M12 renamed *Post Invitation for Poster Presentation*. | ✅ done |
+| A5 | Five missing instruction files authored from Davi's verbatim text. | ✅ done |
+| A6 | `_quizzes/2026F/` created from `2026Summer`. Quality review tracked as **#36 (High)**. | ⏳ review pending |
+| A7 | Syllabus Quiz **authored** (14 items, edition-agnostic, audit PASS). Team Setup and Group Check-in recorded verbatim. | ✅ done |
+| A8 | Three survey instructions recorded. Two carry unresolved `[TBD]` survey links. | ⚠️ links pending |
+| A9 | Extra-credit rules transcribed verbatim from the docx into `_extra_credit/2026F/`. Publishing to students still tracked as **#33**. | ⏳ publication pending |
+| A10 | Peer-evaluation instrument carried forward from Summer. Brightspace form still to build (**#34**). | ⏳ form pending |
+| A11 | Competition instructions vs. Rank Code Submission. | ⏳ open (**#35**) — next up |
+| A12 | Grade item created by Davi; deliverable structure tracked as **#37 (High)**. | ⏳ open |
+| B1 | Removed from `schedule.qmd`, `syllabus.qmd`, the midterm README, and the published site. | ⚠️ **docx still carries it** |
+| B2 | Disregarded per Davi. | ➖ closed |
+| C1 | #10 corrected to Fri Sep 25, coverage nb00–nb09. | ✅ done |
+| C2 | #19 rebuilt to the 16-item track. | ✅ done |
+| C3 | #3 closed as complete. | ✅ done |
+| D1 | All `_adm_stuff/` references repointed to `_adm/`. **This was breaking the site build.** | ✅ done |
+| D2 | `sync_instructor_md.sh` now discovers nbconvert instead of hardcoding a `.venv` that never existed. 20 notebooks converted. | ✅ done |
+| D3 | CLAUDE.md polish claim corrected to "nb08 onward". | ✅ done |
+| E1 | Davi replaced the Summer schedule in the docx. Verified: no May/June or Day 0–20 leftovers. | ✅ verified |
+| E2 | Confirmed by Brightspace evidence. | ✅ done |
+| E3 | Docx now reads **August 24**. | ✅ verified |
+| E4 | "August 248" typo corrected. | ✅ verified |
+| E5, E8 | Accepted as-is per Davi. | ➖ closed |
+
+### What D1 actually broke
+
+`_quarto.yml` pointed its post-render hook at `_adm_stuff/_instructor_page/scripts/postrender.sh`. Since that path stopped existing, **`quarto render` aborted every time**, which means the site had not been renderable since the rename. Two further stale paths were security-relevant: `encrypt_instructor_page.py` resolved the page password from the dead path, and the `pre-commit` guard read the same dead path to detect a staged file containing the password. A guard that reads a nonexistent file passes silently, so that protection had been off.
+
+### Still open after this pass
+
+1. **The syllabus docx still says "cross-validation with 95% confidence intervals"** (register item E9). Every other artifact is corrected, so the docx is now the only one carrying the retired claim. Not edited automatically because the file was open in Word. Suggested replacement: *"cross-validation and paired model comparison"*.
+2. **The peer-review matrix assigns 33 groups**; Brightspace addresses the assignment to 26 groups on a 98-student roster. Filed verbatim and flagged in `final_project_peer_review_submission.md`; must be regenerated before publication.
+3. **Two `[TBD]` survey links** (Reflection Survey, Midterm Feedback) and two placeholders in the peer-review instructions (`[Dropbox Folder Link]`, `[link]`).
+4. **Round 01 meeting windows are inferred**, derived from the M00 and M04 deadlines to mirror the structure M07 states explicitly. Flagged in the reference file pending confirmation.
+
+
 ## Priority order for the open items
 
 1. **A6** (quiz bank version) — quizzes went live Aug 24; a stale bank teaches a retired rule.
@@ -95,5 +141,5 @@ of record, or between it and the site.
 
 ---
 
-**Last updated:** 2026-08-20.
+**Last updated:** 2026-08-20 (resolution pass applied).
 **Maintained by:** Professor Davi Moreira + AI Assistants.

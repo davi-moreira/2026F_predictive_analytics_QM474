@@ -16,13 +16,31 @@ REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_ROOT"
 
 OUT_DIR="$REPO_ROOT/_notebook_lm"
-NBCONVERT="$REPO_ROOT/.venv/bin/jupyter-nbconvert"
 
 mkdir -p "$OUT_DIR"
 
-if [[ ! -x "$NBCONVERT" ]]; then
-  echo "sync_instructor_md: $NBCONVERT not found; skipping (no .venv with nbconvert)" >&2
-  exit 0
+# Locate a working nbconvert. The repo .venv is preferred when present, but it is
+# not required: any interpreter on the box that has nbconvert will do. Hardcoding
+# the .venv path meant this script silently no-opped on a machine without one,
+# and because it is wired to a PostToolUse hook the skip message was invisible.
+NBCONVERT=""
+for cand in "$REPO_ROOT/.venv/bin/jupyter-nbconvert" "$(command -v jupyter-nbconvert 2>/dev/null || true)"; do
+  if [[ -n "$cand" && -x "$cand" ]]; then NBCONVERT="$cand"; break; fi
+done
+if [[ -z $NBCONVERT ]]; then
+  for py in "$REPO_ROOT/.venv/bin/python3" /usr/local/bin/python3 /opt/homebrew/bin/python3 python3; do
+    if command -v "$py" >/dev/null 2>&1 && "$py" -c 'import nbconvert' 2>/dev/null; then
+      NBCONVERT="$py -m nbconvert"; break
+    fi
+  done
+fi
+
+if [[ -z $NBCONVERT ]]; then
+  echo "sync_instructor_md: FAILED - no interpreter with nbconvert found." >&2
+  echo "  _notebook_lm/ is now STALE. Fix with one of:" >&2
+  echo "    /usr/local/bin/python3 -m pip install nbconvert" >&2
+  echo "    python3 -m venv .venv && .venv/bin/pip install nbconvert" >&2
+  exit 0   # exit 0 so a PostToolUse hook never blocks an edit
 fi
 
 if [[ $# -gt 0 ]]; then
@@ -49,7 +67,7 @@ for nb in "${TARGETS[@]}"; do
     continue
   fi
   echo "→ $nb"
-  "$NBCONVERT" --to markdown --output-dir "$OUT_DIR" "$nb" >/dev/null
+  $NBCONVERT --to markdown --output-dir "$OUT_DIR" "$nb" >/dev/null
   converted=$((converted + 1))
 done
 
