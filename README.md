@@ -132,7 +132,7 @@ Milestone deliverables are due **Sundays, 11:59 PM**, except the final poster, w
 | — | **URC Poster Presentation — required of every student** | Tue Nov 17 |
 | — | Intra-group Peer Evaluation | Fri Dec 11 |
 
-**Poster-to-Product (Fri Nov 20 – Wed Dec 9):** deployed dashboard/app + executive brief, showcase Wed Dec 9. Full instructions and rubrics: [`_final_project/2026F/`](_final_project/2026F/) and [`_adm_stuff/_qm474_poster_product/`](_adm_stuff/_qm474_poster_product/).
+**Poster-to-Product (Fri Nov 20 – Wed Dec 9):** deployed dashboard/app + executive brief, showcase Wed Dec 9. Full instructions and rubrics: [`_final_project/2026F/`](_final_project/2026F/) and [`_adm/_qm474_poster_product/`](_adm/_qm474_poster_product/).
 
 ### Kaggle Case Competition
 - **Competition:** Fall 2026 QM47400 Case Competition: Bank Churn

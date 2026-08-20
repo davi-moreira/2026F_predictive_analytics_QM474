@@ -90,7 +90,7 @@ Short quizzes based on lecture and notebook content promote consistent engagemen
 
 ### Midterm Exam (20%)
 
-The midterm exam wraps up the foundational concepts of the course in a comprehensive assessment. It is held **in person, on paper, during class time**, and covers the material through `nb09` — problem framing, exploratory data analysis, data splitting, preprocessing pipelines, regression and classification metrics, baselines, regularization, logistic regression, cost-based thresholds, cross-validation with 95% confidence intervals, hyperparameter tuning, and leakage detection.
+The midterm exam wraps up the foundational concepts of the course in a comprehensive assessment. It is held **in person, on paper, during class time**, and covers the material through `nb09` — problem framing, exploratory data analysis, data splitting, preprocessing pipelines, regression and classification metrics, baselines, regularization, logistic regression, cost-based thresholds, cross-validation and paired model comparison, hyperparameter tuning, and leakage detection.
 
 The exam is a **business case**: you take the role of the manager responsible for a predictive model, and each question puts you inside a decision that arises during model development — an analyst proposes a feature, a cross-validation result lands, a metric drops, a leakage signature appears. You have **15 multiple-choice questions with five alternatives each**, and **45 minutes** of class time to complete them (about 3 minutes per question). The exam is **closed book**, and **no AI tools, notes, or electronic devices** are permitted.
 

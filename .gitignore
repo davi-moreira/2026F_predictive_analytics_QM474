@@ -55,6 +55,9 @@ _homework/
 _lecture_notes/
 _quizzes/
 _midterm_exam/
+# _participation/ holds keyed confirmation quizzes and the syllabus-quiz answer key.
+# This repo is public and students read it; the content mirrors to the private instructor repo.
+_participation/
 _supplemental_material/
 _in_class_participation/
 _notebook/

@@ -61,7 +61,7 @@ Common issues encountered while developing or deploying course materials, with p
 
 **Solutions:**
 1. Check `.gitignore` — files may be excluded intentionally.
-2. `_adm_stuff/`, instructor notebooks, `video_guides/`, and large files are excluded by design.
+2. `_adm/`, instructor notebooks, `video_guides/`, and large files are excluded by design.
 3. `docs/` should be present — if not, run `quarto render`.
 
 ---

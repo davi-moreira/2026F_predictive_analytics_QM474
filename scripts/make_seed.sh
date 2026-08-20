@@ -51,7 +51,7 @@ EXCLUDES=(
   # downloaded datasets — re-download / re-link in the new course
   "notebooks/data/"
   # private / semester-specific — grades, announcements, this term's admin
-  "_adm_stuff/" "_announcements/"
+  "_adm/" "_announcements/"
   # large media bags from one-off render artifacts
   "*_files/" "*.html"
 )

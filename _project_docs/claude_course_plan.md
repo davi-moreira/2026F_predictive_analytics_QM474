@@ -137,7 +137,7 @@ This course is built; what remains is upkeep. The authoritative procedures live 
 | Any student notebook edited | Voice grep for third-person "students" / instructor-voice language |
 | Any quiz or exam CSV touched | `python scripts/audit_answer_length.py --file <csv>` must PASS before Brightspace import |
 | Any content change at all | `quarto render`, commit `docs/`, push — the site is stale otherwise |
-| Instructor notebook, video guide, quiz bank, or `instructor.qmd` changed | `bash _adm_stuff/_instructor_page/scripts/sync_instructor_repo.sh` |
+| Instructor notebook, video guide, quiz bank, or `instructor.qmd` changed | `bash _adm/_instructor_page/scripts/sync_instructor_repo.sh` |
 
 ## Open items
 

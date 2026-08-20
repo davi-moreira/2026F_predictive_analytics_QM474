@@ -74,7 +74,7 @@ Hits in wrapper prose (lines not starting with `>`) are fine — only blockquote
 
 ## 🚨 CRITICAL RULE — Narrative Polish Pattern (nb08 Style)
 
-Every student-notebook markdown cell follows the nb08 narrative style. This is the course's voice — applied consistently across all 18 notebooks.
+Every student-notebook markdown cell follows the nb08 narrative style. This is the course's voice. **Coverage is partial:** the pattern is applied from **nb08 onward** (nb08, nb09, nb11-nb14, nb16-nb19 each carry 7-17 Q&A blocks). **nb00-nb07 carry none yet** and are the outstanding backlog — check with `grep -c 'A question that often comes up' notebooks/nbNN_*_student.ipynb` before assuming a notebook is polished.
 
 **Five structural elements every student notebook has:**
 
@@ -184,7 +184,7 @@ python scripts/audit_answer_length.py                        # corpus-wide stati
 | `_quizzes/`, `_midterm_exam/` banks + keys | the Brightspace import / printed student copy |
 | `brightspace/NN_*.md` instructor-facing plan | the published module page |
 
-After any of these, run `bash _adm_stuff/_instructor_page/scripts/sync_instructor_repo.sh` so the private companion repo matches. A student-facing file that changed without its instructor source changing first is a bug, not a shortcut.
+After any of these, run `bash _adm/_instructor_page/scripts/sync_instructor_repo.sh` so the private companion repo matches. A student-facing file that changed without its instructor source changing first is a bug, not a shortcut.
 
 **ALWAYS edit `notebooks/nbNN_*_instructor.ipynb` FIRST, then generate the student file.**
 
@@ -270,10 +270,10 @@ git push origin main
 The sidebar's **Instructor** tab (it replaced the old "For Instructors" tab; the AI co-design essay `workflow.qmd` stays published at its URL, unlisted, linked from the gated page) is the instructor's index to the instructor notebooks (full solutions), video guides, quiz banks, and midterm cases. Ported from the qm670 Business Analytics implementation.
 
 - **`instructor.qmd` is gitignored** (plaintext source of the gated page; backup lives at `site/instructor.qmd` in the private repo). **`docs/instructor.html` is NOT ignored** — the encrypted page is what we publish. Do not "fix" either fact.
-- **The page ships ENCRYPTED.** `_adm_stuff/_instructor_page/scripts/encrypt_instructor_page.py` (stdlib-only AES-256-GCM + PBKDF2-SHA256, 250k iterations; `--self-test` runs 22 checks) rewrites `docs/instructor.html` into a self-contained browser-decrypted gate. It runs automatically as a Quarto **post-render** hook (`postrender.sh`, wired in `_quarto.yml`), fail-closed: no password → render aborts, the page never publishes in the clear. Idempotent on the marker `<!-- qm474-encrypted-page v1 -->`. The same step prunes `docs/search.json`.
-- **Password:** gitignored `_adm_stuff/_instructor_page/page_password.txt` (or `$QM474_PAGE_PASSWORD`). NEVER hardcode it, NEVER commit it, never put it in a commit message or announcement.
-- **The actual files live in the private companion repo** `davi-moreira/2026F_predictive_analytics_QM474_instructor`: instructor notebooks → `notebooks/`, `video_guides/` → `video_guides/`, `_quizzes/` → `quizzes/`, `_midterm_exam/` → `midterm_exam/`, `instructor.qmd` → `site/instructor.qmd`. Mirror it with `_adm_stuff/_instructor_page/scripts/sync_instructor_repo.sh` (`--dry-run` supported; hard-stops unless `gh` reports the target repo PRIVATE and `_instructor_repo` is gitignored). The mirror is synced, never edited directly. **Run the sync after changing any instructor notebook, video guide, quiz bank, midterm file, or `instructor.qmd`.**
-- **Guard:** `.git/hooks/pre-commit` refuses to commit `docs/instructor.html` without the marker, `instructor.qmd`, the password file, or any staged file containing the password. `.git/hooks/` is never cloned — the copy of record + install steps live in `_adm_stuff/_instructor_page/` (`pre-commit`, `INSTALL_HOOK.md`).
+- **The page ships ENCRYPTED.** `_adm/_instructor_page/scripts/encrypt_instructor_page.py` (stdlib-only AES-256-GCM + PBKDF2-SHA256, 250k iterations; `--self-test` runs 22 checks) rewrites `docs/instructor.html` into a self-contained browser-decrypted gate. It runs automatically as a Quarto **post-render** hook (`postrender.sh`, wired in `_quarto.yml`), fail-closed: no password → render aborts, the page never publishes in the clear. Idempotent on the marker `<!-- qm474-encrypted-page v1 -->`. The same step prunes `docs/search.json`.
+- **Password:** gitignored `_adm/_instructor_page/page_password.txt` (or `$QM474_PAGE_PASSWORD`). NEVER hardcode it, NEVER commit it, never put it in a commit message or announcement.
+- **The actual files live in the private companion repo** `davi-moreira/2026F_predictive_analytics_QM474_instructor`: instructor notebooks → `notebooks/`, `video_guides/` → `video_guides/`, `_quizzes/` → `quizzes/`, `_midterm_exam/` → `midterm_exam/`, `instructor.qmd` → `site/instructor.qmd`. Mirror it with `_adm/_instructor_page/scripts/sync_instructor_repo.sh` (`--dry-run` supported; hard-stops unless `gh` reports the target repo PRIVATE and `_instructor_repo` is gitignored). The mirror is synced, never edited directly. **Run the sync after changing any instructor notebook, video guide, quiz bank, midterm file, or `instructor.qmd`.**
+- **Guard:** `.git/hooks/pre-commit` refuses to commit `docs/instructor.html` without the marker, `instructor.qmd`, the password file, or any staged file containing the password. `.git/hooks/` is never cloned — the copy of record + install steps live in `_adm/_instructor_page/` (`pre-commit`, `INSTALL_HOOK.md`).
 
 ---
 
@@ -345,7 +345,7 @@ Before ending any session that touched course content:
 - [ ] **Answer-length audit run** if any quiz/exam CSV was created or edited: `python scripts/audit_answer_length.py --file <csv>` returns PASS for every touched bank.
 - [ ] **Narrative polish applied** if any new or rewritten student markdown cells landed: named stakeholder in Why-This-Matters, narrative prose over bullet lists in Reading-the-output, at least one `"A question that often comes up here"` Q&A, warm wrap-up with bridge to the next notebook.
 - [ ] **`quarto render` run** if ANY content changed (`.qmd`, notebooks, images), AND `docs/` committed.
-- [ ] **Instructor-repo sync run** (`bash _adm_stuff/_instructor_page/scripts/sync_instructor_repo.sh`) if any instructor notebook, video guide, quiz bank, midterm file, or `instructor.qmd` changed.
+- [ ] **Instructor-repo sync run** (`bash _adm/_instructor_page/scripts/sync_instructor_repo.sh`) if any instructor notebook, video guide, quiz bank, midterm file, or `instructor.qmd` changed.
 - [ ] `CONVERSATION_LOG.md` updated with session summary (appended, not overwritten).
 - [ ] If notebooks changed: tested in Colab.
 - [ ] `git push origin main` (includes BOTH content AND `docs/`).

@@ -61,7 +61,7 @@ This document records design decisions made during course development and the re
 
 ## Decision 5: Exclude Admin Materials from Git
 
-**Decision:** `_adm_stuff/` is in `.gitignore`. Instructor notebooks (`*_instructor*.ipynb`) and `video_guides/` are also gitignored.
+**Decision:** `_adm_stuff/` is in `.gitignore`. *(The directory was later renamed to `_adm/`, which is also gitignored; the decision stands, only the path changed.)* Instructor notebooks (`*_instructor*.ipynb`) and `video_guides/` are also gitignored.
 
 **Rationale:**
 - Student privacy (contact info, accommodations).

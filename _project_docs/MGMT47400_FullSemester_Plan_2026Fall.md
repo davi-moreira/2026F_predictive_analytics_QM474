@@ -269,7 +269,7 @@ Funded by a **$5,000 Daniels Experiential Learning Grant** (Curriculum Innovatio
 - Assessed via **NACE-aligned rubrics** (Technology, Teamwork, Communication, Critical Thinking).
 - Outcomes feed a reusable departmental "Poster-to-Product Instructor Kit" (rubrics, AI persona/prompt library, deployment templates) and a SoTL brief.
 
-*Source materials:* `_adm_stuff/_qm474_poster_product/` (grant approval, application answers, budget).
+*Source materials:* `_adm/_qm474_poster_product/` (grant approval, application answers, budget).
 
 ---
 
