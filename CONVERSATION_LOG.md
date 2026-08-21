@@ -2615,3 +2615,21 @@ peer-review matrix assigns 33 groups against a 26-group roster; two `[TBD]`
 survey links and two peer-review placeholders; Round 01 meeting windows are
 inferred. Next up: A11 (competition Rank Code Submission coverage).
 
+
+---
+
+## 2026-08-21 — Honors Contract section for QM 47400
+
+**Trigger:** Haonan Huang (huan2312@purdue.edu) emailed on 2026-08-20 asking to pursue an honors contract in QM 474. Davi asked for a syllabus section that is simple, friendly, and anchored in what the course already does, meeting the Honors Scholarly Project requirement where possible.
+
+**Sources read:** `honors_program_dsb_start_20260501/about_purdue_honors/04_honors_contracts.md` and `03_scholarly_project.md`, `honors_contracting/Honors Contracting at Daniels.docx`, the DSB Honors Contract web page PDF, and the Summer 2026 sample contract (`Lehman, Isaac`) whose `MGMT 35200 Honors Syllabus.pdf` is the DSB honors-syllabus template of record (OBJECTIVES / DELIVERABLES / DEADLINES / GRADING SCHEME / ADDITIONAL INFORMATION).
+
+**Design.** The honors work is an individual research angle on the group final project, not a parallel course. Three deliverables ride along existing milestones: H1 honors question memo with M01 (Sun Sep 20), H2 modeling extension evaluated CV-first with paired per-fold comparison against the team baseline with M08 (Sun Oct 25), H3 named panel on the team poster with M10 (Tue Nov 10) walked through at the conference (Tue Nov 17). Three 15-minute one-on-ones ride the existing instructor/TA meeting rounds. Ten points move from the Final Project (35% → 25%, all five components scaled) to a 10% Honors Research Extension, matching the reallocation pattern in the DSB sample syllabus.
+
+**Scholarly Project alignment.** The three deliverables were shaped around Davi's most common review note — individual contribution must be unmistakable — plus the public-presentation requirement (URC Nov 17) and the mentor requirement (Davi already mentors the final project). The section is explicit that approval stays with JMHC and that the student files the proposal by Thu Oct 1 and the completion verification afterward.
+
+**Verified dates used:** Fall 2026 intake closes **Thu Sep 3, 11:59 p.m.** (DSB request form + Qualtrics; verified 2026-08-03 off the live DSB page — not the "2nd Friday" rule of thumb in the faculty docx); coordinator decisions due Fri Sep 18; JMHC fall proposal deadline Thu Oct 1.
+
+**Changes:** `syllabus.qmd` gained `## Honors Contract (Optional)` between Grade Challenges and Course Policies. New `scripts/build_honors_syllabus_docx.py` renders the attachable modified honors syllabus to the gitignored `_syllabus/2026F/honors_contract/QM47400_2026F_honors_syllabus.docx`. Site rendered, `docs/` committed, pushed.
+
+**Open for Davi:** the official syllabus docx carries no honors language — logged as item 10 in `_project_docs/SYLLABUS_OF_RECORD_2026F.md`. Haonan's email is unanswered; no reply was drafted.
