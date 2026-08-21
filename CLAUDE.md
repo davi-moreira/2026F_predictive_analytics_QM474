@@ -239,7 +239,7 @@ python3 scripts/build_honors_section_docx.py    # slices the section out of syll
 python3 scripts/build_honors_syllabus_docx.py   # the modified honors syllabus, DSB template
 ```
 
-Both write into the gitignored `_syllabus/2026F/honors_contract/`. The **section** docx is for pasting into the official syllabus or sending on its own. The **honors syllabus** docx is the modified-syllabus upload the contract requires, and it is the one place that states specific deliverable dates — student-facing text says "Check the course Brightspace page", but JMHC requires the contract to carry "specific assignments, deadlines, and grade scheme."
+Both write into the gitignored `_syllabus/2026F/honors_contract/`. The **section** docx is for pasting into the official syllabus or sending on its own. The **honors syllabus** docx is *not* what students upload — Davi confirmed 2026-08-21 that the official syllabus alone satisfies the form, since the honors section carries its own grading scheme; it is retained only in case a future term or another college asks for a separate modified syllabus, and it is the one artifact stating specific deliverable dates (student-facing text says "Check the course Brightspace page").
 
 **Deadlines shift every term — never reuse these.** Pull the student intake date from the live [Daniels Honors Contract page](https://business.purdue.edu/undergraduate/honors-program/academics/contract.php) (it tracks the Registrar's H grade-mode deadline, *not* the "2nd Friday" rule of thumb in the faculty docx), the coordinator decision date from the 4th Friday of the term, and the scholarly-project proposal deadline from JMHC (Oct 1 fall / Feb 1 spring). Fall 2026, verified: intake **Thu Sep 3**, decisions **Fri Sep 18**, proposals **Thu Oct 1**.
 

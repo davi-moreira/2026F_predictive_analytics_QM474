@@ -30,7 +30,7 @@ The official syllabus now carries a top-level **HONORS CONTRACT (OPTIONAL)** sec
 | **Student intake deadline** | **Thu Sep 3, 2026, 11:59 p.m.** — Daniels request form + Qualtrics; cannot be extended |
 | Coordinator decision deadline | Fri Sep 18, 2026 (4th Friday), entered in the Registration Workflow |
 | Step 1 | **The student supplies the research question and Davi must approve it** (this replaced an earlier "we talk it over" framing) |
-| Attachments the student uploads | **This syllabus.** Because the honors section (with its own grading scheme) now lives inside the official syllabus, one file carries both the standard and the modified syllabus |
+| Attachments the student uploads | **The official syllabus alone** — confirmed by Davi 2026-08-21. Because the honors section carries its own grading scheme inside the official syllabus, that one file satisfies both the standard and the modified-syllabus requirement on the contract form. `QM47400_2026F_honors_syllabus.docx` is therefore **not** the upload; it is retained only in case a future term or another college asks for a separate modified syllabus |
 | Deliverables | **H1** honors question memo (rides M01) · **H2** modeling extension, CV-first, paired folds vs. the team baseline (rides M08) · **H3** one clearly labeled honors section on the team poster plus a conference walkthrough (rides M10 and the conference) |
 | Deliverable due dates | **"Check the course Brightspace page"** in the syllabus. Specific dates appear only in the attachable honors syllabus, which the contract requires to carry them |
 | Weights | Final Project 35% → 25%, all five components scaled; **Honors Research Extension 10%** (H1 2% · H2 5% · H3 3%). Total stays 100% |
@@ -112,8 +112,10 @@ These are contradictions *inside* the official docx or between it and other arti
 
 | 10 | ✅ **RESOLVED 2026-08-21** — Davi pasted the section into the docx and edited it there; `syllabus.qmd` was synced to the docx the same day (step 1 now requires his approval of the research question, deliverable dates defer to Brightspace, H3 is an "honors section" on the poster, group contracts are capped at the course max group size, and the ten-point reallocation applies only when the team is not entirely an honors group). ~~The Honors Contract section exists only on the website.~~ | site vs. docx | None. |
 
-| 11 | **Typo in the honors deliverables table:** H3 reads "carrying your extension **it it** is not an honors group". Should be "if it". The website was published with "if"; the docx still has "it it". | docx, Honors Contract section, H3 row | Low, but it is the clause that governs whole-honors-group teams. |
+| 11 | ✅ **RESOLVED 2026-08-21** — Davi corrected it in the docx and regenerated the PDF; H3 now reads "carrying your extension **if** it is not an honors group". ~~Typo "it it" in the H3 row.~~ | docx | None. |
+
+| 12 | **The "How to start" list renders as 3. / 4. / 5. instead of 1. / 2. / 3.** in the syllabus PDF — a Word list-numbering continuation from the preceding list. Cosmetic, but it is the first thing an honors student reads, and this PDF is what Brightspace serves under Content > Syllabus PDF. Fix: right-click the first item, "Restart at 1", and re-export. | docx and PDF, Honors Contract section | Low. |
 
 ---
 
-**Last updated:** 2026-08-21 (honors contract added to the docx, then the rubric-exclusion and gradebook-mechanics paragraphs); facts of record last read 2026-08-17 from `2026F_predictive_analytics_purdue_QM474.docx` (modified 2026-08-17 16:54).
+**Last updated:** 2026-08-21 (honors contract complete in the docx and PDF; items 10-11 resolved, item 12 opened); facts of record last read 2026-08-17 from `2026F_predictive_analytics_purdue_QM474.docx` (modified 2026-08-17 16:54).
