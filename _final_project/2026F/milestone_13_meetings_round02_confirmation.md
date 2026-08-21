@@ -1,4 +1,4 @@
-# Final Project Milestone 13 — Instructor and TA Meetings (Round 02 Confirmation)
+# Milestone 13 — Instructor and TA Meetings (Round 02 Confirmation)
 
 ## About the Final Project
 

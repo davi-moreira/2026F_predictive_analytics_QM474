@@ -1,4 +1,4 @@
-# Final Project Milestone 07 — Instructor and TA Meetings (Round 02 Schedule)
+# Milestone 07 — Instructor and TA Meetings (Round 02 Schedule)
 
 ## About the Final Project
 

@@ -1,4 +1,4 @@
-# Final Project Milestone 12 — Post Invitation for Poster Presentation
+# Milestone 12 — Post Invitation for Poster Presentation
 
 ## About the Final Project
 

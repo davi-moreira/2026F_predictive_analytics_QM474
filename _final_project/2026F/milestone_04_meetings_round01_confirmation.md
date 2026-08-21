@@ -1,4 +1,4 @@
-# Final Project Milestone 04 — Instructor and TA Meetings (Round 01 Confirmation)
+# Milestone 04 — Instructor and TA Meetings (Round 01 Confirmation)
 
 ## About the Final Project
 

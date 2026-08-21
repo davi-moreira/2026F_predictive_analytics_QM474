@@ -1,4 +1,4 @@
-# Final Project Milestone 00 — Instructor and TA Meetings (Round 01 Schedule) + Group Contract
+# Milestone 00 — Instructor and TA Meetings (Round 01 Schedule) + Group Contract
 
 ## About the Final Project
 
