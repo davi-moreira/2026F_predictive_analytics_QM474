@@ -1,12 +1,12 @@
 # Final Project — Peer Review Submission
 
-**Due:** Sun Nov 15, 2026 (11:59 PM) · **Weight:** 10% of the Final Project grade · **Submit:** `NN_peer_review.pdf`
+**Due:** see the assignment on Brightspace · **Weight:** 10% of the Final Project grade · **Submit:** `NN_peer_review.pdf`
 
 ## About the Final Project
 
-The Final Project is a **group capstone** culminating in a **research poster** presented at the Fall 2026 Purdue Undergraduate Research Conference. The project is worth **35%** of the course grade: Milestone Deliverables 30%, Peer Evaluation 20%, **Peer Review 10%**, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+The Final Project is a **group capstone** culminating in a **research poster** presented at the Purdue Undergraduate Research Conference. The project is worth **35%** of the course grade: Milestone Deliverables 30%, Peer Evaluation 20%, **Peer Review 10%**, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
 
-> **Peer Review is not Peer Evaluation.** Peer *Review* (this assignment, 10%) is your group reviewing **other groups' posters**. Peer *Evaluation* (20%, due Fri Dec 11) is each member confidentially rating **their own teammates' contributions**. Both exist, they are graded separately, and they are submitted at different times.
+> **Peer Review is not Peer Evaluation.** Peer *Review* (this assignment, 10%) is your group reviewing **other groups' posters**. Peer *Evaluation* (20%, submitted at the end of the course) is each member confidentially rating **their own teammates' contributions**. Both exist, they are graded separately, and they are submitted at different times.
 
 ---
 
@@ -102,7 +102,7 @@ Thank you for providing this valuable feedback to your peers!
 
 ## Instructor notes (not for the student-facing page)
 
-1. **The review matrix assigns 33 groups; Fall 2026 has ~26.** Brightspace shows this assignment addressed to **26 group submissions**, and the roster is 98 students. The matrix above is carried forward verbatim as supplied and still references G27 through G33. It must be regenerated for the actual number of Fall 2026 groups before publication, or reviewers will be pointed at groups that do not exist.
+1. **The review matrix must be regenerated every offering.** The matrix above is carried forward verbatim as supplied and assigns **33 groups**, referencing G27 through G33. The current offering has roughly **26** groups (Brightspace addresses the assignment to 26 submissions on a 98-student roster). Regenerate the matrix for the actual group count before publication, or reviewers will be pointed at groups that do not exist.
 2. **Two placeholders are unresolved:** the `[Dropbox Folder Link]` for the poster PDFs and the `[link]` for the Poster Peer Review Survey.
 
 ---

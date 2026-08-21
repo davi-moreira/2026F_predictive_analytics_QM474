@@ -1,11 +1,11 @@
-# Peer Evaluation — Instrument and Logistics (Fall 2026)
+# Peer Evaluation — Instrument and Logistics
 
 **Brightspace item:** *Peer Evaluation Submission: Final Project and/or Course Case Competition*
-**Due:** Fri Dec 11, 2026 (11:59 PM) · **Window:** Dec 7 – Dec 11
+**Due:** see the assignment on Brightspace (collected at the end of the course)
 
 Carried forward from the 2026Summer offering (`_final_project/2026Summer/final_project_milestone_reference.md` §6), unchanged in substance.
 
-> **Peer Evaluation is not Peer Review.** Peer *Evaluation* (this instrument, 20%) is each member confidentially rating **their own teammates' contributions**. Peer *Review* (10%, due Nov 15) is each group reviewing **other groups' posters**. Both exist and are graded separately.
+> **Peer Evaluation is not Peer Review.** Peer *Evaluation* (this instrument, 20%) is each member confidentially rating **their own teammates' contributions**. Peer *Review* (10%, submitted before the conference) is each group reviewing **other groups' posters**. Both exist and are graded separately.
 
 ---
 
@@ -62,4 +62,4 @@ A rating of 3 is the normal, healthy outcome for a teammate who did their share.
 
 ---
 
-**Last updated:** 2026-08-20.
+**Last updated:** 2026-08-20. Edition-neutral: no dates that would block reuse next offering.

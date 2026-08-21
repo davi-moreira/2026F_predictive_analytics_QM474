@@ -1,14 +1,12 @@
 # Final Project Milestone 00 — Instructor and TA Meetings (Round 01 Schedule) + Group Contract
 
-**Due:** Sun Sep 20, 2026 (11:59 PM) · **Points:** completion · **Submit:** three PDFs
-
 ## About the Final Project
 
-The Final Project is a **group capstone** culminating in a **research poster** presented at the Fall 2026 Purdue Undergraduate Research Conference. Across the term your group completes milestones **M00 through M13** (M00 through M13, with no gaps in the numbering). The project is worth **35% of your overall course grade**, broken down as Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%.
+The Final Project is a **group capstone** culminating in a **research poster** presented at the Purdue Undergraduate Research Conference. Across the term your group completes milestones **M00 through M13** (M00 through M13, with no gaps in the numbering). The project is worth **35% of your overall course grade**, broken down as Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%.
 
 The post-conference **Poster-to-Product** build sprint is graded separately as its own **5%** of the course grade.
 
-**Presentation at the Fall 2026 Purdue Undergraduate Research Conference (Tue Nov 17) is required for all students**; the final poster is due Tue Nov 10. Professor Moreira serves as faculty mentor throughout the process. Award-winning prior posters from this course: <https://davi-moreira.github.io/applied_projects.html>. Conference information: <https://www.purdue.edu/undergrad-research/conferences/index.php>. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+**Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due Tue Nov 10. Professor Moreira serves as faculty mentor throughout the process. Award-winning prior posters from this course: <https://davi-moreira.github.io/applied_projects.html>. Conference information: <https://www.purdue.edu/undergrad-research/conferences/index.php>. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
 
 ---
 
@@ -64,7 +62,7 @@ At least one member of your group must attend each meeting. It does not have to 
 
 These meetings are for discussing your project and its development, with the focus at this stage on your **prediction problem, your data, and your proposed modeling strategy**.
 
-**To complete this milestone you submit the scheduling emails, not the meetings themselves.** The meetings are confirmed later, in [Milestone 04](milestone_04_meetings_round01_confirmation.md).
+**To complete this milestone you submit the scheduling emails, not the meetings themselves.** The meetings are confirmed later.
 
 Each of the two emails must:
 
@@ -100,4 +98,6 @@ Export each sent email as a PDF and upload both.
 
 ---
 
-**End of Milestone 00 instructions.**
+All the best,
+
+Prof. Moreira
