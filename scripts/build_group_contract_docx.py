@@ -2,7 +2,7 @@
 """Build the Final Project Group Contract .docx that students complete and sign
 for Milestone 00.
 
-Output: _final_project/2026F/template/2026F_QM474_group_contract.docx
+Output: _final_project/2026F/template/QM474_group_contract.docx
 
 The instruction text of record lives in
 _final_project/2026F/milestone_00_meetings_schedule_and_group_contract.md;
@@ -19,7 +19,7 @@ from docx.oxml.ns import qn
 from docx.shared import Pt, Inches, RGBColor
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(REPO, "_final_project/2026F/template/2026F_QM474_group_contract.docx")
+OUT = os.path.join(REPO, "_final_project/2026F/template/QM474_group_contract.docx")
 
 # ---------- Purdue palette (matches build_schedule_docx.py) ----------
 BLACK = "000000"
@@ -153,7 +153,10 @@ def build():
     s.right_margin = Inches(0.8)
 
     # ---------- header ----------
-    para(doc, "QM 47400 · Predictive Analytics · Fall 2026",
+    # Edition-neutral on purpose: the contract is reused each offering, and the
+    # folder it lives in already scopes the term. Davi removed the term from the
+    # header by hand; keep it out.
+    para(doc, "QM 47400 · Predictive Analytics",
          size=10, color=GREY, space_after=2)
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(2)

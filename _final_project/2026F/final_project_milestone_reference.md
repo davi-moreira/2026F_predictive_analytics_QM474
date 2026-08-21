@@ -4,6 +4,16 @@
 
 > **Precedence.** This file is reconciled against the **live Brightspace course**, which is what students actually see and submit against. Where this file and Brightspace disagree, Brightspace wins and this file is corrected. Last reconciled **2026-08-20** against the Brightspace export of 2026-08-18 (see [`../../_project_docs/BRIGHTSPACE_INVENTORY_2026F.md`](../../_project_docs/BRIGHTSPACE_INVENTORY_2026F.md)).
 
+### Templates and rubrics (this folder)
+
+| File | Used by |
+|---|---|
+| [`template/qm474_poster_template.pptx`](template/qm474_poster_template.pptx) | M09 poster first draft, M10 final poster |
+| [`rubric/Predictive_Analytics_Poster_Rubric.pdf`](rubric/Predictive_Analytics_Poster_Rubric.pdf) (also `.docx`, `.xlsx`) | M09, M10, and the Instructor/TA evaluation |
+| [`template/QM474_group_contract.docx`](template/QM474_group_contract.docx) | M00 group contract; rebuilt by `scripts/build_group_contract_docx.py` |
+
+The poster template and rubric are carried forward unchanged from the 2026Summer offering; only the template filename changed, from `mgmt474_poster_template.pptx` to `qm474_poster_template.pptx`, to match the current course code.
+
 ### Individual milestone files (this folder)
 
 [`milestone_00_meetings_schedule_and_group_contract.md`](milestone_00_meetings_schedule_and_group_contract.md) · [`milestone_01_initial_proposal.md`](milestone_01_initial_proposal.md) · [`milestone_02_expanded_outline.md`](milestone_02_expanded_outline.md) · [`milestone_03_draft_abstract.md`](milestone_03_draft_abstract.md) · [`milestone_04_meetings_round01_confirmation.md`](milestone_04_meetings_round01_confirmation.md) · [`milestone_05_conference_application.md`](milestone_05_conference_application.md) · [`milestone_06_simple_model.md`](milestone_06_simple_model.md) · [`milestone_07_meetings_round02_schedule.md`](milestone_07_meetings_round02_schedule.md) · [`milestone_08_complex_models.md`](milestone_08_complex_models.md) · [`milestone_09_poster_first_draft.md`](milestone_09_poster_first_draft.md) · [`milestone_10_final_poster.md`](milestone_10_final_poster.md) · [`milestone_11_presentation_planning.md`](milestone_11_presentation_planning.md) · [`milestone_12_post_invitation.md`](milestone_12_post_invitation.md) · [`milestone_13_meetings_round02_confirmation.md`](milestone_13_meetings_round02_confirmation.md) · [`final_project_peer_review_submission.md`](final_project_peer_review_submission.md) · [`final_project_conference_presentation.md`](final_project_conference_presentation.md) · [`peer_evaluation_instrument.md`](peer_evaluation_instrument.md)
@@ -83,7 +93,7 @@ At least one member of the group must attend each meeting; it need not be the sa
 Full instructions and rubrics: the individual `milestone_NN_*.md` files in this folder (source: `reference/Final Project Milestones .docx`).
 
 ### M00 — Instructor and TA Meetings (Round 01 Schedule) + Group Contract · due Sun Sep 20 · completion
-Two jobs. **(1)** The group completes and signs the **Group Contract** (template: [`template/2026F_QM474_group_contract.docx`](template/2026F_QM474_group_contract.docx), rebuilt by `scripts/build_group_contract_docx.py`), covering members and contact information, communication norms, meeting cadence, roles, decision-making, work distribution, accountability, and signatures. **(2)** The group emails the TA and Professor Moreira proposing dates and times for the Round 01 meetings. Three PDFs submitted: contract, TA request, instructor request.
+Two jobs. **(1)** The group completes and signs the **Group Contract** (template: [`template/QM474_group_contract.docx`](template/QM474_group_contract.docx), rebuilt by `scripts/build_group_contract_docx.py`), covering members and contact information, communication norms, meeting cadence, roles, decision-making, work distribution, accountability, and signatures. **(2)** The group emails the TA and Professor Moreira proposing dates and times for the Round 01 meetings. Three PDFs submitted: contract, TA request, instructor request.
 
 ### M01 — Initial Project Proposal · due Sun Sep 20 · 50 pts
 Define a **prediction goal** (not a research question): prediction goal, motivation and significance, data overview, preliminary methods, expected contributions. 1–2 pages. *(Course support: nb01–nb05.)*
