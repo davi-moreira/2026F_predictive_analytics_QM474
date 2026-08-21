@@ -199,10 +199,14 @@ def build():
                 "the comparison, the limitations, and the recommendation to the stakeholder.", False)],
          indent=0.15)
     rich(doc, [("3. Honors Panel and Conference Walkthrough. ", True),
-               ("One clearly labeled panel on the team's conference poster presenting the student's "
-                "extension and carrying the student's name, plus a five-minute individual "
-                "walkthrough of that panel delivered at the Purdue Undergraduate Research "
-                "Conference.", False)], indent=0.15)
+               ("A labeled \"Honors Extension\" block inside the team's conference poster, "
+                "approximately one column wide, placed within the Models Performance and Evaluation "
+                "section of the course poster template, presenting the student's extension and "
+                "carrying the student's name, plus a five-minute individual walkthrough of that "
+                "block delivered at the Purdue Undergraduate Research Conference. The honors panel "
+                "is assessed solely as part of the Honors Research Extension and is excluded from "
+                "the group poster rubric, so it does not affect the grades of the student's "
+                "teammates.", False)], indent=0.15)
     para(doc,
          "In addition, the student meets individually with the instructor three times during the "
          "term, for approximately fifteen minutes each, in late September, late October, and after "
@@ -216,7 +220,7 @@ def build():
           ["Deliverable", "Due", "Aligned course milestone"],
           [["**Honors Question Memo**", "Sunday, September 20, 2026", "M01 - Initial Project Proposal"],
            ["**Honors Analysis**", "Sunday, October 25, 2026", "M08 - More Complex Models and Performance Evaluation"],
-           ["**Honors Panel (on the final poster)**", "Tuesday, November 10, 2026", "M10 - Final Poster Submission"],
+           ["**Honors Panel (in the team poster)**", "Tuesday, November 10, 2026", "M10 - Final Poster Submission"],
            ["**Conference Walkthrough**", "Tuesday, November 17, 2026", "Purdue Undergraduate Research Conference"]],
           widths=[2.5, 1.9, 2.6])
 

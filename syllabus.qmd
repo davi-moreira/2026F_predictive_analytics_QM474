@@ -154,7 +154,9 @@ Send me an email or stop by office hours **during the first week of classes**. E
 |-----------|--------------------------|-----------|-----------|
 | **H1** | **Honors question memo** — about two pages naming the specific question you will own inside your team's project, why it matters to the stakeholder, three to five sources you are building on, and how you plan to answer it. | Milestone 01 — Initial Project Proposal | Sun Sep 20 |
 | **H2** | **Honors analysis** — one modeling extension beyond what your team does, submitted as a Colab notebook plus a three-page results memo. Evaluate it with the course's cross-validation protocol and compare it to your team's baseline on identical folds. | Milestone 08 — More Complex Models | Sun Oct 25 |
-| **H3** | **Honors panel and conference walkthrough** — one clearly labeled panel on your team's poster carrying your extension, plus a five-minute walkthrough of it at the conference. | Milestone 10 — Final Poster, and the conference | Tue Nov 10 and Tue Nov 17 |
+| **H3** | **Honors panel and conference walkthrough** — a labeled *Honors Extension* block inside your team's poster, about one column wide, carrying your name and your result, plus a five-minute walkthrough of it at the conference. | Milestone 10 — Final Poster, and the conference | Tue Nov 10 and Tue Nov 17 |
+
+> **Your teammates are not affected by any of this.** The honors panel sits inside the *Models Performance and Evaluation* section of the poster template, and it is graded only as part of your Honors Research Extension. It is not scored under the group's poster rubric, and it cannot move your team's grade in either direction.
 
 We also meet one-on-one three times for about fifteen minutes — late September, late October, and once after the conference. Book them through the same link your team already uses for its instructor and TA meetings.
 
