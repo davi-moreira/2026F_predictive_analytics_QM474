@@ -20,6 +20,32 @@ When the docx and any other artifact disagree — `syllabus.qmd`, `schedule.qmd`
 | Brightspace | Official source of record for material and announcements |
 | Course website | https://davi-moreira.github.io/2026F_predictive_analytics_QM474/ — explicitly **non-official**, supplementary |
 
+### Honors contract (added to the docx 2026-08-21)
+
+The official syllabus now carries a top-level **HONORS CONTRACT (OPTIONAL)** section, placed after the DataCamp extra-credit block and before the Netiquette guidelines. It is the source of record for the honors route and `syllabus.qmd` was synced to it the same day.
+
+| Field | Value of record |
+|---|---|
+| Route | John Martinson Honors College honors contract; the honors work is an individual research angle on the group final project, not a parallel course |
+| **Student intake deadline** | **Thu Sep 3, 2026, 11:59 p.m.** — Daniels request form + Qualtrics; cannot be extended |
+| Coordinator decision deadline | Fri Sep 18, 2026 (4th Friday), entered in the Registration Workflow |
+| Step 1 | **The student supplies the research question and Davi must approve it** (this replaced an earlier "we talk it over" framing) |
+| Attachments the student uploads | **This syllabus.** Because the honors section (with its own grading scheme) now lives inside the official syllabus, one file carries both the standard and the modified syllabus |
+| Deliverables | **H1** honors question memo (rides M01) · **H2** modeling extension, CV-first, paired folds vs. the team baseline (rides M08) · **H3** one clearly labeled honors section on the team poster plus a conference walkthrough (rides M10 and the conference) |
+| Deliverable due dates | **"Check the course Brightspace page"** in the syllabus. Specific dates appear only in the attachable honors syllabus, which the contract requires to carry them |
+| Weights | Final Project 35% → 25%, all five components scaled; **Honors Research Extension 10%** (H1 2% · H2 5% · H3 3%). Total stays 100% |
+| Entire-honors-group case | The ten-point reallocation and the separate poster section apply **only when the team is not entirely an honors group** |
+| Group contracts | Allowed, **limited to the course maximum group size** |
+| Scholarly Project | The contract is built to qualify (individually attributable new knowledge, public presentation at the URC, Davi as mentor). Approval stays with JMHC; student files the proposal by **Thu Oct 1, 2026** and the completion verification afterward |
+| Meetings | Three one-on-ones of about fifteen minutes — late September, late October, after the conference — booked through the team's existing instructor/TA meeting procedure |
+
+Artifacts, both regenerated from source and never hand-edited:
+
+| File | Built by | Purpose |
+|---|---|---|
+| `_syllabus/2026F/honors_contract/QM47400_2026F_honors_contract_section.docx` | `scripts/build_honors_section_docx.py` (slices `syllabus.qmd`) | The section alone, for pasting into the official docx or sending on its own |
+| `_syllabus/2026F/honors_contract/QM47400_2026F_honors_syllabus.docx` | `scripts/build_honors_syllabus_docx.py` | The **modified honors syllabus** in the DSB template format, carrying the specific deadlines the contract requires |
+
 ### Assessment weights
 
 Attendance 1% · Participation 4% · Quizzes 15% · Midterm Exam 20% · Course Case Competition 20% · Final Project 35% · Poster-to-Product 5%. **No final exam.** Matches `CLAUDE.md` and `DECISIONS.md` Decision 13 — unchanged by the 2026-08-17 update.
@@ -82,8 +108,10 @@ These are contradictions *inside* the official docx or between it and other arti
 
 | 9 | **The docx still says the midterm covers "cross-validation with 95% confidence intervals".** That is retired claim W1 in `CV_INFERENCE_DOCTRINE.md`; the fold interval is descriptive, not a confidence interval for true performance. `schedule.qmd`, `syllabus.qmd`, the midterm README, and the published site were corrected on 2026-08-20, so the docx is now the **only** artifact still carrying it. | docx, Midterm Exam section | Medium. Suggested replacement: "cross-validation and paired model comparison". Not edited automatically because the file was open in Word. |
 
-| 10 | **The Honors Contract section exists only on the website.** `syllabus.qmd` gained an "Honors Contract (Optional)" section on 2026-08-21 (JMHC contract route, three honors deliverables riding along M01/M08/M10, Final Project scaled 35% → 25% with a 10% Honors Research Extension, and the Scholarly Project alignment). The official docx has no honors language at all. | site vs. docx | **Medium.** The docx is the source of record for policy, so the same section (or a pointer to it) should be pasted into the docx before it is posted to Brightspace. Attachable honors syllabus: `_syllabus/2026F/honors_contract/QM47400_2026F_honors_syllabus.docx` (built by `scripts/build_honors_syllabus_docx.py`). |
+| 10 | ✅ **RESOLVED 2026-08-21** — Davi pasted the section into the docx and edited it there; `syllabus.qmd` was synced to the docx the same day (step 1 now requires his approval of the research question, deliverable dates defer to Brightspace, H3 is an "honors section" on the poster, group contracts are capped at the course max group size, and the ten-point reallocation applies only when the team is not entirely an honors group). ~~The Honors Contract section exists only on the website.~~ | site vs. docx | None. |
+
+| 11 | **Typo in the honors deliverables table:** H3 reads "carrying your extension **it it** is not an honors group". Should be "if it". The website was published with "if"; the docx still has "it it". | docx, Honors Contract section, H3 row | Low, but it is the clause that governs whole-honors-group teams. |
 
 ---
 
-**Last updated:** 2026-08-21 (item 10 added: honors contract); facts of record last read 2026-08-17 from `2026F_predictive_analytics_purdue_QM474.docx` (modified 2026-08-17 16:54).
+**Last updated:** 2026-08-21 (honors contract added to the docx; facts of record and register updated); facts of record last read 2026-08-17 from `2026F_predictive_analytics_purdue_QM474.docx` (modified 2026-08-17 16:54).

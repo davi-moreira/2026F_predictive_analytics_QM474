@@ -214,3 +214,21 @@ This document records design decisions made during course development and the re
 **Scope:** the 2026F midterm banks (rebuilt to the doctrine), 10 notebooks (nb02, nb06, nb08, nb09, nb11–nb14, nb16, nb18 — instructor copy first, per the instructor-first rule), 17 quiz banks with keyed options asserting the overlap rule, the video guides, and the Brightspace pages. Decision 9 (test-set lock) is unaffected and stands.
 
 **Implication:** any new material that states a CV comparison rule must follow the doctrine file; its "Authoring rules" section (A1–A6: never assert an uncomputed number; keep the three outcomes distinct; declare the margin before results, once; prose and code move together; sweep whole notebooks, not mapped cells; instructor copy first) is part of the decision.
+
+---
+
+## Decision 15: Honors Contract Anchored in the Final Project (2026-08-21)
+
+**Context.** A John Martinson Honors College student asked to contract QM 47400 on 2026-08-20. Daniels processes contract paperwork for every DSB-taught course, so the course needed standing honors language rather than a one-off arrangement — and Davi, as DSB Honors Director, wanted something reusable across courses and terms.
+
+**Decision.** The honors contract is **an individual research angle on the group final project**, never a parallel course. Three deliverables ride along existing milestones — H1 question memo with M01, H2 modeling extension (CV-first, paired per-fold comparison against the team's baseline) with M08, H3 a labeled honors section on the team poster with M10 and the conference. Ten points move from the Final Project (35% → 25%, all five components scaled proportionally) to a 10% Honors Research Extension, so the student's total never grows. Where an entire team holds contracts, neither the reallocation nor the separate poster section applies.
+
+**Why not a bolt-on project.** The DSB faculty-facing guidance is explicit that contracting "doesn't have to add to your workload," and the sample contracts that work reuse an assignment the instructor already runs. Anchoring in the final project keeps the marginal cost near zero for both sides and keeps the honors student inside their team rather than beside it.
+
+**Why it doubles as the Scholarly Project.** JMHC requires new knowledge, presented publicly, with a confirmed faculty mentor — and the review note Davi writes most often is that the individual contribution must be unmistakable. H1 names the student's question, H2 produces their result, H3 puts their name on a labeled poster section, the URC is the public venue, and Davi already mentors the final project. Approval remains JMHC's; the student files the proposal by the fall deadline (Oct 1) and the completion verification afterward.
+
+**Source of record.** The section lives in `_syllabus/2026F/2026F_predictive_analytics_purdue_QM474.docx`; `syllabus.qmd` is synced *from* it, never the reverse. Deliverable dates in student-facing text say "Check the course Brightspace page"; the attachable honors syllabus carries the specific dates, because the contract requires "specific assignments, deadlines, and grade scheme."
+
+**Artifacts.** `scripts/build_honors_section_docx.py` (slices the section out of `syllabus.qmd`) and `scripts/build_honors_syllabus_docx.py` (renders the modified honors syllabus in the DSB template). Both write into the gitignored `_syllabus/2026F/honors_contract/`. Regenerate; never hand-edit the output.
+
+**Key dates (Fall 2026, verified).** Student intake closes **Thu Sep 3, 11:59 p.m.** (Daniels form + Qualtrics, not extendable) · coordinator decisions due **Fri Sep 18** · JMHC scholarly-project proposal due **Thu Oct 1**. These shift each term — pull from the Registrar Add/Modify calendar and the live Daniels Honors Contract page rather than reusing them.

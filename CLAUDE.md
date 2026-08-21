@@ -27,6 +27,7 @@ The same **18-notebook arc (nb00–nb09, nb11–nb14, nb16–nb19 — nb10 the m
 | `_project_docs/COURSE_MATERIAL_WORKFLOW.md` | Producing a notebook's full material set end-to-end — notebook → videos → Brightspace page → NotebookLM splits → quizzes (the per-notebook production pipeline + dependency order) |
 | `_project_docs/NOTEBOOK_TEMPLATE.md` | Creating or restructuring a notebook — full 8-section templates |
 | `_project_docs/SYLLABUS_OF_RECORD_2026F.md` | Any question about official course policy, dates, weights, office hours, extra credit — and the open discrepancy register |
+| `_project_docs/DECISIONS.md` Decision 15 | Anything touching the **honors contract** — deliverables, weights, deadlines, the two generated .docx artifacts |
 | `_project_docs/DECISIONS.md` | Before proposing changes to conventions (seeds, splits, format) |
 | `_project_docs/TROUBLESHOOTING.md` | Render fails, GitHub Pages stale, Colab errors, leaked solutions |
 | `CONVERSATION_LOG.md` | Project history and prior decisions |
@@ -221,6 +222,30 @@ See `_project_docs/NOTEBOOK_TEMPLATE.md` for the full notebook structure and `_p
 
 ---
 
+## 🚨 CRITICAL WORKFLOW — The Honors Contract (added 2026-08-21)
+
+The course carries a standing **HONORS CONTRACT (OPTIONAL)** offer for John Martinson Honors College students. Full rationale in `_project_docs/DECISIONS.md` Decision 15; the values of record are in `_project_docs/SYLLABUS_OF_RECORD_2026F.md` under "Honors contract".
+
+**The shape, in one line:** the honors work is an *individual research angle on the group final project*, never a parallel course — H1 question memo rides M01, H2 modeling extension (CV-first, paired folds vs. the team baseline) rides M08, H3 a labeled honors section on the team poster rides M10 and the conference. Final Project 35% → 25%, all five components scaled; **Honors Research Extension 10%** (H1 2% · H2 5% · H3 3%). The student's total never grows. Where an entire team holds contracts, neither the reallocation nor the separate poster section applies.
+
+**Direction of sync — this is the part that gets it wrong.** The honors section lives in the **official syllabus docx** (`_syllabus/2026F/2026F_predictive_analytics_purdue_QM474.docx`, gitignored). `syllabus.qmd` is synced **from** the docx, never the reverse. Davi edits the docx in Word; read it back with `python-docx` and bring the website into line, then log any typo left in the docx in the discrepancy register rather than editing an open Word file.
+
+**Two generated artifacts, both regenerated and never hand-edited:**
+
+```bash
+python3 scripts/build_honors_section_docx.py    # slices the section out of syllabus.qmd
+python3 scripts/build_honors_syllabus_docx.py   # the modified honors syllabus, DSB template
+```
+
+Both write into the gitignored `_syllabus/2026F/honors_contract/`. The **section** docx is for pasting into the official syllabus or sending on its own. The **honors syllabus** docx is the modified-syllabus upload the contract requires, and it is the one place that states specific deliverable dates — student-facing text says "Check the course Brightspace page", but JMHC requires the contract to carry "specific assignments, deadlines, and grade scheme."
+
+**Deadlines shift every term — never reuse these.** Pull the student intake date from the live [Daniels Honors Contract page](https://business.purdue.edu/undergraduate/honors-program/academics/contract.php) (it tracks the Registrar's H grade-mode deadline, *not* the "2nd Friday" rule of thumb in the faculty docx), the coordinator decision date from the 4th Friday of the term, and the scholarly-project proposal deadline from JMHC (Oct 1 fall / Feb 1 spring). Fall 2026, verified: intake **Thu Sep 3**, decisions **Fri Sep 18**, proposals **Thu Oct 1**.
+
+**Reference material** lives outside this repo, in Davi's honors-director repo `~/Dropbox/profissional/purdue/activity_report_services/honors_program_dsb_start_20260501/` — `about_purdue_honors/04_honors_contracts.md`, `about_purdue_honors/03_scholarly_project.md`, `honors_contracting/Honors Contracting at Daniels.docx`, and prior-term sample contracts under `honors_contracting/<term>/`.
+
+
+---
+
 ## 🚨 CRITICAL WORKFLOW — Sync Video Guides and Planning Docs
 
 > Producing a **new** notebook's full material set (notebook → videos → Brightspace page → NotebookLM splits → quizzes)? Follow the end-to-end pipeline and dependency order in `_project_docs/COURSE_MATERIAL_WORKFLOW.md`. The rules below are the per-update sync gate within it.
@@ -355,6 +380,6 @@ Before ending any session that touched course content:
 
 ---
 
-**Last Updated:** 2026-08-15
-**Version:** 2.1 — slimmed from 977 lines by extracting reference material into `NOTEBOOK_TEMPLATE.md`, `DECISIONS.md`, `TROUBLESHOOTING.md`, and `scripts/`. Behavior-changing rules and workflows preserved verbatim.
+**Last Updated:** 2026-08-21
+**Version:** 2.2 — added the Honors Contract workflow (Decision 15). Previously 2.1 — slimmed from 977 lines by extracting reference material into `NOTEBOOK_TEMPLATE.md`, `DECISIONS.md`, `TROUBLESHOOTING.md`, and `scripts/`. Behavior-changing rules and workflows preserved verbatim.
 **Maintained by:** Professor Davi Moreira + AI Assistants

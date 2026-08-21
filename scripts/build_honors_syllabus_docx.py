@@ -198,15 +198,12 @@ def build():
                 "against a margin declared in advance. The memo states the question, the method, "
                 "the comparison, the limitations, and the recommendation to the stakeholder.", False)],
          indent=0.15)
-    rich(doc, [("3. Honors Panel and Conference Walkthrough. ", True),
-               ("A labeled \"Honors Extension\" block inside the team's conference poster, "
-                "approximately one column wide, placed within the Models Performance and Evaluation "
-                "section of the course poster template, presenting the student's extension and "
-                "carrying the student's name, plus a five-minute individual walkthrough of that "
-                "block delivered at the Purdue Undergraduate Research Conference. The honors panel "
-                "is assessed solely as part of the Honors Research Extension and is excluded from "
-                "the group poster rubric, so it does not affect the grades of the student's "
-                "teammates.", False)], indent=0.15)
+    rich(doc, [("3. Honors Section and Conference Walkthrough. ", True),
+               ("One clearly labeled section on the team's conference poster presenting the "
+                "student's extension and carrying the student's name, plus a five-minute individual "
+                "walkthrough of that section delivered at the Purdue Undergraduate Research "
+                "Conference. Where the entire team holds honors contracts, the poster as a whole is "
+                "the honors deliverable and no separate section is required.", False)], indent=0.15)
     para(doc,
          "In addition, the student meets individually with the instructor three times during the "
          "term, for approximately fifteen minutes each, in late September, late October, and after "
@@ -214,13 +211,15 @@ def build():
 
     # ---------------- DEADLINES ----------------
     section_heading(doc, "HONORS CONTRACT DEADLINES")
-    para(doc, "All deliverables are due at 11:59 p.m. on the dates below, submitted through Brightspace.",
+    para(doc, "All deliverables are due at 11:59 p.m. on the dates below, submitted through Brightspace. "
+              "The honors contract requires specific deadlines, so they are stated here even though the "
+              "course syllabus defers deliverable dates to Brightspace.",
          size=9.5, italic=True, color=GREY, space_after=5)
     table(doc,
           ["Deliverable", "Due", "Aligned course milestone"],
           [["**Honors Question Memo**", "Sunday, September 20, 2026", "M01 - Initial Project Proposal"],
            ["**Honors Analysis**", "Sunday, October 25, 2026", "M08 - More Complex Models and Performance Evaluation"],
-           ["**Honors Panel (in the team poster)**", "Tuesday, November 10, 2026", "M10 - Final Poster Submission"],
+           ["**Honors Section (in the team poster)**", "Tuesday, November 10, 2026", "M10 - Final Poster Submission"],
            ["**Conference Walkthrough**", "Tuesday, November 17, 2026", "Purdue Undergraduate Research Conference"]],
           widths=[2.5, 1.9, 2.6])
 
@@ -229,9 +228,9 @@ def build():
     para(doc,
          "Ten percent of the course grade is reallocated from the group Final Project to the "
          "individual Honors Research Extension, giving the honors component a noticeable impact on "
-         "the final grade. The Final Project retains all five of its standard components; each is "
-         "scaled proportionally from 35% to 25% of the course grade. Every other assessment is "
-         "unchanged.", space_after=6)
+         "the final grade, unless the entire team holds honors contracts. The Final Project retains "
+         "all five of its standard components; each is scaled proportionally from 35% to 25% of the "
+         "course grade. Every other assessment is unchanged.", space_after=6)
     table(doc,
           ["Assessment", "Standard", "Honors"],
           [["Attendance", "1%", "1%"],
@@ -245,7 +244,7 @@ def build():
            ["**Total**", "**100%**", "**100%**"]],
           widths=[4.0, 1.5, 1.5])
     para(doc, "The Honors Research Extension is graded out of the 10 points as follows: Honors "
-              "Question Memo 2 points, Honors Analysis 5 points, Honors Panel and Conference "
+              "Question Memo 2 points, Honors Analysis 5 points, Honors Section and Conference "
               "Walkthrough 3 points. Each is assessed on clarity of the question, soundness of the "
               "evaluation, and quality of the communication to a non-technical stakeholder.",
          size=9.5, space_before=5)
@@ -255,7 +254,7 @@ def build():
     para(doc,
          "This contract is designed so that it may also serve as the student's John Martinson "
          "Honors College Scholarly Project. It produces new knowledge that is individually "
-         "attributable - the question, the analysis, and the labeled poster panel are the student's "
+         "attributable - the question, the analysis, and the labeled poster section are the student's "
          "own - and it is presented publicly at the Purdue Undergraduate Research Conference. The "
          "instructor serves as faculty mentor. Approval of the Scholarly Project remains a decision "
          "of the Honors College: the student submits the proposal through the Honors College portal "
@@ -263,9 +262,10 @@ def build():
          "same portal afterward. The Honors Question Memo is written to double as the proposal draft.")
     para(doc,
          "A group honors contract is available when more than one student on the same team "
-         "contracts the course. Each student still owns a distinct question, submits their own "
-         "memo and analysis, and presents their own labeled poster panel; only the administration "
-         "is shared.")
+         "contracts the course, limited to the course maximum group size. Each student still owns a "
+         "distinct question and submits their own memo and analysis; only the administration is "
+         "shared. Where every member of a team holds a contract, the team's poster as a whole is "
+         "the honors deliverable.")
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     doc.save(OUT)
