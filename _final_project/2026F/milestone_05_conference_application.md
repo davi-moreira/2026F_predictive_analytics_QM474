@@ -1,10 +1,8 @@
 # Milestone 05 — Applying to the Conference
 
-**Due:** see the assignment on Brightspace · **Grading:** completion · **Submit:** `NN_conference_application.pdf`
-
 ## About the Final Project
 
-The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 through M13** (no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due one week before the conference. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 through M13** (no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due one week before the conference.
 
 ---
 
@@ -46,3 +44,11 @@ The Final Project is a **group capstone** (groups of four, randomly assigned) cu
 ---
 
 **Course alignment.** Submit your M03 abstract as the application abstract. Because presentation is required, every group must complete this milestone; flag any registration issues to the instructor early.
+
+---
+
+Please feel free to let me know if you have any questions.
+
+All the best,
+
+Prof. Moreira

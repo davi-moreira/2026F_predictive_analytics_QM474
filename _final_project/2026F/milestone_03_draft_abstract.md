@@ -1,10 +1,8 @@
 # Milestone 03 — Project Draft Abstract
 
-**Due:** see the assignment on Brightspace · **Points:** 30 · **Submit:** `NN_abstract.pdf`
-
 ## About the Final Project
 
-The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 through M13** (no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due one week before the conference. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 through M13** (no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due one week before the conference.
 
 ---
 
@@ -53,3 +51,11 @@ Include:
 ---
 
 **Course alignment.** This is a *draft* abstract written early — your final modeling numbers come later (M06/M08); state expected or preliminary findings now and refine for the poster (M09/M10). The conference application (M05) reuses this abstract.
+
+---
+
+Please feel free to let me know if you have any questions.
+
+All the best,
+
+Prof. Moreira

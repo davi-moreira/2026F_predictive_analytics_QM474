@@ -1,10 +1,8 @@
 # Final Project — Conference Poster Presentation
 
-**Due:** see the assignment on Brightspace · **Weight:** 20% of the Final Project grade · **Submit:** `NN_presentation_photo.pdf`
-
 ## About the Final Project
 
-The Final Project is a **group capstone** culminating in a **research poster** presented at the Purdue Undergraduate Research Conference. The project is worth **35%** of the course grade: Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, **Poster Presentation at the conference 20%**, Instructor/TA Evaluation 20%. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+The Final Project is a **group capstone** culminating in a **research poster** presented at the Purdue Undergraduate Research Conference. The project is worth **35%** of the course grade: Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, **Poster Presentation at the conference 20%**, Instructor/TA Evaluation 20%.
 
 ---
 
@@ -36,4 +34,8 @@ Conference information: <https://www.purdue.edu/undergrad-research/conferences/i
 
 ---
 
-**End of Conference Poster Presentation instructions.**
+Please feel free to let me know if you have any questions.
+
+All the best,
+
+Prof. Moreira

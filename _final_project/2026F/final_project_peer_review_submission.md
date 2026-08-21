@@ -1,10 +1,8 @@
 # Final Project — Peer Review Submission
 
-**Due:** see the assignment on Brightspace · **Weight:** 10% of the Final Project grade · **Submit:** `NN_peer_review.pdf`
-
 ## About the Final Project
 
-The Final Project is a **group capstone** culminating in a **research poster** presented at the Purdue Undergraduate Research Conference. The project is worth **35%** of the course grade: Milestone Deliverables 30%, Peer Evaluation 20%, **Peer Review 10%**, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+The Final Project is a **group capstone** culminating in a **research poster** presented at the Purdue Undergraduate Research Conference. The project is worth **35%** of the course grade: Milestone Deliverables 30%, Peer Evaluation 20%, **Peer Review 10%**, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%.
 
 > **Peer Review is not Peer Evaluation.** Peer *Review* (this assignment, 10%) is your group reviewing **other groups' posters**. Peer *Evaluation* (20%, submitted at the end of the course) is each member confidentially rating **their own teammates' contributions**. Both exist, they are graded separately, and they are submitted at different times.
 
@@ -107,4 +105,8 @@ Thank you for providing this valuable feedback to your peers!
 
 ---
 
-**End of Peer Review instructions.**
+Please feel free to let me know if you have any questions.
+
+All the best,
+
+Prof. Moreira

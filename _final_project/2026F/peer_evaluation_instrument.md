@@ -58,7 +58,7 @@ A rating of 3 is the normal, healthy outcome for a teammate who did their share.
 
 - The Brightspace form still needs to be built to match this instrument: 5 Likert items plus 2 free-text fields, repeated per teammate, with the roster piped in per group.
 - Group size is "groups of four, randomly assigned" for the Final Project and "up to four" for the Course Case Competition, so the form must handle a variable number of teammates rather than hardcoding three.
-- Decide whether Poster-to-Product's 20% rides on this same Dec 11 submission or gets a separate instance. Tracked in the companion repo.
+- Decide whether Poster-to-Product's 20% rides on this same end-of-course submission or gets a separate instance. Tracked in the companion repo.
 
 ---
 

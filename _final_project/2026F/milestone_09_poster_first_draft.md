@@ -1,10 +1,8 @@
 # Milestone 09 — Poster First Draft
 
-**Due:** see the assignment on Brightspace · **Grading:** poster rubric (draft) · **Submit:** `NN.pdf`
-
 ## About the Final Project
 
-The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 through M13** (no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due one week before the conference. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 through M13** (no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due one week before the conference.
 
 ---
 
@@ -52,3 +50,11 @@ Submit one PDF named with your group number — group 01 → `01.pdf`, group 17 
 ---
 
 **Course alignment.** Your headline numbers come from M06 (baseline) and M08 (tuned model), all **cross-validated** (course rule). Apply the six principles + eleven-section poster architecture from **nb17**. This draft gets feedback you incorporate into the final poster (M10).
+
+---
+
+Please feel free to let me know if you have any questions.
+
+All the best,
+
+Prof. Moreira

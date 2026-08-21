@@ -1,10 +1,8 @@
 # Milestone 11 — Poster Presentation Planning
 
-**Due:** see the assignment on Brightspace · **Grading:** rubric (see below) · **Submit:** `NN_presentation_planning.pdf`
-
 ## About the Final Project
 
-The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 through M13** (no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due one week before the conference. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 through M13** (no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due one week before the conference.
 
 ---
 
@@ -50,3 +48,11 @@ A written PDF containing: (1) one-paragraph audience analysis; (2) the three ele
 ---
 
 **Course alignment.** Build the pitches around your **cross-validated** headline results (M06/M08) and the poster narrative from **nb17**. Rehearse before the required conference presentation.
+
+---
+
+Please feel free to let me know if you have any questions.
+
+All the best,
+
+Prof. Moreira

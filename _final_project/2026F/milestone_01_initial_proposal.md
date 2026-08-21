@@ -1,10 +1,8 @@
 # Milestone 01 — Initial Project Proposal
 
-**Due:** see the assignment on Brightspace · **Points:** 50 · **Submit:** `NN_proposal.pdf`
-
 ## About the Final Project
 
-The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 through M13** (no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due one week before the conference. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 through M13** (no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due one week before the conference.
 
 ---
 
@@ -59,3 +57,11 @@ Summarize what you expect to achieve. What insights or benefits might your predi
 ---
 
 **Course alignment.** Build the proposal on the workflow vocabulary from **nb01–nb05** (prediction goal, EDA, leakage-safe splits). If your group uses the Kaggle Bank Churn competition data or any synthetic dataset, say so. This proposal seeds M02 (expanded outline) and M03 (draft abstract).
+
+---
+
+Please feel free to let me know if you have any questions.
+
+All the best,
+
+Prof. Moreira

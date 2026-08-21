@@ -1,10 +1,8 @@
 # Final Project Milestone 07 — Instructor and TA Meetings (Round 02 Schedule)
 
-**Due:** Sun Oct 18, 2026 (11:59 PM) · **Points:** completion · **Submit:** two PDFs
-
 ## About the Final Project
 
-The Final Project is a **group capstone** culminating in a **research poster** presented at the Fall 2026 Purdue Undergraduate Research Conference. Across the term your group completes milestones **M00 through M13** (M00 through M13, with no gaps in the numbering). The project is worth **35%** of the course grade: Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+The Final Project is a **group capstone** culminating in a **research poster** presented at the Fall 2026 Purdue Undergraduate Research Conference. Across the term your group completes milestones **M00 through M13** (M00 through M13, with no gaps in the numbering). The project is worth **35%** of the course grade: Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%.
 
 ---
 
@@ -48,4 +46,8 @@ Replace `NN` with your group number. One designated group member uploads on beha
 
 ---
 
-**End of Milestone 07 instructions.**
+Please feel free to let me know if you have any questions.
+
+All the best,
+
+Prof. Moreira

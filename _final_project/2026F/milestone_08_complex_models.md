@@ -1,10 +1,8 @@
 # Milestone 08 — More Complex Models & Performance Evaluation
 
-**Due:** see the assignment on Brightspace · **Points:** 100 · **Submit:** `NN_complex_models.pdf` + code file(s)
-
 ## About the Final Project
 
-The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 through M13** (no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due one week before the conference. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+The Final Project is a **group capstone** (groups of four, randomly assigned) culminating in a **research poster** and a post-conference **Poster-to-Product** build sprint. Across the term your group completes milestones **M00 through M13** (no gaps in the numbering); each member also submits a confidential intra-group peer evaluation at the end. The project is worth **35%** of the course grade — Milestone Deliverables 30%, Peer Evaluation 20%, Peer Review 10%, Poster Presentation at the conference 20%, Instructor/TA Evaluation 20%. The post-conference **Poster-to-Product** sprint is graded separately as its own **5%** of the course grade. **Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due one week before the conference.
 
 ---
 
@@ -55,4 +53,12 @@ State your prediction goal(s); explain why they matter; confirm whether it is **
 
 ---
 
-**Course alignment (CV-first).** Tuning and comparison run on **cross-validation over the training data only** — the test set stays locked (course rule, nb08/nb14). Use **nb09** (GridSearchCV/RandomizedSearchCV) and **nb11–nb14** (trees, forests, boosting, fair model selection with the CI-overlap rule). The tuned champion you select here feeds the poster (M09/M10) and the Poster-to-Product build.
+**Course alignment (CV-first).** Tuning and comparison run on **cross-validation over the training data only** — the test set stays locked (course rule, nb08/nb14). Use **nb09** (GridSearchCV/RandomizedSearchCV) and **nb11–nb14** (trees, forests, boosting, and model selection on paired per-fold differences against a predeclared margin). The tuned champion you select here feeds the poster (M09/M10) and the Poster-to-Product build.
+
+---
+
+Please feel free to let me know if you have any questions.
+
+All the best,
+
+Prof. Moreira

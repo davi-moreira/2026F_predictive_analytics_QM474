@@ -6,7 +6,7 @@ The Final Project is a **group capstone** culminating in a **research poster** p
 
 The post-conference **Poster-to-Product** build sprint is graded separately as its own **5%** of the course grade.
 
-**Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due Tue Nov 10. Professor Moreira serves as faculty mentor throughout the process. Award-winning prior posters from this course: <https://davi-moreira.github.io/applied_projects.html>. Conference information: <https://www.purdue.edu/undergrad-research/conferences/index.php>. Full schedule: [`final_project_milestone_reference.md`](final_project_milestone_reference.md).
+**Presentation at the Purdue Undergraduate Research Conference is required for all students**; the final poster is due Tue Nov 10. Professor Moreira serves as faculty mentor throughout the process. Award-winning prior posters from this course: <https://davi-moreira.github.io/applied_projects.html>. Conference information: <https://www.purdue.edu/undergrad-research/conferences/index.php>.
 
 ---
 
@@ -97,6 +97,8 @@ Export each sent email as a PDF and upload both.
 - **Decide your designated uploader now** and write it into the contract, so there is no confusion at any future submission.
 
 ---
+
+Please feel free to let me know if you have any questions.
 
 All the best,
 
