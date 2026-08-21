@@ -248,6 +248,13 @@ def build():
               "Walkthrough 3 points. Each is assessed on clarity of the question, soundness of the "
               "evaluation, and quality of the communication to a non-technical stakeholder.",
          size=9.5, space_before=5)
+    para(doc, "The honors section on the poster is graded exclusively as part of the Honors Research "
+              "Extension. It is not evaluated under the group poster rubric and therefore cannot "
+              "raise or lower the team's poster grade.", size=9.5, space_before=4)
+    para(doc, "During the term the Brightspace gradebook reflects only the grade earned through the "
+              "regular course requirements. After the student completes the full honors contract, "
+              "the instructor manually adjusts the final course grade to incorporate the Honors "
+              "Research Extension.", size=9.5, space_before=4)
 
     # ---------------- ADDITIONAL ----------------
     section_heading(doc, "ADDITIONAL INFORMATION")

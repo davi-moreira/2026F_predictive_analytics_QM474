@@ -38,6 +38,8 @@ The official syllabus now carries a top-level **HONORS CONTRACT (OPTIONAL)** sec
 | Group contracts | Allowed, **limited to the course maximum group size** |
 | Scholarly Project | The contract is built to qualify (individually attributable new knowledge, public presentation at the URC, Davi as mentor). Approval stays with JMHC; student files the proposal by **Thu Oct 1, 2026** and the completion verification afterward |
 | Meetings | Three one-on-ones of about fifteen minutes — late September, late October, after the conference — booked through the team's existing instructor/TA meeting procedure |
+| **Poster-rubric exclusion** | The honors section on the poster is graded **exclusively** under the Honors Research Extension. It is not evaluated under the group poster rubric and cannot raise or lower the team's poster grade. (Restored to the docx 2026-08-21 after an earlier draft dropped it.) |
+| **Gradebook mechanics** | **During the term the Brightspace gradebook shows only the grade earned through the regular course requirements.** After the student completes the full contract, Davi **manually adjusts the final course grade** to incorporate the Honors Research Extension. Nothing honors-related appears in the running gradebook, so the adjustment is a manual end-of-term step that must not be forgotten. |
 
 Artifacts, both regenerated from source and never hand-edited:
 
@@ -114,4 +116,4 @@ These are contradictions *inside* the official docx or between it and other arti
 
 ---
 
-**Last updated:** 2026-08-21 (honors contract added to the docx; facts of record and register updated); facts of record last read 2026-08-17 from `2026F_predictive_analytics_purdue_QM474.docx` (modified 2026-08-17 16:54).
+**Last updated:** 2026-08-21 (honors contract added to the docx, then the rubric-exclusion and gradebook-mechanics paragraphs); facts of record last read 2026-08-17 from `2026F_predictive_analytics_purdue_QM474.docx` (modified 2026-08-17 16:54).

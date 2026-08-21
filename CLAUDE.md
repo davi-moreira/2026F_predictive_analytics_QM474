@@ -228,6 +228,8 @@ The course carries a standing **HONORS CONTRACT (OPTIONAL)** offer for John Mart
 
 **The shape, in one line:** the honors work is an *individual research angle on the group final project*, never a parallel course — H1 question memo rides M01, H2 modeling extension (CV-first, paired folds vs. the team baseline) rides M08, H3 a labeled honors section on the team poster rides M10 and the conference. Final Project 35% → 25%, all five components scaled; **Honors Research Extension 10%** (H1 2% · H2 5% · H3 3%). The student's total never grows. Where an entire team holds contracts, neither the reallocation nor the separate poster section applies.
 
+**Grading mechanics — the step with no automatic trigger.** The honors poster section is graded *exclusively* under the Honors Research Extension, never under the group poster rubric, so non-honors teammates cannot lose points for it. And the running Brightspace gradebook shows **only** the regular course requirements: the Honors Research Extension is folded in by a **manual adjustment to the final course grade** after the contract is complete. Nothing prompts that adjustment — put it on the end-of-term checklist for every term a contract is live.
+
 **Direction of sync — this is the part that gets it wrong.** The honors section lives in the **official syllabus docx** (`_syllabus/2026F/2026F_predictive_analytics_purdue_QM474.docx`, gitignored). `syllabus.qmd` is synced **from** the docx, never the reverse. Davi edits the docx in Word; read it back with `python-docx` and bring the website into line, then log any typo left in the docx in the discrepancy register rather than editing an open Word file.
 
 **Two generated artifacts, both regenerated and never hand-edited:**

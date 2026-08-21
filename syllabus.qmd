@@ -174,7 +174,11 @@ Your honors work replaces ten points of group weight rather than adding to your 
 | **Honors Research Extension** (H1 2% · H2 5% · H3 3%) | — | **10%** |
 | **Total** | **100%** | **100%** |
 
-Everything else is unchanged: same class, same team, same competition, same exam, same rubrics.
+Everything else is unchanged: same class, same team, same competition, same exam, same rubrics. Your teammates are not affected by this.
+
+Your Honors section is graded exclusively as part of your Honors Research Extension. It is not evaluated under the group poster rubric and therefore cannot raise or lower your team's poster grade.
+
+During the course, your gradebook will reflect only the grade earned through the regular course requirements. After you have completed the full Honors Contract, I will manually adjust your final grade to incorporate the Honors Research Extension.
 
 ### It can also count as your Honors Scholarly Project
 
