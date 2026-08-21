@@ -82,6 +82,8 @@ These are contradictions *inside* the official docx or between it and other arti
 
 | 9 | **The docx still says the midterm covers "cross-validation with 95% confidence intervals".** That is retired claim W1 in `CV_INFERENCE_DOCTRINE.md`; the fold interval is descriptive, not a confidence interval for true performance. `schedule.qmd`, `syllabus.qmd`, the midterm README, and the published site were corrected on 2026-08-20, so the docx is now the **only** artifact still carrying it. | docx, Midterm Exam section | Medium. Suggested replacement: "cross-validation and paired model comparison". Not edited automatically because the file was open in Word. |
 
+| 10 | **The Honors Contract section exists only on the website.** `syllabus.qmd` gained an "Honors Contract (Optional)" section on 2026-08-21 (JMHC contract route, three honors deliverables riding along M01/M08/M10, Final Project scaled 35% → 25% with a 10% Honors Research Extension, and the Scholarly Project alignment). The official docx has no honors language at all. | site vs. docx | **Medium.** The docx is the source of record for policy, so the same section (or a pointer to it) should be pasted into the docx before it is posted to Brightspace. Attachable honors syllabus: `_syllabus/2026F/honors_contract/QM47400_2026F_honors_syllabus.docx` (built by `scripts/build_honors_syllabus_docx.py`). |
+
 ---
 
-**Last updated:** 2026-08-20 (register reconciled against Brightspace); facts of record last read 2026-08-17 from `2026F_predictive_analytics_purdue_QM474.docx` (modified 2026-08-17 16:54).
+**Last updated:** 2026-08-21 (item 10 added: honors contract); facts of record last read 2026-08-17 from `2026F_predictive_analytics_purdue_QM474.docx` (modified 2026-08-17 16:54).
