@@ -22,7 +22,7 @@ Topics include exploratory data analysis, train/validation/test splits, linear a
 
 The course centers on **one comprehensive capstone project** completed in **groups of four randomly assigned members**, plus a **Kaggle case competition** predicting bank customer churn. The project unfolds in two integrated stages:
 
-1. **Research Poster** — milestones M00–M12, culminating in a **required presentation at the Fall 2026 Purdue Undergraduate Research Conference on Tuesday, November 17, 2026** (poster due one week prior, Nov 10).
+1. **Research Poster** — milestones M00–M12, culminating in a **required presentation at the Fall 2026 Purdue Undergraduate Research Conference on Tuesday, November 17, 2026** (poster due Sun Nov 8).
 2. **Poster-to-Product** — a post-conference, two-week in-class build sprint that converts the validated model into a **stakeholder-ready dashboard/app + executive brief**, with corporate-partner feedback and a final showcase (**Wed Dec 9**). *(Supported by a Daniels School Experiential Learning Grant.)*
 
 Master plan and single source of truth for sequencing: [`_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md`](_project_docs/MGMT47400_FullSemester_Plan_2026Fall.md). Milestone reference: [`_final_project/2026F/final_project_milestone_reference.md`](_final_project/2026F/final_project_milestone_reference.md).
@@ -35,7 +35,7 @@ The 20-notebook arc (nb00–nb09 and nb11–nb20; nb10, the midterm casebook, is
 - **Unit 2 — Classification (nb06–nb09):** Logistic regression, classification metrics, cross-validation, hyperparameter tuning + leakage detection. *Supports M06 Simple Model & Performance Evaluation.*
 - **Unit 3 — Ensembles + Selection (nb11–nb15):** Decision trees, random forests, gradient boosting, model selection + test-set ceremony, interpretation. *Supports M08 More Complex Models and the M03 Draft Abstract (nb15).*
 - **Unit 4 — Delivery (nb16–nb20):** Time-series forecasting, data communication & poster design, competition workflow, deep learning, course wrap.
-- **Poster → URC (Nov):** poster studios, dry-runs, submission (Nov 10), conference presentation (Nov 17).
+- **Poster → URC (Nov):** poster studios, dry-runs, submission (Nov 8), conference presentation (Nov 17).
 - **Poster-to-Product (Nov 20 – Dec 9):** build sprint → showcase.
 
 ## Learning Approach
@@ -114,7 +114,7 @@ All notebooks run in Google Colab with one-click access and follow a standardize
 
 ### Project Milestones (groups of four randomly assigned members)
 
-Milestone deliverables are due **Sundays, 11:59 PM**, except the final poster, which is pinned to **Tue Nov 10** — exactly 7 days before the conference. The gaps at **M04 / M07 / M13** are intentional (retired meeting-scheduling milestones); do not renumber.
+Milestone deliverables are due **Sundays, 11:59 PM**, except the final poster, which is pinned to **Sun Nov 8** — nine days before the conference, protecting the print window. This is the same lock date as HONR 46400, so both courses print in one run. The gaps at **M04 / M07 / M13** are intentional (retired meeting-scheduling milestones); do not renumber.
 
 | # | Milestone | Due (Fall 2026) |
 |---|-----------|-----------------|
@@ -126,7 +126,7 @@ Milestone deliverables are due **Sundays, 11:59 PM**, except the final poster, w
 | **M06** | Simple Model & Performance Evaluation | Sun Oct 18 |
 | **M08** | More Complex Models & Performance Evaluation | Sun Oct 25 |
 | **M09** | Poster First Draft | Sun Nov 1 |
-| **M10** | Final Poster Submission (`NN.pdf`) | Tue Nov 10 |
+| **M10** | Final Poster Submission (`NN.pdf`) | Sun Nov 8 |
 | **M11** | Poster Presentation Planning | Sun Nov 15 |
 | **M12** | LinkedIn Post Invitation | Sun Nov 15 |
 | — | **URC Poster Presentation — required of every student** | Tue Nov 17 |

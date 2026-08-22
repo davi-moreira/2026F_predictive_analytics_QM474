@@ -219,7 +219,7 @@ def build():
           ["Deliverable", "Due", "Aligned course milestone"],
           [["**Honors Question Memo**", "Sunday, September 20, 2026", "M01 - Initial Project Proposal"],
            ["**Honors Analysis**", "Sunday, October 25, 2026", "M08 - More Complex Models and Performance Evaluation"],
-           ["**Honors Section (in the team poster)**", "Tuesday, November 10, 2026", "M10 - Final Poster Submission"],
+           ["**Honors Section (in the team poster)**", "Sunday, November 8, 2026", "M10 - Final Poster Submission"],
            ["**Conference Walkthrough**", "Tuesday, November 17, 2026", "Purdue Undergraduate Research Conference"]],
           widths=[2.5, 1.9, 2.6])
 

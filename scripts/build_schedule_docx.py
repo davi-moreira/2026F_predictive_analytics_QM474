@@ -155,7 +155,7 @@ MILESTONES = [
     ("M06", "Simple Model & Performance Evaluation",       "Sun Oct 18"),
     ("M08", "More Complex Models & Performance Evaluation","Sun Oct 25"),
     ("M09", "Poster First Draft",                          "Sun Nov 1"),
-    ("M10", "Final Poster Submission (NN.pdf)",            "Tue Nov 10"),
+    ("M10", "Final Poster Submission (NN.pdf)",            "Sun Nov 8"),
     ("M11", "Poster Presentation Planning",                "Sun Nov 15"),
     ("M12", "LinkedIn Post Invitation",                    "Sun Nov 15"),
     ("—",   "URC Poster Presentation (required)",          "Tue Nov 17"),
@@ -257,7 +257,7 @@ style_run(p.add_run("Final Project Milestones"), 13, bold=True)
 p = tune(doc.add_paragraph(), 0, 6)
 style_run(p.add_run(
     "Group capstone. Deliverables are due Sundays, 11:59 PM, except the final poster, "
-    "pinned to Tue Nov 10 — seven days before the conference. Milestone numbering follows the "
+    "pinned to Sun Nov 8 — nine days before the conference.  Milestone numbering follows the "
     "2026F reference documents; M04 / M07 / M13 are intentionally unused."), 9, color=GREY)
 
 m_tbl = doc.add_table(rows=1, cols=3)

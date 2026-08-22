@@ -4,6 +4,8 @@
 
 > **Precedence.** This file is reconciled against the **live Brightspace course**, which is what students actually see and submit against. Where this file and Brightspace disagree, Brightspace wins and this file is corrected. Last reconciled **2026-08-20** against the Brightspace export of 2026-08-18 (see [`../../_project_docs/BRIGHTSPACE_INVENTORY_2026F.md`](../../_project_docs/BRIGHTSPACE_INVENTORY_2026F.md)).
 
+> **⚠ Pending Brightspace change (2026-08-22).** The **M10 final poster deadline moved from Tue Nov 10 to Sun Nov 8, 11:59 PM** — instructor decision, to protect the print window and to share a single print run with HONR 46400, whose poster locks the same night. This file, the milestone files, the README, the plan docs, and the docx generators are updated. **Brightspace is NOT yet updated**: the M10 due date and its availability window (now Nov 2 – Nov 8) must be changed by hand, and the M11/M12 windows re-open Nov 8. Until that is done, Brightspace and this file disagree and the precedence rule above does *not* apply — this change is the instructor's, not Brightspace's.
+
 ### Templates and rubrics (this folder)
 
 | File | Used by |
@@ -26,7 +28,7 @@ The poster template and rubric are carried forward unchanged from the 2026Summer
 
 ## The Final Project at a glance
 
-In the same group, students complete a practical predictive analytics project culminating in a final research poster. **Presentation of the poster at the Fall 2026 Purdue Undergraduate Research Conference on Tuesday, November 17, 2026, is required for all students**, and the final poster is due one week before the conference, on **Tuesday, November 10, 2026**. Professor Moreira serves as faculty mentor throughout the process.
+In the same group, students complete a practical predictive analytics project culminating in a final research poster. **Presentation of the poster at the Fall 2026 Purdue Undergraduate Research Conference on Tuesday, November 17, 2026, is required for all students**, and the final poster is due nine days before the conference, on **Sunday, November 8, 2026**. Professor Moreira serves as faculty mentor throughout the process.
 
 The Final Project is worth **35% of the course grade**, assessed as follows.
 
@@ -63,11 +65,11 @@ Dates and availability windows are taken from Brightspace. Deliverables are due 
 | **M07** | Instructor and TAs Meetings (Round 02 Schedule) | **Sun Oct 18** | Oct 1 – Oct 18 | completion |
 | **M08** | More Complex Models and Performance Evaluation | **Sun Oct 25** | Oct 1 – Oct 25 | 100 |
 | **M09** | Poster First Draft | **Sun Nov 1** | Oct 26 – Nov 1 | rubric |
-| **M10** | Final Poster Submission (`NN.pdf`) | **Tue Nov 10** | Nov 2 – Nov 10 | poster rubric |
-| **M11** | Poster Presentation Planning | **Sun Nov 15** | Nov 10 – Nov 15 | rubric |
-| **M12** | Post Invitation for Poster Presentation | **Sun Nov 15** | Nov 10 – Nov 15 | completion |
-| **M13** | Instructor and TAs Meetings (Round 02 Confirmation) | **Sun Nov 15** | Nov 10 – Nov 15 | completion |
-| — | **Peer Review Submission** | **Sun Nov 15** | Nov 10 – Nov 15 | 10% of project |
+| **M10** | Final Poster Submission (`NN.pdf`) | **Sun Nov 8** | Nov 2 – Nov 8 | poster rubric |
+| **M11** | Poster Presentation Planning | **Sun Nov 15** | Nov 8 – Nov 15 | rubric |
+| **M12** | Post Invitation for Poster Presentation | **Sun Nov 15** | Nov 8 – Nov 15 | completion |
+| **M13** | Instructor and TAs Meetings (Round 02 Confirmation) | **Sun Nov 15** | Nov 8 – Nov 15 | completion |
+| — | **Peer Review Submission** | **Sun Nov 15** | Nov 8 – Nov 15 | 10% of project |
 | — | **Conference Poster Presentation** (required) | **Tue Nov 17** | Nov 17 | 20% of project |
 | — | **Peer Evaluation Submission** | **Fri Dec 11** | Dec 7 – Dec 11 | 20% of project |
 
@@ -122,8 +124,8 @@ Structured report plus code: prediction goal(s); baseline model (may replicate M
 ### M09 — Poster First Draft · due Sun Nov 1 · rubric
 First full poster draft using the template, rubric, and the Data Communication lecture (nb17): title and authors, abstract and introduction, methods and data, results and analysis (baseline vs. advanced metrics), conclusions and future directions; logical flow, clean visual design, citations, **Acknowledgments** (Daniels School, Prof. Moreira, TAs), data-privacy compliance. Single PDF named `NN.pdf`.
 
-### M10 — Final Poster Submission · due Tue Nov 10 · poster rubric
-Final poster incorporating first-draft feedback. One PDF named `NN.pdf` (e.g., `03.pdf`, `17.pdf`), no section number. Submitted **7 days before the conference**; the instructor prints it for free.
+### M10 — Final Poster Submission · due Sun Nov 8 · poster rubric
+Final poster incorporating first-draft feedback. One PDF named `NN.pdf` (e.g., `03.pdf`, `17.pdf`), no section number. Submitted **9 days before the conference**; the instructor prints it for free.
 
 ### M11 — Poster Presentation Planning · due Sun Nov 15 · rubric
 A written plan (PDF): one-paragraph audience analysis; three elevator pitches (**30-second ≤75 words, 90-second ≤200 words, 2-minute ≤300 words**); poster-integration outline (where figures are referenced); and a question-and-discussion strategy (at least 3 audience-directed questions).

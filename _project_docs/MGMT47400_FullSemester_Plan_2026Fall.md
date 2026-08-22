@@ -23,7 +23,7 @@
 
 **Course-specific anchors:**
 - **Fall Undergraduate Research Conference (URC) poster presentation: Tue Nov 17, 2026** — **all students required to present.**
-- **Poster submission deadline: Tue Nov 10, 2026** (7 days before URC).
+- **Poster submission deadline: Sun Nov 8, 2026** (9 days before URC).
 - **Lecture content completes Mon Oct 26** (nb17); the last notebook, **nb20**, lands in the **Fri Nov 6** studio — leaving Oct 28 – Nov 16 for poster build, finalization, and dry-runs.
 - **Poster-to-Product (P2P) build sprint runs after URC:** Nov 20 – Dec 9, culminating in a showcase (Wed Dec 9); course wrap Fri Dec 11.
 - **Kaggle Case Competition** runs Aug 24 → **online work session Mon Nov 23**, final submission **Sun Nov 29** (concluded over the Thanksgiving-week online session, so December is a clean P2P runway — mirrors Fall 2025, which closed the competition Nov 30).
@@ -72,7 +72,7 @@ Each notebook follows the course loop: **Concept + demo → PAUSE-AND-DO practic
 
 ## Project milestones (Fall 2026)
 
-Canonical reference: [`_final_project/2026F/final_project_milestone_reference.md`](../_final_project/2026F/final_project_milestone_reference.md) (individual `milestone_NN_*.md` files sit beside it). **Milestone numbering is taken exactly from the 2026F reference documents** — it intentionally skips M04 / M07 / M13 (retired meeting-scheduling milestones). Due dates follow the Fall 2025 cadence; deliverables are due **Sundays 11:59 PM** except the final poster (pinned to **Tue Nov 10**, 7 days before the conference).
+Canonical reference: [`_final_project/2026F/final_project_milestone_reference.md`](../_final_project/2026F/final_project_milestone_reference.md) (individual `milestone_NN_*.md` files sit beside it). **Milestone numbering is taken exactly from the 2026F reference documents** — it intentionally skips M04 / M07 / M13 (retired meeting-scheduling milestones). Due dates follow the Fall 2025 cadence; deliverables are due **Sundays 11:59 PM** except the final poster (pinned to **Sun Nov 8**, nine days before the conference).
 
 > **Notebook vs. milestone numbering:** the notebooks use a simplified "M1–M4" project track internally (nb05 proposal, nb09 baseline, nb15 "M3" complex-model walkthrough). The **official deliverables are M00–M12** below; map by topic (complex model → M08, draft abstract → M03). Notebook content is unchanged this term.
 
@@ -86,7 +86,7 @@ Canonical reference: [`_final_project/2026F/final_project_milestone_reference.md
 | **M06** | Simple Model & Performance Evaluation (baseline + k-fold CV) | **Sun Oct 18** | Oct 19 |
 | **M08** | More Complex Models & Performance Evaluation (tuning + CV) | **Sun Oct 25** | Oct 26 |
 | **M09** | Poster First Draft | **Sun Nov 1** | Nov 2 |
-| **M10** | Final Poster Submission (`NN.pdf`) | **Tue Nov 10** | Nov 9 |
+| **M10** | Final Poster Submission (`NN.pdf`) | **Sun Nov 8** | Nov 9 |
 | **M11** | Poster Presentation Planning (elevator pitches) | **Sun Nov 15** | Nov 16 |
 | **M12** | LinkedIn Post Invitation | **Sun Nov 15** | Nov 16 |
 | — | **URC Poster Presentation (required, all students)** | **Tue Nov 17** | Nov 18 |
@@ -209,7 +209,7 @@ Legend: **nbNN** = notebook anchored that session · Mode = *In person* / *Studi
 ### Week 12 — Nov 9–13 · Poster submission + presentation prep
 | Date | Mode | Session |
 |---|---|---|
-| Mon Nov 9 | Studio | Final poster QA → submission · **M10 Final Poster due Tue Nov 10** |
+| Mon Nov 9 | Studio | Final poster QA → submission · **M10 Final Poster due Sun Nov 8** |
 | Wed Nov 11 | Studio | Dry-run presentations |
 | Fri Nov 13 | Studio | Presentation coaching + logistics |
 
