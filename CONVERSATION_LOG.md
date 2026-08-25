@@ -2643,3 +2643,55 @@ inferred. Next up: A11 (competition Rank Code Submission coverage).
 **Still open:** the removed rubric-exclusion note means an honors student's added poster section can again cost non-honors teammates points under criterion 7 of the group poster rubric — Davi's call whether to restore it. Haonan Huang's email remains unanswered.
 
 **Same day, third pass — rubric exclusion restored and gradebook mechanics added.** Davi put the protection back into the docx under "How it is graded", immediately after "Everything else is unchanged… same rubrics", and added a fact the earlier design did not have: **during the term the Brightspace gradebook reflects only the regular course requirements, and the Honors Research Extension is folded in by a manual adjustment to the final course grade after the contract is complete.** Nothing triggers that adjustment automatically, which makes it the operational risk in the design — it now appears in `CLAUDE.md`, Decision 15, the facts of record, and session memory as an end-of-term checklist item for any term with a live contract. `syllabus.qmd` was synced from the docx and both .docx artifacts rebuilt; register item 11 (the "it it" typo in H3) remains open.
+
+---
+
+## 2026-08-21 to 2026-08-24 — Midterm readiness: scrubbed, reviewed, still blocked
+
+**Question asked:** is the midterm ready to (a) print for Fri Sep 25 and (b) import to Brightspace
+as a practice quiz, with all 14 cases usable either way at Davi's choice?
+
+**Answer: no to both.** Tracked as #40 (rewrite), #41 (rationale bug), #42 (practice material);
+#10 is blocked on the first two.
+
+**What passes.** validate_banks, check_pdfs, all 14 answer-length audits. CV doctrine **CLEAN**:
+137 doctrine-touching items read end to end, zero W1/W2/W3 in any keyed option or rationale.
+Coverage of nb01–nb09 adequate; nb00 untested, which is fine for the Launchpad.
+
+**The defect.** The exam passed the length gate at exactly chance and was still guessable, because
+the cue sat in punctuation: "pick the option with a semicolon" scored 59.6% on 85 questions against
+a 20% floor; per-form the chained strategy ran 20.0% to 50.0%. Same class of failure as the
+2026Summer "always pick the longest" incident, different channel, after a documented remediation.
+
+**The scrub.** 453 of 1,050 options rewritten to a uniform punctuation register across all 14 banks.
+12 cases via an agent fleet that died mid-run on a monthly spend limit after writing its files;
+creditfirst and telcoboost by hand. Verified zero key changes, zero reorders, stems untouched.
+Semicolons, colons and dashes now zero. All artifacts rebuilt.
+
+**Why it is still blocked.** Codex (gpt-5.6-sol, ultra, read-only) showed the post-scrub 22.4%
+figure was an artifact of the v1 gate's own blind spots. Re-measured and confirmed: most-clauses
+50.0%, avoid-"because" 43.3%, most-commas 42.9%. **The comma attack pre-dated the scrub and the
+scrub worsened it** (34.5% to 42.9%), because semicolons became commas.
+
+Root cause: **keys are written in a more elaborated register than distractors**. Character-length
+parity holds, which is exactly why the length gate passes. Elaboration parity never existed.
+Punctuation was a symptom. Omnibus evidence: leave-one-form-out TF-IDF on option text alone picks
+the held-out form's keys at **88.6%**.
+
+**Dual use is unsafe as originally specified.** Case-level separation does not contain the leak;
+publishing one case's answers exposes the keyed register of the other 13. That rule has been
+corrected in the README.
+
+**Gate rebuilt (v2).** audit_option_cues.py now tests attraction and elimination, graded features,
+a 20,000-replicate within-item permutation null (v1 pushed a fractional tie-credit score through
+ceil() and compared it to a Binomial, which is not that statistic's null), rare-perfect-cue
+detection, and a --style probe. Effect size is the gate; an earlier draft gated on Holm alone and
+silently passed everything, because a 2,000-replicate p floors above the Holm threshold.
+
+**Independent defect found by Codex, verified:** build_midterm.py shuffles options and updates the
+key letter but prints rationales verbatim. 87 of 210 rationales name option positions; creditfirst
+q1 says "Option 0 fails" while that option prints as D. Grid correct, explanation wrong. (#41)
+
+**Also shipped:** scripts/build_quiz_masters.py (16 master quiz CSVs, 480 questions, all gates
+pass, zero keyed options asserting retired doctrine) and scripts/build_midterm_practice.py.
+
