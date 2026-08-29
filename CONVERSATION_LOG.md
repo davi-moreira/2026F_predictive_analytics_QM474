@@ -3020,3 +3020,31 @@ not break edition-neutrality, and page-1 identity now masks the version before c
 alone does not identify the key -- the case title in the page footer does. Scantrons still have to be
 paired with their booklets, or the piles sorted by case. Recorded in the README, the instructor page,
 `syllabus.qmd` and task #43, whose announce-on-the-day procedure is now superseded.
+
+---
+
+## 2026-08-29 — Both exam-logistics messages are staged, one of them behind an approval
+
+Davi reported two states worth recording, because in both cases the work is done but the message has
+not landed.
+
+**The Copy Center request is scheduled, not sent.** It is composed with the exam files attached and
+queued for **Wed Sep 16**. That makes #44 a watch rather than a task — but it stays open, because a
+scheduled message is a frozen snapshot of its attachments. **#40 is still open**, so if the
+option-cue rewrite lands before Sep 16 the queued message has to be edited or pulled; otherwise it
+sends superseded booklets to a copy center that will print exactly what it receives.
+
+**The exam file went to PTS attached to the request itself**, so PTS has held the booklet since
+Aug 29 — and Davi is **holding the student announcement until PTS approves**. That is the right
+instinct: the draft tells students the exam is filed and ready, and the claim should be true when
+they read it.
+
+**The hold needed an outer bound, so it got one.** Students book their own RegisterBlast
+appointments, and that does not wait on the TIF being approved — so a long approval could quietly
+eat the students' scheduling room ahead of the **Fri Sep 18** booking deadline. #46 now carries a cap:
+send on approval, or by **Tue Sep 8** regardless, dropping the "already filed" sentence if it goes out
+first. Its due date moved from Sep 4 to Sep 8 to match.
+
+Recorded in `_midterm_exam/2026F/print_request_dsb_copy_center.md`,
+`_midterm_exam/2026F/accommodated_testing_pts.md`, the announcement draft's status line, and two
+memories: how Davi stages these messages, and the PTS filing's consequences for grading.
