@@ -2963,3 +2963,33 @@ start between Jan 16 and Dec 23, 2027** — after the course ends. Several map t
 term: mid-term evaluations scheduled for January, the URC poster sequence for March against a **Tue
 Nov 17, 2026** conference, final grades for April. They will not fire late; they will not fire at
 all. Opened as #48, due Sep 30, before the October evaluation window makes it expensive.
+
+**2026-08-29, later — the five slot-4 preprocessing items are repaired.** Codex's blocker was that
+four printed Q4 items had no fully correct alternative. NovaCure was repaired alongside them: its
+defect is identical to SiliconPeak's, which was in the four, so fixing one and not the other would
+have shipped a known-identical flaw.
+
+| Form | What the briefing establishes | The defect | The repair |
+|---|---|---|---|
+| IronCore | "Some sensor readings are missing" | key approved a `StandardScaler`-only numeric branch | stem now proposes a median fill before standardising; key names it |
+| TechCorp | missing entries plus `-999` in `salary_pct_of_market` | same, and -999 scaled as a real ratio | stem recodes the placeholder to missing, then imputes, then scales |
+| TerraFlex | `regional_construction_index` "with gaps on some rows" | same; Ridge raised | key imputes; stem now surfaces the gap |
+| SiliconPeak | about 4 percent missing plus `-999` / `99,999` codes | had an imputer, but `SimpleImputer` defaults to `missing_values=np.nan` so the codes survived | key recodes both codes before imputing |
+| NovaCure | 18 percent labs missing plus 1,400 `dose_mg = -999` | same sentinel gap | key recodes before imputing |
+
+**Verified by execution, not by reading.** A 20-agent workflow (5 repair, 5 execute, 5 review, 5
+revise; 0 errors) included a stage that built a synthetic frame per case matching the briefing's own
+facts -- same columns, missing at the stated rate, the named sentinel codes in the named column, an
+unseen categorical level -- then constructed the pipeline each of the five options describes and
+fitted it. All five forms returned **exactly-one-correct** with the key fitting. SiliconPeak's run
+confirmed the sentinels reach NaN before imputation; IronCore's added a counterfactual probe showing
+that had a sentinel existed there, the key would have been incomplete too.
+
+**Parity held, which was the risk.** Adding a step lengthens the key, and "the elaborated option is
+correct" is the live blocker. Length parity per item went from 0.80-0.90 to 0.75-0.93, the key is not
+the longest on any of the five, and on the printed 140 the cue profile is unchanged --
+clause count 49.2 to 48.7 percent, comma count 43.8 to 42.7, avoid-"because" 43.1 to 43.2. The repair
+neither helped nor hurt it. **#40 still blocks printing.**
+
+Regression: only the five targeted items changed across all 14 banks; nine banks are byte-identical;
+no `correct_index` moved. All four gates pass.
