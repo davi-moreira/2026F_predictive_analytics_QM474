@@ -2802,3 +2802,62 @@ teaching group/time-aware validation — neither is in #40's current scope.
 A correction to my own reporting: I told Davi 42 stems were stranded from their options. That count
 was wrong — my detector matched a boilerplate stem opener ("At GreenLeaf Energy, where you are the
 Operations Director...") shared across every item on a form. Codex's 12 was right.
+
+---
+
+## 2026-08-29 (second pass) — The midterm becomes a 10-question exam with a per-option answer key
+
+**What was asked.** Six changes: drop the exam version information; fix the notesheet instruction to
+exact wording; put Davi's name on the instructions page; move the section request to the instructions
+page and drop the identity block from the case page, improving the case page's presentation; cut every
+form from 15 questions to 10; and rebuild the answer key so it says why each alternative is wrong and
+why the correct one is correct. A seventh arrived mid-run: a PDF per case carrying only the business
+case.
+
+**All seven are done and gated.** Four gates pass on 14 booklets, 14 keys and 14 case PDFs.
+
+**The 10-item cut is blueprint-driven, not arbitrary.** Each bank keeps its 15 authored items; a new
+top-level `exam_selection` names the ten that print, one per slot: framing, EDA, splitting,
+preprocessing pipeline, baselines, metric selection, exactly one leakage item, regularization or
+cost-based threshold, cross-validation, tuning. Every form fills every slot, so the 14 forms stay
+comparable. The 15-item banks carried three or four leakage items, two EDA items, two CV items and a
+"manager synthesis" item; the blueprint keeps one of each duplicate and **drops the synthesis item on
+every form** — which is where Codex's open R5 objection lived, since those keys turned on opening the
+locked test set or authorising a production pilot. Booklets went from 11 pages to 8.
+
+**#41 is fixed structurally, not patched.** Every printed question now carries `option_rationales`,
+five strings index-aligned with `options`, and `balanced_shuffle()` was rewritten to permute by INDEX
+so every parallel array is re-dealt with the options. An explanation can no longer be printed beside
+the wrong choice. Positional references are banned outright and `check_exam_structure.py` fails the
+build on any that reappear. The old single free-text `rationale` is kept in the bank as source
+material but is no longer printed, so a stale "Option 0 fails" cannot reach paper.
+
+**700 rationales, authored and adversarially checked.** A 70-agent workflow (14 select, 14 author, 28
+verify on two lenses, 14 revise; 0 errors) produced them: 129 required edits, 20 blocking, all
+applied. An independent screen of all 700 found zero positional references, all ASCII, every count
+aligned with its option list.
+
+**Removing the version number has a grading consequence, recorded rather than worked around.** A
+collected scantron no longer records which form the student sat. The case title is in the page
+footer, so the booklet is identifiable, but the scantron alone is not — each scantron must be paired
+with its booklet at collection, since the 14 forms have different keys.
+
+**An agent exceeded its brief, and the change was kept deliberately.** While authoring rationales for
+`greenleaf`, an agent modified two items it had been told not to touch: q2's key had said "impute both
+columns", one of which is the TARGET (the 312 zero-demand hours are missing labels), and q5's stem
+proposed a ColumnTransformer with no imputer while the case has 4 percent missing humidity, so its
+keyed "Approve it" approved a pipeline that raises `ValueError: Input X contains NaN`. Both are
+defects Codex confirmed in its previous review, and both repairs match its recommended corrections.
+They were kept because an honest "why this is correct" could not be written for the original keys,
+and they were flagged to Codex for independent scrutiny rather than accepted silently. Four techcorp
+rationales run 113-136 words against a 90-word target; left as dense rather than padded.
+
+**The selection improved one cue and left the main one untouched.** On the printed 140 items the
+stance cue ("always pick the rejecting option") fell from +26.0 points over expectation to +12.6.
+The elaboration cue did not move — clause count 49.2 percent, comma count 43.8 percent,
+avoid-"because" 43.1 percent against a 20 percent floor — because it is a property of how every item
+was authored, not of which ten print. **#40 still blocks printing.**
+
+**Register items 14 and 15 opened.** The question count (15 in the docx and `syllabus.qmd`, 10 on the
+paper) and the now-fixed notesheet wording both contradict the official syllabus. Docx first, then
+`syllabus.qmd` syncs from it.
