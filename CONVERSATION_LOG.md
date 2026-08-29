@@ -2695,3 +2695,76 @@ q1 says "Option 0 fails" while that option prints as D. Grid correct, explanatio
 **Also shipped:** scripts/build_quiz_masters.py (16 master quiz CSVs, 480 questions, all gates
 pass, zero keyed options asserting retired doctrine) and scripts/build_midterm_practice.py.
 
+
+---
+
+## 2026-08-29 — The exam booklet is restructured: signed instructions, case on page 2, no answer sheet
+
+**What was asked.** Five changes to the 14 printed forms: (1) print the case description from
+`../2026Summer/midterm_case_<case>.md` after the instruction page, under a preamble carrying the
+title, case, name/ID request and Prof. Moreira's identification, with questions starting on a later
+page; (2) strip dates and the Fall 2026 mention so the files survive across editions; (3) remove the
+answer sheet completely; (4) make page 1 a universal signed instruction sheet (scantron with name,
+instructor and section; only the scantron graded; 45 minutes; calculator allowed; one notesheet in
+any format); (5) confirm the items only cover material taught before the exam.
+
+**Done, and gated.** `build_midterm.py` now emits a three-part booklet — signed instruction page,
+then the case, then the questions behind a `\clearpage`. `EXAM_DATE` and `TERM` are deleted; nothing
+in any exam or key PDF names a date, month, year or term. The student answer grid is gone. A new
+`check_exam_structure.py` asserts all of it, including that page 1 is identical across the 14 forms
+except its version number. Four gates pass on all 14: structure, print fidelity, banks, answer length.
+
+**Exam Version Numbers replaced the form codes.** A scantron test-number field cannot take `ASTR`, so
+each form now carries a numeric version 1-14, alphabetical by case key, in the top-right corner of
+every page. Without it the 14 different keys cannot be graded.
+
+**A pre-existing print defect, found and fixed.** Unbreakable `snake_case` column names produced an
+83pt overfull hbox; the sheet CLIPPED the overflow, so `last_order_recency_days` printed as
+`last_order_recency_d` inside a data dictionary students need, and one question stem overflowed too.
+This predates the restructure. `tex_escape` now maps `_` to `\_\allowbreak{}`, and `compile_pdf`
+raises on any line overflowing by more than 10pt.
+
+**The Summer case briefings could not be printed as-is.** A 56-agent workflow (14 audits, 28
+adversarial verifiers on two lenses, 14 revisions; 0 errors) rewrote all 14 into
+`_midterm_exam/2026F/cases/<case>.md`. Every case needed edits: 154 required, 66 of them blocking.
+Three failure classes:
+- **Answer leakage.** 55 marker hits across the 14. The AstraOrbit briefing named a candidate feature
+  as "(post-decision data leakage)" — the diagnosis its leakage item is keyed on — and stated the
+  keyed threshold direction verbatim, including a pre-emptive refutation of the tempting distractor.
+  The rewritten set has zero.
+- **Contradiction with the corrected Fall items.** The same briefing called `landing_zone_type`
+  (2 levels) and `engine_throttle_profile` (4 levels) "high-cardinality" — the exact false premise the
+  Fall item was repaired to remove — while never defining `booster_id`, the genuinely
+  high-cardinality column the repaired item moved to.
+- **Retired CV doctrine**, quoting the fold interval as a "95% Student's t confidence interval" (W1).
+
+**Requirement 5: coverage is clean.** Zero items were flagged as blocking. All 53 flags are borderline
+out-of-scope *vocabulary*, almost all confined to distractors, and the strategy "eliminate any option
+naming a technique we never taught" scores 20.9% against a 20.0% floor — not exploitable.
+
+**Two findings outside the booklet work, both verified by hand after an agent claimed them:**
+1. **`nb07` cell 25 inverts precision.** It reads: *"PR-AUC focuses on the question that matters: 'Of
+   the patients we told are healthy, how many actually have cancer?'"* With benign as the positive
+   class that describes 1 - precision, the false omission rate. Two midterm items key off the correct
+   definition, so the notebook currently contradicts the exam.
+2. **A stance cue in the banks.** "Always pick the rejecting option" hits 35 of 53 stance items, 66%
+   against 40% expected — a +26 point lift. `homevalue` is 7/7 against 3.0 expected: a student who
+   notices takes all seven of that form's stance items with no content knowledge. This is the same
+   family as the `avoid 'approve'` / `pick 'reject'` attacks the cue gate already fails on, and it
+   feeds directly into #40.
+
+Agents also surfaced cross-item leakage *within* a form (novacure item 9's stem leaks item 15's key;
+neurologic Q3 is disclosed by four other stems), a class #40 does not currently cover. One agent went
+out of scope and wrote `scripts/build_midterm_practice_cases.py`, which would have shipped live exam
+cases as Brightspace practice — precisely what the 88.6% style-leak finding forbids. It was moved out
+of the repo, not merged.
+
+**Policy conflict logged, not silently resolved.** The calculator and notesheet allowances contradict
+the official syllabus docx ("Closed book: no notes, no textbooks, no calculators..."), which is the
+source of record. Opened as **item 13** in the discrepancy register: Davi edits the docx in Word
+first, then `syllabus.qmd` syncs from it. `instructor.qmd` and the midterm README were updated to the
+new policy and the site re-rendered and re-encrypted; the instructor companion repo was synced.
+
+**Unchanged and still blocking print:** #40 (option-register rewrite) and #41 (rationale positional
+references). The restructure does not touch the items, so the cue gate still fails at nine attacks
+and an 88.6% style probe. The booklet is ready; the items are not.
