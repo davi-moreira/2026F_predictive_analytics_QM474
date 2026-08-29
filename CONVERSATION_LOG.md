@@ -2891,3 +2891,38 @@ covers the 98-student roster with six spares and must be re-checked against the 
 wants accommodated materials by noon Thu Sep 24**, which makes Wednesday the last workable pickup;
 and the scantron does not record which form a student sat, so scantron and booklet must be paired at
 collection.
+
+**Codex review of the 10-question build (gpt-5.6-sol, ultra, six lanes, read-only).** It verified
+R1, R2, R3, R5 and R7 as PASS, R4 partial, and R6 a substantive FAIL. It found no defect in the
+shuffle lane: **700/700 rationales stayed beside their source option**, 140/140 keyed texts are the
+authored keys, every answer grid, solution label and CSV mark agrees, and every form carries exactly
+two keys per letter. It endorsed keeping the two GreenLeaf repairs.
+
+**Fixed the same day, all in the generator or the gate:**
+- **The notesheet check was a sham.** The `NOTESHEET` constant was defined and never used; the regex
+  that actually ran accepted "8.5 ft x 11cm". It now compares the exact sentence, and the corrupted
+  variant fails.
+- **Sixteen bad page breaks.** Ruled headings were stranded at page feet and lead-ins split from
+  their bullets. Added widow/orphan penalties, `\needspace` plus `\nobreak` around ruled heads, and
+  `\nopagebreak` after a colon lead-in. Stranded headings went from 8 to 0.
+- **`Answer: X` detached** from a long topic line in the key; replaced `\hfill` with two minipages.
+- **The case-only PDF branded itself `MIDTERM EXAM`**; it now says `BUSINESS CASE`.
+
+**The blocker Codex found, and it is not the cue gate.** Four printed Q4 items have **no fully
+correct alternative**. IronCore, TechCorp and TerraFlex key an "approve this pipeline" option whose
+numeric branch is `StandardScaler` alone, while the printed case establishes missing values in those
+columns; SiliconPeak imputes but never recodes the documented `-999` / `99,999` sentinels. Verified
+locally under scikit-learn 1.6.1: the first three raise `ValueError: Input X contains NaN`. This is
+the same family Codex flagged in the previous review, of which only GreenLeaf was ever repaired --
+and the blueprint put this item at slot 4, so it prints on every form. NovaCure Q4 is a fifth,
+ambiguous case.
+
+**Also confirmed by local reproduction:** `StandardScaler` is NaN-aware, so TelcoBoost Q4's
+distractor D (scaler before imputer, both inside the pipeline) fits without error. Its rationale --
+authored this round -- asserts the opposite, and the item therefore has two defensible answers.
+
+Further explanation defects Codex verified and Davi must rule on: three tuning keys (RetailMax,
+TerraFlex, SiliconPeak Q10) report the GridSearchCV selection score as an honest performance
+estimate; HomeValue has no tuning item at all and duplicates its own Q9 construct; AstraOrbit Q6,
+NovaCure Q5 and seven low-severity rationales contain overclaims. All are item-content work and sit
+with #40, not with this round's scope.
