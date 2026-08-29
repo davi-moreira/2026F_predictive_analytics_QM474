@@ -2768,3 +2768,37 @@ new policy and the site re-rendered and re-encrypted; the instructor companion r
 **Unchanged and still blocking print:** #40 (option-register rewrite) and #41 (rationale positional
 references). The restructure does not touch the items, so the cue gate still fails at nine attacks
 and an 88.6% style probe. The booklet is ready; the items are not.
+
+**Codex review (gpt-5.6-sol, ultra, read-only, subagent lanes).** Verdict: R1, R3 and R4 met; R2
+violated; the gate certified layouts it should have rejected. Confirmed and fixed the same day:
+
+- **R2 was genuinely violated and the gate said PASS.** Six `siliconpeak` rationales printed "Summer
+  stem and four options carried over" into the answer key. The provenance was moved into the bank's
+  `provenance` field, with keys, options and stems verified unchanged. The gate now flags any
+  capitalised season word — no sentence-start exemption, because the violation began its sentence.
+- **`item\'s` in a raw string** made TeX read `\'` as an accent: every one of the 14 keys printed
+  "see each itemś provenance". Fixed.
+- **The gate passed five constructed violations.** Hardened: version numbers are validated as a
+  bijection onto the case set rather than merely blanked before comparison, numeric dates are caught
+  (with train/validation/test ratios excluded by their sum to 100), and an answer grid is detected
+  structurally as a row of bubble letters rather than by its caption.
+- **`\needspace{4\baselineskip}` was a magic number.** Codex found 12 stems whose options all began
+  on the next page. The reservation is now computed from the stem and first option's own length; the
+  count is zero.
+
+Two of its findings were adjudicated down. Of four Q15 items it flagged as testing excluded content,
+only **greenleaf Q15** is genuinely arguable — its key is "open the held-out block once, judge its MAE
+against the tolerance, and if it clears, ship", which is the nb14 ceremony in substance and nb14 is
+taught two weeks after the exam. IronCore, TechCorp and RetailMax Q15 use deployment vocabulary as
+business framing while assessing nb03/nb07/nb08 constructs; they stay in scope. Left for Davi.
+
+Its sharpest structural point stands unresolved: **GreenLeaf and IronCore are the wrong case designs
+for the taught toolkit.** GreenLeaf is two years of hourly rows carrying `prior_hour_demand`, and
+IronCore is repeated hourly observations from 200 bearings with overlapping 24-hour labels; both
+stipulate ordinary five-fold CV, which leaks across serially adjacent rows and repeated entities. A
+methodologically strong student can object correctly. Fixing it needs either different cases or
+teaching group/time-aware validation — neither is in #40's current scope.
+
+A correction to my own reporting: I told Davi 42 stems were stranded from their options. That count
+was wrong — my detector matched a boilerplate stem opener ("At GreenLeaf Energy, where you are the
+Operations Director...") shared across every item on a form. Codex's 12 was right.
