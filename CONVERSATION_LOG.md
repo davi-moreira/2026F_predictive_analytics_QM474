@@ -2993,3 +2993,30 @@ neither helped nor hurt it. **#40 still blocks printing.**
 
 Regression: only the five targeted items changed across all 14 banks; nine banks are byte-identical;
 no `correct_index` moved. All four gates pass.
+
+**2026-08-29, final — three printed exam versions, alternating.** Version labels return, but as a
+fixed set of three on the instruction page: `Version 001 (A)`, `Version 002 (B)`, `Version 003 (C)`.
+The scantron bullet is restored to tell the student to code it.
+
+The assignment is not a plain three-cycle, because a plain three-cycle fails the stated requirement:
+cycling `ABC` over the alphabetical case list puts **astraorbit and siliconpeak both on A**. The
+table is therefore explicit, and two constraints are asserted at build time in `version_label()` and
+again in `check_exam_structure.py`:
+
+1. astraorbit, creditfirst and siliconpeak carry three different versions.
+2. No two alphabetically adjacent forms share a version, so a stack handed out in order alternates.
+
+| Version | Forms |
+|---|---|
+| 001 (A) | astraorbit, homevalue, neurologic, retailmax, techcorp, veritasfin |
+| 002 (B) | creditfirst, ironcore, novacure, telcoboost |
+| 003 (C) | greenleaf, medscreen, siliconpeak, terraflex |
+
+Both checks were proven to fire by mutating the table in memory. The gate's rule that previously
+FAILED on any version string was inverted: a version names a **form**, not an offering, so it does
+not break edition-neutrality, and page-1 identity now masks the version before comparing.
+
+**The operational caveat is narrower but still real:** several forms share a version, so the version
+alone does not identify the key -- the case title in the page footer does. Scantrons still have to be
+paired with their booklets, or the piles sorted by case. Recorded in the README, the instructor page,
+`syllabus.qmd` and task #43, whose announce-on-the-day procedure is now superseded.
