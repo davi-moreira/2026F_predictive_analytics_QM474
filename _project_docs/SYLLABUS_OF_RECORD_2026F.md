@@ -115,10 +115,38 @@ These are contradictions *inside* the official docx or between it and other arti
 | 11 | ✅ **RESOLVED 2026-08-21** — Davi corrected it in the docx and regenerated the PDF; H3 now reads "carrying your extension **if** it is not an honors group". ~~Typo "it it" in the H3 row.~~ | docx | None. |
 
 | 12 | **The "How to start" list renders as 3. / 4. / 5. instead of 1. / 2. / 3.** in the syllabus PDF — a Word list-numbering continuation from the preceding list. Cosmetic, but it is the first thing an honors student reads, and this PDF is what Brightspace serves under Content > Syllabus PDF. Fix: right-click the first item, "Restart at 1", and re-export. | docx and PDF, Honors Contract section | Low. |
-| 13 | **The exam resource policy changed and the docx has not caught up.** On 2026-08-29 Davi specified that the printed midterm allows **any type of calculator** and **one sheet of notes, in any format**. The docx still reads *"Closed book: no notes, no textbooks, no calculators, no phones, no laptops, no AI tools"*, and `syllabus.qmd` (two places) plus the midterm README repeat it. The printed booklets now state the new policy on their signed instruction page. | docx, Midterm Exam section; `syllabus.qmd` lines ~95 and ~203; `_midterm_exam/2026F/README.md` | **High.** A student who reads the syllabus and brings no calculator, or who brings a notesheet a proctor then confiscates, has a legitimate grievance either way. The docx is the source of record, so it must be edited first; `syllabus.qmd` is then synced from it. Not edited automatically — the docx is Word-owned. |
-| 14 | **The midterm is now 10 questions, not 15.** Changed 2026-08-29. The docx, `syllabus.qmd` (line ~95) and the schedule handout all still say *"15 multiple-choice questions with five alternatives each"*. The printed booklets and their instruction page now say 10, at the same 45 minutes (about 4.5 min per question). The five held-back items stay in each bank as replacements. | docx, Midterm Exam section; `syllabus.qmd` line ~95; `_midterm_exam/2026F/README.md` (updated) | **High.** The question count is what a student plans their time around, and it is stated in three places that now disagree with the paper they will be handed. Docx first, then sync `syllabus.qmd`. |
-| 15 | **The notesheet wording is now fixed text.** The instruction page prints exactly *"One sheet of paper, 8.5” x 11”, front and back, is allowed as a notesheet."* Any syllabus language about notes must match this exactly, including the size, or a student can argue the two documents permit different things. | docx; `syllabus.qmd`; the printed instruction page | Medium. Follows from item 13; listed separately because the wording, not just the permission, is now load-bearing. |
+| 13 | **The exam resource policy changed and the docx has not caught up.** On 2026-08-29 Davi specified that the printed midterm allows **any type of calculator** and **one sheet of notes, in any format**. The docx still reads *"Closed book: no notes, no textbooks, no calculators, no phones, no laptops, no AI tools"*, and `syllabus.qmd` (two places) plus the midterm README repeat it. The printed booklets state the new policy on their signed instruction page, and **`syllabus.qmd` and the README were brought into line on 2026-08-29** (rendered and pushed). **Only the docx is still out of date.** | docx, Midterm Exam section | **High — docx only.** The website and the paper now agree; the docx does not. Paste the replacement text below into the docx in Word. |
+| 14 | **The midterm is now 10 questions, not 15.** Changed 2026-08-29. The docx, `syllabus.qmd` (line ~95) and the schedule handout all still say *"15 multiple-choice questions with five alternatives each"*. The printed booklets and their instruction page now say 10, at the same 45 minutes (about 4.5 min per question). The five held-back items stay in each bank as replacements. | docx, Midterm Exam section | **High — docx only.** `syllabus.qmd` and the README now say 10 (updated 2026-08-29); the docx still says 15. The question count is what a student plans their time around. |
+| 15 | **The notesheet wording is now fixed text.** The instruction page prints exactly *"One sheet of paper, 8.5” x 11”, front and back, is allowed as a notesheet."* Any syllabus language about notes must match this exactly, including the size, or a student can argue the two documents permit different things. | docx | Medium — docx only. `syllabus.qmd` now carries the exact sentence. Listed separately because the wording, not just the permission, is load-bearing: the paper and the syllabus must describe the same notesheet. |
+
+
+### Paste-ready replacement for the docx Midterm Exam section (items 13-15)
+
+Replace the sentence beginning "You have 15 multiple-choice questions" and the closed-book sentence
+after it with:
+
+> You have **10 multiple-choice questions with five alternatives each**, and **45 minutes** of class
+> time to complete them (about 4.5 minutes per question).
+>
+> **Answers are marked on a scantron form, and only the scantron is scored** — nothing written in the
+> exam booklet is graded. Bring a **number 2 pencil**. Print your name, your instructor, and your
+> section on the scantron. Several business cases are in use, so **your exam version number will be
+> announced at the start of the exam**; code it on your scantron, because a scantron without the
+> correct version cannot be graded.
+>
+> **You may use any type of calculator**, and **one sheet of paper, 8.5" x 11", front and back, is
+> allowed as a notesheet**. The notesheet can be prepared in any way and is not collected. Otherwise
+> the exam is **closed book**: no textbooks, no other notes, **no AI tools**, and no phones, laptops,
+> tablets, smart watches, earbuds, or any other device that can communicate or reach the internet.
+
+And in the AI-policy list, replace the midterm bullet with:
+
+> You are **not allowed to use AI tools while taking quizzes or the midterm exam**. The midterm is an
+> in-person paper exam: no AI tools and no electronic devices. A calculator and one 8.5" x 11"
+> notesheet, front and back, are the only permitted aids.
+
+This is the text now published on the website, so pasting it makes the two agree exactly.
 
 ---
 
-**Last updated:** 2026-08-29 (items 13-15 opened: the midterm now allows a calculator and a fixed-wording notesheet, and is 10 questions rather than 15 — all three contradict the docx). Previously 2026-08-21 (honors contract complete in the docx and PDF; items 10-11 resolved, item 12 opened); facts of record last read 2026-08-17 from `2026F_predictive_analytics_purdue_QM474.docx` (modified 2026-08-17 16:54).
+**Last updated:** 2026-08-29 (items 13-15: `syllabus.qmd` and the README updated and published; the docx remains outstanding, paste-ready text above. Originally opened: the midterm now allows a calculator and a fixed-wording notesheet, and is 10 questions rather than 15 — all three contradict the docx). Previously 2026-08-21 (honors contract complete in the docx and PDF; items 10-11 resolved, item 12 opened); facts of record last read 2026-08-17 from `2026F_predictive_analytics_purdue_QM474.docx` (modified 2026-08-17 16:54).

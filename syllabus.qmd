@@ -92,7 +92,11 @@ Short quizzes based on lecture and notebook content promote consistent engagemen
 
 The midterm exam wraps up the foundational concepts of the course in a comprehensive assessment. It is held **in person, on paper, during class time**, and covers the material through `nb09` — problem framing, exploratory data analysis, data splitting, preprocessing pipelines, regression and classification metrics, baselines, regularization, logistic regression, cost-based thresholds, cross-validation and paired model comparison, hyperparameter tuning, and leakage detection.
 
-The exam is a **business case**: you take the role of the manager responsible for a predictive model, and each question puts you inside a decision that arises during model development — an analyst proposes a feature, a cross-validation result lands, a metric drops, a leakage signature appears. You have **15 multiple-choice questions with five alternatives each**, and **45 minutes** of class time to complete them (about 3 minutes per question). The exam is **closed book**, and **no AI tools, notes, or electronic devices** are permitted.
+The exam is a **business case**: you take the role of the manager responsible for a predictive model, and each question puts you inside a decision that arises during model development — an analyst proposes a feature, a cross-validation result lands, a metric drops, a leakage signature appears. You have **10 multiple-choice questions with five alternatives each**, and **45 minutes** of class time to complete them (about 4.5 minutes per question).
+
+**Answers are marked on a scantron form, and only the scantron is scored** — nothing written in the exam booklet is graded. Bring a **number 2 pencil**. Print your name, your instructor, and your section on the scantron. Several business cases are in use, so **your exam version number will be announced at the start of the exam**; code it on your scantron, because a scantron without the correct version cannot be graded.
+
+**You may use any type of calculator**, and **one sheet of paper, 8.5" x 11", front and back, is allowed as a notesheet**. The notesheet can be prepared in any way and is not collected. Otherwise the exam is **closed book**: no textbooks, no other notes, **no AI tools**, and no phones, laptops, tablets, smart watches, earbuds, or any other device that can communicate or reach the internet.
 
 Only under exceptional circumstances, when legitimate and verifiable reasons are provided, will make-ups be given. "Exceptional circumstances" means a death in the family, a serious personal medical emergency, participation in a conflicting NCAA athletic event, or as otherwise required by University policies. *Except for emergencies, requests for a makeup must be made by email with supporting documentation no later than 7 days before the scheduled exam.*
 
@@ -200,7 +204,7 @@ Two things stay on your side: submit the proposal through the Honors College por
 
 I encourage you to use AI tools you believe will enhance your individual or group learning performance. Learning to use AI is a valuable and emerging skill, and I am available to provide support during office hours or by appointment. Be aware of the following guidelines:
 
--   You are **not allowed to use AI tools while taking quizzes or the midterm exam**. The midterm is a closed-book, in-person paper exam: no AI tools, notes, or electronic devices.
+-   You are **not allowed to use AI tools while taking quizzes or the midterm exam**. The midterm is an in-person paper exam: no AI tools and no electronic devices. A calculator and one 8.5" x 11" notesheet, front and back, are the only permitted aids.
 -   Providing low-effort prompts will result in low-quality outputs. Refine your prompts to achieve desirable outcomes — use the course knowledge for that.
 -   Use AI to **support your learning**: ask for explanations, examples, or clarifications of doubts; **do not** simply ask for solutions.
 -   **Do not blindly trust the information** provided by the output. Any errors or omissions resulting from your use of an AI tool are your responsibility. AI works better for topics you already understand.
