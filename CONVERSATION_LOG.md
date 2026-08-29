@@ -2926,3 +2926,40 @@ TerraFlex, SiliconPeak Q10) report the GridSearchCV selection score as an honest
 estimate; HomeValue has no tuning item at all and duplicates its own Q9 construct; AstraOrbit Q6,
 NovaCure Q5 and seven low-severity rationales contain overclaims. All are item-content work and sit
 with #40, not with this round's scope.
+
+---
+
+## 2026-08-29 — Inbox intake: the PTS accommodated-testing filing, and a stale announcement queue
+
+Two files were sitting in `_adm/_inbox/`; both are now read, filed, and reflected in the tracker.
+
+**The Testing Instruction Form for the midterm is filed with Purdue Testing Services.** Davi
+submitted the TIF and the exam on 2026-08-29 (the form itself carries no date, so the date comes from
+his report, not from the document). Filed at
+`_adm/_accommodations/2026F/2026-08-29_purdue-testing-services_qm47400-midterm-tif.pdf`; the facts
+live at `_midterm_exam/2026F/accommodated_testing_pts.md`. As submitted: IDP-11 scantron (A–E), any
+calculator, one 8.5" x 11" notesheet front and back, no password, **return method "scanned copy
+returned to Instructor Portal"**, additional instructions left empty.
+
+**Three consequences, each now tracked rather than remembered.** The return method means the
+accommodated scantrons come back as *images* while the class set goes through IDP — so they are
+hand-graded, or the originals are collected at STEW G39 before the two-week shredding window closes
+(#47, with the 48-business-hour download and rescan clock inside it). The TIF's empty "additional
+instructions" field means **no PTS proctor has an exam version to announce**, which contradicts what
+`syllabus.qmd` promises students and makes the case title in the booklet footer the only record of
+which form was sat (flagged on #43). And the copy PTS now holds is whatever was current at
+submission: **if #40 rewrites an item, it must be resubmitted by noon Thu Sep 24.**
+
+**The student-facing half has a deadline only students can meet.** PTS requires appointments booked
+**seven days ahead**, so a Fri Sep 25 sitting must be booked by **Fri Sep 18**. The announcement is
+drafted at `_announcements/2026F/midterm_accommodated_testing_pts.md` and tracked as #46, due Sep 4
+so students get room to schedule rather than a reminder on the deadline. It names no one, so it works
+sent individually or posted class-wide — and posted class-wide it also reaches students who are
+eligible but have not activated, which is the failure PTS says it sees most.
+
+**The second file was a Brightspace announcements export (2026-08-21), and it turned up a real
+gap.** Of 35 announcements in the shell, 11 are dated inside Fall 2026 and **24 are scheduled to
+start between Jan 16 and Dec 23, 2027** — after the course ends. Several map to moments inside this
+term: mid-term evaluations scheduled for January, the URC poster sequence for March against a **Tue
+Nov 17, 2026** conference, final grades for April. They will not fire late; they will not fire at
+all. Opened as #48, due Sep 30, before the October evaluation window makes it expensive.
