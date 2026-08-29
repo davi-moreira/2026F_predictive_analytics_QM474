@@ -2861,3 +2861,33 @@ was authored, not of which ten print. **#40 still blocks printing.**
 **Register items 14 and 15 opened.** The question count (15 in the docx and `syllabus.qmd`, 10 on the
 paper) and the now-fixed notesheet wording both contradict the official syllabus. Docx first, then
 `syllabus.qmd` syncs from it.
+
+---
+
+## 2026-08-29 — Copy Center print request for the midterm, drafted and recorded
+
+Davi will send the DSB Copy Center print request **seven days before he collects the copies**. The
+midterm is **Fri Sep 25**, the copies are ready and picked up **Wed Sep 23**, so the email goes out
+**Wed Sep 16, 2026**.
+
+The message is his own wording, carried over from the MGMT 305 / MGMT 30500 requests to the same copy
+center (Feb 2025 – May 2026): black and white, single-sided, staple upper left, 52 copies of the
+first file on pink paper with an orange scantron after page 1, 52 of the second on blue with a green
+scantron, versions piled alternately. Three things were added, all facts rather than prose: the
+booklet is **8 pages** (so 104 booklets total), pickup is at **KRAN 160**, and "alternatively" became
+"alternately (pink, blue, pink, blue, …)", which is what the copy center has to act on.
+
+**Recipient recovered from the mail archive rather than assumed:** Tom Brown, `trbrown@purdue.edu`,
+Mail Room / Copy Center / Safety, KRAN 160, with `copycenter@purdue.edu` on cc — the address that
+replied when the MGMT 305 exams were ready.
+
+**Why the scantron sits after the first page.** Page 1 of every Fall booklet is the signed
+instruction sheet, so the scantron is collated behind it, not on top of the packet.
+
+**Recorded at** `_midterm_exam/2026F/print_request_dsb_copy_center.md` (gitignored, mirrored to the
+private instructor repo), with a row in that directory's README and a pre-send checklist that names
+four blockers: the banks are still **NOT CLEARED FOR PRINT** (#40, the option-cue audit); 52 + 52
+covers the 98-student roster with six spares and must be re-checked against the live roster; **PTS
+wants accommodated materials by noon Thu Sep 24**, which makes Wednesday the last workable pickup;
+and the scantron does not record which form a student sat, so scantron and booklet must be paired at
+collection.
