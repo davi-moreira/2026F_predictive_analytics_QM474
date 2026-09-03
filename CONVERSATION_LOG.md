@@ -3048,3 +3048,38 @@ first. Its due date moved from Sep 4 to Sep 8 to match.
 Recorded in `_midterm_exam/2026F/print_request_dsb_copy_center.md`,
 `_midterm_exam/2026F/accommodated_testing_pts.md`, the announcement draft's status line, and two
 memories: how Davi stages these messages, and the PTS filing's consequences for grading.
+
+---
+
+## 2026-09-03 — Final Project groups aligned to lecture sections
+
+Davi exported the Brightspace Final Project groups and asked for three things: no group mixing
+sections, a concrete destination for anyone mixed, and group names whose `- 00N` suffix states the
+section its members are actually in.
+
+**The export was archived out of git first.** The public repo already carries a prior-term roster
+(`_course_case_competition/2025F/Fall 2025 MGMT 47400 - Merge_GradesExport_2025-09-17-13-54.xlsx`,
+131 students with PUIDs, emails and every graded item, tracked since 72f9f8f on 2026-06-04), so the
+2026F export went to the gitignored `_adm/_groups/2026F/` instead. The 2025F exposure is flagged
+for Davi to decide on; nothing was rewritten.
+
+**The diagnosis.** 98 students, 49 per section, in 25 groups of 4 (Group 21 held 2, Group 25 was
+unused). **15 groups mixed the two sections** and **29 students sat under a suffix that did not
+match their section**. The 1–13 / 14–26 numbering was the intended section split.
+
+**The plan costs 21 moves, not 29.** Three groups were already monolithic or near it, so correcting
+the *name* was cheaper than moving the people: `Group 2 - 001` → `- 002`, `Group 4 - 001` → `- 002`,
+`Group 21 - 002` → `- 001`. That leaves the section blocks non-contiguous (001 now owns 21 and 25),
+which is the deliberate trade — 9 students keep their number and every teammate. The six evenly
+split 2/2 groups then resolve as three clean pair swaps (7↔16, 10↔17, 11↔19), all staying at 4.
+`Group 25 - 001` is opened for four displaced students. Final: 13 groups per section, ten of 4 and
+three of 3. 68 students see no change at all.
+
+**Written by `_adm/_groups/2026F/allocate_groups.py`** (stdlib-only; the .xlsx is unzipped and
+parsed directly, since openpyxl is not installed on this machine). It emits the current roster, the
+plan, the final roster, and a Brightspace action sheet. An independent verifier — re-reading the
+outputs against the untouched export rather than trusting the generator — caught that the script
+zero-padded group names (`Group 01 - 001`) while Brightspace does not (`Group 1 - 001`); all 25
+names now round-trip exactly.
+
+**Not yet done:** the Brightspace edits themselves, and the note to the 21 students who move.
