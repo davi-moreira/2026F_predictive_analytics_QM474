@@ -3110,3 +3110,30 @@ the mixed groups are mostly an artefact of add/drop, not of how the groups were 
 
 **If a Group 20 member really has dropped**, re-export from Brightspace and re-run the script; the
 roster falls to 97 and the group arithmetic re-derives itself.
+
+## 2026-09-03 (evening) — Realignment executed and verified clean
+
+Davi made all 23 moves in Brightspace and re-exported at 21:11. Both snapshots now live in
+`_adm/_groups/2026F/` under their export times (`2026-09-03-1352_*`, `2026-09-03-2111_*`); the
+script's stamp regex takes an optional `-HHMM` so successive snapshots never overwrite each other,
+and a `REQUESTS` entry whose student already sits in the destination is skipped rather than
+re-issued as a phantom move.
+
+**The audit is clean: 26 groups, none mixed, none smaller than 3, zero transfers needed.** 97
+students — 49 in section 001, 48 in 002.
+
+**Sarah Alharthi has dropped**, which vindicates Alan Fefer: he told Davi on Sep 3 that a Group 20
+member had left, and the 13:52 export still showed her enrolled, so the claim was held pending a
+check. Group 20 now holds three. Fefer sits in Group 16 with Mishka Parashar, his old Group 7
+teammate; his original request for Group 20 is now grantable if he still wants it, at the cost of
+dropping Group 16 to three and moving him twice.
+
+**Four group names now carry a suffix that contradicts their members** — Groups 2 and 4 (named 001,
+holding 002) and 21 and 25 (named 002, holding 001). Group 25 was created as `Group 25 - 002` and
+filled with section 001. This is accepted, not a defect: Davi ruled on 2026-09-03 that only the
+single-section rule binds.
+
+The BCC notice to the 23 students who moved is drafted at
+`_announcements/2026F/final_project_group_changed_to_match_section.md`. It deliberately omits the
+section meeting times: 9:30 and 10:30 appear only in two student emails, never in `syllabus.qmd` or
+`schedule.qmd`, so they are unverified.
