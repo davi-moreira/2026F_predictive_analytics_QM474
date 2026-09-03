@@ -3137,3 +3137,34 @@ The BCC notice to the 23 students who moved is drafted at
 `_announcements/2026F/final_project_group_changed_to_match_section.md`. It deliberately omits the
 section meeting times: 9:30 and 10:30 appear only in two student emails, never in `syllabus.qmd` or
 `schedule.qmd`, so they are unverified.
+
+## 2026-09-03 (late) — Replies drafted for the seven open QM 474 threads
+
+Davi sent the group-change BCC at 21:25, then asked for replies to every open QM 474 email.
+Seven threads are live, six of them unread. Drafts are in
+`_adm/_replies/2026F/2026-09-03_qm474_open_email_replies.md` (gitignored).
+
+**Five of the seven reduce to two rulings, not five separate answers.** Jonathan Maffei
+(syllabus quiz + profile survey), Nicole Yu (syllabus quiz), Joshua Pang (NB03 quiz) and Nhu
+Nguyen (NB03 exercise) are all asking to reopen a closed early item they missed through their
+own oversight — one ruling, applied to all four. Mauricio Tovar and Nguyen are both asking for
+attendance credit for a session they attended without checking in on iClicker — a second
+ruling. Answering these case by case is what produces different outcomes for identical
+requests, so each draft carries a bracketed slot rather than a decision.
+
+`syllabus.qmd` does not authorise either grace on its own: participation is graded on
+"completeness and timeliness ... with no participatory activity dropped", quizzes carry "no
+quiz dropped", and the make-up clause is exam-only and needs exceptional circumstances. A
+one-time week-1/2 grace is defensible but has to be uniform.
+
+**Jess Tran is deliberately carved out of that ruling.** She enrolled in week 2 and could not
+have taken the items that closed before she joined; a late add is not a missed deadline.
+
+Two individual matters. **Alan Fefer** is vindicated — Alharthi's drop is real and Group 20
+now holds three — so his original request is grantable; both variants are drafted. **Marlee
+Brimner** raised two challenges: a Student Profile Survey scored 0/5 that needs the Qualtrics
+response list checked before any reply, and a quiz 3 challenge on the MAE question. The key
+holds and the draft says why: nb03 establishes the mean/median baselines in Section 4 *before*
+the linear model in Section 5, Exercise 2 asks for the delta over baseline, and nb17 states it
+as Principle 1. Her chosen option also overstates — a matching train/validation MAE does not
+"certify" the absence of overfitting.
