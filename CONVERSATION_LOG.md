@@ -3083,3 +3083,30 @@ zero-padded group names (`Group 01 - 001`) while Brightspace does not (`Group 1 
 names now round-trip exactly.
 
 **Not yet done:** the Brightspace edits themselves, and the note to the 21 students who move.
+
+## 2026-09-03 (cont.) — Rule 3 dropped, and three student requests folded in
+
+Davi relaxed the brief: **a stale `- 00N` suffix is acceptable**; the only binding rule is that a
+group never mixes sections. `ALIGN_GROUP_NAMES = False` in `allocate_groups.py` turns the renames
+off, so Groups 2, 4 and 21 keep their current names while holding the other section's students.
+The move count does not fall — 21 is the arithmetic floor either way, since every mixed group must
+shed all but its majority — so the renames were only ever cosmetic.
+
+**Outlook turned up three pending group-change requests**, all on Groups 7 and 21, and two of them
+are a mutual swap the students appear to have arranged themselves:
+
+- **Nhu Nguyen** (001, Group 7) asked 2026-09-03 for Group 21 — granted; Group 21 is all-001.
+- **Jess Tran** (001, Group 21) asked 2026-08-31 for Group 7 — granted; Group 7 is all-001 once its
+  two section-002 members leave. She is a week-2 enrollee who switched into the 9:30 section.
+- **Alan Fefer** (002, Group 7) asked for Group 20. Section-compatible, but **Group 20 holds four
+  students in today's export**, all still enrolled — his claim that a member dropped is not visible
+  in the data. Davi told him on Aug 31 that the group was full. Left unhonoured pending a check;
+  the plan sends him to Group 16 with Mishka Parashar, his current Group 7 teammate.
+
+Honouring the two lifts the plan to **23 moves**. `REQUESTS` in the script carries them, and the
+planner re-checks section compatibility and capacity rather than trusting the list. Both a section
+switch (Fefer) and a late enrollment (Tran) are why those students were misplaced to begin with —
+the mixed groups are mostly an artefact of add/drop, not of how the groups were formed.
+
+**If a Group 20 member really has dropped**, re-export from Brightspace and re-run the script; the
+roster falls to 97 and the group arithmetic re-derives itself.
