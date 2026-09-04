@@ -3384,3 +3384,44 @@ applicants are reading.
 
 As before, no candidate identity reaches this repo; `_adm/` is git-ignored and issue #38 in the
 private companion repo carries the full record.
+
+---
+
+## 2026-09-04 (cont.) — The TA job costed: a flat 10-hour week does not fit
+
+The TA duties were modelled against the live Final Project milestone track and the verified
+26-group roster, to produce two artifacts: a candidate-facing role summary to send with the
+interview invitations, and an internal week-by-week workload plan. Both are in the git-ignored
+`_adm/_ta_search/2026F/`.
+
+**The finding that matters is a scheduling one, not a budget one.** The appointment is 10 hours a
+week for 16 weeks — 160 hours — but the hire lands around Mon Sep 14, leaving 13 weeks to the last
+class day. Thirteen weeks at a flat ten hours is 130 hours of capacity, against roughly 142 hours
+of work. The pot is large enough; the weekly ceiling is not. Spending it unevenly is therefore not
+a convenience, it is the only way the term closes.
+
+**Where the load actually sits.** Two obligations dominate. Fifty-two group meetings — 26 groups
+seen twice — cost about 25 hours at twenty minutes each, or 31 at twenty-five, once scheduling
+email and follow-up notes are counted. Sixteen grading items across 26 submissions cost about 77
+hours, and two of them, the hundred-point model-and-code reports, are eleven hours apiece on their
+own. A weekly office hour, the standing thirty-minute check-in, and student email put a 2.5-hour
+floor under every week before anything else happens.
+
+**The collision is structural and worth naming precisely.** Both TA meeting rounds sit exactly on
+top of the two heaviest grading milestones. Round 02 runs Oct 19 – Nov 1; the first model report is
+due Oct 18 and the second Oct 25. During a meeting week the TA owes thirteen meetings plus the
+recurring floor — about 8.8 hours — before reading a single submission. Those four weeks cannot be
+ten-hour weeks under any arrangement of the work, which is why the recommended plan runs them at
+roughly fifteen and drops other weeks to three.
+
+Five decisions belong to Davi and are recorded with the plan: whether the hiring office will allow
+a week above ten hours while the appointment total holds (Fall 2025 precedent says the ceiling was
+"a strict maximum"), meeting length at twenty or twenty-five minutes, whether the instructor takes
+one of the two heavy model reports, whether the turnaround promised to students is one week or two,
+and whether the TA supports the Poster-to-Product sprint at all.
+
+**And the hire is now genuinely late.** M00 is due Sun Sep 20 — that milestone *is* the groups
+emailing the TA to schedule Round 01, with meetings starting Mon Sep 21. For twenty-six groups to
+have an address to write to, the TA has to be hired and announced by about Wed Sep 16. Interviews
+this week, offer early next, paperwork immediately. If that slips, widening or moving the M00
+TA-meeting requirement is an announcement to students, not a silent adjustment.
