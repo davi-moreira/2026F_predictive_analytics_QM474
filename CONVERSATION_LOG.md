@@ -3339,3 +3339,48 @@ exist, with TA meetings running **Mon Sep 21 – Sun Oct 4**. The original stopp
 resumes is dead — applications arrive at roughly one per week, so six would land well after
 the deliverable is due. Interviewing this week leaves margin for the offer, the hiring
 paperwork, and the announcement introducing the TA (#39) before ~26 groups need to book.
+
+---
+
+## 2026-09-04 (cont.) — Second undergraduate candidate filed; the student pay scale recovered and recorded
+
+A second undergraduate applied, and the search now has two candidates who clear the bar rather
+than one. The new candidate is a **senior** with an **A+ in this course** and two prior TA
+appointments in the department, which makes them the first applicant to meet every posted
+criterion without a judgment call. The trade-off against the first candidate is real and worth
+holding until interviews: prior teaching experience and unambiguous class standing on one side,
+a stronger Python/ML profile and more recent exposure to the course on the other. Two things go
+on the interview list for the new candidate — an ongoing off-campus co-op stacked on two other
+campus roles, against a 10 hrs/week commitment; and a Power BI / RStudio-leaning stack against a
+course that lives in Python and Colab.
+
+Both candidates' materials now sit in `_adm/_ta_search/2026F/` under the naming convention
+established earlier today, each with a summary file. That summary is not a convenience: in
+**both** cases the qualifying evidence — the course grade, the prior TA work, the conference
+presentation — appears **only in the application email** and in neither attached PDF. Filing the
+PDFs alone would have thrown away the reason to interview either of them.
+
+**The pay rate was not actually known, and now it is.** The authoritative artifact is
+`Student Pay Levels.xlsx`, the Daniels School Student Pay Scale effective 2024-08-12, which had
+been sitting as an attachment in the Fall 2025 TA email thread. It is now transcribed to
+`_adm/_ta_search/PAY_RATES.md`, together with the hiring mechanics from the department's
+`Student hiring Instructions July 2025.docx`.
+
+The governing fact is a distinction that is easy to get backwards: **the rate follows the level
+of the course, not the level of the student.** A TA for an undergraduate course earns **$12.00/hour
+whether they are an undergraduate or a master's student** — which means the graduate applicants
+would never have been the expensive option on this line. ($15 is an undergraduate TA'ing a
+*graduate* course; $26.92 is a graduate student TA'ing one.) Davi's own earlier recollection —
+"$10 for undergrad, around $15 for grad" — was wrong, and the Fall 2025 hire was correctly paid
+$12 on the strength of the Business Office FAQ rather than that recollection. At 10 hrs/week the
+line costs $120/week, roughly $1,560 from a mid-September start to the last class day.
+
+Two cautions are recorded with the table. The workbook is two years old and its graduate line has
+already moved once ($25 → $26.92), so the current figure gets confirmed with the hiring
+coordinator before it appears in an offer email. And the **live posting asks for a grade of "A- or
+above", not the B+ that was specified to the coordinator on 2026-08-21** — both candidates clear
+A-, so nothing is blocked, but the published bar is stricter than intended and is the one
+applicants are reading.
+
+As before, no candidate identity reaches this repo; `_adm/` is git-ignored and issue #38 in the
+private companion repo carries the full record.
