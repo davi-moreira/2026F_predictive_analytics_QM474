@@ -66,7 +66,7 @@ of record, or between it and the site.
 |---|---|:--:|---|
 | E1 | **The embedded schedule is the wrong offering.** The docx's "TENTATIVE COURSE SCHEDULE" is the Summer 2026 4-week intensive: "May 18 – June 12, 2026", Day 0–20, Colab links pointing at the `2026Summer_..._MGMT474` repo. Students reading the official syllabus get a May–June calendar and dead notebook links. | 🔴 | none |
 | E2 | ~~Two contradictory Final Project sections~~ — **resolved.** The live *Peer Review Submission* in Brightspace confirms the later 30/20/10/20/20 version is operative (see A3). The docx should be cut down to that version. | ✅ | #29 |
-| E3 | **Kaggle open date.** Docx says the competition opens **Aug 28**; the site and planning docs said **Aug 24**. nb00 now defers to Brightspace rather than printing either, but the docx/site contradiction itself is unresolved. | 🟡 | none |
+| E3 | **Kaggle open date.** The docx reads *"The competition will open on September 4, 2026"*; as of **2026-09-04** the course opens it on **Fri Sep 18** instead — the first studio after nb07 (Wed Sep 16) lands ROC-AUC. `schedule.qmd` and the planning docs carry Sep 18; the docx sentence needs Davi's edit in Word (see `SYLLABUS_OF_RECORD_2026F.md` item 16). nb00 prints no date and defers to Brightspace, and the Brightspace *Competition Team Setup* deadline (Sun Sep 20) already matches the later start. | 🟡 | none |
 | E4 | **Typo: "after August 248, 2026"** in the DataCamp extra-credit rule. It is the eligibility start date, so it should read Aug 24 or Aug 28 to match E3. | ⚪ | none |
 | E5 | **Typo: "within 1 calendar days"** in the grade-challenge rule. | ⚪ | none |
 | E6 | Office hours (Mon 2:30–3:30 EST) are in the docx; the site defers to Brightspace. **Intentional**, no action. | ✅ | — |

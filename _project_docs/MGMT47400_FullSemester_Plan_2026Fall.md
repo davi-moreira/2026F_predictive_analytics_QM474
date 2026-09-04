@@ -101,7 +101,7 @@ The 20-notebook progression is **identical to the established arc** — each not
 
 ```
 Orientation
-  00 Launchpad / Setup  (platform fluency, AI policy, Kaggle launch, P2P preview)
+  00 Launchpad / Setup  (platform fluency, AI policy, Kaggle preview, P2P preview)
 
 Unit 1 — REGRESSION
   01 EDA/Splits → 02 Pipelines → 03 Metrics/Baselines → 04 Features/Diagnostics → 05 Regularization
@@ -132,30 +132,30 @@ Legend: **nbNN** = notebook anchored that session · Mode = *In person* / *Studi
 ### Week 1 — Aug 24–28 · Orientation + start of Regression
 | Date | Mode | Session |
 |---|---|---|
-| Mon Aug 24 | In person | Course launch + **nb00** Launchpad (syllabus, grading, Colab, Gemini, AI policy, **P2P preview**, **Kaggle launch**) |
+| Mon Aug 24 | In person | Course launch + **nb00** Launchpad (syllabus, grading, Colab, Gemini, AI policy, **P2P preview**, **Kaggle preview** — the competition itself opens Fri Sep 18, after nb07) |
 | Wed Aug 26 | In person | **nb01** EDA & Splits |
 | Fri Aug 28 | In person | **nb02** Preprocessing Pipelines |
 
-### Week 2 — Aug 31–Sep 4 · Regression + competition launch
+### Week 2 — Aug 31–Sep 4 · Regression + project launch
 | Date | Mode | Session |
 |---|---|---|
 | Mon Aug 31 | In person | **nb03** Regression Metrics & Baselines |
 | Wed Sep 2 | In person | **nb04** Linear Features & Diagnostics |
-| Fri Sep 4 | Studio | Kaggle kickoff studio — join the competition, form teams, download the data, first submission · group formation · **M00 Group Contact due Sun Sep 6** |
+| Fri Sep 4 | Studio | Project studio — group formation, topic scouting · **M00 Group Contact due Sun Sep 6** |
 
 ### Week 3 — Sep 7–11 · Regularization + project launch
 | Date | Mode | Session |
 |---|---|---|
 | Mon Sep 7 | ⛔ | Labor Day |
 | Wed Sep 9 | In person | **nb05** Regularization (Ridge/Lasso) — live lecture |
-| Fri Sep 11 | Studio | Project studio — topic and data lock-in, M01 drafting · competition EDA |
+| Fri Sep 11 | Studio | Project studio — topic and data lock-in, M01 drafting |
 
 ### Week 4 — Sep 14–18 · Classification
 | Date | Mode | Session |
 |---|---|---|
 | Mon Sep 14 | In person | **nb06** Logistic Regression & Pipelines |
 | Wed Sep 16 | In person | **nb07** Classification Metrics & Thresholding |
-| Fri Sep 18 | Studio | Project studio — M01 finalize + M02 outline kickoff · competition baseline push · **M01 Proposal due Sun Sep 20** |
+| Fri Sep 18 | Studio | **Kaggle kickoff studio — the case competition opens here, after nb07** (join the competition, form `Group NN` teams, download the data, first submission) · M01 finalize + M02 outline kickoff · **M01 Proposal due Sun Sep 20** · **Competition Team Setup due Sun Sep 20** |
 
 ### Week 5 — Sep 21–25 · Evaluation spine + competition workflow
 | Date | Mode | Session |
@@ -250,6 +250,7 @@ The Fall 2025 offering (`_syllabus/2025F/mgmt474_fall2025_schedule.md`) spread ~
 
 - **All content finishes before the conference** — lecture content completes **Mon Oct 26** (nb17) and the last notebook, **nb20**, lands in the **Fri Nov 6** studio, instead of running into December. The poster needs the full toolkit (incl. nb19 deep learning) in hand by early November.
 - **Kaggle concludes Nov 29** (≈ 2025F's Nov 30) via an **online work session on Mon Nov 23** before Thanksgiving, so December is a clean Poster-to-Product runway.
+- **The Kaggle competition opens Fri Sep 18 — after nb07, not in week 1.** The case is a binary-churn problem scored on **ROC-AUC**, the metric nb07 teaches on Wed Sep 16, so teams join the leaderboard only once they can read the score they are chasing — and only after nb06 (Mon Sep 14) has given them a classifier worth submitting. The kickoff studio therefore sits on **Fri Sep 18**, which is also what the published **Sun Sep 20 Competition Team Setup** deadline on Brightspace assumes. The two Fridays before it (Sep 4, Sep 11) are final-project studios only.
 - **An in-class midterm, one Friday.** Fall 2026 administers a **paper midterm (20%) on Fri Sep 25**, built directly from the 2026Summer 14-case bank; **nb10 (the midterm casebook) stays retired** — the exam needs no staging notebook. Weights: Attendance 1% / Participation 4% / Quizzes 15% / Midterm 20% / Competition 20% / Final Project 35% / Poster-to-Product 5%.
 - **Every Friday is a studio.** Mondays and Wednesdays carry the content; Fridays are dedicated poster and/or competition working sessions (the exceptions are Fri Aug 28, which carries nb02, and Fri Sep 25, which hosts the midterm). That guarantees the project and the competition weekly class time instead of leaving them to homework.
 - **Modality is simple:** every session meets **in person** except the Thanksgiving-week competition block (**Mon Nov 23** online, competition open online across the Nov 25–28 break). **nb05 stays a live lecture** (Ridge/Lasso benefits from real-time explanation) and **nb14 stays in person** (the test-set ceremony is a live event).

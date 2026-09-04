@@ -3202,3 +3202,55 @@ belong to QM 670 — checked against the export rather than assumed from context
 Also logged for later: **the DataCamp extra-credit rules are not published** — `syllabus.qmd`
 has only a stub pointer (discrepancy A9), yet the item is worth up to 5% and carries a two-day
 spacing rule that is unrecoverable if learned late.
+
+---
+
+## 2026-09-04 (cont.) — The case competition opens after nb07, not in week 1
+
+Davi's call: **the Course Case Competition starts only once nb07 is covered.** The reason is
+pedagogical and it is the whole argument — the Bank Churn case is scored on **ROC-AUC**, and
+ROC-AUC is exactly what nb07 (Classification Metrics, **Wed Sep 16**) teaches. Opening the
+leaderboard before it asks teams to chase a number they cannot yet read, and to do it before
+nb06 (Mon Sep 14) has even given them a classifier worth submitting. The kickoff therefore
+moves to the **Fri Sep 18** studio, the first group-work session after nb07.
+
+**The Brightspace calendar already assumed this.** The published deadline list carries
+*"Sep 20: Participation: Course Competition Team Setup — Due"* — the Sunday after Fri Sep 18.
+The old Fri Sep 4 kickoff in the planning docs was the outlier, not the new date.
+
+What changed, all of it downstream of `schedule.qmd`:
+
+- **`schedule.qmd`** — Fri Sep 4 and Fri Sep 11 are now *Group Work: Final Project* only
+  (they read "Final Project/Competition"); Fri Sep 18 carries the **Course Case Competition
+  kickoff** with a Notes-column entry, **COURSE CASE COMPETITION OPENS — team setup due Sun
+  Sep 20**; the Mon Aug 24 nb00 row says *case competition preview* instead of *Kaggle launch*.
+  Fri Oct 2 onward already read "Final Project/Competition" and were left alone.
+- **The generated handout** — `scripts/build_schedule_docx.py` rebuilt the `.docx`. Note that
+  the script does **not** write `2026F_predictive_analytics_QM474_schedule.md` even though that
+  file's own header claims it does; the `.md` was synced by hand and will drift again unless the
+  script learns to emit it.
+- **`MGMT47400_FullSemester_Plan_2026Fall.md`** — week 2 heading, the Fri Sep 4 / Sep 11 /
+  Sep 18 studio rows, the nb00 line, the arc diagram, plus a new rationale bullet stating the
+  nb07 gate.
+- **`claude_course_plan.md`** and **`notebook_sequence_justification.md`** — both asserted the
+  competition "opens in week 1". The justification file's NB18 row also still claimed nb18 was
+  taught **Fri Sep 25** (that is the midterm) and revisited Oct 23; corrected to the single
+  Mon Oct 19 pass while rewriting the same sentence.
+
+**The one thing Davi has to do by hand.** The official syllabus docx reads *"The competition
+will open on September 4, 2026."* It is the source of record and it is student-facing, so it now
+promises a date two weeks earlier than the schedule. Logged as **item 16** in
+`SYLLABUS_OF_RECORD_2026F.md` (and **E3** in the discrepancy register) with the exact sentence to
+replace — the file was not edited here because the docx is edited in Word, never from the repo.
+Register item 3 (the old Aug 24 vs Aug 28 conflict) was closed as superseded; along the way the
+SOR was found to still record "Opens August 28" while the docx had since been changed to Sep 4.
+
+**Also outside the repo:** the Kaggle competition's own start date and the Brightspace release of
+the invitation link need to match Fri Sep 18.
+
+**Still stale, flagged not fixed:** `_course_case_competition/2026F/course_case_competition_reference.md`
+is a verbatim copy of the Summer file — "Term: Summer 2026", section Y01, the summer Kaggle URL,
+a `Group XX – Y01` naming rule that contradicts the 2026F `Group NN` convention, and a key-dates
+table reading "Competition open Mon May 18, 2026 / deadline Fri June 12". It calls itself the
+single source of truth for the competition. Fixing one date in it would have left the rest
+lying; it needs a full 2026F conversion as its own task.

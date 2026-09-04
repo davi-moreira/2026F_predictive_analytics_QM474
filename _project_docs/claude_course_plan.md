@@ -87,14 +87,14 @@ and therefore belong on Fridays.
 
 | Notebook | Session | Note |
 |---|---|---|
-| nb00 | Mon Aug 24 | Launchpad; Kaggle competition opens |
+| nb00 | Mon Aug 24 | Launchpad; case competition previewed (it opens Fri Sep 18, after nb07) |
 | nb01 | Wed Aug 26 | |
 | nb02 | **Fri Aug 28** | The one content Friday in the semester |
 | nb03 | Mon Aug 31 | |
 | nb04 | Wed Sep 2 | |
 | nb05 | Wed Sep 9 | Live lecture (Ridge/Lasso benefits from real-time explanation) |
 | nb06 | Mon Sep 14 | |
-| nb07 | Wed Sep 16 | Classification arc closes here |
+| nb07 | Wed Sep 16 | Classification arc closes here; ROC-AUC lands, so the **case competition opens** in the Fri Sep 18 studio |
 | nb08 | Mon Sep 21 | |
 | nb09 | Wed Sep 23 | Single session — the Fri Sep 25 midterm covers the toolkit it closes |
 | **Midterm Exam** | **Fri Sep 25** | In class, on paper — 14 MC questions per case form on nb00–nb09, built from the 2026Summer case bank |
