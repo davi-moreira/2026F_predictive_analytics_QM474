@@ -3254,3 +3254,47 @@ a `Group XX – Y01` naming rule that contradicts the 2026F `Group NN` conventio
 table reading "Competition open Mon May 18, 2026 / deadline Fri June 12". It calls itself the
 single source of truth for the competition. Fixing one date in it would have left the rest
 lying; it needs a full 2026F conversion as its own task.
+
+## 2026-09-04 (cont.) — New groups export: Group 21 is gone, Group 27 took its place
+
+Davi downloaded a fresh Brightspace export at **15:10 UTC** (11:10 EDT). Archived under the
+established convention as `_adm/_groups/2026F/2026-09-04-1510_*`, checksum-matched against the
+Downloads copy, which was then removed. It is a `Merge_GradesExport` and carries one extra
+column (`iClicker Attendance Points Grade`) that the loader ignores — same seven columns it
+reads, so the archive convention absorbs it without change.
+
+**What actually changed since the 02:10 export — four students, no roster change.** The count is
+identical: 97 students, 49 in 001 and 48 in 002, 26 groups of 3–4. Nobody added, nobody dropped.
+But **Group 21 no longer exists and `Group 27 - 001` stands in its place**:
+
+- `nguye911` Nhu Nguyen, `tsai245` Jayden Tsai, `whitak50` Derin Whitaker — carried from
+  Group 21 into Group 27. Same three teammates, **different group number**.
+- `hsilenri` Hector Silen — left Group 21 for **Group 8**, which goes 3 → 4.
+- `tran334` Jess Tran — left **Group 7** (4 → 3) for Group 27.
+
+Section totals and the group-size distribution are untouched; the moves cancel out.
+
+**The allocator returns 0 renames, 0 creations, 0 moves** on the new export, and `verify()`
+passes: no mixed-section group, every name's suffix matches its members' section, every group
+at 3–4. The state is clean and needs nothing done in Brightspace.
+
+**`REQUESTS` in `allocate_groups.py` is now empty, and that was necessary, not cosmetic.** It
+still held `[('nguye911', 21), ('tran334', 7)]`. Group 21 is gone from the export, so
+`true_label[21]` would have raised a `KeyError` and the run would have died; and Jess Tran's
+entry would have dragged her back out of Group 27 into Group 7, undoing a move she made herself.
+Alan Fefer's note was folded into the same comment — his Group 20 request was granted back in
+the 02:10 export. The rule the file now states: **a request lives in `REQUESTS` only between the
+moment it is approved and the first export that shows it applied.** Clear it as soon as the
+export agrees, or the planner starts re-litigating history.
+
+**One thing to confirm with Davi.** Nobody recorded making these changes, and the 2026-09-03
+triage established that **students cannot self-assign** in this Brightspace shell — a student
+tried and the tool refused him. So either Davi made the four changes in the interim, or group
+self-enrollment has since been turned on. It matters because of who was told: the
+"Your Final Project group has changed" announcement went out against the 13:52 → 21:11 diff, so
+**Nguyen, Tsai and Whitaker have a new group number nobody has announced**, and Silen and Tran
+have new teammates. If the changes were Davi's, a one-line follow-up to those five closes it; if
+students can now self-enroll, the group table stops being stable and every downstream artifact
+(milestone dropboxes, peer-evaluation rosters) needs a re-read before it is built.
+
+Issue #5 in the tasks repo carries the same summary.
