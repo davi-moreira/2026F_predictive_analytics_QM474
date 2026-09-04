@@ -3298,3 +3298,44 @@ students can now self-enroll, the group table stops being stable and every downs
 (milestone dropboxes, peer-evaluation rosters) needs a re-read before it is built.
 
 Issue #5 in the tasks repo carries the same summary.
+
+---
+
+## 2026-09-04 (cont.) — The TA search has its first eligible undergraduate, and a home for candidate files
+
+The TA opening drew four applications through the department channel plus one direct
+expression of interest. Only one of the four is an undergraduate, and the posted line is
+explicitly undergraduate (juniors/seniors who completed QM/MGMT 47400 with a B+ or above),
+so the eligibility question that had blocked this hire since 2026-08-24 — whether a master's
+student can be appointed to it — no longer needs an answer to move forward.
+
+The candidate took this course last spring with Prof. Wolanski and earned an **A**, and
+presented his Predictive Analytics course project at the Undergraduate Research Conference
+with distinction. Supporting coursework (Python for Business, Data Mining, Business
+Statistics) is all A-range, and his summer was a regression-benchmarking and PowerBI
+reporting role at an airline. The one criterion in question is class standing: he started
+in Fall 2024 and graduates Spring 2028, which puts him in his third year, while his own
+résumé says "sophomore". The substantive requirement — the course, at an A — is met either
+way, so the standing question is Davi's judgment call rather than a disqualification.
+
+**New convention: `_adm/_ta_search/<term>/` is where TA candidate materials live.** It sits
+under `_adm/`, which `.gitignore:80` already ignores, and that is load-bearing rather than
+incidental: the department's TA application form carries date of birth, PUID, home address,
+and cell phone. `git check-ignore` was run against the destination *before* anything moved
+into it. Files follow the same `YYYY-MM-DD_<source>_<topic>.<ext>` shape as
+`_adm/_accommodations/`, dated by the application's submission date rather than the download
+timestamp. The folder README carries the posted criteria and a candidate index; a per-candidate
+summary file holds the interview-relevant facts and the application email verbatim, since the
+strongest evidence in this application — the course grade, the conference presentation, the
+related coursework — appears **only** in the cover email and in neither attached PDF.
+
+Nothing about the candidate reaches a tracked path. Issue **#38** in the private companion
+repo carries the full intake as a dated comment, per its own convention of being the running
+record of the search; this entry, in the public repo, stays deliberately anonymous.
+
+**Why the clock matters.** The hire is on the critical path of Final Project M00: every group
+owes a `NN_ta_meeting_request.pdf` by **Sun Sep 20**, addressed to a TA who does not yet
+exist, with TA meetings running **Mon Sep 21 – Sun Oct 4**. The original stopping rule of six
+resumes is dead — applications arrive at roughly one per week, so six would land well after
+the deliverable is due. Interviewing this week leaves margin for the offer, the hiring
+paperwork, and the announcement introducing the TA (#39) before ~26 groups need to book.
