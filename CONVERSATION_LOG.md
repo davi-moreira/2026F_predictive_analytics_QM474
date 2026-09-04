@@ -3168,3 +3168,37 @@ holds and the draft says why: nb03 establishes the mean/median baselines in Sect
 the linear model in Section 5, Exercise 2 asks for the delta over baseline, and nb17 states it
 as Principle 1. Her chosen option also overstates — a matching train/validation MAE does not
 "certify" the absence of overfitting.
+
+## 2026-09-04 — Groups final and verified; three more email threads found
+
+Davi exported again at 02:10 after making the four renames and moving Alan Fefer to Group 20
+(Variant A — Alharthi's drop was real). Archived as
+`_adm/_groups/2026F/2026-09-04-0210_*`; the loose Downloads copies were checksum-matched and
+removed.
+
+**The group work is finished and verified.** 97 students, 26 groups, sizes 3-4, **no
+mixed-section group and no name/section mismatch** — the suffixes now agree with the members
+too, so the register that had four stale names is clear. Section 001 holds groups 1, 3, 5-13,
+21, 25; section 002 holds 2, 4, 14-20, 22-24, 26. The allocator returns zero moves.
+
+**A search-method bug worth remembering:** the Outlook connector's `afterDateTime` silently
+returns nothing for a full ISO timestamp (`2026-09-03T19:00:00Z`) but works with a plain date
+(`2026-09-03`). The empty result looks identical to "no mail". A date-only sweep then surfaced
+three QM 474 threads the `"QM 474"` text query had missed, because their subject lines do not
+contain that string — one of them is titled "QM 473 Syllabus Quiz". **Text-query sweeps of a
+mailbox are not sufficient; sweep by date and filter by roster.**
+
+The three: **Amarti Tesfaye** asked to reopen the syllabus quiz — the fifth Ruling A request, and
+the reason a uniform Sep 9 answer was worth fixing in advance. **Joshua Pang** asked where to
+submit DataCamp certificates. **Han Huang** reported a missing Student Profile grade — and that
+is now the **second QM 474 student** saying so after Marlee Brimner, with a third identical case
+in QM 670 that Davi already fixed by hand. Two independent reports in one course reads as a
+Qualtrics-to-Brightspace matching gap; the register entry says reconcile the whole response list
+once rather than per student, since the students who did not write in are the ones it costs.
+
+Two senders in the sweep, Joshua Candra and Mithila Gupta, are **not** on the QM 474 roster and
+belong to QM 670 — checked against the export rather than assumed from context.
+
+Also logged for later: **the DataCamp extra-credit rules are not published** — `syllabus.qmd`
+has only a stub pointer (discrepancy A9), yet the item is worth up to 5% and carries a two-day
+spacing rule that is unrecoverable if learned late.
