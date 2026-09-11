@@ -3425,3 +3425,28 @@ emailing the TA to schedule Round 01, with meetings starting Mon Sep 21. For twe
 have an address to write to, the TA has to be hired and announced by about Wed Sep 16. Interviews
 this week, offer early next, paperwork immediately. If that slips, widening or moving the M00
 TA-meeting requirement is an announcement to students, not a silent adjustment.
+
+---
+
+## 2026-09-11 — Final Project real-data announcement drafted
+
+Davi requested a student announcement based on the Fall 2025
+`mgmt474_final_project_guidelines_schedule.docx`, with a stronger Fall 2026 policy: the Final
+Project must use real data and may not use synthetic, simulated, code-generated, or AI-generated
+observations. The source DOCX was extracted and rendered through Microsoft Word for full-page
+inspection; its seven suggested data-source families were retained, with the live UCI URL and
+Nasdaq Data Link name replacing the old UCI path and Quandl branding.
+
+The resulting draft is
+`_announcements/2026F/final_project_real_data_requirement_and_milestones.md`. It defines what
+counts as real data, makes clear that the synthetic Bank Churn competition data is not eligible,
+permits ordinary preprocessing and feature engineering on real observations, and requires M01 to
+document provenance. It also warns that a listing on Kaggle, UCI, or another repository does not
+itself prove eligibility because those repositories can host generated data.
+
+The roadmap follows the canonical Fall 2026 M00–M13 track, including the two-round meeting cycle,
+CV-first M06/M08 modeling requirements, poster draft and final sequence, the instructor-approved
+**Sun Nov 8** M10 deadline, the Nov 15 submission cluster, the required Tue Nov 17 conference
+presentation, and the Dec 11 peer evaluation. The announcement explicitly supersedes the stale
+generic sentences in M01/M03 that say to disclose or flag a synthetic dataset; disclosure is no
+longer enough under the new policy.
