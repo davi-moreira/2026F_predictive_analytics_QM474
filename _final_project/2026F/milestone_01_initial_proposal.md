@@ -30,7 +30,17 @@ Provide a clear and concise statement of the outcome you intend to predict.
 Explain why this prediction goal is important. Describe its relevance to current business challenges or industry trends, and the potential impact of accurate predictions.
 
 ### 3. Data Overview
-Offer a high-level description of the dataset(s) you plan to use: data source(s), key variables of interest, and a brief discussion of the data's suitability for predictive analytics.
+Your project must use data collected or observed from real-world people, organizations, transactions, markets, public records, surveys, experiments, devices, or other actual processes. Synthetic, simulated, artificially generated, and AI-generated datasets are not eligible. The synthetic Bank Churn dataset used in the Course Case Competition is a separate course activity and may not be used for the Final Project.
+
+Include all of the following:
+
+- A direct link to the dataset and the name of its original provider or collector.
+- A short explanation of what one row represents and when and how the data were collected.
+- The response variable you intend to predict and the predictors you expect to use.
+- A brief discussion of the data's suitability for predictive analytics.
+- A clear statement that the dataset contains real observations and is not synthetic, simulated, or generated.
+
+If the dataset documentation does not establish where the observations came from, select a different dataset or ask Professor Moreira before your group commits to it.
 
 ### 4. Preliminary Methods
 Outline the predictive analytics techniques you plan to explore (e.g., logistic regression, decision trees, neural networks).
@@ -50,13 +60,13 @@ Summarize what you expect to achieve. What insights or benefits might your predi
 |-----------|------------------|------------------|------------------|---------------------|
 | **Prediction Goal** | Clearly defines a specific, measurable prediction goal directly linked to business applications. | States a clear prediction goal, though some details (e.g., measurability) could be more precise. | Mentions a prediction goal but it is vague or only partially aligned with business challenges. | Goal is unclear, missing, or unrelated to a predictive-analytics context. |
 | **Motivation & Significance** | Compelling rationale convincingly explaining why the goal matters, with strong ties to current business challenges or industry trends. | Explains significance adequately, though the rationale may not be deeply developed. | Some motivation but lacks depth or clear connection to practical business impact. | Minimal or no explanation of the project's importance. |
-| **Data Overview** | Detailed description of the dataset(s): source, key variables, and a clear explanation of why the data is well suited to the goal. | Most key elements present; some details or justifications missing or only partially explained. | Basic description with limited detail or justification for its use. | Incomplete, unclear, or missing critical aspects. |
+| **Data Overview** | Documents an eligible real dataset with a direct source link, original provider or collector, unit of observation, collection context, response and predictors, and a clear explanation of why the data is well suited to the goal. | Uses an eligible real dataset and presents most required provenance, variable, and suitability details; minor elements are missing or underdeveloped. | Uses real data, but the provenance, variables, collection context, or suitability is incomplete or unclear. | Uses an ineligible synthetic or generated dataset, or provides an incomplete or unverifiable data overview. |
 | **Preliminary Methods** | Clearly outlines the predictive techniques/models and demonstrates strong alignment with the goal. | Outlines intended methods with reasonable clarity, though some elements are general or not fully connected. | Mentions methods without sufficient detail or clarity on how they address the goal. | Methods poorly described, irrelevant, or absent. |
 | **Expected Contributions & Organization** | Clearly states anticipated contributions with strong relevance to business decision-making; very well organized, formatted, and error-free. | Adequate clarity and organization; minor errors or formatting issues that do not detract significantly. | Vague contributions; organization needs improvement with several errors. | Outcomes missing or very poorly defined; disorganized with numerous errors. |
 
 ---
 
-**Course alignment.** Build the proposal on the workflow vocabulary from **nb01–nb05** (prediction goal, EDA, leakage-safe splits). If your group uses the Kaggle Bank Churn competition data or any synthetic dataset, say so. This proposal seeds M02 (expanded outline) and M03 (draft abstract).
+**Course alignment.** Build the proposal on the workflow vocabulary from **nb01–nb05** (prediction goal, EDA, leakage-safe splits). The Final Project requires real data; the synthetic Bank Churn competition data and all other synthetic, simulated, or generated datasets are ineligible. This proposal seeds M02 (expanded outline) and M03 (draft abstract).
 
 ---
 

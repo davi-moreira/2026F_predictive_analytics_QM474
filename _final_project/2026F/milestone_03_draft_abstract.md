@@ -24,12 +24,13 @@ This milestone synthesizes your work into a draft abstract that will serve as th
 A concise, informative title that reflects the essence of your project.
 > **Example:** *"Predicting Customer Churn: A Data-Driven Approach to Enhancing Retention Strategies."*
 
-> **Important!** If you are working with a synthetic / generated dataset, you must mention it in the project title.
+> **Real-data requirement:** Your Final Project must use data collected or observed from an actual real-world process. Synthetic, simulated, artificially generated, and AI-generated datasets are not eligible. The synthetic Bank Churn dataset used in the Course Case Competition may not be used for the Final Project.
 
 ### 2. Draft Abstract (~250 words)
 Include:
 - **Prediction Problem/Question:** framed as a clear question — use a question mark "?".
 - **Prediction Goal and Motivation:** a brief statement of your goal and why it matters.
+- **Real Data:** briefly identify the dataset's original provider and what real-world observations it contains.
 - **Methodology and Tools:** a summary of the data-preparation process, analytical methods, and tools.
 - **Key Findings / Expected Contributions:** a brief overview of preliminary findings or anticipated contributions.
 - **Broader Implications:** how your project informs business practice or the broader field.
@@ -45,7 +46,7 @@ Include:
 | Criterion | Exemplary (9–10) | Proficient (7–8) | Developing (5–6) | Beginning (0–4) |
 |-----------|------------------|------------------|------------------|---------------------|
 | **Project Title** | Clear, concise, compelling title that encapsulates the project and prediction goal. | Clear and relevant, though it may lack impact or creativity. | Somewhat generic or only partially reflective of scope. | Vague, overly generic, or ineffective. |
-| **Abstract Content (~250 words)** | Well-organized; succinctly summarizes goal, methodology, key findings, and broader implications; engaging and polished. | Covers main components adequately; slightly less concise/organized; minor refinement needed. | Touches required elements but unclear or lacks depth; inconsistent coherence. | Incomplete, disorganized, or missing critical components. |
+| **Abstract Content (~250 words)** | Well-organized; succinctly summarizes the goal, eligible real data and its original provider, methodology, key findings, and broader implications; engaging and polished. | Covers the main components and identifies eligible real data adequately; slightly less concise or organized, with minor refinement needed. | Touches the required elements, but the real-data source or another component is unclear or lacks depth; inconsistent coherence. | Uses an ineligible synthetic or generated dataset, or is incomplete, disorganized, or missing critical components. |
 | **Writing Quality & Polish** | Impeccably written, clear academic language accessible to a diverse audience; error-free and thoroughly proofread. | Well-written with only minor grammatical/stylistic errors. | Several issues that detract from clarity; needs more proofreading. | Numerous errors that significantly impede understanding. |
 
 ---

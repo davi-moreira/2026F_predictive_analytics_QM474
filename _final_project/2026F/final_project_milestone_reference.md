@@ -98,13 +98,13 @@ Full instructions and rubrics: the individual `milestone_NN_*.md` files in this 
 Two jobs. **(1)** The group completes and signs the **Group Contract** (template: [`template/QM474_group_contract.docx`](template/QM474_group_contract.docx), rebuilt by `scripts/build_group_contract_docx.py`), covering members and contact information, communication norms, meeting cadence, roles, decision-making, work distribution, accountability, and signatures. **(2)** The group emails the TA and Professor Moreira proposing dates and times for the Round 01 meetings. Three PDFs submitted: contract, TA request, instructor request.
 
 ### M01 — Initial Project Proposal · due Sun Sep 20 · 50 pts
-Define a **prediction goal** (not a research question): prediction goal, motivation and significance, data overview, preliminary methods, expected contributions. 1–2 pages. *(Course support: nb01–nb05.)*
+Define a **prediction goal** (not a research question): prediction goal, motivation and significance, eligible real-data overview with source link and provenance, preliminary methods, and expected contributions. Synthetic, simulated, artificially generated, and AI-generated datasets are not eligible. 1–2 pages. *(Course support: nb01–nb05.)*
 
 ### M02 — Expanded Project Outline · due Sun Sep 27 · 50 pts
 Refine the goal and detail the plan: revised goal and objectives, data preparation (cleaning and feature engineering), methodology and evaluation metrics, initial EDA findings, anticipated challenges. 2–3 pages with visualizations. *(Course support: nb02, nb06–nb09.)*
 
 ### M03 — Project Draft Abstract · due Sun Oct 4 · 30 pts
-A \~250-word draft abstract for the conference: informative title (flag synthetic data if used), prediction problem framed as a question (with a "?"), goal and motivation, methodology and tools, key findings and expected contributions, broader implications.
+A \~250-word draft abstract for the conference: informative title, prediction problem framed as a question (with a "?"), goal and motivation, identification of the eligible real dataset and its original provider, methodology and tools, key findings and expected contributions, and broader implications. Synthetic, simulated, artificially generated, and AI-generated datasets are not eligible for the Final Project.
 
 ### M04 — Instructor and TAs Meetings (Round 01 Confirmation) · due Sun Oct 11 · completion
 Upload a PDF detailing the dates and times of the group's Round 01 meetings with the instructor and the TAs.

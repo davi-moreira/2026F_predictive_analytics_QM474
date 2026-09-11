@@ -3450,3 +3450,22 @@ CV-first M06/M08 modeling requirements, poster draft and final sequence, the ins
 presentation, and the Dec 11 peer evaluation. The announcement explicitly supersedes the stale
 generic sentences in M01/M03 that say to disclose or flag a synthetic dataset; disclosure is no
 longer enough under the new policy.
+
+---
+
+## 2026-09-11 (cont.) — Real-data policy moved into M01 and M03
+
+Davi supplied the final announcement wording and asked that the older synthetic-data language be
+removed from the milestone instructions themselves. The ignored announcement draft was revised to
+match that wording: it no longer carries milestone due dates in the roadmap, identifies the event
+as the Purdue Undergraduate Research Expo, and states the real-data requirement without referring
+students to superseded milestone language.
+
+M01 now makes real data an eligibility condition in the Data Overview, requires a direct source
+link, original provider or collector, unit of observation, collection context, response and
+predictors, suitability, and an explicit real-data confirmation. Its rubric now treats a synthetic
+or generated dataset as ineligible rather than merely requiring disclosure. M03 replaces the old
+"flag synthetic data in the title" instruction with the same eligibility rule, requires the
+abstract to identify the original data provider and real-world observations, and carries that rule
+through its rubric. The canonical milestone reference was updated for both M01 and M03 so the
+short-form summaries agree with the detailed files.
