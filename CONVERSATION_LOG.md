@@ -3492,3 +3492,21 @@ of the course** — by then the routine is established and the first quizzes and
 submissions have closed, which is when retroactive requests start arriving. The draft carries a
 "Recurring announcement" header block recording that, and the rule was written to the project
 memory so future sessions re-raise it at the right time.
+
+---
+
+## 2026-09-14 (cont.) — Davi's final wording for the week-4 announcement
+
+Davi supplied the wording he will post, and the draft file now holds it verbatim (his `&nbsp;`
+entities kept so it pastes into Brightspace unchanged). Two substantive changes from the earlier
+draft:
+
+- Attendance now has **three** exceptions, not two. The iClicker-failure notice must arrive
+  **during the class session** (the earlier "before or during" is gone), and a new middle case
+  covers a **very important appointment or event during lecture time — e.g. a job interview —
+  flagged before class**.
+- The deadline paragraph no longer offers an advance-notice route. **Once a deadline has passed,
+  only a documented emergency under University regulations reopens it.** The advance-notice case
+  is an attendance exception only.
+
+The project memory and tracked task #49 were updated to match.
