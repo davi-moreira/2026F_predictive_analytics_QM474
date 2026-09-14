@@ -3469,3 +3469,26 @@ or generated dataset as ineligible rather than merely requiring disclosure. M03 
 abstract to identify the original data provider and real-world observations, and carries that rule
 through its rubric. The canonical milestone reference was updated for both M01 and M03 so the
 short-form summaries agree with the detailed files.
+
+---
+
+## 2026-09-14 — Week-4 attendance and deadline policy announcement
+
+Davi asked for an announcement stating that, from today forward, he reviews an individual
+attendance record only when the student emails that the iClicker check-in failed **before or
+during that class session**, or when a documented emergency or urgency recognized by University
+regulations kept them from class — and that the identical rule governs every assignment deadline
+in the course (notice before the deadline, or a documented emergency after it).
+
+The draft is `_announcements/2026F/week4_attendance_records_and_deadline_policy.md` (gitignored).
+Its exceptional-circumstances list is taken from the syllabus make-up policy so the two agree:
+death in the family, serious personal medical emergency, conflicting NCAA athletic event, or as
+otherwise required by University policy. It closes by repeating the 85% attendance requirement and
+that no quiz or participation activity is dropped, and points students back to the Brightspace
+checklist.
+
+Davi designated this a **recurring announcement for the beginning of the 4th week of every edition
+of the course** — by then the routine is established and the first quizzes and notebook
+submissions have closed, which is when retroactive requests start arriving. The draft carries a
+"Recurring announcement" header block recording that, and the rule was written to the project
+memory so future sessions re-raise it at the right time.
