@@ -3510,3 +3510,58 @@ draft:
   is an attendance exception only.
 
 The project memory and tracked task #49 were updated to match.
+
+---
+
+## 2026-09-22 — The midterm scantrons get an IDP submission packet
+
+**The question.** Three days before the Fri Sep 25 paper midterm: collect IDP's test-scoring request
+form, fill it for QM 47400, and name the solution file to bubble each answer key from.
+
+**Which two forms are actually being graded, recovered rather than assumed.** The print-request
+record still carried `<case A>` / `<case B>` placeholders. The sent message in Outlook settles it:
+the attachments were **`exam_astraorbit.pdf`** (pink, **Version 001**) and
+**`exam_siliconpeak.pdf`** (blue, **Version 003**), 53 copies each, sent **Sep 8** and delivered to
+the office **Sep 9** — eight days ahead of the drafted Sep 16 / Sep 23 plan. The attached PDF's text
+was extracted and matches the local build, so `pdf/solutions_astraorbit.pdf` and
+`pdf/solutions_siliconpeak.pdf` are the keys for the paper in the room.
+
+**The versions are 001 and 003, not 001 and 002.** The version label is a property of the case form,
+and these two were chosen precisely because they differ. Anyone reaching for "A and B" would bubble
+a key IDP then matches to nothing.
+
+**Two records in this directory were factually wrong and are corrected.** Both
+`print_request_dsb_copy_center.md` and `accommodated_testing_pts.md` asserted that "the booklets
+carry no version number". They do: page 1 of all fourteen prints `Version 001 (A)` / `002 (B)` /
+`003 (C)` and a bullet tells the student to code it. The claim appears to date from the Aug 29
+request to "drop the exam version information", which was not what the build ended up doing. What
+survives of the concern is narrower and still true: the TIF's additional-instructions field is
+empty, so no PTS proctor will remind an accommodated student to bubble it.
+
+**The answer keys, read off the printed PDFs and spot-checked against the printed option text:**
+
+| Test Form | Case | Key file | Items 1-10 |
+|---|---|---|---|
+| 001 | AstraOrbit (classification) | `pdf/solutions_astraorbit.pdf` | D A E D A C C E B B |
+| 003 | SiliconPeak (regression) | `pdf/solutions_siliconpeak.pdf` | C E D D A B E B C A |
+
+**Built, all inside the gitignored `_midterm_exam/2026F/`:** `fill_idp_test_scoring_form.py` (ported
+from the QM 67000 filler — it rewrites the blank form's underscore runs in bold+underline and
+measures Arial Narrow so nothing wraps), the blank template beside it, and the filled
+`idp_test_scoring_request_midterm.docx` / `.pdf`. Plus `scantron_scoring_idp.md`: IDP is **STEW
+G-61**, walk-in, free, 24-48h — *not* PTS, which administers accommodated exams and no longer
+delivers anything to IDP on an instructor's behalf.
+
+**The one open decision, recorded on the form and flagged rather than silently chosen.** The booklet
+tells students "All 10 questions are worth 1 point each", so question 6 is filled **unweighted,
+total 10**, and IDP will return a raw score out of 10 — which means the **Brightspace midterm grade
+item must have a maximum of 10**. Making the column out of 100 is a three-line `CONFIG` change and a
+rerun, at the cost of the paper and the gradebook disagreeing on an item's face value.
+
+**The accommodated sittings do not ride along.** The TIF sets the return method to *scanned copy to
+the Instructor Portal*, so those scantrons come back as images, not as paper a scanner can read.
+Either hand-grade them from the scan against the matching key (ten items), or collect the originals
+at STEW G39 and walk them to G-61 as late sheets — 48 business hours to download or request a
+rescan, two weeks before PTS shreds. Which booklet PTS is holding is not recorded anywhere in the
+repo and has to be read off the RegisterBlast instructor portal.
+
