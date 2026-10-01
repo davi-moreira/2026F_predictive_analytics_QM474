@@ -3565,3 +3565,18 @@ at STEW G39 and walk them to G-61 as late sheets — 48 business hours to downlo
 rescan, two weeks before PTS shreds. Which booklet PTS is holding is not recorded anywhere in the
 repo and has to be read off the RegisterBlast instructor portal.
 
+
+---
+
+## 2026-10-01 — Group-split request: the standing options
+
+A Section 001 student asked to leave their final-project group: teammates were unresponsive, the
+student did M02 alone, and there was no personal conflict. They also asked for an M00 regrade.
+Davi's reply sets the pattern for these cases. He offers **three options and the student chooses**:
+(1) reassignment to a new group, (2) working alone as a one-person group, or (3) Davi stepping in
+with the current group. **The regrade waits until the group arrangement is settled.** The syllabus
+has no rule on leaving a group. So if the student goes solo or moves, four details are settled case
+by case: which milestone grades stay shared, whether the student keeps the topic or writes a new
+proposal, how peer evaluation (20% of Final Project) works for a one-person group, and telling the
+teammates who stay. Then the groups export workflow is rerun. Status: waiting for the student's
+choice. The student's identity is kept out of this public log.
