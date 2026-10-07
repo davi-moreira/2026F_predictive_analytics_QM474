@@ -3615,3 +3615,10 @@ reductions against both baselines (42.47% mean, 40.71% median) and treat the sma
 gap as an observation. The video guide is synced and its §9 cells are remapped to the instructor
 notebook. The notebook executes end to end locally. The review, its dossier and the verification
 script live in the gitignored `_adm/codex_reviews/2026-10-07_nb03-section3-rmse/`.
+
+**Follow-up, same day.** Davi asked where the RMSE counterpart to the MAE sentence was; the
+Codex-driven rewrite had dropped it. Section 3 now reads RMSE the same way: 0.72 is \~USD 72,000,
+the miss that, applied to every tract, would match the model's squared error. That reading is the
+formula in words, so it is exact and implies no range for a new estimate. At Davi's request the
+Section 3 text and the other student-facing cells edited today were rewritten in plainer
+undergraduate language with no em dashes; the video guide carries the same RMSE reading.
