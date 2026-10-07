@@ -107,9 +107,11 @@ def check_file(path):
     if not qs:
         print(f"  -> FAIL: {path} parsed to zero questions")
         sys.exit(1)
-    unkeyed = [i for i, q in enumerate(qs, 1) if not any(w > 0 for w, _ in q["options"])]
-    if unkeyed:
-        print(f"  -> FAIL: {path} has no keyed option in question(s) {unkeyed}")
+    # Exactly one keyed option per question. A second positive-weight option used to pass
+    # (Codex review, 2026-10-07); a multi-key question is a broken import, not a length issue.
+    bad_keys = [i for i, q in enumerate(qs, 1) if sum(w > 0 for w, _ in q["options"]) != 1]
+    if bad_keys:
+        print(f"  -> FAIL: {path} has != 1 keyed option in question(s) {bad_keys}")
         sys.exit(1)
     fails, longest_hits = [], 0
     for i, q in enumerate(qs, 1):
