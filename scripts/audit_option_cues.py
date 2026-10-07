@@ -113,7 +113,36 @@ def cands_graded(items, fn, want_max):
         vals = [fn(t, stem) for t in opts]
         target = max(vals) if want_max else min(vals)
         cand = {i for i, v in enumerate(vals) if v == target}
-        out.append(cand if len(cand) != len(opts) else None)
+        # A full tie stays in, with fractional (random-fallback) credit. Dropping it as None
+        # while keeping it in the denominator scored 30 perfect picks + 180 ties as 14.3%
+        # instead of 35.7% (Codex review, 2026-10-07).
+        out.append(cand)
+    return out
+
+
+_tok3 = lambda s: set(re.findall(r"[a-z]{3,}", s.lower()))
+
+
+def jaccard(a, b):
+    return len(a & b) / len(a | b) if (a or b) else 0.0
+
+
+def convergence_sums(opts):
+    """Per option: summed Jaccard similarity (3+-letter tokens) with the other options."""
+    toks = [_tok3(t) for t in opts]
+    return [sum(jaccard(toks[i], toks[j]) for j in range(len(opts)) if j != i)
+            for i in range(len(opts))]
+
+
+def cands_convergence(items, want_max):
+    """Option-to-option convergence (NBME 'convergence' flaw): the key collects the
+    components repeated across distractors, so it overlaps most with the others. Uses no
+    stem, no labels, no model. Added after the Codex review of 2026-10-07 found it at 47.9%."""
+    out = []
+    for opts, _, _ in items:
+        vals = [round(v, 9) for v in convergence_sums(opts)]
+        target = max(vals) if want_max else min(vals)
+        out.append({i for i, v in enumerate(vals) if v == target})
     return out
 
 
@@ -200,6 +229,7 @@ def style_probe(forms):
         return None, "needs >= 3 forms"
     hit = tot = 0
     per = []
+    rank_hits = {}
     for held, _ in forms:
         X, y = [], []
         for name, items in forms:
@@ -213,12 +243,18 @@ def style_probe(forms):
         A = vec.fit_transform(X)
         clf = LogisticRegression(max_iter=2000, class_weight="balanced").fit(A, y)
         items = dict(forms)[held]
-        h = sum(1 for opts, key, _ in items
-                if int(clf.decision_function(vec.transform(opts)).argmax()) == key)
+        h = 0
+        for opts, key, _ in items:
+            scores = clf.decision_function(vec.transform(opts))
+            order = sorted(range(len(opts)), key=lambda i: -scores[i])
+            r = order.index(key)            # 0 = the model's top pick
+            rank_hits[r] = rank_hits.get(r, 0) + 1
+            h += (r == 0)
         per.append((held, h, len(items)))
         hit += h
         tot += len(items)
-    return (hit / tot, per), None
+    ranks = {r + 1: rank_hits.get(r, 0) / tot for r in range(max(len(o) for _, its in forms for o, _, _ in its))}
+    return (hit / tot, per, ranks), None
 
 
 def main():
@@ -269,6 +305,10 @@ def main():
             run(f"{'most ' if want_max else 'fewest'} {name}",
                 cands_graded(items, fn, want_max), False)
 
+    for want_max in (True, False):
+        run(f"{'most ' if want_max else 'fewest'} option convergence",
+            cands_convergence(items, want_max), False)
+
     pvals = [a[3] for a in attacks]
     sig = holm(pvals, ALPHA)
 
@@ -288,13 +328,20 @@ def main():
                             f"{100*adv:+.1f} pts over chance ({holm_note})")
 
     style = None
+    style_error = None
     if args.style:
-        style, err = style_probe(forms)
-        if style:
-            rate, per = style
-            if rate - chance > MAX_ADVANTAGE:
-                failures.append(f"learned style probe: {100*rate:.1f}% leave-one-form-out "
-                                f"({100*(rate-chance):+.1f} pts over chance)")
+        style, style_error = style_probe(forms)
+        if style_error:
+            # A requested check that cannot run is a failure, not a silent pass.
+            failures.append(f"learned style probe unavailable: {style_error}")
+        elif style:
+            rate, per, ranks = style
+            # Every rank is an attack: "pick the model's second choice" is as usable as its
+            # first (Codex 2026-10-07: rank 2 held 35.2% of keys when rank 1 held 21.4%).
+            for r, rr in ranks.items():
+                if rr - chance > MAX_ADVANTAGE:
+                    failures.append(f"learned style probe, rank {r}: key at the model's rank-{r} "
+                                    f"option {100*rr:.1f}% ({100*(rr-chance):+.1f} pts over chance)")
 
     if args.as_json:
         print(json.dumps({
@@ -302,7 +349,8 @@ def main():
             "attacks": [{"attack": l, "rate": r, "applicable": a, "p": p,
                          "deterministic_n": d, "holm_significant": i in sig}
                         for i, (l, r, a, p, d) in enumerate(attacks)],
-            "style": None if not style else {"rate": style[0], "per_form": style[1]},
+            "style": None if not style else {"rate": style[0], "per_form": style[1], "rank_rates": style[2]},
+            "style_error": style_error,
             "failures": failures, "pass": not failures}, indent=1))
         sys.exit(0 if not failures else 1)
 
@@ -319,9 +367,12 @@ def main():
         print(f"  {label:<26}{100*rate:7.1f}%{appl:>7}{100*(rate-chance):+7.1f}{p:>10.4f}"
               f"  {'FAIL' if bad else 'ok'}")
 
+    if style_error:
+        print(f"\nLEARNED STYLE PROBE UNAVAILABLE: {style_error}")
     if style:
-        rate, per = style
+        rate, per, ranks = style
         print(f"\nLEARNED STYLE PROBE (leave-one-form-out, option text only)")
+        print("  key rank under the model: " + "  ".join(f"rank {r}: {100*v:.1f}%" for r, v in ranks.items()))
         for c, h, n in sorted(per, key=lambda r: -r[1]):
             print(f"  {c:<14}{h:>3}/{n}  {100*h/n:5.1f}%")
         print(f"  {'POOLED':<14}{100*rate:>8.1f}%   (chance {100*chance:.1f}%)")
