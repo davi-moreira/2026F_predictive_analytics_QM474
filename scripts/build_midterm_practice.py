@@ -19,7 +19,7 @@ A manifest is JSON:
 
 `indices` are 1-based and follow the order questions appear in the source:
   - source "summer": `_midterm_exam/2026Summer/midterm_<case>_*.csv` (4 options each)
-  - source "fall":   `_midterm_exam/2026F/banks/<case>.json`          (5 options each)
+  - source "fall":   `_midterm_exam/2026F/banks/<case>.json`          (4 options each since 2026-10-07)
 
 Usage:
     python3 scripts/build_midterm_practice.py --manifest <path> [--out <path>]
