@@ -3580,3 +3580,38 @@ by case: which milestone grades stay shared, whether the student keeps the topic
 proposal, how peer evaluation (20% of Final Project) works for a one-person group, and telling the
 teammates who stay. Then the groups export workflow is rerun. Status: waiting for the student's
 choice. The student's identity is kept out of this public log.
+
+
+---
+
+## 2026-10-07 — nb03 Section 3: RMSE in business terms, reviewed by Codex
+
+Davi asked for a business-terms reading of RMSE in nb03 Section 3, built from what the data actually
+produce, plus a review of the MAE interpretation and the MAE-vs-RMSE comparison, with Codex reviewing.
+Claude's first draft read RMSE (validation, linear model: \~USD 72k) as a "give or take" pricing band
+(77% of tracts within ±1 RMSE, 95% within ±2) and used RMSE/MAE ≈ 1.25 as a bell-curve benchmark.
+An intermediate version of the student notebook reached GitHub through the repo's auto-commit
+(`b7b6e67`) before the review was settled.
+
+**Codex review (gpt-6-astra, effort max): "Revise before shipping."** Three of its reasons drove the
+rewrite. First, the 77%/95% shares describe the validation sample, not the range for a new estimate
+(only 65% of tracts worth USD 350k+ fall within ±2 RMSE). Second, the ratio rule only runs one way:
+normal errors give ≈1.25, but 1.25 does not imply normal errors (counterexample: errors −7, −1, 1, 7).
+Third, "costs far more than twice" does not select RMSE: MAE and RMSE correspond to symmetric absolute
+and symmetric quadratic loss, and real costs (thresholds, over- vs under-valuation) rarely match
+either, so RMSE is a proxy. Codex also caught that the worst miss is a USD 137.5k tract predicted at
+−USD 303k (`AveOccup` ≈ 1,243), that the dataset ceiling shows as a vertical column in the
+predicted-vs-actual plot rather than a model "clip" (52 validation predictions exceed USD 500k and 24
+fall below zero), and that the video guide's §9 cell numbers were stale.
+
+**All recommendations applied (`1918cb7`).** Section 3 uses Codex's replacement wording and Q&A, with
+RMSE 38% below the mean baseline, loss functions named, a predeclared primary metric, and R² defined
+against the evaluated-outcome mean (validation 0.617). Section 2 names the target as a 1990 census
+block-group median, not a sale price. Section 6's residual cell now prints the median absolute
+error (\~USD 41k), the largest-10% shares (32% of absolute error, 60% of squared error), the negative
+predictions, and the worst miss, and its reading cell drops the bell-shape requirement. Section 7 fixes the ceiling
+explanation and Section 9's template carries current figures. The instructor solutions report MAE
+reductions against both baselines (42.47% mean, 40.71% median) and treat the small train–validation
+gap as an observation. The video guide is synced and its §9 cells are remapped to the instructor
+notebook. The notebook executes end to end locally. The review, its dossier and the verification
+script live in the gitignored `_adm/codex_reviews/2026-10-07_nb03-section3-rmse/`.
