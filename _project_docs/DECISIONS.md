@@ -234,3 +234,90 @@ This document records design decisions made during course development and the re
 **Artifacts.** `scripts/build_honors_section_docx.py` (slices the section out of `syllabus.qmd`) and `scripts/build_honors_syllabus_docx.py` (renders the modified honors syllabus in the DSB template). Both write into the gitignored `_syllabus/2026F/honors_contract/`. Regenerate; never hand-edit the output.
 
 **Key dates (Fall 2026, verified).** Student intake closes **Thu Sep 3, 11:59 p.m.** (Daniels form + Qualtrics, not extendable) · coordinator decisions due **Fri Sep 18** · JMHC scholarly-project proposal due **Thu Oct 1**. These shift each term — pull from the Registrar Add/Modify calendar and the live Daniels Honors Contract page rather than reusing them.
+
+---
+
+## Decision 16: Midterm Banks Rewritten to 15 Items x Four Options, in Plain Language (2026-10-07)
+
+**Decision.** Effective 2026-10-07, every midterm form in `_midterm_exam/2026F/` prints **15
+multiple-choice questions with four alternatives each (A–D)** in 45 minutes, one item per slot of a
+common fifteen-slot blueprint, in this order:
+- framing;
+- two EDA items;
+- split;
+- pipeline;
+- baseline;
+- metric;
+- two leakage items;
+- threshold or regularization;
+- a form-specific modeling item;
+- two cross-validation items;
+- tuning;
+- an in-scope synthesis item.
+
+Every stem, option, answer-key rationale and case briefing was rewritten in smooth, simple, fully
+spelled-out language for undergraduate business students, to the spec in
+`_midterm_exam/2026F/STYLE_GUIDE_15x4.md`.
+
+This supersedes the "five alternatives each" clause of Decision 13, item 1, and the ten-item selection
+of 2026-08-29. The Fri Sep 25, 2026 sitting (10 items, five options) is frozen in
+`_midterm_exam/2026F/archive/administered_2026-09-25/` for grading, appeals and the version-effect
+analysis.
+
+**Rationale.** From the midterm feedback survey (85 finished responses, Sep 28 – Oct 2, 2026;
+`_adm/_grade/2026F/midterm_exam/feedback_survey/REPORT.md`):
+- 55% agreed the questions were clearly worded;
+- 55% agreed they could tell the five options apart;
+- 55% preferred more, shorter, lower-weight items;
+- students reported spending more time reading than answering.
+
+**Why fifteen items and four options.**
+- **Fifteen items** lower the stakes per item: each is one fifteenth of the exam instead of one
+  tenth.
+- **Four plausible options** cut reading time and are not worse psychometrically than five (Rodriguez,
+  2005). On Sep 25, 13 of 40 AstraOrbit and 9 of 40 SiliconPeak distractors drew no one.
+- **Reading load:** about 2,200–2,400 words per form (briefing plus items), against about 3,000 for
+  10 items on Sep 25.
+- **Guessing floor:** it rises from 20% to 25%, which is accepted.
+
+**How it was built and checked.**
+1. A per-form rewrite. A blind solver who never saw the key, a content and doctrine reviewer, and a
+   plain-language and cue reviewer checked each form, with fix rounds after.
+2. A slot-wise cue fix across forms.
+3. A taught-content audit of slots 2, 6, 7, 10, 12, 13 and 14 against the notebooks. It found that
+   the spec's tuning rule was not taught in nb09, so the spec was corrected.
+4. An independent Codex review (`gpt-6-astra`, ultra). It found ten major item defects, a new
+   option-convergence cue (47.9%) and several gate false passes. Its verified findings were applied.
+5. A spread pass after the convergence repair overcorrected into an "avoid the extremes" cue (40.7%).
+
+A fresh blind solve and adjudication followed every round. In the final round the blind solver agreed
+with the key on all 210 items.
+
+**Implication.**
+- **Decision 11 applies with chance at 1/4:**
+  - every option is at least 60% of the length of the item's longest option;
+  - the correct option is strictly the longest in 2–4 of 15 items per bank;
+  - the correct option's length rank varies.
+- **The release gates pass:**
+  - `validate_banks.py` (built on `item_lint.py`);
+  - `check_exam_structure.py`, which now checks answer labels, the answer grid, verdict placement,
+    the dealt option order and signed numbers;
+  - `check_pdfs.py`;
+  - `scripts/audit_answer_length.py`, which now requires exactly one key per question;
+  - `scripts/audit_option_cues.py --style`, which now also tests option convergence, "avoid the
+    extremes" rules and every rank of the style model, and fails closed.
+- **A known residual:** independent learned probes still place the key at their top pick about
+  9–11 points above chance.
+- **What the gates do not establish:** a common blueprint gives the forms the same organization, but
+  not equal difficulty, reliability or interchangeable scores (Standards 5.12). Timing still needs a
+  pilot (Standards 4.14).
+
+The syllabus of record (docx) and `syllabus.qmd` describe the Fall 2026 sitting as administered, and
+this decision does not change them. A future offering's syllabus must state "15 multiple-choice
+questions with four alternatives each".
+
+**Open for the instructor.**
+- Codex's proposed rewording of the CV doctrine's C2/C3: a descriptive decision rule, not a test.
+- The notebook defects in `_midterm_exam/2026F/NOTEBOOK_ISSUES_2026-10-07.md`.
+- Whether NovaCure was released as practice in August.
+- A common mixed-family design (classification and regression on every form) for future sittings.

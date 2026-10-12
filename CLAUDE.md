@@ -36,7 +36,7 @@ The same **18-notebook arc (nb00–nb09, nb11–nb14, nb16–nb19 — nb10 the m
 | `scripts/audit_cv_first.py` | Run before every commit in nb09–nb19 |
 | `scripts/voice_check_guides.py` | Run before every video-guide edit |
 | `scripts/audit_answer_length.py` | Run before importing ANY quiz/exam CSV to Brightspace (MC answer-length cue gate) |
-| `_midterm_exam/2026F/README.md` | Working on the in-class paper midterm (Fri Sep 25) — bank JSON, CSVs, LaTeX sources, build script, PDFs |
+| `_midterm_exam/2026F/README.md` | Working on the paper midterm — 15 x 4 banks (authoring spec `STYLE_GUIDE_15x4.md`), CSVs, LaTeX sources, build script, PDFs, release gates; the Sep 25 sitting is archived in `archive/administered_2026-09-25/` |
 | `scripts/_distractor_rewrite_instructions.md` | Authoring/rewriting MC distractors — the full length-parity spec |
 
 **Canonical notebook reference:** `notebooks/nb01_eda_splits_student.ipynb`. Match its formatting exactly.
@@ -160,7 +160,7 @@ The only acceptable output is hits in `nb14` cells 30 + 34 (one per spine) plus 
 
 **Hard rules for every multiple-choice question (quizzes and any future exam):**
 
-1. **Every option ≥ 60% of the length of that question's longest option.** (Quizzes use four options; the **2026F paper midterm uses five**, so chance is 20% there and the per-bank correct-is-longest budget is measured against that.) Distractors carry their own flawed-but-specific rationale at the same elaboration and connector-word density as the correct option — wrongness comes from a real misconception, never from brevity, vagueness, or "always/never" tells.
+1. **Every option ≥ 60% of the length of that question's longest option.** (Quizzes and the paper midterm both use **four options** — the midterm since its 2026-10-07 rewrite to 15 x 4, Decision 16; the Sep 25, 2026 sitting used five and is archived — so chance is 25% and the per-bank correct-is-longest budget is measured against that.) Distractors carry their own flawed-but-specific rationale at the same elaboration and connector-word density as the correct option — wrongness comes from a real misconception, never from brevity, vagueness, or "always/never" tells.
 2. **Per bank, the correct option is strictly longest in ≤ 40% of questions** (target \~25%, chance). Vary the correct option's length rank — it must land at longest, middle, and shortest across the bank, and the longest option's position must vary.
 3. **Full authoring spec:** `scripts/_distractor_rewrite_instructions.md` (also embedded in the quiz and midterm generation plans, §4.5 and §5.6).
 
@@ -382,6 +382,6 @@ Before ending any session that touched course content:
 
 ---
 
-**Last Updated:** 2026-08-21
-**Version:** 2.2 — added the Honors Contract workflow (Decision 15). Previously 2.1 — slimmed from 977 lines by extracting reference material into `NOTEBOOK_TEMPLATE.md`, `DECISIONS.md`, `TROUBLESHOOTING.md`, and `scripts/`. Behavior-changing rules and workflows preserved verbatim.
+**Last Updated:** 2026-10-12
+**Version:** 2.3 — the paper midterm is now 15 questions x four options in plain language (Decision 16); MC parity line updated. Previously 2.2 — added the Honors Contract workflow (Decision 15). Previously 2.1 — slimmed from 977 lines by extracting reference material into `NOTEBOOK_TEMPLATE.md`, `DECISIONS.md`, `TROUBLESHOOTING.md`, and `scripts/`. Behavior-changing rules and workflows preserved verbatim.
 **Maintained by:** Professor Davi Moreira + AI Assistants
