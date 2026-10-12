@@ -3622,3 +3622,84 @@ the miss that, applied to every tract, would match the model's squared error. Th
 formula in words, so it is exact and implies no range for a new estimate. At Davi's request the
 Section 3 text and the other student-facing cells edited today were rewritten in plainer
 undergraduate language with no em dashes; the video guide carries the same RMSE reading.
+
+---
+
+## 2026-10-07 to 10-12 — Midterm: the feedback survey, then a 15 x 4 plain-language rewrite reviewed by Codex
+
+**The survey.** The QM474 Midterm Exam Feedback export was archived and de-identified (IP and
+geolocation dropped) in `_adm/_grade/2026F/midterm_exam/feedback_survey/`, with the analysis and a
+Codex-reviewed `REPORT.md`. There were 85 finished responses against a roster of 97.
+- 87% said the exam covered nb00–nb09, 76% that it tested judgment, and 74% that it was fair.
+- Only 55% found the wording clear, and 55% could tell the five options apart.
+- 55% wanted more, shorter, lower-weight items.
+- SiliconPeak respondents reported a much larger expectation and practice mismatch than AstraOrbit
+  respondents. The comments point to the practice being classification. This is a hypothesis, not a
+  cause.
+
+**The practice file is identical to an exam form.** `practice/midterm_practice_astraorbit.csv` was
+byte-identical to the live AstraOrbit exam CSV. Whether it was ever published is Davi's to confirm.
+
+**Davi's decision (Decision 16).** Every form prints 15 questions with four options, worded smoothly
+and simply for undergraduates, and Codex reviews the work.
+
+**What was done.**
+- **The Sep 25 sitting** is frozen in `_midterm_exam/2026F/archive/administered_2026-09-25/`. It
+  reproduces IDP's printed keys, and the version-effect analysis now reads from it.
+- **Spec and tooling.**
+  - `STYLE_GUIDE_15x4.md` defines the 15-slot blueprint, budgets, plain-language rules, cue rules and
+    doctrine.
+  - New tools: `item_lint.py`, `student_view.py` (for blind solving), `form_check.py` and
+    `cue_trace.py`.
+  - `build_midterm.py` was updated for 15 x 4. Each item now stays whole on one page, and key
+    sequences have no runs and no fixed strides.
+  - `validate_banks.py` was rebuilt. A practice-handout crash dating from August was fixed.
+- **The rewrite.** 98 agents, each form going through author, blind solver, content reviewer,
+  language and cue reviewer, then fix rounds. It covered all 210 items, including option rationales
+  for the 70 items never printed before. A slot-wise cue fix and a taught-content audit followed. The
+  audit found that nb09 never teaches "the best GridSearchCV score is optimistic", so the spec was
+  corrected and every tuning item now rests on taught rules.
+- **The Codex review** (`gpt-6-astra`, ultra) is in
+  `_adm/codex_reviews/2026-10-07_midterm-15x4-rewrite/`. It found ten major item defects, an
+  option-convergence cue (47.9%) and gate false passes.
+  - Its verified findings were applied per form.
+  - Convergence was rebalanced. A first repair overcorrected into an "avoid the extremes" cue
+    (40.7%); a spread pass fixed it.
+  - The gates were hardened and mutation-tested. The cue gate now tests convergence, middle-option
+    rules and every style rank, and fails closed. The structure gate checks answer labels, the answer
+    grid, verdict placement, dealt option order and signed numbers. The practice builder compares the
+    full ordered items. The length audit requires one key per question.
+- **Blind verification.** A fresh blind solve and adjudication followed every round. In the final
+  round the blind solver agreed with the key on all 210 items.
+
+**The state now.** All release gates pass: validate, structure, PDFs, length (key strictly longest
+13–20% per form), and the cue gate.
+- Convergence: most 27.8%, fewest 26.9%, middle 22.7%.
+- Style model ranks: 29.5 / 32.4 / 23.3 / 14.8%.
+- Independent probes still place the key at their top pick about 9–11 points above chance, a known
+  residual, down from 56–68 points on the Sep 25 forms.
+- Each form is about 2,200–2,400 words to read.
+
+Practice files were rebuilt for NovaCure, AstraOrbit and SiliconPeak; they duplicate live forms. The
+all-cases pool is stale on purpose.
+
+**Docs and sync.** Decision 16 is recorded and CLAUDE.md's option-parity line updated. The midterm
+README and the instructor page were rewritten, and the page re-rendered and encrypted. The instructor
+repo is synced. `_midterm_exam/2026F/NOTEBOOK_ISSUES_2026-10-07.md` lists notebook defects a student
+could quote in an appeal:
+- threshold direction in the nb06 and nb07 solutions;
+- leftover "95% CI" labels;
+- the nb07 ROC-AUC sentence;
+- the nb02 L2 statement;
+- nb01's split-before-EDA contradiction;
+- the "simpler C" inconsistency;
+- nb09's untaught tuning point.
+
+**Open for Davi.**
+- Fix the notebook issues (instructor copy first).
+- Codex's proposed rewording of the CV doctrine C2/C3 as a descriptive decision rule.
+- Was NovaCure, or the AstraOrbit duplicate, released as practice?
+- Pilot the 45-minute timing.
+- A common mixed-family design (classification and regression on every form) before treating scores
+  from different forms as interchangeable.
+- A Fall 2026 make-up needs the regression forms' slots 6–7 checked against the August nb03.
