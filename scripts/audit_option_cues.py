@@ -134,6 +134,30 @@ def convergence_sums(opts):
             for i in range(len(opts))]
 
 
+def cands_middle(items, fn):
+    """Avoid-the-extremes attack: pick among the options that are neither the max nor the
+    min of a graded feature. Fixing "the key is the longest / the most convergent" by pushing
+    keys to the middle creates exactly this cue (pick-the-middle by convergence scored 40.7%
+    after the first convergence repair, 2026-10-12). A full tie keeps every option."""
+    out = []
+    for opts, _, stem in items:
+        vals = [round(fn(t, stem), 9) if fn is not None else None for t in opts]
+        mx, mn = max(vals), min(vals)
+        cand = {i for i, v in enumerate(vals) if v != mx and v != mn}
+        out.append(cand or set(range(len(opts))))
+    return out
+
+
+def cands_middle_convergence(items):
+    out = []
+    for opts, _, _ in items:
+        vals = [round(v, 9) for v in convergence_sums(opts)]
+        mx, mn = max(vals), min(vals)
+        cand = {i for i, v in enumerate(vals) if v != mx and v != mn}
+        out.append(cand or set(range(len(opts))))
+    return out
+
+
 def cands_convergence(items, want_max):
     """Option-to-option convergence (NBME 'convergence' flaw): the key collects the
     components repeated across distractors, so it overlaps most with the others. Uses no
@@ -308,6 +332,9 @@ def main():
     for want_max in (True, False):
         run(f"{'most ' if want_max else 'fewest'} option convergence",
             cands_convergence(items, want_max), False)
+    run("middle option convergence", cands_middle_convergence(items), False)
+    for name, fn in GRADED.items():
+        run(f"middle {name}", cands_middle(items, fn), False)
 
     pvals = [a[3] for a in attacks]
     sig = holm(pvals, ALPHA)
