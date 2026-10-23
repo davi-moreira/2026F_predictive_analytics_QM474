@@ -139,7 +139,7 @@ If two or more teammates each independently submitted before forming the team, K
 - Explore `train.csv` to understand the features.
 - Preprocess the data inside a `Pipeline` — encode categorical variables, scale numeric features, and handle missing values without leaking information from the test set.
 - Train candidate models (logistic regression, decision trees, random forests, gradient boosting, neural networks).
-- Evaluate locally using **AUC-ROC under cross-validation** — the same CV-first protocol the course adopts from `nb08` onward (k-fold + Student's *t* 95% CI).
+- Evaluate locally using **AUC-ROC under cross-validation** — the same CV-first protocol the course adopts from `nb08` onward (k-fold + Student's *t* approximate 95% interval, descriptive because the folds share training rows; models compared with the paired-difference → parsimony rule, never by whether two intervals overlap).
 - Select the model with the most defensible **cross-validated** AUC for your final submission, not the one that happens to score highest on the public leaderboard. Public-leaderboard overfitting is real and will hurt you on the private leaderboard.
 
 The instructor-provided notebook `_course_case_competition/2026Summer/churn_exit_prediction_workflow_student.ipynb` walks the team through the full pipeline end-to-end on this dataset.
@@ -258,6 +258,7 @@ Maintain this section when the structure changes.
 | Date | Change | Authored by |
 |---|---|---|
 | 2026-05-05 | Initial canonical version: 20/60/20 assessment (Team Participation / Leaderboard / Peer Evaluation), step-by-step participation flow with detailed Kaggle team-formation instructions (Option A invite, Option B merge), quick checklist, deliverables, peer-evaluation alignment with the Final Project. Compressed `Course Case Competition Guidelines.docx` + `quick_check_list.docx` (Fall 2025 long-form references) into the Summer 2026 canonical reference. | Davi Moreira (with Claude assistance) |
+| 2026-10-23 | Aligned with the CV inference doctrine (`_project_docs/CV_INFERENCE_DOCTRINE.md`, Decision 14). §7.3 now calls the CV interval a descriptive Student's *t* approximate 95% interval and names the paired-difference → parsimony rule. The 2026F instructions' Team Participation rubric drops the retired CI-overlap selection rule for the same paired rule `nb18` teaches (per-fold differences on identical folds against a predeclared margin); point values unchanged. | Davi Moreira (with Claude assistance) |
 
 ---
 

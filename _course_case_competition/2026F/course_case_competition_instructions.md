@@ -159,10 +159,10 @@ This is an evaluation of your submitted, reproducible `NN_kaggle_code.ipynb`. Tw
 |---|---:|---|
 | **Reproducible notebook** | 4 | A fresh **"Run All"** in Colab completes top-to-bottom on the original Kaggle files and writes your submission `.csv`. |
 | **Leakage-safe pipeline** | 4 | All preprocessing lives inside a `Pipeline` / `ColumnTransformer` so it refits within each CV fold. |
-| **Cross-validated evaluation** | 4 | A baseline **and** a complex model, each reported as CV ROC-AUC with a **95% confidence interval**. |
-| **Systematic tuning & selection** | 4 | Hyperparameter search **inside** CV, with your final model chosen by the CI-overlap rule — not by the public leaderboard. |
-| **Required visualizations** | 2 | A hyperparameter-search plot **and** a CV-CI comparison bar chart (baseline vs. champion). |
-| **Write-up & AI note** | 2 | A short top-of-notebook summary (model, key settings, CV-CI, one-sentence rationale) and your AI-use acknowledgment. |
+| **Cross-validated evaluation** | 4 | A baseline **and** a complex model, each reported as mean CV ROC-AUC with its Student's *t* **approximate 95% interval** — descriptive, since the folds share training rows. |
+| **Systematic tuning & selection** | 4 | Hyperparameter search **inside** CV, with your final model chosen by the **paired-difference → parsimony rule** from `nb18` (per-fold differences on identical folds, judged against a margin you declare before comparing) — not by the public leaderboard. |
+| **Required visualizations** | 2 | A hyperparameter-search plot **and** a CV comparison bar chart (baseline vs. champion) with approximate-interval error bars. |
+| **Write-up & AI note** | 2 | A short top-of-notebook summary (model, key settings, CV ROC-AUC with its approximate interval, one-sentence rationale) and your AI-use acknowledgment. |
 
 ### Peer Evaluation — 20%
 

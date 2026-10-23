@@ -3703,3 +3703,23 @@ could quote in an appeal:
 - A common mixed-family design (classification and regression on every form) before treating scores
   from different forms as interchangeable.
 - A Fall 2026 make-up needs the regression forms' slots 6–7 checked against the August nb03.
+
+## 2026-10-23 — Case Competition: previous-editions announcement and a rubric fix to the CV doctrine
+
+**Announcement.** Drafted `_announcements/2026F/case_competition_previous_editions_top3.md`: the top-3
+public and private AUC-ROC scores for Fall 2025 and Summer 2026, taken from Davi's Kaggle screenshots,
+with no group names. The Fall 2025 numbers match the saved leaderboard CSVs. The private-board winners
+were 7th and 8th on the public board, and the public leader finished 3rd.
+
+**Rubric fix.** The 2026F competition instructions' Team Participation rubric still told teams to pick
+their final model "by the CI-overlap rule" (retired claim W2) and asked for a "95% confidence interval"
+(W1). Four rows were rewritten to match `nb18`: a Student's *t* approximate 95% interval, labeled
+descriptive; selection by the paired-difference → parsimony rule against a margin declared before
+comparing; and "CV comparison bar chart" in place of "CV-CI". Point values are unchanged. The canonical
+reference §7.3 was updated first and given a change-log row.
+
+**Open for Davi.**
+- Re-paste the four rubric rows into the Brightspace competition assignment.
+- Decide how to grade teams that already followed the old CI-overlap wording.
+- The supporting `churn_exit_prediction_workflow_*.ipynb` (2026F) still implements CI-overlap
+  selection in code and prose (instructor cells 34–40, student cells 34–35).
