@@ -25,7 +25,7 @@ By following these instructions, **the instructor will print your poster for fre
 
 ---
 
-**Course alignment.** Incorporate the M09 feedback; ensure every claim is backed by the **cross-validated** results from M06/M08 and that the Acknowledgments section is present. All students present this poster at the conference (required).
+**Course alignment.** Incorporate the M09 feedback; ensure every claim is backed by the **cross-validated** results from M06/M08, that the baseline-vs-tuned comparison uses **per-fold paired differences** against a margin stated before the results (scored here, rubric criterion 6), and that both the **Acknowledgments** and the **AI Use Disclosure** sections are present. All students present this poster at the conference (required).
 
 ---
 

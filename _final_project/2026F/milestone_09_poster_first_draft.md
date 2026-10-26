@@ -38,18 +38,22 @@ Proper citations for references/data/code; credit sources; acknowledge partners 
 Clean, attractive layout with readable fonts (≥18 pt for main text); high-contrast color scheme; clearly labeled charts/tables (titles, axes, legends); effective white space. Keep text concise; highlight significant results; keep formatting consistent.
 
 ## 5. Data Privacy & NDA Compliance
-Your poster must **not** contain personally identifiable or sensitive data. In line with any NDA, all detailed data must be permanently deleted upon completion of your project.
+Your poster must **not** contain personally identifiable or sensitive data. In line with any NDA, all detailed data must be permanently deleted upon completion of your project. Any such data on the poster scores 0 on rubric criterion 8 and must be removed before the poster is printed.
 
 ## 6. Acknowledgments Section (include on the poster)
 As applicable: **Mitch Daniels School of Business** (if it funded your participation); **Professor Davi Moreira** (mentor); **Teaching Assistants**; any other contributing individuals or institutions.
 > *Example:* "We thank Professor Davi Moreira for his mentorship throughout the project. We are also grateful to our TAs, [Name] and [Name], for their guidance. This work was supported by the Mitch Daniels School of Business. We also acknowledge the Undergraduate Research Center and Purdue University for this valuable opportunity."
 
-## 7. Submission
+## 7. AI Use Disclosure (include on the poster)
+Per the syllabus **AI Policy**, every poster discloses AI use in the template's **AI USE DISCLOSURE** section: name each AI tool you used (e.g., Gemini in Colab), say what it did (code, debugging, text editing, figure design), and state that your group reviewed and verified the output. If you used no AI tools, write *"No AI tools were used."* A poster without this section cannot earn more than 2 of the 5 points in rubric criterion 8.
+> *Example:* "We used Gemini in Google Colab to debug our cross-validation code and ChatGPT to tighten the abstract's wording. We reviewed and verified every AI-assisted output and take full responsibility for this poster."
+
+## 8. Submission
 Submit one PDF named with your group number — group 01 → `01.pdf`, group 17 → `17.pdf`.
 
 ---
 
-**Course alignment.** Your headline numbers come from M06 (baseline) and M08 (tuned model), all **cross-validated** (course rule). Apply the six principles + eleven-section poster architecture from **nb17**. This draft gets feedback you incorporate into the final poster (M10).
+**Course alignment.** Your headline numbers come from M06 (baseline) and M08 (tuned model), all **cross-validated** (course rule). Compare the two on **identical folds** with **per-fold paired differences** against a margin you state before the results (nb08); on this draft that comparison gets feedback only, and it is scored on the final poster (M10, rubric criterion 6). Apply the six principles + eleven-section poster architecture from **nb17**. This draft gets feedback you incorporate into the final poster (M10).
 
 ---
 

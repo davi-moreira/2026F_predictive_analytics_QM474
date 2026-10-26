@@ -14,7 +14,7 @@
 | [`rubric/Predictive_Analytics_Poster_Rubric.pdf`](rubric/Predictive_Analytics_Poster_Rubric.pdf) (also `.docx`, `.xlsx`) | M09, M10, and the Instructor/TA evaluation |
 | [`template/QM474_group_contract.docx`](template/QM474_group_contract.docx) | M00 group contract; rebuilt by `scripts/build_group_contract_docx.py` |
 
-The poster template and rubric are carried forward unchanged from the 2026Summer offering; only the template filename changed, from `mgmt474_poster_template.pptx` to `qm474_poster_template.pptx`, to match the current course code.
+The poster template and rubric came from the 2026Summer offering (template renamed from `mgmt474_poster_template.pptx` to `qm474_poster_template.pptx` for the current course code) and were revised on 2026-10-26. **Template:** six typos fixed and an **AI USE DISCLOSURE** section added under Acknowledgements. **Rubric:** Data Preparation 20 → 18, Baseline 20 → 17, criterion 6 rewritten to the paired per-fold comparison against a predeclared margin (`_project_docs/CV_INFERENCE_DOCTRINE.md`; feedback only at M09, scored from M10), a new criterion 8 *Sources, Acknowledgments, AI Use & Data Privacy* (5 pts; no AI disclosure caps it at 2, personally identifiable data scores 0), and a note that an honors section is not scored under this rubric (Decision 15). Total stays 100. The `.docx`/`.xlsx` were rebuilt in place and the `.pdf` exported from the `.docx`.
 
 ### Individual milestone files (this folder)
 
@@ -122,7 +122,7 @@ Schedule two Round 02 meetings: one with the TA between **Oct 19 and Nov 1**, on
 Structured report plus code: prediction goal(s); baseline model (may replicate M06); a **more complex model** (e.g., Random Forest, SVM, Gradient Boosting) with **hyperparameter tuning via k-fold CV**; model selection and final comparison against the baseline with practical interpretation. *(Course support: nb11–nb14.)*
 
 ### M09 — Poster First Draft · due Sun Nov 1 · rubric
-First full poster draft using the template, rubric, and the Data Communication lecture (nb17): title and authors, abstract and introduction, methods and data, results and analysis (baseline vs. advanced metrics), conclusions and future directions; logical flow, clean visual design, citations, **Acknowledgments** (Daniels School, Prof. Moreira, TAs), data-privacy compliance. Single PDF named `NN.pdf`.
+First full poster draft using the template, rubric, and the Data Communication lecture (nb17): title and authors, abstract and introduction, methods and data, results and analysis (baseline vs. advanced metrics), conclusions and future directions; logical flow, clean visual design, citations, **Acknowledgments** (Daniels School, Prof. Moreira, TAs), an **AI Use Disclosure** (syllabus AI Policy), data-privacy compliance. Single PDF named `NN.pdf`.
 
 ### M10 — Final Poster Submission · due Sun Nov 8 · poster rubric
 Final poster incorporating first-draft feedback. One PDF named `NN.pdf` (e.g., `03.pdf`, `17.pdf`), no section number. Submitted **9 days before the conference**; the instructor prints it for free.
