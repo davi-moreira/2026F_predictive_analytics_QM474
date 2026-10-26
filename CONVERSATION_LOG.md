@@ -3851,3 +3851,25 @@ gitignored, so the banks live only in the instructor repo, now synced.
 **Open for Davi.** Fix the live Brightspace nb17 quiz. Which version Brightspace serves is still
 unverified (`_quizzes/2026F/README.md`, item 1), so either re-import v2 or edit the five correct
 options in place.
+
+## 2026-10-26 (cont.) — Lower-bound tiebreaker check and a drafted C2/C3 doctrine amendment
+
+**Question.** Is the lower limit of a model's 95% CV interval a valid tiebreaker? Claude and a Codex
+partner run (gpt-6-astra, max effort, read-only) researched it independently; every source and
+number was re-verified. Verdict: not as a test of which model is better (it ignores pairing, can pick
+a model that loses every fold, and has no margin), though choosing on a pessimistic bound is
+legitimate where the bounds carry real guarantees. The check also found two weaknesses in the August
+doctrine itself: the "same sign on every fold" verdict is weak at k = 5 (1 in 16 by chance with
+independent folds, about 1 in 6.5 with fold correlation 0.2), and "under the margin" was being read
+as "practically equivalent". Run artifacts: `_adm/codex_collab/2026-10-26_cv-lower-bound-tiebreaker/`.
+
+**Drafted, not applied** (gitignored, `_adm/doctrine_drafts/2026-10-26_C2C3_amendment/`): a proposed
+`CV_INFERENCE_DOCTRINE.md` with C2/C3 rewritten (Nadeau–Bengio corrected paired interval read against
+±margin; four outcomes: worthwhile gain / worthwhile loss / practically equivalent / unresolved;
+parsimony restated as a business policy), A2 and A5 updated, worked examples computed and checked, a
+reference implementation, and a rollout list; plus `doctrine.diff` and draft wording for poster
+rubric criterion 6 with an optional Fall 2026 transition clause. No notebook, rubric, or tracked
+doctrine file changed.
+
+**Open for Davi.** Approve the amendment; decide whether criterion 6 changes for this term's M10
+(due Nov 8, with the transition clause and a formula snippet) or from next term.
