@@ -3795,3 +3795,36 @@ Instructor page's salt changed); instructor repo synced.
 (95% CI 0.84–0.88); locked-test-set ROC-AUC = 0.85, INSIDE the 95% CI" (W1/W3), the guide asks
 for "a CV-CI bar chart against the baseline" and "the headline result with the 95% confidence
 interval", and student cell 129 credits "the confidence interval" from notebook 08.
+
+## 2026-10-26 (cont.) — nb17 brought in line with the CV inference doctrine
+
+nb17 was missing from the 2026-08-17 doctrine sweep. Applied instructor copy first
+(`scripts/apply_instructor_first.py`, 11 edits, 0 rejected); instructor minus solution cells =
+student, cell for cell.
+
+- **C1** (cell 129): headline metric reported as an approximate 95% interval, labeled descriptive,
+  with the once-per-notebook caveat that folds share training rows; the "range your score would land
+  in if you ran the study again" definition is gone.
+- **C2/C3** (cells 130, 143, 145): the margin is introduced once, in cell 130 ("a margin you set
+  before comparing, the smallest gain that would change your stakeholder's decision"), before any
+  comparison uses it; the baseline comparison reads per-fold paired differences; the Q&A keeps the
+  three outcomes distinct (A2). "Both confidence intervals so the gap is solid" and "CV-CI bar chart"
+  are replaced by the per-fold comparison.
+- **W1** (cell 148): the conclusion's "how sure you are" example now rests on the paired comparison.
+- **Exercise 2** (cell 158 + Gemini prompt) and the **instructor solution** (cell 160): row 8 now
+  gives the descriptive interval, a paired win against a 0.01 margin, and the test score against the
+  clinics' preset 0.80 floor (C4), with no INSIDE verdict. The abstract sentence was rewritten
+  (whitespace count 120 → 137 words, so its stated "137 words" is now accurate; it was off before).
+- **Video guide**: 13 lines rewritten (CV-CI verdicts, CV CI, CI half-width, side-by-side intervals,
+  the abstract's "95% confidence interval"); voice check clean.
+- **Brightspace page** `brightspace/17_data_communication_poster.md`: 6 lines updated the same way
+  (lines 9 and 108 left: the nb16 forecast interval, and the description of the recorded video).
+
+`scripts/audit_cv_first.py` flags only the nb14 ceremonies. Rendered (salt only); instructor repo
+synced.
+
+**Open for Davi.**
+- The 2026F nb17 quiz (`quiz_nb17_v2.csv`, `masters/quiz_nb17_master.csv`) still keys five correct
+  options on the retired wording, including "both with confidence intervals so the gap is visibly
+  solid" (W2). The quiz now contradicts the notebook.
+- Re-paste the changed nb17 Brightspace page lines (27, 37, 39, 46, 118, 120).
