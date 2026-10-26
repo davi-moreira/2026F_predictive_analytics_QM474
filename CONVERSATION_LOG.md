@@ -3873,3 +3873,33 @@ doctrine file changed.
 
 **Open for Davi.** Approve the amendment; decide whether criterion 6 changes for this term's M10
 (due Nov 8, with the transition clause and a formula snippet) or from next term.
+
+## 2026-10-26 (cont.) — Doctrine Amendment 1 applied; rubric criterion 6 updated for M10
+
+**Doctrine.** The drafted amendment is now `_project_docs/CV_INFERENCE_DOCTRINE.md`: C2/C3 read the
+verdict from the Nadeau–Bengio corrected paired interval against ±margin, with four outcomes (worthwhile
+gain / worthwhile loss / practically equivalent / unresolved); parsimony is a stated business policy; A2
+and A5 updated; the Amendment 1 section carries the rationale and a rollout table. `CLAUDE.md`'s CV-first
+bullet now says "four outcomes" and names the corrected interval; `DECISIONS.md` Decision 14 has an
+Amendment 1 addendum. These three files were picked up and pushed by the auto-commit job (e65a378,
+17:53) mid-session, together with a first-pass rubric that was later tightened.
+
+**Rubric** (`_final_project/2026F/rubric/`, docx/xlsx/pdf). Criterion 6 Exemplary asks for the
+corrected interval, with the formula, and one of the four outcomes; Competent adds "by fold signs alone"
+and "calls the models equivalent when the interval extends past the margin". The M09 note now covers the
+corrected interval. A new **Fall 2026** note gives full credit to a comparison done as nb08 teaches it
+(descriptive interval and the three August outcomes, applied correctly). Wording was tightened and a
+trailing empty paragraph removed so the PDF stays at two pages with no criterion split.
+
+**M10 instructions** gain a *Model comparison (rubric criterion 6)* paragraph with the formula, the four
+outcomes, and the transition note. **Announcement** drafted in the gitignored
+`_announcements/2026F/m10_model_comparison_corrected_interval.md` (formula, outcomes, Colab code;
+the code was executed on a classification and a regression dataset before saving).
+
+**nb14 finding (forked session, not applied).** Re-running nb14's regression case, the shipped
+tuned-GBM-vs-random-forest comparison comes out *unresolved* under the amended rule, where the August
+rule called it a real difference. The notebook rollout (nb08, nb09, nb11–nb14, nb16–nb18, quiz and
+midterm banks, guides, Brightspace pages) is pending; the doctrine's rollout table tracks it.
+
+**Open for Davi.** Post the announcement; re-paste the M10 instructions in Brightspace and attach the
+new rubric PDF to M09 and M10.
