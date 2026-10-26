@@ -3828,3 +3828,26 @@ synced.
   options on the retired wording, including "both with confidence intervals so the gap is visibly
   solid" (W2). The quiz now contradicts the notebook.
 - Re-paste the changed nb17 Brightspace page lines (27, 37, 39, 46, 118, 120).
+
+## 2026-10-26 (cont.) — nb17 quiz brought in line with the CV doctrine
+
+`_quizzes/2026F/quiz_nb17_v2.csv` and `masters/quiz_nb17_master.csv` (= v1 + v2) keyed five correct
+options on retired wording. Rewrote only those five keyed options, matching the new nb17 text:
+
+- v2 Q3: "95% confidence interval" → "descriptive CV interval".
+- v2 Q4: "no confidence interval" → "no fold spread".
+- v2 Q7: "(both with confidence intervals so the gap is visibly solid)" (W2) → "(same folds, per-fold
+  gains judged against a margin set in advance)".
+- v2 Q9: "the headline result with its 95% CI" → "with its interval and baseline gain".
+- v2 Q10: "(the 95% cross-validation interval)" (W1) → "(a win over the baseline on every fold, by
+  more than a preset margin)", trimmed so every distractor stays at or above 60% of its length.
+
+No stems, distractors, weights or order changed. `audit_answer_length.py` PASS on both files:
+correct-is-longest 2/10 (v2) and 4/20 (master), both 20%, unchanged from before; no spread failures;
+structure re-validated (one 100.00 option per question, four options each). v1 had no retired
+wording. The quiz blueprint's five matching content lines were updated too. `_quizzes/` is
+gitignored, so the banks live only in the instructor repo, now synced.
+
+**Open for Davi.** Fix the live Brightspace nb17 quiz. Which version Brightspace serves is still
+unverified (`_quizzes/2026F/README.md`, item 1), so either re-import v2 or edit the five correct
+options in place.
