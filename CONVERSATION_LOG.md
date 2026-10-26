@@ -3749,3 +3749,31 @@ churn only. Instructor repo synced.
   criterion 6 does not name the paired per-fold comparison against a margin. Point values are his call.
 - The template slide is 34 × 22.5 in, while nb17 mentions a 36 × 48 poster; confirm the print size.
 - `nb19`'s video guide still says "your Milestone 4 poster session" (line 142).
+
+## 2026-10-26 (cont.) — Poster rubric revision and AI-use disclosure
+
+**Rubric** (`_final_project/2026F/rubric/`, all three formats; total still 100). Data Preparation
+20 → 18 and Baseline 20 → 17, to fund a new criterion 8, *Sources, Acknowledgments, AI Use & Data
+Privacy* (5 pts): data source, references and software cited; Acknowledgments naming the Daniels
+School, Prof. Moreira and the TAs; an AI Use Disclosure (no disclosure caps the criterion at 2);
+personally identifiable or NDA-restricted data scores 0 and must be removed before printing.
+Criterion 6 is now *Choice, Tuning, Paired Comparison*: identical folds, per-fold paired differences,
+a margin stated before the results, the mean difference with a descriptive interval, and a verdict
+naming one of the three CV-doctrine outcomes (A2); interval-overlap verdicts sit in the Competent band.
+Because M08 never asked for paired differences, the comparison is feedback only at M09 and scored from
+M10 (Davi did not pick between this and grading it at M09; this was the recommended default). Notes
+added: the rubric's three uses, the AI Policy, and that an honors section is not scored here
+(Decision 15). PDF exported with LibreOffice (Liberation Serif, metric-identical to the original Times
+New Roman); now two pages, header row repeats, no criterion splits across pages.
+
+**Template.** New **AI USE DISCLOSURE** section (header bar + placeholder text) under
+Acknowledgements, beside the QR code; the Acknowledgements block moved up 1.2 in into the empty gap.
+
+**Instructions.** M09 gains §7 *AI Use Disclosure* (Submission is now §8), a privacy sentence tied to
+criterion 8, and the paired-comparison timing in Course alignment; M10's Course alignment names both
+sections and the criterion 6 scoring. Milestone reference updated (no longer "carried forward
+unchanged"). No `.qmd` or notebook changed, so no render.
+
+**Open for Davi.**
+- Re-paste the M09 and M10 instructions into Brightspace and attach the new template and rubric PDF.
+- nb17 §19 *Final Touches* lists acknowledgments and references but not the AI Use Disclosure.
