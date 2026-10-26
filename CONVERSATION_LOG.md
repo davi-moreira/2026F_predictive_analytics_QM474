@@ -3777,3 +3777,21 @@ unchanged"). No `.qmd` or notebook changed, so no render.
 **Open for Davi.**
 - Re-paste the M09 and M10 instructions into Brightspace and attach the new template and rubric PDF.
 - nb17 §19 *Final Touches* lists acknowledgments and references but not the AI Use Disclosure.
+
+## 2026-10-26 (cont.) — AI Use Disclosure in nb17
+
+nb17 §19 *Final Touches* now has a paragraph on the template's **AI USE DISCLOSURE** section (name
+each tool, what it did, that the group verified the output, or "No AI tools were used"; rubric
+criterion 8 caps a poster without it at 2 of 5) and one nb09-format Q&A ("will disclosing that we
+used AI cost us points?"). The intro sentence and the poster-outline table's section 11 row mention
+it too. Applied instructor copy first with `scripts/apply_instructor_first.py`; the instructor copy
+also carried two stale "Tue Nov 10" M10 dates that the student copy had already corrected to Sun Nov 8,
+now synced (instructor minus solution cells = student, cell for cell). The nb17 video guide gains a
+matching read-aloud paragraph and an updated section 11 line (voice check clean). Rendered (only the
+Instructor page's salt changed); instructor repo synced.
+
+**Found, not fixed.** nb17 was never swept for the CV-inference doctrine (it is not in the
+2026-08-17 list). The instructor solution to Exercise 2 still reads "5-fold CV ROC-AUC = 0.86
+(95% CI 0.84–0.88); locked-test-set ROC-AUC = 0.85, INSIDE the 95% CI" (W1/W3), the guide asks
+for "a CV-CI bar chart against the baseline" and "the headline result with the 95% confidence
+interval", and student cell 129 credits "the confidence interval" from notebook 08.
