@@ -3723,3 +3723,29 @@ reference §7.3 was updated first and given a change-log row.
 - Decide how to grade teams that already followed the old CI-overlap wording.
 - The supporting `churn_exit_prediction_workflow_*.ipynb` (2026F) still implements CI-overlap
   selection in code and prose (instructor cells 34–40, student cells 34–35).
+
+## 2026-10-26 — Poster attachments for M09/M10: template typos and nb17 rubric pointers
+
+**Attachments.** M09 (poster first draft) and M10 (final poster) both take the same two files:
+`_final_project/2026F/template/qm474_poster_template.pptx` and
+`_final_project/2026F/rubric/Predictive_Analytics_Poster_Rubric.pdf`. The rubric `.docx`/`.xlsx`
+carry the identical 100-point rubric and are not attached.
+
+**Template.** Fixed six typos in the template's placeholder text: CRIPS-DM → CRISP-DM, "Mitch.
+Daniels" → "Mitch Daniels" (Acknowledgements), "What did you find you find out?", "why is the problem
+is important", "overview of you what you investigated", "what you're talk about". Edited the slide XML
+in place; layout unchanged; verified by a LibreOffice PDF render.
+
+**nb17.** Three cells still said the grading rubric lives "inside Milestone 04" (the Summer
+numbering). They now point to the rubric attached to Milestones 09 and 10. Applied instructor copy first
+with `scripts/apply_instructor_first.py`; the nb17 video guide's two matching read-aloud lines were
+updated the same way (voice check clean). The re-render's `docs/` diff is Quarto 1.10.18 toolchain
+churn only. Instructor repo synced.
+
+**Open for Davi.**
+- Set the M10 Brightspace due date to Sun Nov 8 (availability Nov 2–8); the Brightspace inventory
+  still lists Nov 10.
+- The rubric does not score Acknowledgments, citations or data privacy, which M09/M10 require, and
+  criterion 6 does not name the paired per-fold comparison against a margin. Point values are his call.
+- The template slide is 34 × 22.5 in, while nb17 mentions a 36 × 48 poster; confirm the print size.
+- `nb19`'s video guide still says "your Milestone 4 poster session" (line 142).
