@@ -4063,3 +4063,27 @@ corrected interval and the four outcomes and says a "Fall 2026 transition" note 
 the draft announcement `_announcements/2026F/m10_model_comparison_corrected_interval.md` carries the
 corrected-interval code. nb19, nb13 §6 and nb12 §9 still contain CI-based reasoning; the Competent
 band now deducts for an overlap-based verdict, which nb19 used.
+
+## 2026-10-27 — M09/M10 instructions follow the published notebooks
+
+Follow-up to the rubric and template revision above, at Davi's request: the M09 and M10 instruction
+text now matches rubric criterion 6 as published (nb08's paired rule, nb14's champion).
+
+- **M09** (`_final_project/2026F/milestone_09_poster_first_draft.md`): §1c asks for the primary metric
+  and a practical margin with its business meaning (δ and the simplest-first order removed); §1d asks
+  for the CV mean with SD and descriptive approximate 95% interval, the baseline and tuned model on the
+  same folds, per-fold differences and their mean, and nb08's verdict (real difference / no winner /
+  practically equivalent), with interval overlap ruled out as the decider and a per-fold dot plot next
+  to the margin (nb17); §1e declares the champion as nb14 teaches, with a four-point rationale
+  (verdict, mean gain, margin; secondary metrics, fit time, interpretability, runner-up). The course
+  alignment paragraph names nb08/nb14 and absorbs the disclosure and full-credit protections; the
+  "Fall 2026 transition" note is deleted.
+- **M10** (`_final_project/2026F/milestone_10_final_poster.md`): the Model comparison and Champion
+  paragraphs are rewritten to the same rule (corrected-interval formula, four outcomes and the
+  announcement pointer removed; "Your nb08 and nb14 exercises walk through the computation"); the
+  "Fall 2026 transition" note is deleted and its protections moved into the Champion paragraph.
+- `final_project_milestone_reference.md` fourth-revision note updated to record this.
+
+Still open: re-paste both instruction pages on Brightspace; do not post
+`_announcements/2026F/m10_model_comparison_corrected_interval.md`; nb19/nb13/nb12 CI-based residues;
+after Nov 8, move the rubric, template and M09/M10 text to the Amendment 1 notebook versions.
