@@ -4012,3 +4012,21 @@ Criterion 6 protection) is the Nov 1 priority. Not acted on.
   clinical safety endpoint; nested CV for tuned candidates; reserving nb14's final calibration rows
   (20% of `X_train`) before selection; the U11 narrowed core. U9 (nb19 reload, audit lineage,
   CLAUDE.md) and nb16's test-window target are open.
+
+**D11 + D12 and the next-edition task, 2026-10-27 (Claude alone; no Codex credits, so not reviewed by Codex).**
+- **Davi's decisions:**
+  - **D11:** five folds everywhere — outer, inner and grid search; nested CV is 5 × 5. Shrink the search, never the folds.
+  - **D12:** from nb09 on, one 80/20 split (`test_size=0.20`, seed 474, stratified for classification) and all work on `X_train`. No `X_val`, `*_temp` objects or carve-outs. nb01–nb07 keep train/val/test; nb08 may use a validation split only to motivate CV; nb16 is the temporal exception.
+  - Both are recorded in the plan's §1 (plan folder gitignored).
+- **Verified:** `X_test` is the identical set of rows under the new split — same first call, checked by execution — and the new `X_train` = old train ∪ old validation (455 / 16,512 rows).
+- **CV+ checked:** CV+ (Barber, Candès, Ramdas & Tibshirani 2021, *Ann. Statist.* 49:486–507; Theorem 4: coverage ≥ 1 − 2α − √(2/n), typically ≈ 1 − α, verified from the arXiv text and DOI) is proposed in place of reserved calibration rows. R7 is Davi's call.
+- **Re-run on the 80% `X_train`, five folds:** ladders, δ band, nested 5 × 5 with CV+ (46.6 min on 16 cores), uncertainty demo and Figures 1–11. Champions unchanged: random forest (HomeValue) and LogReg C=1 (MedScreen). What changed:
+  - MedScreen has no AUC = 1.0 folds any more; the largest reachable lower limit is +0.00052, still below the band.
+  - On HomeValue the tuned GBM beats the forest on CV+ interval score by a worthwhile $12,789. It is a guardrail, so there is no switch.
+  - Dollars are now $670 / $1,350 / $2,739.
+  - Order counts moved from 240/480 to 360/360.
+  - The full before/after table is in plan §16.3.
+- **Self-review:** the plan's own scripts had used 60/20/20 (discarding the validation rows), an inner 3-fold and a 25% calibration carve-out. All replaced. The "reserve 20% of `X_train`" proposal is withdrawn.
+- **Drafted, not applied:** rule texts for CLAUDE.md, the doctrine, Decision 17 and a data-roles check for `audit_cv_first.py`, tested read-only against today's student notebooks. Inventory of other surfaces: 18 quiz questions, 8 midterm items, 29 guide lines, 4 Brightspace lines.
+- **Colab timing (2 workers):** cells moving to 5 folds stay under about 75 s. The 54-config HomeValue GBM grid was not measured on 80% (the run stopped).
+- **Task #56** in the private tracker holds the 17 open decisions and the rollout plan, starting Nov 9 (Davi: no notebook changes before M10). The Brightspace rubric/M09/M10 update before Nov 1 is listed at the top of #56.
