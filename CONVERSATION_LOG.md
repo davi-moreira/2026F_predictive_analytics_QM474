@@ -3944,3 +3944,29 @@ Fall 2026 rubric protection unambiguous (R11, calendar priority). Verdict at
 **Open for Davi.** Decide on Codex's R11 (rubric transition wording) before M09 (Nov 1); decide D1–D10
 and which critique revisions to fold into the plan; re-attach the rubric PDF to M09/M10 in Brightspace,
 re-paste the instructions, post the announcement.
+
+## 2026-10-27 — Review plan revised after the Codex critique: δ band, uncertainty roles
+
+**Decided by Davi** (side-chat, building on Codex R3–R6), applied to the gitignored plan
+`_adm/doctrine_drafts/2026-10-26_amendment1_course_review/AMENDMENT1_COURSE_REVIEW_PLAN.md` and its
+figures only — no notebook, rubric, or Codex verdict touched:
+- **δ is a stipulated policy reported as a band:** each case declares small / base / large margins with
+  business scenarios before scoring; base decides; report robust vs margin-sensitive and the break-even
+  δ. Derived-cost claims removed. HomeValue 0.005 / 0.01 / 0.02 R² (≈ $653 / $1,315 / $2,665 less
+  typical error at the forest's level, Codex's corrected formula); MedScreen 0.005 / 0.01 / 0.02 AUC
+  (headroom 0.006465 on these folds); TechCorp and bank churn 0.005 / 0.01 / 0.02 AUC (not computed);
+  workforce planner 12,500 / 25,000 / 50,000 employees (nb16 stays descriptive).
+- **Re-computed (A1):** both champions robust across the band — HomeValue random forest, MedScreen
+  LogReg C=1. Tuned GBM vs forest [+0.00015, +0.01569]: a gain only if δ < 0.00015 R² (≈ $20; the
+  side-chat estimate was ≈ 0.0002 / $26), equivalent above 0.0157. All outcome labels matched.
+- **Predictive-uncertainty role fixed by the stakeholder's decision:** HomeValue business guardrail
+  (coverage near 90%, interval score not a worthwhile loss); MedScreen safety guardrails with
+  non-inferiority on Brier and malignant recall (margins open; the clinical-override sentence deleted;
+  operating metric as primary is an open option for next offering). Guardrails block, never promote;
+  uncertainty never adds complexity as a tiebreaker. Wording: "better-supported predictions".
+- `champion_ladder` gains guardrails and a "no deployable model" outcome (executed in `code/delta_band.py`).
+  Figure 5 redrawn with the corrected formula and break-even marks; Figure 10 (MedScreen band) added;
+  Figures 8–9 retitled. New §14 maps Codex R1–R13 plus R14–R16 to statuses.
+
+**Open for Davi:** R11 rubric transition (urgent before Nov 1), R1 outer-fold evaluation, R2, R7, R9,
+R10, R13; Brier/recall margins for MedScreen.
