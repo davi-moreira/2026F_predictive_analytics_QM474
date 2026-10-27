@@ -4030,3 +4030,36 @@ Criterion 6 protection) is the Nov 1 priority. Not acted on.
 - **Drafted, not applied:** rule texts for CLAUDE.md, the doctrine, Decision 17 and a data-roles check for `audit_cv_first.py`, tested read-only against today's student notebooks. Inventory of other surfaces: 18 quiz questions, 8 midterm items, 29 guide lines, 4 Brightspace lines.
 - **Colab timing (2 workers):** cells moving to 5 folds stay under about 75 s. The 54-config HomeValue GBM grid was not measured on 80% (the run stopped).
 - **Task #56** in the private tracker holds the 17 open decisions and the rollout plan, starting Nov 9 (Davi: no notebook changes before M10). The Brightspace rubric/M09/M10 update before Nov 1 is listed at the top of #56.
+
+## 2026-10-27 — Rubric and template follow the published notebooks until Nov 8
+
+**Decision (Davi).** The poster rubric and template must reflect the course content as published now;
+both move to the new notebook versions (Amendment 1) after Nov 8.
+
+**Rubric** (`.docx`, `.pdf`, `.xlsx`; points unchanged, total 100, two pages):
+- Criterion 6 Exemplary scores notebook 08's rule: identical folds, per-fold paired differences and
+  their mean, a practical margin with business meaning stated before comparing, and the verdict named
+  as real difference / no winner / practically equivalent (simpler model wins); one champion chosen as
+  notebook 14 teaches, with a stakeholder rationale; interval overlap does not pick it; no test-set
+  selection. Competent lists the matching misapplications. The corrected interval, the four outcomes,
+  δ and the simplest-first ladder are removed.
+- Criterion 5 asks again for the CV mean with SD and approximate 95% interval, labeled descriptive
+  (it had said no per-model interval was needed).
+- Notes: "Criterion 6 at M09" keeps feedback-only on the first draft; the "Fall 2026 (this note
+  controls criterion 6)" note became "Criterion 6 follows the notebooks" (disclosed late margins not
+  penalized; baseline champion or honest no-winner verdict can earn full credit; no new model search
+  or test-set opening).
+- Kept from the earlier revisions: criteria 1, 7 and 8 as they were.
+
+**Template.** Methodology, Models Performance & Evaluation, and the first Business Implications
+bullet now prompt for the published workflow (leakage-safe pipeline, k-fold CV on training data,
+test set locked until the champion; CV mean with descriptive interval; champion vs baseline per fold
+against the margin; three-outcome verdict; one diagnostic; champion's decision in stakeholder
+terms). "ACKNOWLEDGEMENTS" became "ACKNOWLEDGEMENTS & REFERENCES" with a references placeholder;
+the AI Use Disclosure block moved down 0.5 in. LibreOffice render checked.
+
+**Not changed, now inconsistent with the rubric.** The M09/M10 instruction text still recommends the
+corrected interval and the four outcomes and says a "Fall 2026 transition" note controls criterion 6;
+the draft announcement `_announcements/2026F/m10_model_comparison_corrected_interval.md` carries the
+corrected-interval code. nb19, nb13 §6 and nb12 §9 still contain CI-based reasoning; the Competent
+band now deducts for an overlap-based verdict, which nb19 used.
