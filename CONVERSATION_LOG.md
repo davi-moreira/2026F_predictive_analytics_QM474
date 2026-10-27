@@ -4087,3 +4087,8 @@ text now matches rubric criterion 6 as published (nb08's paired rule, nb14's cha
 Still open: re-paste both instruction pages on Brightspace; do not post
 `_announcements/2026F/m10_model_comparison_corrected_interval.md`; nb19/nb13/nb12 CI-based residues;
 after Nov 8, move the rubric, template and M09/M10 text to the Amendment 1 notebook versions.
+
+**Spring 2027 edition started, 2026-10-27.** Davi decided to apply the course-material review in a new edition. The new local repo is `../2027S_predictive_analytics_QM474`, seeded from this one; it has its own log and plan, and no GitHub repo yet.
+- **Same pattern as Fall:** Mon/Wed/Fri meetings, the Spring Undergraduate Research Conference required (Tue Apr 13, 2027), and Poster-to-Product kept with funding to be confirmed.
+- **Built there:** a single calendar source that generates the schedule and the Brightspace deadline sheet, the re-dated site, Spring announcements, and 19 milestone-instruction PDFs in simple narrative.
+- Task #56's decisions stay as placeholders in the Spring materials, and the task now points there.
