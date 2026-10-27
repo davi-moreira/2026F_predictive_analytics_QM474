@@ -3981,3 +3981,34 @@ accumulate degradation (needs a fixed safety reference); the band runs executed 
 interval-score evidence come from differently fitted predictors; ladder champions are non-monotone in δ
 outside the band (δ 0.0001 GBM, 0.01 forest, 0.156 GBM, 0.16 OLS). Recommendations U1–U12; U1 (rubric
 Criterion 6 protection) is the Nov 1 priority. Not acted on.
+
+**Third revision, 2026-10-27 (Claude alone; Davi had no Codex credits, so it was not reviewed by Codex).**
+- **U1 applied (commit `fa6b883`):** the Fall 2026 note now *controls* rubric criterion 6. The corrected
+  interval is recommended, not required. Exemplary accepts notebook 08's rule applied correctly. The
+  Competent deductions apply only to the rule a team used, and a late δ costs points only when
+  undisclosed. M09/M10 and the announcement draft match; "four sentences" became "a short statement
+  covering four points". Points unchanged; PDF still 2 pages. **Not yet on Brightspace** (re-attach the
+  PDF, re-paste M09/M10, post the announcement before Nov 1).
+- **Codex's claims checked first:** the MedScreen proof holds, and a 200k random-challenger search found
+  no lower limit above −0.00029. The unresolved-but-non-inferior example holds. The δ path and the
+  240/480 order counts reproduce. Assel, Sjoberg & Vickers (2017) and FPP3 §5.5 are verified.
+- **Nested CV (`code/procedure_eval.py`, 2.7 min):** tuning runs inside each outer fold, and R²,
+  coverage and interval score come from the same fitted-and-calibrated candidate. Both champions hold:
+  HomeValue's tuned forest (vs OLS +0.2118 [+0.1543, +0.2693]; no interval-score veto) and MedScreen's
+  LogReg C=1. The tuned GBM's edge over the forest is now [−0.0028, +0.0182], so no positive margin
+  makes it a gain. Order counts are 360/360. The champion path over δ is still non-monotone.
+- **Plan updated (gitignored):** MedScreen feasibility corrected throughout. Guardrails have their own
+  margins γ and a decision table (veto U < −γ; non-inferiority L > −γ against the fixed incumbent), and
+  a missing result blocks promotion. The plan now separates development eligibility from post-freeze
+  acceptance ("no model approved under this protocol"). "Robust" is conditional on order and folds, and
+  "break-even δ" is now the "pairwise switching cutoff". The nb16 records are consistently descriptive.
+  §14 statuses are split (Policy / Specified / Executed / Verified / Student-facing). New §15 holds the
+  full record.
+- **Figures and code:** Figures 5, 8, 9 and 10 and the shared legend were redrawn; Figures 8–9 now use
+  the nested evidence and show the guardrail action beside the outcome label. `delta_band.py` gains
+  `business_veto` and `noninferior`.
+- **Proposed by Claude, awaiting Davi:** HomeValue γ = $10,000 with coverage within 0.03 (or drop the
+  guardrail, since the CFO acts on point estimates); Brier as a probability-quality guardrail, not a
+  clinical safety endpoint; nested CV for tuned candidates; reserving nb14's final calibration rows
+  (20% of `X_train`) before selection; the U11 narrowed core. U9 (nb19 reload, audit lineage,
+  CLAUDE.md) and nb16's test-window target are open.
