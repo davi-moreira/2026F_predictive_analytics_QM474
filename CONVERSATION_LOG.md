@@ -3903,3 +3903,44 @@ midterm banks, guides, Brightspace pages) is pending; the doctrine's rollout tab
 
 **Open for Davi.** Post the announcement; re-paste the M10 instructions in Brightspace and attach the
 new rubric PDF to M09 and M10.
+
+## 2026-10-26 (cont.) — Course-wide review plan: compare_paired, champions, no per-model CI, δ per case, predictive uncertainty
+
+**Asked.** A plan (no notebook implementation) for reviewing all 18 notebooks against Amendment 1, with
+Codex: where each notebook needs content and code changes, written in the course voice with research
+support and tied to each business case; a champion per business case with clear criteria; a summary
+table; and updated M09/M10 rubric. Mid-task Davi added: build on his `compare_paired` function with
+visualizations; remove the per-model 95% CI from the material except one "question that often comes up"
+block; define δ in each business case's terms; and research whether a model's predictive uncertainty
+can be compared and used to pick a champion (with Codex).
+
+**Plan of record** (gitignored): `_adm/doctrine_drafts/2026-10-26_amendment1_course_review/` —
+`AMENDMENT1_COURSE_REVIEW_PLAN.md` (decisions D1–D10, approach, δ per case, computed champions,
+uncertainty section, per-notebook records, summary table, rollout order, verified references),
+`figures/` (9 figures + JSON), `code/` (re-runnable), `APPENDIX_A_codex_register.md` (Codex's
+443-location cell register, spot-verified). Re-running nb14's rosters with `compare_paired` and δ = 0.01:
+HomeValue champion = random forest (tuned GBM unresolved vs forest; course currently ships the GBM);
+MedScreen = LogisticRegression(C=1) (every challenger unresolved; δ exceeds the 0.0065 AUC headroom).
+Other findings: sign rule decides every comparison nb08–nb18; nb19 still uses CI overlap; HomeValue
+margin drifts 0.01/0.02/0.005; nb12 false "dominance tiebreaker" history; per-model CI in 182 cells;
+nb07 cost code charges the missed-cancer cost to the wrong error (Codex, verified); nb12/nb14 exercises
+lack solutions; nb13 duplicated cells.
+
+**Applied (commit d11e6ef, pushed):** poster rubric (docx/xlsx/pdf, still two pages) — criterion 6 now
+*Model Comparison and Champion Selection*; criterion 5 asks for fold scores + mean + SD, no per-model CI;
+criteria 1/7 name the decision and the champion; transition notes; M09/M10 instructions and the
+milestone reference updated. Announcement draft `_announcements/2026F/m10_model_comparison_corrected_interval.md`
+rewritten around `compare_paired` (not posted).
+
+**Codex runs:** partner audit (ultra, 22 min), partner uncertainty research (max, 16 min; merged into §5),
+critique of the approach (max, 20 min): *do not adopt as written* — keep the paired four-outcome rule,
+the CI removal and the champion statement, but evaluate tuned procedures on outer folds instead of
+same-fold "nominees", treat the ladder as an order-dependent policy (720-order sensitivity: forest 240,
+tuned GBM 480), label margins as stipulated assumptions, resolve MedScreen's guardrail/override conflict,
+narrow the uncertainty wording, keep nb16 descriptive, repair nb19's full-dataset reload, and make the
+Fall 2026 rubric protection unambiguous (R11, calendar priority). Verdict at
+`_adm/codex_reviews/2026-10-26_course-review-plan-approach/verdict.md`; not yet acted on.
+
+**Open for Davi.** Decide on Codex's R11 (rubric transition wording) before M09 (Nov 1); decide D1–D10
+and which critique revisions to fold into the plan; re-attach the rubric PDF to M09/M10 in Brightspace,
+re-paste the instructions, post the announcement.
