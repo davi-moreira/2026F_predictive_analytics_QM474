@@ -3970,3 +3970,14 @@ figures only — no notebook, rubric, or Codex verdict touched:
 
 **Open for Davi:** R11 rubric transition (urgent before Nov 1), R1 outer-fold evaluation, R2, R7, R9,
 R10, R13; Brier/recall margins for MedScreen.
+
+**Second Codex review (2026-10-27, gpt-6-astra, max, 19 min)** of the revised plan, archived at
+`_adm/codex_reviews/2026-10-27_course-review-plan-revision/verdict.md`: *adopt the policy direction,
+revise before treating the plan as implementation-ready.* New material findings: on these MedScreen folds
+no challenger can establish a positive AUC gain under the corrected-interval rule even at δ = 0 (two folds
+already at AUC 1), so "only the small margin is reachable" is wrong; "unresolved" ≠ "non-inferiority not
+established" for safety guardrails; successive non-inferiority checks against the current champion can
+accumulate degradation (needs a fixed safety reference); the band runs executed no guardrails; R² and
+interval-score evidence come from differently fitted predictors; ladder champions are non-monotone in δ
+outside the band (δ 0.0001 GBM, 0.01 forest, 0.156 GBM, 0.16 OLS). Recommendations U1–U12; U1 (rubric
+Criterion 6 protection) is the Nov 1 priority. Not acted on.
