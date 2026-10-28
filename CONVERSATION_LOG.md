@@ -4092,3 +4092,31 @@ after Nov 8, move the rubric, template and M09/M10 text to the Amendment 1 noteb
 - **Same pattern as Fall:** Mon/Wed/Fri meetings, the Spring Undergraduate Research Conference required (Tue Apr 13, 2027), and Poster-to-Product kept with funding to be confirmed.
 - **Built there:** a single calendar source that generates the schedule and the Brightspace deadline sheet, the re-dated site, Spring announcements, and 19 milestone-instruction PDFs in simple narrative.
 - Task #56's decisions stay as placeholders in the Spring materials, and the task now points there.
+
+## 2026-10-28 — Champions audit of the published notebooks, added to the Amendment 1 rollout plan
+
+Davi asked which champions the published notebooks actually select according to their code and the rule
+they teach, then whether the student copies give the same results as the instructor copies. Instructor
+copies of nb08, nb09, nb11–nb14, nb16, nb18 and nb19 were executed headless (scikit-learn 1.6.1, seed 474,
+the notebooks' own August splits), then the student copies, and every shared code cell's output compared.
+No notebook was changed (D10).
+
+- **Same results for students:** every student copy was last committed Aug 15–17, before it was taught;
+  every shared code cell printed identical output (only nb14's fit-time column and an unseeded nb19 tensor
+  demo differ). nb18's student copy has no code.
+- **Champions:** HomeValue tuned GBM holds under the 0.005 R² margin (it would be the forest under
+  nb11/nb12's 0.02); bank churn random forest holds; MedScreen's c30 fallback opens the test set for
+  LogReg L1 (C=0.1) on a fit-time coin flip while the text names LogReg(C=1.0); nb16 picks Drift by mean
+  though the simpler Naive is within the margin.
+- **Other mismatches:** nb11 depth exercises pick depths 2 and 7 while the text says they reconfirm 3 and 5;
+  nb13's grid names n=50 for MedScreen while the rosters carry n=200; nb13 c16 says `sqrt` where the code
+  uses 0.5; nb19's HomeValue "STATISTICAL TIE" is an outright GBM win on every fold (+0.030 R²).
+- **Instructor-copy drift:** nb13's instructor copy is scrambled while the student copy is clean; nb18's
+  instructor copy has unmarked non-solution code the student copy blanks; nb19 differs by one sentence.
+  Regenerating those student copies from the instructor copies would change what students get.
+
+Recorded at Davi's request as **§17 of the Amendment 1 rollout plan**
+(`_adm/doctrine_drafts/2026-10-26_amendment1_course_review/AMENDMENT1_COURSE_REVIEW_PLAN.md`, gitignored;
+findings N1–N11), with a new batch 0c (resync the nb13/nb18/nb19 instructor copies before any notebook
+batch), pointers in the per-notebook records, and the audit scripts in `code/notebook_audit_2026-10-28/`.
+The Spring 2027 repo reads this plan file directly, and its notebook copies are byte-identical to Fall's.
