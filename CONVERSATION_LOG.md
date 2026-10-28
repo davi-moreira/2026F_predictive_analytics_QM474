@@ -4137,3 +4137,10 @@ replies were still unsent drafts.
   0.6169); nb06 says "nearly everything is labeled benign" at threshold 0.3 (73 of 114) and that accuracy may
   drop there (it is highest, 0.965).
 - Not yet done: key fixes, class-wide regrade, notebook text fixes, sending the drafts.
+
+## 2026-10-28 — NB06/NB07 quiz regrade applied in Brightspace
+
+Davi approved a per-question regrade; applied with Update All Attempts (keyed answers keep their point,
+the notebook-consistent answer also earns it): NB07 Q19 answer 2 (16 attempts); NB06 Q23 answer 2 (13),
+Q27 answer 4 (11), Q28 answer 2 (4), Q29 answer 2 (10), Q30 answer 4 (5); Q24 unchanged (no one missed it).
+Gradebook verified against a pre-regrade snapshot. The bank keys themselves are not yet fixed (tasks #30).
