@@ -4192,3 +4192,16 @@ it is treated as a class-wide fix.
 Per-student table (names, sections, iClicker changes) is in the gitignored
 `_adm/_replies/2026F/2026-10-28_attendance_review.md`. iClicker edits wait on Davi signing in
 to iClicker Cloud in the browser pane.
+
+**Update, same day — iClicker applied.** Davi signed in and 27 attendance records were changed
+from Absent to **Excused**, matching his earlier practice for granted absences (Excused takes
+the session out of the student's attendance base): 15 in section 001 and 12 in section 002.
+Each change was checked against the dialog's student name and date before saving and read back
+after. The Oct 9 and Oct 12 sessions were already gone from both QM 474 courses, so no session
+was deleted. Findings left for Davi: one documented-absence student is also absent on the
+notice's return date, which the notice does not cover; one pending student's record shows
+absences on six dates since Oct 2; a student counted as QM 474 turned out to be in QM 670,
+whose record is already correct (the extra Oct 7 item was an exit poll, not attendance); and
+QM 670's iClicker shows every student absent for all seven sessions from Oct 12 to Oct 26,
+left untouched. One convention-day absence (Fri Oct 30) is still to be excused after the
+session runs.
