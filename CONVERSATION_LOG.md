@@ -4144,3 +4144,23 @@ Davi approved a per-question regrade; applied with Update All Attempts (keyed an
 the notebook-consistent answer also earns it): NB07 Q19 answer 2 (16 attempts); NB06 Q23 answer 2 (13),
 Q27 answer 4 (11), Q28 answer 2 (4), Q29 answer 2 (10), Q30 answer 4 (5); Q24 unchanged (no one missed it).
 Gradebook verified against a pre-regrade snapshot. The bank keys themselves are not yet fixed (tasks #30).
+
+## 2026-10-28 — Student-reported errata corrected in the material and in Brightspace
+
+Davi asked for the identified issues to be corrected in the course material and in Brightspace, quizzes
+first. This overrides, for these errata only, the rule that Fall notebooks stay unchanged this term (D10).
+
+- **Quiz banks:** NB06 master Q23, Q24, Q27–Q30 (and v3) and NB07 master Q19 (and v2) rewritten to the
+  benign-positive convention. Answer-length audit PASS on all four banks (23%, 40%, 30%, 30%).
+- **Notebooks** (`d7931ff`): nb02 Exercise 2 checklist; nb06 threshold-0.3 reading and Exercise 2 solution;
+  nb07 Exercise 1 costs now `cost_FP = 50000` (missed cancer) and `cost_FN = 1000` (optimal threshold
+  0.557, \$3,000), and the student prompt asks for a higher FP cost. nb06/nb07 video guides updated.
+  Instructor mirror and NotebookLM copies synced. Students open notebooks through the Colab badges on
+  GitHub main, so no Brightspace upload was needed.
+- **Brightspace:** the seven questions were edited in the Question Library (`qm474_notebooks/quiz_nb06`,
+  `quiz_nb07`) and applied to both the library and the live NB06/NB07 quizzes. Each saved version was
+  checked against the bank (question, all four options, key), and no place still uses an old version.
+  Brightspace applies edits to future attempts only: all 97 NB06 and 97 NB07 grades match the
+  pre-edit snapshot.
+- **Spring 2027:** the same 12 files were byte-identical there; the corrected copies were carried over
+  (Spring `5a3db67`) and the Spring instructor mirror synced.
