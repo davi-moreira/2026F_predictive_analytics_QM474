@@ -4120,3 +4120,20 @@ Recorded at Davi's request as **§17 of the Amendment 1 rollout plan**
 findings N1–N11), with a new batch 0c (resync the nb13/nb18/nb19 instructor copies before any notebook
 batch), pointers in the per-notebook records, and the audit scripts in `code/notebook_audit_2026-10-28/`.
 The Spring 2027 repo reads this plan file directly, and its notebook copies are byte-identical to Fall's.
+
+## 2026-10-28 — Student course-material reports audited; NB06/NB07 quiz keys contradict the notebooks
+
+Davi asked for every Outlook report from QM474 students about course-material issues, then a verdict on
+each. 21 threads (Aug 28 – Oct 21) were read in full and checked against the quiz banks, the notebooks
+(nb02 and nb06 re-run headless) and the syllabus docx: 18 reports earn the 0.25% credit, one is Davi's call
+(a midterm-format report sent after the Sep 20 syllabus fix), three do not qualify. Twelve of Davi's
+replies were still unsent drafts.
+
+- **Root defect:** `8d05ef6` (Aug 15) made benign the positive class in nb06/nb07, but the 2026F quiz banks
+  (copied from Summer on Aug 20) still assume malignant = positive. Contradicting keys: NB06 master
+  Q23, Q24, Q27–Q30; NB07 master Q19. Student screenshots (ignored
+  `_adm/_grade/2026F/quiz_issue_reports/`) prove Brightspace serves the master wording. Logged on tasks #30.
+- **Other live defects:** nb02 Exercise 2 checklist says train R² exceeds validation (it is 0.6035 vs
+  0.6169); nb06 says "nearly everything is labeled benign" at threshold 0.3 (73 of 114) and that accuracy may
+  drop there (it is highest, 0.965).
+- Not yet done: key fixes, class-wide regrade, notebook text fixes, sending the drafts.
