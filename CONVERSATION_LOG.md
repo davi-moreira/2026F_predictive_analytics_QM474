@@ -4164,3 +4164,31 @@ first. This overrides, for these errata only, the rule that Fall notebooks stay 
   pre-edit snapshot.
 - **Spring 2027:** the same 12 files were byte-identical there; the corrected copies were carried over
   (Spring `5a3db67`) and the Spring instructor mirror synced.
+
+---
+
+## 2026-10-28 — Attendance requests reviewed under the week-4 rule; Outlook drafts rebuilt
+
+Davi asked for every QM 474 attendance email since week 4 to be ruled on, the reply drafts
+updated, and iClicker corrected by section. Rule applied, as he restated it: an absence is
+adjusted when the student notified **before class or on the same day** (an in-class word
+counts), or when a documented University-recognized emergency covers it (ODOS grief, MEAPS);
+later notice leaves the record as it is. Absences before Sep 14 keep the earlier grace.
+
+A sweep of the mailbox found 48 attendance records since Sep 14; most were already answered.
+Eighteen open requests were ruled: fourteen granted in full, three granted in part with
+late-reported dates denied, one pending dates from the student. Thirteen agent drafts were
+rebuilt (several threads from the same student merged into one reply) and the stale ones
+moved to Deleted Items; five correct drafts were kept. Two drafts carry `[RULING:]` brackets
+for reopening missed work under a documented emergency, which is a deadline call, not an
+attendance one. The email-triage ledger records the replacements so its reconciler does not
+read them as discards.
+
+Calendar facts the rulings rest on: no in-person class Wed Sep 30 (conference), online group
+work Fri Oct 9, Fall Break Mon Oct 12. Several students saw iClicker absences on Oct 9 and
+Oct 12; Davi had already told one student that morning the error was valid and corrected, so
+it is treated as a class-wide fix.
+
+Per-student table (names, sections, iClicker changes) is in the gitignored
+`_adm/_replies/2026F/2026-10-28_attendance_review.md`. iClicker edits wait on Davi signing in
+to iClicker Cloud in the browser pane.
