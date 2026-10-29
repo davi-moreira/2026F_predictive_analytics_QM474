@@ -4205,3 +4205,22 @@ whose record is already correct (the extra Oct 7 item was an exit poll, not atte
 QM 670's iClicker shows every student absent for all seven sessions from Oct 12 to Oct 26,
 left untouched. One convention-day absence (Fri Oct 30) is still to be excused after the
 session runs.
+
+## 2026-10-29 — Final-project advising: Group 4 (flight delays)
+
+Group 4 asked how to improve a flight-delay classifier they felt was weak. Their notebook (138 cells) and the Kaggle
+3M-flight sample were reviewed. Their results show an information ceiling, not a modeling failure: five model families
+land within about 0.02 ROC-AUC. Read like for like under the nb08 rule, their best boosting model is "no winner" against
+logistic regression on the same 11 features, so logistic is their defensible champion. Two design issues stood out. The
+primary metric drifted from PR-AUC (abstract) to ROC-AUC (notebook), and the historical features were starved: in
+validation they only saw training-fold outcomes, so after 60 days they fall back to the overall average.
+
+A reference notebook for Colab was built and run on the real data. It trains on 2022, tests once on Jan–Aug 2023, uses
+monthly walk-forward folds, a ladder of dummy → logistic → histogram gradient boosting → + yesterday's delay rate at the
+origin airport (an nb16-style lag feature), nb08 verdicts, and a 20% alert budget (precision, recall, lift). The
+algorithm swap was a narrow real difference under nb08 (unresolved under the Amendment 1 cross-check). The lag feature
+gained in all five months, and the champion met the declared lift bar on the locked test. The reply drafts guidance only,
+with no code: shorter window, PR-AUC first, an alert budget instead of a threshold, like-for-like nb08 comparisons, fixing
+the history feature at a stated prediction moment, dropping `year`, and an appendix for the side experiments.
+
+Files (gitignored): `_adm/_grade/2026F/final_project/group_advising/g04_flight_delay/`. The reply is not sent yet.
