@@ -4237,3 +4237,7 @@ margin); and baseline-vs-tuned pairing against nb14's top-two comparison (either
 no paired comparison decides the champion). Calibration: start at 22–25, −4 for the first Competent-band
 issue, −3 for each further one, floor 13. Paste-ready Brightspace lines included. Open for Davi: whether an
 nb19-style overlap verdict loses the 4 points.
+
+Update, same day: Davi decided overlap-based verdicts are scored as the rubric is written — a verdict or
+champion decided by interval overlap is one Competent-band issue (−4 if it is the first), even when the
+poster also shows per-fold differences. The grading note's overlap section now says so.
