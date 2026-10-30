@@ -4224,3 +4224,16 @@ with no code: shorter window, PR-AUC first, an alert budget instead of a thresho
 the history feature at a stated prediction moment, dropping `year`, and an appendix for the side experiments.
 
 Files (gitignored): `_adm/_grade/2026F/final_project/group_advising/g04_flight_delay/`. The reply is not sent yet.
+
+## 2026-10-30 — M10 criterion 6 grading note
+
+At Davi's request, an instructor-only note for scoring rubric criterion 6 on the M10 final poster:
+`_adm/_grade/2026F/final_project/m10_final_poster/criterion6_grading_note.md` (gitignored). It keeps the
+published rubric unchanged and settles the three situations nb13/nb14 create: a margin set or changed after
+the results (deduct only for an undisclosed M09→M10 change that moved the verdict or champion; a change
+that followed our M09 feedback counts as disclosed); an undefined "simpler model" and folds that tie at zero
+(any stated simplicity order accepted; "no winner" and "practically equivalent" both accepted under the
+margin); and baseline-vs-tuned pairing against nb14's top-two comparison (either accepted; deduct only when
+no paired comparison decides the champion). Calibration: start at 22–25, −4 for the first Competent-band
+issue, −3 for each further one, floor 13. Paste-ready Brightspace lines included. Open for Davi: whether an
+nb19-style overlap verdict loses the 4 points.
