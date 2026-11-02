@@ -4260,3 +4260,6 @@ are graded and two had no file. `build_report.py` now also writes one feedback f
 
 Update, same day: a second emailed M09 draft (sent minutes after the deadline) was filed and graded, with no late
 penalty applied pending Davi's ruling. 25 of 26 groups are graded; one group has no submission and sent no email.
+
+Update, same day: Davi ruled that the two M09 drafts emailed after the deadline are accepted with a flat 10-point
+late penalty each, shown as a separate "Late submission" line so the rubric criteria stay intact.
