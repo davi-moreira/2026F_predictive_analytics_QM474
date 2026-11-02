@@ -4277,3 +4277,16 @@ them. The assignment was switched to "out of 100" first.
   feedback bullet is present.
 - The two late groups' automatic published 0s were retracted before their drafts were saved.
 - The non-submitting group's automatic 0 was left published.
+
+Update, same day: Davi reviewed the M09 grading starting with one group and set six rules, propagated to every poster.
+
+- **Deductions:**
+  - Naming the instructor in the title/author block costs −2 (seven groups).
+  - The Abstract and the AI Use Disclosure must each be a headed section as in the template; −5 each where they were not (four charges across three groups).
+- **Feedback:**
+  - Every paired per-fold comparison was checked against nb08's three outcomes.
+  - Wherever a comparison ends in no winner or practically equivalent, the team is told it must still pick one model and justify it for its stakeholder.
+  - Map suggestions were added where the data has a geographic dimension.
+- **Brightspace:** all 25 drafts were re-entered and checked; still unpublished.
+
+Rules are in the gitignored `m09_poster_draft/rubric.md` ("Review decisions").
