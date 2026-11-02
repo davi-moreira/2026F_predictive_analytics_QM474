@@ -4268,3 +4268,12 @@ Update, same day: Davi added submission-requirement penalties to M09 at −5 per
 Business logo, `NN.pdf` file name, the template's sample QR code left in place, each missing or unfilled mandatory
 section, and a page that is not a single 34 × 22.5 in sheet. Rubric deductions covering the same problems were
 removed so nothing is charged twice. Rules and the per-group list are in the gitignored `m09_poster_draft/rubric.md`.
+
+Update, same day: all 25 M09 grades and feedback were entered in Brightspace as **unpublished drafts**. Davi publishes
+them. The assignment was switched to "out of 100" first.
+
+- Method: the feedback is typed as HTML into the editor's source-code view, because the Valence API drops feedback
+  text on drafts. Each draft was then checked through the API: the score matches, it is not published, and every
+  feedback bullet is present.
+- The two late groups' automatic published 0s were retracted before their drafts were saved.
+- The non-submitting group's automatic 0 was left published.
