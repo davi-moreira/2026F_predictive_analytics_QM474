@@ -4290,3 +4290,15 @@ Update, same day: Davi reviewed the M09 grading starting with one group and set 
 - **Brightspace:** all 25 drafts were re-entered and checked; still unpublished.
 
 Rules are in the gitignored `m09_poster_draft/rubric.md` ("Review decisions").
+
+Update, same day: a second M09 review pass, started from one group's poster, added four more rules for every poster.
+
+- **Deductions:**
+  - Course information shown on the poster costs −5 (13 groups). This covers a group or team number, the course code, the section, or a milestone label. Naming the milestone when a margin was set is a method disclosure and is not charged.
+  - A missing author email costs −5 (16 groups). LinkedIn QR codes alone do not count.
+- **Feedback:**
+  - Each group's criterion-6 feedback now says what its paired comparison plot is missing: the per-fold differences, the zero line, the margin as a labeled shaded band, or the mean with its descriptive interval.
+  - The DSB logo deduction was re-confirmed.
+- **Brightspace:** all 25 entries were re-entered and checked through the API. In the final check, 23 were unpublished drafts. The other two showed as published with the entered score and feedback; both were drafts when saved.
+- **Scores:** mean 73.8, median 80.
+- **Where the rules live:** the gitignored `m09_poster_draft/rubric.md`, "Group 8 pass".
