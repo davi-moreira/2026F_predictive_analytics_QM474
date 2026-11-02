@@ -4263,3 +4263,8 @@ penalty applied pending Davi's ruling. 25 of 26 groups are graded; one group has
 
 Update, same day: Davi ruled that the two M09 drafts emailed after the deadline are accepted with a flat 10-point
 late penalty each, shown as a separate "Late submission" line so the rubric criteria stay intact.
+
+Update, same day: Davi added submission-requirement penalties to M09 at −5 per violation — Mitch Daniels School of
+Business logo, `NN.pdf` file name, the template's sample QR code left in place, each missing or unfilled mandatory
+section, and a page that is not a single 34 × 22.5 in sheet. Rubric deductions covering the same problems were
+removed so nothing is charged twice. Rules and the per-group list are in the gitignored `m09_poster_draft/rubric.md`.
