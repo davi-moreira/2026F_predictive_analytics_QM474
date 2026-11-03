@@ -4304,3 +4304,5 @@ Update, same day: a second M09 review pass, started from one group's poster, add
 - **Where the rules live:** the gitignored `m09_poster_draft/rubric.md`, "Group 8 pass".
 
 Update, same day: Davi waived the M09 deductions for one group's two template-text sections. A member who has since withdrawn from the course was assigned those sections. The two −5 mandatory-section charges were removed, and the feedback now asks the team to develop both sections for M10, with no deduction. The re-entered Brightspace draft was checked through the API. The ruling is item 11 in the gitignored `m09_poster_draft/rubric.md`.
+
+Update, same day: for the same M09 group, Davi also waived the three rubric deductions for content those two sections would hold: unnamed engineered features, no ablation, and no baseline CV results. All five items are now "To develop (no deduction)" comments. The Brightspace draft was re-entered and checked through the API. The new M09 mean is 74.6 and the median 81.
