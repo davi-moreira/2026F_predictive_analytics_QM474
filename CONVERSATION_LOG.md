@@ -4302,3 +4302,5 @@ Update, same day: a second M09 review pass, started from one group's poster, add
 - **Brightspace:** all 25 entries were re-entered and checked through the API. In the final check, 23 were unpublished drafts. The other two showed as published with the entered score and feedback; both were drafts when saved.
 - **Scores:** mean 73.8, median 80.
 - **Where the rules live:** the gitignored `m09_poster_draft/rubric.md`, "Group 8 pass".
+
+Update, same day: Davi waived the M09 deductions for one group's two template-text sections. A member who has since withdrawn from the course was assigned those sections. The two −5 mandatory-section charges were removed, and the feedback now asks the team to develop both sections for M10, with no deduction. The re-entered Brightspace draft was checked through the API. The ruling is item 11 in the gitignored `m09_poster_draft/rubric.md`.
