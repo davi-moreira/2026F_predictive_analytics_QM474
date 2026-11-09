@@ -4327,3 +4327,10 @@ The Brightspace assignment "Final Project: Peer Review Submission" (opens Nov 10
 - **Posters:** a view-only Dropbox link to the Copy Center print set.
 - **Brightspace:** the instructions were updated with both links and the new 26-group table through the API; every other setting was echoed and checked unchanged.
 - **Open (Davi):** delete the edit link Dropbox created by default on the posters folder (never published). Script, import file, links and details are in the gitignored `_adm/_grade/2026F/final_project/peer_review/README.md`.
+
+Update, same day (morning): Davi emailed five groups for corrected posters during class and graded the corrections as each group's last submission.
+
+- **Corrections received:** four of the five, plus one unrequested group that sent its intended one-page file. Fixed requirement lines were lifted, and each corrected file replaced the original in the print set.
+- **New rule (Davi):** −10 on its own line ("Final version not submitted") for every group he had to contact for a corrected poster; the unprompted correction is not charged.
+- **Brightspace:** all affected drafts re-entered and checked through the API; 25 of 26 are unpublished drafts. The remaining group shows a placeholder 0 that Davi published himself; per his instruction its grade is not published or changed. New mean 88.2, median 92.
+- **Copy Center:** request sent by Davi at 10:07 AM with the Dropbox link; 25 of 26 posters in the folder, one still pending.
