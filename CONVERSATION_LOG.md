@@ -4317,3 +4317,13 @@ The Brightspace download of M10 (Final Poster, due Sun Nov 8) and one group's em
 - **Rulings (Davi):** the emailed submission after a Brightspace error carries no late penalty, and the last upload is graded as-is.
 - **Brightspace:** all 26 saved as unpublished drafts and checked through the API (score, bullets, `IsGraded:false`). One automatic published 0 was retracted first. Davi publishes.
 - **Open:** the items listed in the gitignored `m10_final_poster/README.md`, "Open for Davi".
+
+## 2026-11-09 — Final Project peer review: Qualtrics survey, poster assignment, Brightspace instructions
+
+The Brightspace assignment "Final Project: Peer Review Submission" (opens Nov 10, due Sun Nov 15) still carried 2025F placeholders and a 33-group table. Set up for Fall 2026:
+
+- **Survey:** rebuilt in Qualtrics from the 2025F Microsoft Form (imported from an Advanced Format TXT, all items force-response, published with an anonymous link). Same six questions; the group lists now hold the 26 poster groups, and a name field replaces the form's automatic name capture.
+- **Assignment:** seeded (474) and balanced. Each group reviews 5 posters, each poster gets exactly 5 reviews, with no self-reviews and no reciprocal pairs.
+- **Posters:** a view-only Dropbox link to the Copy Center print set.
+- **Brightspace:** the instructions were updated with both links and the new 26-group table through the API; every other setting was echoed and checked unchanged.
+- **Open (Davi):** delete the edit link Dropbox created by default on the posters folder (never published). Script, import file, links and details are in the gitignored `_adm/_grade/2026F/final_project/peer_review/README.md`.
