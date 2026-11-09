@@ -4306,3 +4306,14 @@ Update, same day: a second M09 review pass, started from one group's poster, add
 Update, same day: Davi waived the M09 deductions for one group's two template-text sections. A member who has since withdrawn from the course was assigned those sections. The two −5 mandatory-section charges were removed, and the feedback now asks the team to develop both sections for M10, with no deduction. The re-entered Brightspace draft was checked through the API. The ruling is item 11 in the gitignored `m09_poster_draft/rubric.md`.
 
 Update, same day: for the same M09 group, Davi also waived the three rubric deductions for content those two sections would hold: unnamed engineered features, no ablation, and no baseline CV results. All five items are now "To develop (no deduction)" comments. The Brightspace draft was re-entered and checked through the API. The new M09 mean is 74.6 and the median 81.
+
+## 2026-11-09 — M10 final posters: print set, Copy Center draft, grading, Brightspace drafts
+
+The Brightspace download of M10 (Final Poster, due Sun Nov 8) and one group's emailed file were filed under the gitignored `_adm/_grade/2026F/final_project/m10_final_poster/`, using each group's last upload. All 26 groups submitted.
+
+- **Print set:** `qm474_posters/NN.pdf`, 26 single-page 34 × 22.5 in files with fonts embedded, built for the Copy Center as in 2025F. One oversize page with the same proportions was scaled to size, and one stray second page was dropped from the print copy. The graded originals are unchanged.
+- **Copy Center email:** drafted from the 2025F request in `copy_center_email.md`, not sent. It still needs the Dropbox link (the connectors can only make invite-only links) and a pickup time.
+- **Grading:** same scale and submission requirements as M09, with criterion 6 now scored per the criterion-6 note. Six graders worked in parallel from one brief, and their entries were then calibrated so that a margin with no stakeholder meaning is charged the same way for every group. Mean 89.3, median 93. The 25 groups graded at both milestones went from a mean of 74.6 to 90.5. The M09-vs-M10 table is in `COMPARISON.md`.
+- **Rulings (Davi):** the emailed submission after a Brightspace error carries no late penalty, and the last upload is graded as-is.
+- **Brightspace:** all 26 saved as unpublished drafts and checked through the API (score, bullets, `IsGraded:false`). One automatic published 0 was retracted first. Davi publishes.
+- **Open:** the items listed in the gitignored `m10_final_poster/README.md`, "Open for Davi".
