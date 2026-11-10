@@ -4334,3 +4334,7 @@ Update, same day (morning): Davi emailed five groups for corrected posters durin
 - **New rule (Davi):** −10 on its own line ("Final version not submitted") for every group he had to contact for a corrected poster; the unprompted correction is not charged.
 - **Brightspace:** all affected drafts re-entered and checked through the API; 25 of 26 are unpublished drafts. The remaining group shows a placeholder 0 that Davi published himself; per his instruction its grade is not published or changed. New mean 88.2, median 92.
 - **Copy Center:** request sent by Davi at 10:07 AM with the Dropbox link; 25 of 26 posters in the folder, one still pending.
+
+## 2026-11-10 — QM Project Showcase intake and announcement draft
+
+Inbox intake of the department's QM Project Showcase student guideline (sent by the QM showcase organizer on Nov 9). The showcase is Fri Dec 11, 2026, 2:00–5:00 PM, RAWL 2nd Floor Atrium. It is a judged poster event for the senior QM courses, and QM 474 sends two teams per section. The guideline is filed in the gitignored `_adm/_qm_showcase/2026F/`, with a README of facts and open items. The Brightspace announcement draft is `_announcements/2026F/qm_project_showcase_dec11.md` (not yet posted). It proposes selection from the M10 final poster plus the Nov 17 conference presentation, which still needs Davi's confirmation. Tracked as course-task #66.
