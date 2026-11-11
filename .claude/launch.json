@@ -4,8 +4,30 @@
     {
       "name": "docs-static",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8474", "--bind", "127.0.0.1", "--directory", "docs"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8474",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "docs"
+      ],
       "port": 8474
+    },
+    {
+      "name": "video-review",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8476",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "_adm/_qm474_poster_product/launch_journey_2026F/videos/out"
+      ],
+      "port": 8476
     }
   ]
 }
