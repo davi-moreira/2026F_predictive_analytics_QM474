@@ -35,6 +35,8 @@ website:
         text: Syllabus
       - href: schedule.qmd
         text: Schedule and Material
+      - href: p2p.qmd
+        text: Poster-to-Product
       - href: instructor.qmd
         text: Instructor
 

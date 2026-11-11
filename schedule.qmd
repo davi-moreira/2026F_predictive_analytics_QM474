@@ -93,8 +93,8 @@ editor: visual
 | 15 | Wed Dec 2 | Poster-to-Product Stage 4: Test — does it work, is it true? | — | Round 03 meetings (Sprint Reviews), Dec 2–4 |
 | 15 | Fri Dec 4 | Poster-to-Product Stage 5: Test with users + iterate | — |  |
 | 16 | Mon Dec 7 | Poster-to-Product Stage 6: Launch — brief, video, final checks | — | **Poster-to-Product launch package due 11:59 PM** |
-| 16 | Wed Dec 9 | **Poster-to-Product Stage 7: Demo Day** (in-class showcase) | — | **DEMO DAY** |
-| 16 | Fri Dec 11 | Course wrap — Poster-to-Product Stage 8: Retro · peer evaluation · reflection survey | — |  |
+| 16 | Wed Dec 9 | **Poster-to-Product Stage 7: Demo Day I** — half of the teams present; everyone reviews (order on the Poster-to-Product tab) | — | **DEMO DAY I** |
+| 16 | Fri Dec 11 | **Poster-to-Product Stage 8: Demo Day II** — the other half presents; peer evaluation starts in class · course wrap | — | **DEMO DAY II** · peer evaluation and reflection due 11:59 PM |
 
 :::
 
