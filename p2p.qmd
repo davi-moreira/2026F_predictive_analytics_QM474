@@ -36,7 +36,7 @@ toc: true
 <div class="p2p-hero"><p class="tag">Three weeks. One decision-maker. One product you would show an employer.</p><div class="p2p-stats"><div class="p2p-stat"><b>Nov 16 – Dec 11</b><span>three weeks, nine stages</span></div><div class="p2p-stat"><b>5%</b><span>of your course grade (100 points)</span></div><div class="p2p-stat"><b>+5%</b><span>Launch Award: top 3 teams in each section</span></div><div class="p2p-stat"><b>Dec 9 & 11</b><span>Demo Days, in class</span></div></div></div>
 ```
 
-After the Fall Undergraduate Research Conference, each team turns its poster into a product: one decision-maker, one decision, and a working product, built with Claude, that helps them make it: a dashboard, a decision tool, a small web app or another format the team chooses, at a link anyone can open. The method is **The Launch Sprint**, design thinking with a deadline: understand one decision-maker, sketch, decide, build a realistic prototype, test it with real users, then launch. Full instructions, rubrics, templates and videos are on **Brightspace** (Module 5: Poster-to-Product).
+After the Fall Undergraduate Research Conference, each team turns its poster into a product: one decision-maker, one decision, and a working product, built with Claude, that helps them make it: a dashboard, a decision tool, a small web app or another format the team chooses, at a link anyone can open. The method is **The Launch Sprint**, design thinking with a deadline: understand one decision-maker, sketch, decide, build a realistic prototype, test it with real users, then launch. Full instructions, rubrics, templates and videos are on **Brightspace** (the Poster-to-Product module).
 
 ## The journey
 

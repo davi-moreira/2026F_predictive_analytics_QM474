@@ -4405,3 +4405,14 @@ The anonymous course-feedback survey (Reflection 4, Part 2) had been created on 
 - **Link rule:** anyone with the link must be able to open the product, with no sign-in, access request, API key or payment. Teams test it signed out, in a private window, on a device that is not theirs. This replaces the old "one self-contained HTML file, tested with Wi-Fi off" rule. Free hosting options are listed in the build rules.
 - **Submissions:** the Sprint Review (G2) takes a prototype link. The Launch Package (G4) takes `product_link.txt` and a product backup (the product's files as a .zip, or a PDF of screenshots) in place of `dashboard.html`. The Test Report's (G3) offline test becomes a link test. Go Live (I5) is a link under the student's own name: a hosted copy, or a portfolio page that links to the product.
 - **Updated:** the build rules, roles, milestone PDFs, one-pager, Brightspace pages, announcements, team templates (the brief now includes the product link), the Poster-to-Product tab and the Showcase Gallery builder (it now lists each team's product link and backup).
+
+## 2026-11-11 (cont.) — Poster-to-Product set up on Brightspace
+
+- **Content module "Poster-to-Product: Your Launch Journey"**, opening Fri Nov 13, 8:00 AM:
+  - top-level files: the overview page, the one-page Launch Journey, the Team Playbook, the Claude Access Guide, the Team Templates and the export cell;
+  - one sub-module per stage (0–8), each with its stage page (released at 7:00 AM on the stage's date), the instructions-and-rubric PDF of each milestone due in that stage, and links to its assignments.
+- **11 assignments** (I1–I6 individual, G1–G5 team on the Final Project groups), visible from Nov 13. Each has its instructions, due date and points, and links to its PDF. I6 and G5 are graded in class, with nothing to upload.
+- **Gradebook:** 12 items in the Poster-to-Product category (5%): the 11 assignments plus the 20-point peer evaluation, weighted by points (100 in total).
+- **Announcements:** the 11 Launch Journey announcements are scheduled, from Fri Nov 13 through Wed Dec 16. 02 and 11 carry a bracketed placeholder until the Claude invitations go out and the award winners are known. The three weekly Important Dates copies (Nov 16, 23, 30) and the master now carry the Launch Journey dates.
+- **Project Reflection 4** now has its instructions on Brightspace (the survey links, and "start it in class on Dec 11").
+- **Website:** the Poster-to-Product tab now says "the Poster-to-Product module" (the course has no numbered modules).
