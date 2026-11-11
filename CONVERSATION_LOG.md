@@ -4338,3 +4338,14 @@ Update, same day (morning): Davi emailed five groups for corrected posters durin
 ## 2026-11-10 — QM Project Showcase intake and announcement draft
 
 Inbox intake of the department's QM Project Showcase student guideline (sent by the QM showcase organizer on Nov 9). The showcase is Fri Dec 11, 2026, 2:00–5:00 PM, RAWL 2nd Floor Atrium. It is a judged poster event for the senior QM courses, and QM 474 sends two teams per section. The guideline is filed in the gitignored `_adm/_qm_showcase/2026F/`, with a README of facts and open items. The Brightspace announcement draft is `_announcements/2026F/qm_project_showcase_dec11.md` (not yet posted). It proposes selection from the M10 final poster plus the Nov 17 conference presentation, which still needs Davi's confirmation. Tracked as course-task #66.
+
+## 2026-11-11 — Unposted Brightspace announcements brought up to Fall 2026
+
+All 24 unposted announcements in Brightspace were reviewed. None is a draft: each is **Scheduled** and posts by itself at its start date (the Valence API reports them as `IsPublished:false` because they are not visible yet). The API's PUT returns 400 on these items, so every edit went through the announcement editor's **Update** button, with "send notification" and "email copy" left unchecked, and each save was checked through the API. Nothing was posted: the 39 published announcements are unchanged.
+
+- **Rewritten for Fall 2026 and scheduled (12 carried over from Fall 2025):** Expo poster program (Thu Nov 12), presentation instructions (Mon Nov 16), presentation-day message (Tue Nov 17 morning), no in-person classes until Nov 30 and the Rank Code deadline (Tue Nov 17 evening), final course evaluation extra credit (Tue Dec 1), evaluation reminder (Tue Dec 8), peer evaluation (Thu Dec 10), end-of-semester message (Fri Dec 11), final grades (Tue Dec 22, after the Registrar deadline). Facts come from the Expo's own pages (Nov 17, PMU North and South Ballrooms, four poster sessions, check-in map, rubric checklist), the Brightspace assignments, and the 1.0% individual-only evaluation credit announced Oct 1.
+- **Important Dates:** the Nov 16, Nov 23 and Nov 30 scheduled copies and the parked master gained the Expo/photo-upload wording, the Nov 30 return to class, the Dec 7 and Dec 9 Poster-to-Product dates, and the Dec 11 QM Project Showcase. The local copy was re-synced.
+- **Rewritten but parked:** event photos (needs Davi's photo-folder link), the official Expo gallery and the award results (both wait on the Office of Undergraduate Research).
+- **Left untouched:** six obsolete Fall 2025 items (midterm evaluation, abstracts approved, two QR-code reminders, rubric review, 2025 TA introduction); recommended for deletion.
+
+The queue, with times and open items, is in the gitignored `_announcements/2026F/brightspace_scheduled_queue.md`.
