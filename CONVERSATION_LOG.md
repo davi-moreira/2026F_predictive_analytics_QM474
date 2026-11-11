@@ -4416,3 +4416,12 @@ The anonymous course-feedback survey (Reflection 4, Part 2) had been created on 
 - **Announcements:** the 11 Launch Journey announcements are scheduled, from Fri Nov 13 through Wed Dec 16. 02 and 11 carry a bracketed placeholder until the Claude invitations go out and the award winners are known. The three weekly Important Dates copies (Nov 16, 23, 30) and the master now carry the Launch Journey dates.
 - **Project Reflection 4** now has its instructions on Brightspace (the survey links, and "start it in class on Dec 11").
 - **Website:** the Poster-to-Product tab now says "the Poster-to-Product module" (the course has no numbered modules).
+
+## 2026-11-11 (cont.) — Audience Review form built; Showcase Gallery ready for Dec 8
+
+- **Audience Review form (Qualtrics, "QM474: Demo Day Audience Review (P2P I6)"):** imported from `qualtrics_p2p_audience_review.txt`; teams listed by section ("Team 13 (Section 001)"); both team choices and all four ratings required. Purdue login (SSO authenticator, the same setup as Project Reflection 4) with retakes allowed, so each student can review every team. After submitting, the form reopens fresh for the next team. Open Mon Dec 7, 12:00 AM – Sat Dec 12, 12:00 AM (Eastern), so it can be tested before Dec 9. Published.
+- **In class:** a projector slide with the form's QR code (`P2P_Audience_Review_Slide.pdf/.png`, generated; the QR code was checked to decode to the form).
+- **On Brightspace:** the link is in the I6 assignment, in Stages 7 and 8 of the Poster-to-Product module (from each Demo Day morning), and in the Dec 9 and Dec 11 announcements. It is kept off the public website.
+- **Scoring:** `score_audience_reviews.py` now reads the form's identity columns and drops students who have left the course (tested on synthetic reviews).
+- **Showcase Gallery:** a "Showcase Gallery" topic in the Poster-to-Product module, locked until Tue Dec 8 at noon; the website's Poster-to-Product tab now links to it. On Dec 8 a script run inside Brightspace copies each team's brief, poster and backup from the G4 submissions into course files and writes the gallery page; no student file leaves Brightspace. Tested in report-only mode.
+- **Fixed:** the instructions of several Poster-to-Product assignments had gone blank on Brightspace; they were restored.
