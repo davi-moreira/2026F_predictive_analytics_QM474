@@ -4398,3 +4398,10 @@ The anonymous course-feedback survey (Reflection 4, Part 2) had been created on 
 - **Timing:** the random order is unchanged. Dec 9 now ends at minute 43 and Dec 11 at minute 37.
 - **Dec 11 close:** in the last 13 minutes, students start **Project Reflection 4 first, then the peer evaluation**; both are due at 11:59 PM.
 - **Updated:** the generated milestone PDFs (one-pager, G5, I6), the Brightspace pages, the announcements, the Audience Review import file and scorer, the Poster-to-Product tab, the Dec 9 and Dec 11 schedule rows and the schedule handout, the P2P plan and TA briefing, and the Reflection 4 notes and course-feedback survey file. Still to apply on Brightspace: the Reflection 4 Participation item text.
+
+## 2026-11-11 (cont.) — Poster-to-Product: any Claude-built product, at a link anyone can open
+
+- **Product (Davi):** the product no longer has to be a dashboard. It can be anything interactive the team builds with Claude that helps the decision-maker decide, such as an interactive dashboard, a decision calculator or what-if tool, a small web app or an interactive report. Teams choose the format in the Sprint Blueprint (G1).
+- **Link rule:** anyone with the link must be able to open the product, with no sign-in, access request, API key or payment. Teams test it signed out, in a private window, on a device that is not theirs. This replaces the old "one self-contained HTML file, tested with Wi-Fi off" rule. Free hosting options are listed in the build rules.
+- **Submissions:** the Sprint Review (G2) takes a prototype link. The Launch Package (G4) takes `product_link.txt` and a product backup (the product's files as a .zip, or a PDF of screenshots) in place of `dashboard.html`. The Test Report's (G3) offline test becomes a link test. Go Live (I5) is a link under the student's own name: a hosted copy, or a portfolio page that links to the product.
+- **Updated:** the build rules, roles, milestone PDFs, one-pager, Brightspace pages, announcements, team templates (the brief now includes the product link), the Poster-to-Product tab and the Showcase Gallery builder (it now lists each team's product link and backup).
