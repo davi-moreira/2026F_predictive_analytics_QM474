@@ -4349,3 +4349,5 @@ All 24 unposted announcements in Brightspace were reviewed. None is a draft: eac
 - **Left untouched:** six obsolete Fall 2025 items (midterm evaluation, abstracts approved, two QR-code reminders, rubric review, 2025 TA introduction); recommended for deletion.
 
 The queue, with times and open items, is in the gitignored `_announcements/2026F/brightspace_scheduled_queue.md`.
+
+Update, same day: Davi asked for the three parked items to be scheduled this term, about two days after each one's best date, and he will fill them in later. Event photos are set for Fri Nov 20, 5 PM. Its closing reminder now points to the Mon Nov 23 online session and the Nov 29 Rank Code deadline, so it stays true on that date. The official Expo gallery is set for Sun Dec 6, 9 AM, and the award results for Wed Dec 16, 9 AM. The photo link, the award list and the gallery check are still placeholders for Davi, and each placeholder now says "before this posts". All 24 are still Scheduled, and 39 are visible, unchanged.
