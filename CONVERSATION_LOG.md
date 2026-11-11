@@ -4372,3 +4372,12 @@ Update, same day: Davi asked for the three parked items to be scheduled this ter
   - The Reflection 4 Part 2 (course feedback) Qualtrics survey is not active, so the R4 redirect would fail on Dec 9.
   - The Final Course Evaluation grade item is a regular, non-bonus 1-point Participation item, not a 1.0% bonus.
   - The hidden Mid-term Course Evaluation grade item still counts in Participation.
+
+## 2026-11-11 (cont.) — Project Reflection 4, Part 2 built and published
+
+The anonymous course-feedback survey (Reflection 4, Part 2) had been created on Oct 28 but never filled in or published: its link said "not currently active". Part 1 also ended with Qualtrics' default message instead of redirecting to Part 2, so students would never have reached Part 2 on Dec 9.
+
+- **Part 2:** the gitignored import file was imported. It holds 39 items, and the build script's `--check` passes. The documented settings were applied: anonymous responses, back button, open Dec 9–11, the three "None" options exclusive, and the custom end message students screenshot for credit. It was then published.
+- **Part 1:** the end of survey now redirects to Part 2, and "We did not use AI tools" is exclusive. It was republished.
+- **Checked:** both public links say "not started" until Dec 9. The published Part 1 shows the redirect.
+- **Open:** two of Part 2's Poster-to-Product questions follow the October plan. The Poster-to-Product planning session was told, so it can align them with the Launch Journey before Dec 9.
