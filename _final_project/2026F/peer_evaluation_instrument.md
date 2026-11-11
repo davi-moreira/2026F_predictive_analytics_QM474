@@ -1,9 +1,7 @@
 # Peer Evaluation — Instrument and Logistics
 
 **Brightspace item:** *Peer Evaluation Submission: Final Project and/or Course Case Competition*
-**Due:** see the assignment on Brightspace (collected at the end of the course)
-
-Carried forward from the 2026Summer offering (`_final_project/2026Summer/final_project_milestone_reference.md` §6), unchanged in substance.
+**Window:** see the assignment on Brightspace (collected at the end of the course)
 
 > **Peer Evaluation is not Peer Review.** Peer *Evaluation* (this instrument, 20%) is each member confidentially rating **their own teammates' contributions**. Peer *Review* (10%, submitted before the conference) is each group reviewing **other groups' posters**. Both exist and are graded separately.
 
@@ -17,49 +15,31 @@ Carried forward from the 2026Summer offering (`_final_project/2026Summer/final_p
 | Course Case Competition (20% of course grade) | **20%** of the competition grade |
 | Poster-to-Product (5% of course grade) | **20%** of the sprint grade |
 
-One Brightspace submission covers the Final Project and the Course Case Competition. Poster-to-Product's share is assessed on the same instrument applied to the sprint team.
+One survey covers all three efforts. Each submission says which effort(s) it covers.
 
 ## Mechanics
 
-- Each member evaluates **every other member of their group**. There is **no self-evaluation**.
-- **Confidential.** Only the instructor and the TA see individual evaluations. Aggregated feedback may be returned to the team.
-- Submitted through a Brightspace form.
-- **Failure to submit a peer evaluation reduces the submitter's own peer-evaluation score**, not their teammates'.
-- The 20% component is calculated **per member**, from the average of the ratings that member receives, with light moderation by the instructor where ratings appear strategically inflated or deflated. Two members of the same group can therefore receive different peer-evaluation scores.
+- Each member evaluates **every other member of their group**, one teammate per submission. There is **no self-evaluation**.
+- **Optional.** A missing evaluation always counts in the teammate's favor: a member nobody evaluates keeps full marks. A missing evaluation is never treated as a zero.
+- **Confidential.** Teammates never see who said what; only the instructor and the TAs read individual evaluations.
+- **Full marks are the default.** The 20% is reduced only for a member whose contribution, as reported by the teammates who evaluated them, falls clearly below the rest of the group. Scoring uses each member's **relative** contribution within the group, so uniform ratings change nothing. The team's own grades are never affected.
 
-## The instrument
+## The instrument (Qualtrics)
 
-For **each** teammate, the evaluator provides five numerical ratings and two short free-text responses.
+For each teammate evaluated, the respondent gives their own name and Purdue email, then:
 
-### Numerical ratings (1 to 5)
+1. **Group number** (Brightspace *Course Tools → Groups*).
+2. **Component(s):** Final Project, Course Case Competition, and/or Poster-to-Product (select all that apply). If a teammate's contribution clearly differed on one effort, submit a separate evaluation for that effort.
+3. and 4. **Teammate's name and Purdue email** (the email is the matching key).
+5. to 8. **Four ratings, 1 to 10:** contribution to the work · reliability and dependability · quality of work · collaboration and communication. Scale anchors: 1 = essentially absent · 5 = noticeably below the team · 7 = solid, fully pulled their weight · 10 = among the strongest contributions.
+9. **Comments** (optional): a brief, factual note on what the teammate did or did not do.
 
-| Dimension | What it measures |
-|---|---|
-| **Commitment** | Showed up, engaged with the work, and stayed involved through the whole project rather than only at deadlines. |
-| **Technical contribution** | Contributed substantively to the analysis: data work, modeling, evaluation, or the technical writing that depends on them. |
-| **Communication** | Responded within the group's agreed time, kept others informed, and raised problems early rather than silently. |
-| **Dependability** | Delivered what they committed to, by when they committed to it. |
-| **Fairness of work distribution** | Took a share of the work proportionate to the group, neither coasting nor quietly absorbing everyone else's tasks. |
-
-Scale: **1 = far below expectations · 2 = below · 3 = met expectations · 4 = above · 5 = far above.**
-
-A rating of 3 is the normal, healthy outcome for a teammate who did their share. Reserve 1 and 5 for cases you can point to a specific reason for, which the free-text fields ask you to supply.
-
-### Free-text (per teammate)
-
-1. **One specific strength.** Name something concrete this teammate did well.
-2. **One specific area for improvement.** Name something concrete they could do differently.
-
-"Great teammate" and "did nothing" are both unusable. The instructor weighs free-text detail when moderating outlier ratings, so specificity protects both you and the person you are rating.
+Everything except the comments is force-response.
 
 ---
 
 ## Instructor notes (not for the student-facing page)
 
-- The Brightspace form still needs to be built to match this instrument: 5 Likert items plus 2 free-text fields, repeated per teammate, with the roster piped in per group.
-- Group size is "groups of four, randomly assigned" for the Final Project and "up to four" for the Course Case Competition, so the form must handle a variable number of teammates rather than hardcoding three.
-- Decide whether Poster-to-Product's 20% rides on this same end-of-course submission or gets a separate instance. Tracked in the companion repo.
-
----
-
-**Last updated:** 2026-08-20. Edition-neutral: no dates that would block reuse next offering.
+- **Fall 2026 build (2026-11-11):** Qualtrics project "QM474: Peer Evaluation (Fall 2026)", open Dec 7, 12:00 AM – Dec 12, 12:00 AM ET (matching the Brightspace window). The survey link appears only in the Brightspace instructions; the link, import file and build notes are in the gitignored `_adm/_grade/2026F/peer_evaluation/`. It replaced the 2026Summer Microsoft Form that the Brightspace instructions still linked, and it added Poster-to-Product, which the Summer form did not cover.
+- **Supersedes the 2026-08-20 draft of this file.** That draft proposed five 1–5 ratings plus two free-text fields, with a penalty for not submitting. It was never built. The live Brightspace instructions (carried from Summer 2026) already promised the optional, 1–10 design above, so the build follows them.
+- Group lists: Groups 1–20 and 22–27 (Group 21 has no members; Group 28 is an empty shell), as in the Nov 9 poster peer review.

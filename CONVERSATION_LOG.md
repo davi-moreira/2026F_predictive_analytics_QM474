@@ -4351,3 +4351,24 @@ All 24 unposted announcements in Brightspace were reviewed. None is a draft: eac
 The queue, with times and open items, is in the gitignored `_announcements/2026F/brightspace_scheduled_queue.md`.
 
 Update, same day: Davi asked for the three parked items to be scheduled this term, about two days after each one's best date, and he will fill them in later. Event photos are set for Fri Nov 20, 5 PM. Its closing reminder now points to the Mon Nov 23 online session and the Nov 29 Rank Code deadline, so it stays true on that date. The official Expo gallery is set for Sun Dec 6, 9 AM, and the award results for Wed Dec 16, 9 AM. The photo link, the award list and the gallery check are still placeholders for Davi, and each placeholder now says "before this posts". All 24 are still Scheduled, and 39 are visible, unchanged.
+
+## 2026-11-11 (cont.) — Obsolete announcements deleted; four Brightspace problems fixed
+
+- **Deleted (Davi approved):** the six obsolete Fall 2025 announcements (midterm evaluation, abstracts approved, two QR-code reminders, rubric review, 2025 TA introduction), through the Valence API. Brightspace now shows 39 published and 18 scheduled.
+- **Final-evaluation extra credit (folder 1581925):** the instructions now state the 1.0% individual bonus (the midterm evaluation was not offered), not "individual and potentially collective" credit. Every other setting was diffed: no change.
+- **Rank Code Submission (folder 1581922):** Brightspace still carried the retired CI-overlap rubric that the Oct 23 source fix had removed. Amendment 1 is now applied to the source first, then to Brightspace:
+  - selection by paired per-fold differences, read through the fold-corrected interval against a predeclared margin;
+  - the comparison chart may show the per-fold differences with the margin band;
+  - a Fall 2026 transition clause gives full marks to the paired-difference rule as nb18 teaches it.
+  - Point values are unchanged.
+- **Peer evaluation (folder 1581921):** the 2026Summer Microsoft Form link was replaced by a new Fall 2026 Qualtrics survey.
+  - The survey keeps the live design (optional, four criteria 1–10) and adds Poster-to-Product as a third component.
+  - It is open Dec 7–11.
+  - The instructions now count it as 20% of the Poster-to-Product grade.
+  - `_final_project/2026F/peer_evaluation_instrument.md` now describes it. The unbuilt August draft design is superseded.
+  - The scheduled Dec 10 peer-evaluation announcement names all three efforts.
+- **Poster-to-Product announcements:** the three older local drafts were not created in Brightspace, because the Poster-to-Product planning session's Launch Journey set supersedes them. That session was told which Important Dates lines and scheduled items carry old-plan Poster-to-Product wording.
+- **Found, not changed:**
+  - The Reflection 4 Part 2 (course feedback) Qualtrics survey is not active, so the R4 redirect would fail on Dec 9.
+  - The Final Course Evaluation grade item is a regular, non-bonus 1-point Participation item, not a 1.0% bonus.
+  - The hidden Mid-term Course Evaluation grade item still counts in Participation.
