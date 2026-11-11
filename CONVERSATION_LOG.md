@@ -4381,3 +4381,11 @@ The anonymous course-feedback survey (Reflection 4, Part 2) had been created on 
 - **Part 1:** the end of survey now redirects to Part 2, and "We did not use AI tools" is exclusive. It was republished.
 - **Checked:** both public links say "not started" until Dec 9. The published Part 1 shows the redirect.
 - **Open:** two of Part 2's Poster-to-Product questions follow the October plan. The Poster-to-Product planning session was told, so it can align them with the Launch Journey before Dec 9.
+
+## 2026-11-11 (cont.) — Poster-to-Product: two Demo Days, Audience Reviews, website tab
+
+- **Two Demo Days:** each section's teams were drawn at random (seed 474) into Wed Dec 9 (7 teams) and Fri Dec 11 (6 teams), in a random order. Slots are 6.5 minutes: a 2-minute demo, a 3.5-minute debrief that Professor Moreira scores, and a 1-minute switch. On Dec 11 the last 10 minutes start the peer evaluation; the peer evaluation and Project Reflection 4 are due at 11:59 PM.
+- **Audience Reviews (new I6, 5 points):** every student reviews every other team in the section with a short Qualtrics form (Purdue login, about 30 seconds). Students are graded on the number of valid reviews. The classmates' average rating is 5 of the 15 Demo Day points.
+- **Point changes:** I5 Go Live 10 → 5, G4 Launch Package 20 → 15, G5 Demo Day 10 → 15. P2P stays at 100 points.
+- **Website:** a new public **Poster-to-Product** tab (`p2p.qmd`, generated; never hand-edit) shows the stages, the Demo Day order by team number, grading, and the Launch Award. The Dec 9 and Dec 11 schedule rows now read Demo Day I and Demo Day II. Commits 888ab68 and 9c58e69.
+- **Student work stays behind Purdue login:** Purdue's data-handling rules don't allow FERPA records on storage without Purdue authentication. That rules out a shared-password page on the public site, and Dropbox is not an approved Purdue store. The Showcase Gallery is therefore an HTML package inside Brightspace, and the public tab only links to it (from Dec 8).
