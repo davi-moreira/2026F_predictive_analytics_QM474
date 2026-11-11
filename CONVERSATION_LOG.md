@@ -4425,3 +4425,14 @@ The anonymous course-feedback survey (Reflection 4, Part 2) had been created on 
 - **Scoring:** `score_audience_reviews.py` now reads the form's identity columns and drops students who have left the course (tested on synthetic reviews).
 - **Showcase Gallery:** a "Showcase Gallery" topic in the Poster-to-Product module, locked until Tue Dec 8 at noon; the website's Poster-to-Product tab now links to it. On Dec 8 a script run inside Brightspace copies each team's brief, poster and backup from the G4 submissions into course files and writes the gallery page; no student file leaves Brightspace. Tested in report-only mode.
 - **Fixed:** the instructions of several Poster-to-Product assignments had gone blank on Brightspace; they were restored.
+
+## 2026-11-11 (cont.) — Poster-to-Product: edition-proof materials ("AI", no dates)
+
+- **Rule (Davi):** the reusable materials say "AI" instead of "Claude" and carry no specific dates, so they work in future editions. Course names such as "Claude 101" stay in the milestone instructions.
+- **Changed to relative timing:** the guides (one-pager, Team Playbook, milestone PDFs, Team Templates), the Brightspace pages and the assignment instructions.
+  - Sessions 1–8 are the last eight class meetings: Session 1 is the kickoff and Sessions 7–8 are the Demo Days.
+  - Deadlines read like "the night before Session 2" or "the night of Session 6", and each assignment points to its own exact date and time.
+  - The Claude Access Guide is now the AI Access Guide.
+- **Exact dates stay** in this term's announcements, the website's Poster-to-Product tab and the Brightspace due dates. The data file keeps them in separate `*_exact` fields for those outputs.
+- **Brightspace:** all module files were replaced in place. The stage folders now read "Session N", and the 11 assignments plus the Round 03 scheduling assignment have new instructions. Five scheduled announcements now say "AI", with their dates unchanged.
+- **Videos:** video 1 follows the same rules. It is narrated in Davi's AI-cloned voice, shows his talking photo, and carries the credit "Professor Moreira’s recording was improved with AI."
