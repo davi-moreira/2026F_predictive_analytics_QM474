@@ -82,19 +82,19 @@ editor: visual
 | 12 | Mon Nov 9 | Group Work: Final Project | — |  |
 | 12 | Wed Nov 11 | Group Work: Final Project | — |  |
 | 12 | Fri Nov 13 | Group Work: Final Project | — |  |
-| 13 | Mon Nov 16 | Group Work: Final Project | — |  |
+| 13 | Mon Nov 16 | Group Work: Final Project · Poster-to-Product Stage 0: Onboard (Claude access opens) | — |  |
 | 13 | **Tue Nov 17** | **Undergraduate Research Conference — Poster Presentation (all students present)** | — | **POSTER PRESENTATION** |
 | 13 | Wed Nov 18 | *No class — time to rest and catch up on other coursework* | — |  |
-| 13 | Fri Nov 20 | Poster-to-Product kickoff — scoping, partner framing, AI-assistant assignment | — |  |
-| 14 | Mon Nov 23 | Group Work: Competition | — |  |
+| 13 | Fri Nov 20 | **Poster-to-Product kickoff** — Stage 1: Map (one decision-maker, one decision) | — |  |
+| 14 | Mon Nov 23 | Group Work: Competition · Poster-to-Product Stage 2: Sketch & Decide | — |  |
 | 14 | Wed Nov 25 | *No class — Thanksgiving break (Nov 25–28)* | — |  |
 | 14 | Fri Nov 27 | *No class — Thanksgiving break (Nov 25–28)* · final submission window, online | — | **Kaggle final submission due Sun Nov 29, 11:59 PM** |
-| 15 | Mon Nov 30 | Poster-to-Product — data engineering + model validation | — |  |
-| 15 | Wed Dec 2 | Poster-to-Product — deployment + partner checkpoint | — |  |
-| 15 | Fri Dec 4 | Poster-to-Product — usability testing + iteration | — |  |
-| 16 | Mon Dec 7 | Poster-to-Product — executive brief drafting + showcase preparation | — |  |
-| 16 | Wed Dec 9 | **Poster-to-Product SHOWCASE** (partners + feedback) | — |  |
-| 16 | Fri Dec 11 | Course wrap — peer evaluation, reflection survey, competition results | — |  |
+| 15 | Mon Nov 30 | Poster-to-Product Stage 3: Prototype — build the dashboard with AI | — |  |
+| 15 | Wed Dec 2 | Poster-to-Product Stage 4: Test — does it work, is it true? | — | Round 03 meetings (Sprint Reviews), Dec 2–4 |
+| 15 | Fri Dec 4 | Poster-to-Product Stage 5: Test with users + iterate | — |  |
+| 16 | Mon Dec 7 | Poster-to-Product Stage 6: Launch — brief, video, final checks | — | **Poster-to-Product launch package due 11:59 PM** |
+| 16 | Wed Dec 9 | **Poster-to-Product Stage 7: Demo Day** (in-class showcase) | — | **DEMO DAY** |
+| 16 | Fri Dec 11 | Course wrap — Poster-to-Product Stage 8: Retro · peer evaluation · reflection survey | — |  |
 
 :::
 
