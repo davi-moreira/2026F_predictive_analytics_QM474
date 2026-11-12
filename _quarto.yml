@@ -4,6 +4,7 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "!p2p.qmd"   # HIDDEN until Mon Nov 16, 2026 (Davi, Nov 12): remove this line and restore the sidebar entry below
   # Fail-closed gate on the Instructor page. This step encrypts docs/instructor.html
   # in place with the instructor password (read from the gitignored file
   # _adm/_instructor_page/page_password.txt) so the published page is unreadable
@@ -35,8 +36,9 @@ website:
         text: Syllabus
       - href: schedule.qmd
         text: Schedule and Material
-      - href: p2p.qmd
-        text: Poster-to-Product
+      # Poster-to-Product tab HIDDEN until Mon Nov 16, 2026 (Davi, Nov 12). To restore, uncomment:
+      # - href: p2p.qmd
+      #   text: Poster-to-Product
       - href: instructor.qmd
         text: Instructor
 
