@@ -4436,3 +4436,17 @@ The anonymous course-feedback survey (Reflection 4, Part 2) had been created on 
 - **Exact dates stay** in this term's announcements, the website's Poster-to-Product tab and the Brightspace due dates. The data file keeps them in separate `*_exact` fields for those outputs.
 - **Brightspace:** all module files were replaced in place. The stage folders now read "Session N", and the 11 assignments plus the Round 03 scheduling assignment have new instructions. Five scheduled announcements now say "AI", with their dates unchanged.
 - **Videos:** video 1 follows the same rules. It is narrated in Davi's AI-cloned voice, shows his talking photo, and carries the credit "Professor Moreira’s recording was improved with AI."
+
+## 2026-11-12 — Poster-to-Product starts Mon Nov 16: nothing reaches students before then
+
+Davi's rule: nothing about Poster-to-Product is shared with students this week; everything starts Mon Nov 16 at 8:00 AM.
+
+- **Announcement 01:** moved from Fri Nov 13 to Mon Nov 16, 8:00 AM, retitled "Your Launch Journey Starts Today", and its first step now says to accept the AI invitation when it arrives that day.
+- **Brightspace:**
+  - The Poster-to-Product module, its overview and Stage 0 pages, and all 12 P2P assignments now open Mon Nov 16 at 8:00 AM. The assignments stay hidden until then.
+  - The Poster-to-Product grade category has a start date of Nov 16, 8:00 AM, which hides its 12 items from students.
+  - A start date alone still shows a module's title, so the module is also switched off until Monday.
+  - Checked in Brightspace's Learner view: nothing from Poster-to-Product appears in Content, Grades, Assignments or the calendar before Monday.
+- **Website:** the Poster-to-Product tab is hidden until Monday: it is out of the sidebar and the build, and its page is removed.
+- **Monday before 8:00 AM:** switch the module back on and restore the website tab.
+- **Video schedule:** the first three videos (Launch Journey overview, Launch Award, Welcome) are due Mon Nov 16 instead of Nov 13.
