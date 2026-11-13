@@ -4450,3 +4450,12 @@ Davi's rule: nothing about Poster-to-Product is shared with students this week; 
 - **Website:** the Poster-to-Product tab is hidden until Monday: it is out of the sidebar and the build, and its page is removed.
 - **Monday before 8:00 AM:** switch the module back on and restore the website tab.
 - **Video schedule:** the first three videos (Launch Journey overview, Launch Award, Welcome) are due Mon Nov 16 instead of Nov 13.
+
+## 2026-11-13 — Request to revise the official catalog description and learning outcomes
+
+Simple Syllabus now auto-populates the official course description, and Zhiwei Zhu's DCC note of 2026-08-28 asked everyone to review theirs through Evelyn Howard. The official record of QM 47400 (2026-2027 catalog) still names RStudio and SAS Enterprise Miner, lists LDA/QDA and SVM, and its outcome 3 reads "build an access predictive models".
+
+- **Package (gitignored):** `_adm/_catalog_revision_2026/`: a two-page summary of changes for Thanh Nguyen, Evelyn Howard and the DCC; a revised syllabus derived from the official docx (three changes only); a README with the process, dates, the Qualtrics form answer sheet, and three copy-paste emails; and the build script.
+- **Proposed text:** description = the syllabus's "Course Description and Objectives" condensed to the three sentences the DSB checklist allows; outcomes = the four in the official syllabus, verbatim. Framed as a revision (consent agenda), not a new course; Email 2 asks Evelyn to confirm.
+- **Dates:** department-head approval first; DSB Course Request form by **Thu Dec 3, 2026** for the **Fri Dec 18** DCC meeting; Modern Campus PDF approval after that; about 30 days of University review. Requested effective term: Summer 2027 or the next available term.
+- **Register:** item 17 added: the docx title reads "fQM 47400" (stray "f"); fixed only in the derived copy.
