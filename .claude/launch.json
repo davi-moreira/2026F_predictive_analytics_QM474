@@ -28,6 +28,18 @@
         "_adm/_qm474_poster_product/launch_journey_2026F/videos/out"
       ],
       "port": 8476
+    },
+    {
+      "name": "workshop-test",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8479",
+        "--bind",
+        "127.0.0.1"
+      ],
+      "port": 8479
     }
   ]
 }

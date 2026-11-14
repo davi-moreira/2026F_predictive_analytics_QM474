@@ -41,6 +41,10 @@ website:
       #   text: Poster-to-Product
       - href: instructor.qmd
         text: Instructor
+      # Workshop tab (added 2026-11-14): password-gated like Instructor, with its own
+      # password. Source workshop.qmd is gitignored; docs/workshop.html ships encrypted.
+      - href: workshop.qmd
+        text: Workshop
 
 format:
   html:
