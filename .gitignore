@@ -116,3 +116,7 @@ _instructor_repo
 .scratch/
 
 **/*.quarto_ipynb
+
+# workshop.qmd is the PLAINTEXT source of the password-gated Workshop tab (added 2026-11-14).
+# Like instructor.qmd it is never committed; docs/workshop.html is published ENCRYPTED.
+/workshop.qmd
