@@ -4470,3 +4470,37 @@ Davi asked for a locked page on the course site, in the spirit of the Summer "Fo
 - **Media:** 16 files (videos, voice samples, kit zip), AES-256-CTR encrypted with a key that lives only in the gated page; staged in `_adm/_workshop_page/media_repo/` for a public repo `davi-moreira/qm474-workshop-media` served by GitHub Pages. Creating that repo was first blocked by the permission system; on Davi's go-ahead ("Yes, create it") it was created the same day, with GitHub Pages on `main`. Verified: all 16 files load from `https://davi-moreira.github.io/qm474-workshop-media/m/` and decrypt to their exact original sizes; the Summer video plays at 1280×720. Locally, `?media=http://localhost:8479/_adm/_workshop_page/media_repo/m/` (server `workshop-test`) plays everything; verified decrypt-and-play and the kit zip.
 - **Confirmed by Davi (2026-11-14):** the visit was in October 2019 (Gmail), and Manoel paid for his flight himself; the department covered it later. The page already says both.
 - **Same day, Davi's edits:** the tab and the page are now titled **For Instructors** (URL stays `workshop.html`); the page opens with an "still under review" warning (remove it when Davi releases the page); section 1 is "Background: a story from Recife, Brazil" and stays collapsed until the reader clicks its heading (or its TOC link). Pushed in 8b4a442.
+
+## 2026-11-15 — Poster-to-Product Videos 7–15: review fixes, HeyGen, and Brightspace
+
+Davi reviewed the video series overview and approved the suggested fixes ("Yes, apply them"). He then asked Claude to run HeyGen for Videos 7–16 in Chrome, doing the uploads itself, and to update Brightspace with everything students need.
+
+- **Review fixes (scripts, pages, data):**
+  - Videos are now multi-listed so each one appears on the stage page where it is first needed. Stage pages unlock at 7 AM on their session day.
+  - Each video has a "for" tag (Everyone / Data Steward first / Build Lead first / Launch Lead first).
+  - New lines in the scripts:
+    - Video 12: the brief scene, and hosting and captions.
+    - Video 7 and Video 15: the data alternative.
+    - Video 9: the missing-member rule.
+    - Video 10: the recompute rule.
+    - Video 16: a written retro, and downloading the project files.
+  - Announcement 04 (Nov 23) gained the data-sharing bullet and a Video 6 pointer.
+  - Details are in `_adm/_qm474_poster_product/launch_journey_2026F/videos/PRODUCTION_PLAN.md`.
+- **HeyGen batch 03:**
+  - Videos 7–15 were rendered (Avatar 6 Turbo, 1080p, green look), keyed, built and frame-checked. Finals are in `videos/out/final/`.
+  - The batch cost 618 credits and **66 are left**. **Video 16 is held**: it needs about 77 credits, so Davi raises Pro to 2,000 credits first (Resume Plan, raise the tier, cancel again).
+- **Brightspace, verified through the API and in the viewer:**
+  - The MP4s and VTTs for Videos 7–15 are in `P2P/videos/` at their exact sizes, and all ten stage and overview pages are overwritten.
+  - Every one of the 15 players loads at 1920 px with its caption cues. Stage 8 still shows Video 16 as "coming soon".
+  - "Watch first" lines, linked to the stage pages, are in G1, G2, I5, G3, G4 and G5. Due dates, availability, rubrics and groups are unchanged.
+  - Scheduled announcement 2067339 is updated and is still Scheduled for Nov 23, 7:00 AM; no email copy was sent.
+- **Found and fixed:**
+  - Eight content topics still pointed at `<name> - Copy.<ext>` files from the first Nov 11 upload:
+    - the overview, Stage 2 and Stage 4 pages;
+    - the one-page journey, Team Playbook, Team Templates, G1 PDF and G2 PDF.
+  - Every later overwrite had missed them, so students would have seen no videos on those pages, Video 1 included.
+  - All eight were repointed to the current files, with dates and visibility kept.
+- **Still open:**
+  - Video 16, after the HeyGen tier raise.
+  - Task #76: switch on module 22845347 and restore the website P2P tab on Mon Nov 16, before 8 AM.
+  - The Codex note about the "Some judges see only your poster" wording on the student pages is Davi's call.
