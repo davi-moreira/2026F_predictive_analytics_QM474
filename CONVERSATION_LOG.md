@@ -4523,3 +4523,20 @@ Davi reviewed the video series overview and approved the suggested fixes ("Yes, 
 - **Brightspace module: STILL HIDDEN.** The built-in browser's Brightspace session had expired and the page asked for a sign-in. Claude typed no credentials and made no change.
   - **Davi's action:** sign in to Brightspace and turn visibility on for the module "Poster-to-Product: Your Launch Journey" (id 22845347).
 - Task #76 stays open until the module is visible.
+
+## 2026-11-16 — Poster-to-Product: slide handouts for every video
+
+Davi asked that students have the slides used in every video as PDFs: links on the content pages, plus a handout folder in the Poster-to-Product module.
+
+- **PDFs:** the new `videos/build_slide_pdfs.py` prints each final video's slides, fully built, to one PDF per video in `videos/out/handouts/` (both under the gitignored `_adm/_qm474_poster_product/launch_journey_2026F/`).
+  - It reads the scenes file named in the final's script and prints with headless Chrome, one 1920×1080 page per slide, keeping text searchable.
+  - There are 16 PDFs, 0.15–0.44 MB each, with page counts matching the slide counts.
+- **Brightspace:**
+  - The PDFs are in course files `P2P/handouts/`, byte-identical to the local files.
+  - New module **"Handouts: the slides from every video"** (22859849), with one topic per video (22859850–22859865), at the bottom of the Poster-to-Product module.
+  - Every stage page and the overview now show "Slides (PDF)" next to each video, and the overview points to the Handouts folder. All 10 pages were re-uploaded and verified, the 23 links checked, and the topic URLs confirmed.
+- **Code:**
+  - `build_launch_materials.videos_md` adds the link once a PDF exists.
+  - `p2p_launch_data.HANDOUT_DIR` holds the folder path.
+  - The production plan's Brightspace checklist has a step 7 for handouts.
+- **Also:** the one-page Launch Journey walkthrough video (Video 17) moved to its own session, at the draft stage.
