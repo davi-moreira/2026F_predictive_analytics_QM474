@@ -4511,3 +4511,15 @@ Davi reviewed the video series overview and approved the suggested fixes ("Yes, 
   - Claude uploaded the MP4, VTT and page to Brightspace and verified them: the player loads at 1920 px with 55 caption cues, and the topic points at the current file.
   - **All 16 Poster-to-Product videos are now on Brightspace.**
   - **Open:** the upgrade switched HeyGen renewal back on ("Renews on December 14, 2026"). Davi cancels it again under Plan & Billing.
+
+---
+
+## 2026-11-16 (Mon): Poster-to-Product switch-on (scheduled task, task #76)
+
+- **Late:** the scheduled run started at 8:50 AM Eastern, 50 minutes after the 8:00 AM release.
+- **Website tab: ON.** Claude removed the `!p2p.qmd` render exclusion and restored the sidebar entry in `_quarto.yml` (commit `a95a6f1`), then rendered the whole site.
+  - `docs/p2p.html` exists, the sidebar links to it, and `docs/instructor.html` and `docs/workshop.html` are still encrypted.
+  - The repo's auto-commit job committed and pushed the rendered `docs/` (commit `1c58898`) before Claude could, so there is no separate "build" commit.
+- **Brightspace module: STILL HIDDEN.** The built-in browser's Brightspace session had expired and the page asked for a sign-in. Claude typed no credentials and made no change.
+  - **Davi's action:** sign in to Brightspace and turn visibility on for the module "Poster-to-Product: Your Launch Journey" (id 22845347).
+- Task #76 stays open until the module is visible.
