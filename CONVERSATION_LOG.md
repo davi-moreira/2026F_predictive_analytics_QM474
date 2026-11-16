@@ -4504,3 +4504,10 @@ Davi reviewed the video series overview and approved the suggested fixes ("Yes, 
   - Video 16, after the HeyGen tier raise.
   - Task #76: switch on module 22845347 and restore the website P2P tab on Mon Nov 16, before 8 AM.
   - The Codex note about the "Some judges see only your poster" wording on the student pages is Davi's call.
+
+- **Video 16, the same evening:**
+  - Davi raised HeyGen Pro to the 2,000-credit tier: a prorated charge, 566 credits after it.
+  - Claude rendered Video 16 in Chrome (70 credits, 496 left), built and frame-checked the final (3:30, 55 captions), and rebuilt the Stage 8 page.
+  - Claude uploaded the MP4, VTT and page to Brightspace and verified them: the player loads at 1920 px with 55 caption cues, and the topic points at the current file.
+  - **All 16 Poster-to-Product videos are now on Brightspace.**
+  - **Open:** the upgrade switched HeyGen renewal back on ("Renews on December 14, 2026"). Davi cancels it again under Plan & Billing.
