@@ -4544,3 +4544,25 @@ Davi asked that students have the slides used in every video as PDFs: links on t
   - The Handouts folder is now **"Handouts: every Poster-to-Product PDF"** (module 22859849).
   - After the 16 slide decks, it adds the one-page Launch Journey, the Team Playbook and the AI Access Guide, then the 11 milestone instruction PDFs in calendar order (I1, G1, I2, I3, G2, G3, I4, G4, G5, I5, I6). That makes 30 topics, all verified.
   - The new topics link the existing course files rather than copies, so a re-uploaded PDF updates the folder too.
+
+## 2026-11-16 — Poster-to-Product Video 17: "Your journey, on one page"
+
+Davi asked for a video of him going through the one-page Launch Journey PDF that stresses what students need, with a warm, welcoming narrative. He reviewed the draft and approved it ("Approved, go ahead").
+
+- **Script:** `videos/v17_scenes.py`, 12 slides, 7:27.
+  - It tours the real page: crops of the published PDF with spotlight boxes, using a new `docwide` / `docside` layout in `build_video.py`.
+  - The original video session started it; a side session that Davi put in charge ("You take it over") finished it.
+  - Four lines were corrected against `p2p_launch_data.py`.
+  - The page's line on poster-only reviews is not narrated.
+  - Every one of the 82 slide states was checked clear of the presenter corner.
+- **HeyGen:**
+  - 150 credits, plus 3 for an 8-second test that confirmed the green look; 343 left.
+  - The render carried a 0.82 s lead-in, trimmed before the final build; sync within 3 ms.
+- **Brightspace, verified:**
+  - Video 17 plays on the overview and Stage 0 pages with 117 caption cues.
+  - Its slides PDF is in `P2P/handouts/`, linked next to the video and listed as Handouts topic 22860719.
+  - Only those two pages changed; the other session's slide-PDF links are kept.
+- **Open:**
+  - Drag the Video 17 slides topic up after Video 16 in the Handouts module; the API refused every reorder.
+  - When the website P2P tab is rebuilt, it should list Video 17.
+  - HeyGen renewal: task #79.
