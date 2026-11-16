@@ -4540,3 +4540,7 @@ Davi asked that students have the slides used in every video as PDFs: links on t
   - `p2p_launch_data.HANDOUT_DIR` holds the folder path.
   - The production plan's Brightspace checklist has a step 7 for handouts.
 - **Also:** the one-page Launch Journey walkthrough video (Video 17) moved to its own session, at the draft stage.
+- **Same day, Davi: "Add all 14".**
+  - The Handouts folder is now **"Handouts: every Poster-to-Product PDF"** (module 22859849).
+  - After the 16 slide decks, it adds the one-page Launch Journey, the Team Playbook and the AI Access Guide, then the 11 milestone instruction PDFs in calendar order (I1, G1, I2, I3, G2, G3, I4, G4, G5, I5, I6). That makes 30 topics, all verified.
+  - The new topics link the existing course files rather than copies, so a re-uploaded PDF updates the folder too.
