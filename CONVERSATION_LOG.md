@@ -4566,3 +4566,8 @@ Davi asked for a video of him going through the one-page Launch Journey PDF that
   - Drag the Video 17 slides topic up after Video 16 in the Handouts module; the API refused every reorder.
   - When the website P2P tab is rebuilt, it should list Video 17.
   - HeyGen renewal: task #79.
+
+## 2026-11-18 — QM 67000 catalog record checked; one approval email for both courses
+
+- The official QM 67000 record has **no learning outcomes** (its Simple Syllabus shows an empty list) and its description omits regression and decision analysis. It is a shared variable-credit course listed in 27 programs.
+- A matching package (summary of changes, revised syllabus, form answers, emails) lives in the QM 670 repo's gitignored `_adm/_catalog_revision_2026/`. Its README holds one combined approval email to Thanh Nguyen for QM 47400 and QM 67000; Email 1 in this repo's package is marked superseded. Nothing sent or submitted yet.
