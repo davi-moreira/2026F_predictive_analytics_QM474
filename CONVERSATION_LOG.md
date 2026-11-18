@@ -4571,3 +4571,5 @@ Davi asked for a video of him going through the one-page Launch Journey PDF that
 
 - The official QM 67000 record has **no learning outcomes** (its Simple Syllabus shows an empty list) and its description omits regression and decision analysis. It is a shared variable-credit course listed in 27 programs.
 - A matching package (summary of changes, revised syllabus, form answers, emails) lives in the QM 670 repo's gitignored `_adm/_catalog_revision_2026/`. Its README holds one combined approval email to Thanh Nguyen for QM 47400 and QM 67000; Email 1 in this repo's package is marked superseded. Nothing sent or submitted yet.
+
+- **2026-11-18 update:** Davi chose to send the QM 47400 request on its own (QM 67000 parked). The approval email went to Thanh Nguyen at 9:43 AM with the summary PDF, Cc Zhiwei Zhu and Adrian Wolanski (who also teaches QM 47400, for input). Next: approval, then the DSB Course Request form by Thu Dec 3.
