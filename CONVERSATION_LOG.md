@@ -4574,3 +4574,4 @@ Davi asked for a video of him going through the one-page Launch Journey PDF that
 
 - **2026-11-18 update:** Davi chose to send the QM 47400 request on its own (QM 67000 parked). The approval email went to Thanh Nguyen at 9:43 AM with the summary PDF, Cc Zhiwei Zhu and Adrian Wolanski (who also teaches QM 47400, for input). Next: approval, then the DSB Course Request form by Thu Dec 3.
 - **Thanh approved** the QM 47400 revision at 10:01 AM the same day ("Yes, please submit to DCC"). Davi asked Adrian Wolanski for suggestions and is holding the form until Adrian replies (due Thu Dec 3).
+- **Adrian Wolanski replied** (1:35 PM): supports the revision and suggested not naming neural networks, to avoid overlap with QM 475. The description now says students "explore special topics in the field"; summary and revised syllabus rebuilt, reply to Adrian drafted. Next: the DSB Course Request form by Thu Dec 3.
