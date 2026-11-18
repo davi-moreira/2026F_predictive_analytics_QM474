@@ -4573,3 +4573,4 @@ Davi asked for a video of him going through the one-page Launch Journey PDF that
 - A matching package (summary of changes, revised syllabus, form answers, emails) lives in the QM 670 repo's gitignored `_adm/_catalog_revision_2026/`. Its README holds one combined approval email to Thanh Nguyen for QM 47400 and QM 67000; Email 1 in this repo's package is marked superseded. Nothing sent or submitted yet.
 
 - **2026-11-18 update:** Davi chose to send the QM 47400 request on its own (QM 67000 parked). The approval email went to Thanh Nguyen at 9:43 AM with the summary PDF, Cc Zhiwei Zhu and Adrian Wolanski (who also teaches QM 47400, for input). Next: approval, then the DSB Course Request form by Thu Dec 3.
+- **Thanh approved** the QM 47400 revision at 10:01 AM the same day ("Yes, please submit to DCC"). Davi asked Adrian Wolanski for suggestions and is holding the form until Adrian replies (due Thu Dec 3).
