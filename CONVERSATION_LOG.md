@@ -4577,3 +4577,11 @@ Davi asked for a video of him going through the one-page Launch Journey PDF that
 - **Adrian Wolanski replied** (1:35 PM): supports the revision and suggested not naming neural networks, to avoid overlap with QM 475. The description now says students "explore special topics in the field"; summary and revised syllabus rebuilt, reply to Adrian drafted. Next: the DSB Course Request form by Thu Dec 3.
 - **Final description wording** (Davi, in the reply sent to Adrian at 3:44 PM): no software named, and "explore special and new topics in the field". The summary and revised syllabus were rebuilt to match.
 - **DSB Course Request submitted** (QM 47400, Change/Revise > Course Content, effective Summer 2027). The content-only path of the form has no rationale or file-upload fields, so the summary and revised syllabus go to Evelyn Howard by email (drafted). Next: the Dec 18 DCC meeting, then approve the Modern Campus PDF.
+
+## 2026-11-20 — M10 final-poster feedback rewritten as explanations; Brightspace drafts re-entered
+
+Davi asked that the M10 feedback stop asking students to do things, because M10 was the final submission. Each deduction now explains three things: what the final poster shows, what the rubric criterion asks for, and how it relates to the M09 feedback (flagged and still present, dropped from the draft, or new on the final poster).
+- **Rewrite:** six agents rewrote the per-group entries from one brief (`REWRITE_BRIEF.md`, in the gitignored `m10_final_poster/`). Tips were removed and points are unchanged, which was checked against an archived copy of the original entries.
+- **Late corrected file:** the last corrected poster, emailed on Nov 9, was graded. Its template-text deductions were removed; the "final version not submitted" line stands.
+- **Brightspace:** all 26 grades and the rewritten feedback were re-entered as **unpublished drafts** and checked through the API. Score, bullet count and full text match the generated file, and every draft shows `IsGraded:false`. One grade that had been published earlier was retracted, with Davi's approval, before its draft was saved. Nothing was published. Davi publishes.
+- **Current totals:** mean 88.3, median 91.5.
