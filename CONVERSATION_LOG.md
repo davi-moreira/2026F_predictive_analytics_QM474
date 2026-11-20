@@ -4591,3 +4591,10 @@ Davi asked that the M10 feedback stop asking students to do things, because M10 
 
 Davi selected two teams per section for the Dec 11 QM Project Showcase. Four plain-text selection emails were drafted into the gitignored `_adm/_qm_showcase/2026F/` (not sent). Each team confirms attendance by Sat Nov 21, 11:59 PM, including arrival at 1:45 PM. Each team sends a final poster with a QR code to its Poster-to-Product product by Sun Dec 6, 11:59 PM, for reprinting through the Copy Center. Course-task #66 is updated.
 - Update, same day: all four selection emails were sent. Group 5 accepted. A reply-all draft with Showcase guidance is in Outlook (not sent). It covers the new audience of faculty and industry judges, the team's M10 feedback, acknowledgments updated for the new event, the product shown on the poster through a QR code, and presentation prep. A reusable base for the other teams is in the gitignored showcase folder. Group 4 accepted later the same day; its guidance reply is also an Outlook draft.
+
+## 2026-11-20 — Conference photo folder created for students
+
+Davi asked for a folder for the Fall Undergraduate Research Conference photos, as in Fall 2025, to share with students. In Fall 2025 his photos sat in a Dropbox folder with an anyone-with-link, view-only, downloadable link, posted in the Nov 18 Brightspace announcement "Congratulations and Event Photos". The same setup now exists for Fall 2026:
+- **Folder:** `_adm/_expo/2026F/QM474_Fall2026_Research_Conference_Photos/` (gitignored, so photos stay out of the public repo).
+- **Link:** created on dropbox.com; verified through the Dropbox API as public, view-only, downloads allowed. The URL is kept out of this public log; read it from the folder's Share menu in Dropbox.
+- **Open:** Davi adds the photos and posts the link to students.
