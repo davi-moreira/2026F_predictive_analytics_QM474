@@ -4607,3 +4607,4 @@ Davi asked for a folder for the Fall Undergraduate Research Conference photos, a
   - Group 25: a smaller copy of the same photo.
   - Group 20's photo arrived inside a PDF; its JPEG was extracted without re-encoding.
   - Groups 21 and 22 submitted nothing. Five photos are HEIC, and Group 9's is a 102 MB PNG, all copied as received.
+- **Update, same day: formats.** At Davi's request, the five HEIC photos (Groups 7, 8, 15, 18, 23) and Group 9's 102 MB PNG were converted to full-resolution JPEG (quality 90; Group 9's is now 4.4 MB). Each displays upright, and the HEIC/PNG copies were removed from the share folder. The students' originals are untouched in the Brightspace download folder. The share folder also holds 69 of Davi's own photos from the day (`20261117_*.jpg`), which he added: 102 files, about 311 MB, synced.
