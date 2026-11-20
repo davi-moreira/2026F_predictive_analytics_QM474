@@ -4598,3 +4598,12 @@ Davi asked for a folder for the Fall Undergraduate Research Conference photos, a
 - **Folder:** `_adm/_expo/2026F/QM474_Fall2026_Research_Conference_Photos/` (gitignored, so photos stay out of the public repo).
 - **Link:** created on dropbox.com; verified through the Dropbox API as public, view-only, downloads allowed. The URL is kept out of this public log; read it from the folder's Share menu in Dropbox.
 - **Open:** Davi adds the photos and posts the link to students.
+- **Update, same day: photos added.** The Brightspace "Final Project Conference Poster Presentation" group-submission download (gitignored `_adm/_expo/2026F/`, 43 files from 25 groups) was sorted into the shared folder: **33 photos, no subfolders**, named `Group NN - k.<ext>`. Repeat copies were left out:
+  - Group 2 and Group 3: lower-resolution re-shares of the same photo.
+  - Group 8: one selfie sent twice; the JPEG was kept.
+  - Group 12: one photo as two HEIC files and a JPEG; the JPEG was kept.
+  - Group 13: a second upload of the same file, plus a PDF of that photo.
+  - Group 17: a screenshot crop of the original.
+  - Group 25: a smaller copy of the same photo.
+  - Group 20's photo arrived inside a PDF; its JPEG was extracted without re-encoding.
+  - Groups 21 and 22 submitted nothing. Five photos are HEIC, and Group 9's is a 102 MB PNG, all copied as received.
