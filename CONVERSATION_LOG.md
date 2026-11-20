@@ -4586,3 +4586,7 @@ Davi asked that the M10 feedback stop asking students to do things, because M10 
 - **Brightspace:** all 26 grades and the rewritten feedback were re-entered as **unpublished drafts** and checked through the API. Score, bullet count and full text match the generated file, and every draft shows `IsGraded:false`. One grade that had been published earlier was retracted, with Davi's approval, before its draft was saved. Nothing was published. Davi publishes.
 - **Current totals:** mean 88.3, median 91.5.
 - **Follow-up (same day):** the three teams whose total fell from M09 to M10 now get a short paragraph explaining the drop. Criterion 6 was feedback-only at M09, so every team received full marks there, and it was scored for the first time at M10. Leaving criterion 6 aside, each of those posters improved, or did so before the final-version line. The paragraph is generated from the grading script and was added to the three Brightspace drafts. All 26 drafts were re-verified against the generated text and remain unpublished.
+
+## 2026-11-20 — QM Project Showcase teams selected; selection emails drafted
+
+Davi selected two teams per section for the Dec 11 QM Project Showcase. Four plain-text selection emails were drafted into the gitignored `_adm/_qm_showcase/2026F/` (not sent). Each team confirms attendance by Sat Nov 21, 11:59 PM, including arrival at 1:45 PM. Each team sends a final poster with a QR code to its Poster-to-Product product by Sun Dec 6, 11:59 PM, for reprinting through the Copy Center. Course-task #66 is updated.
