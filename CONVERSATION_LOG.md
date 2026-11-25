@@ -4639,3 +4639,15 @@ Davi asked that every student leave Poster-to-Product with a complete, portable 
   - Davi reviews the Video 18 draft.
   - Sat Dec 12 morning: check README uploads and nudge students who haven't uploaded.
   - Keep members, Artifacts and External sharing on until Dec 14 (comment on #77).
+
+## 2026-11-25 (evening) — Poster-to-Product: Video 18 "Keep your work" published
+
+- **Approvals:** Davi approved the draft cut ("Approved") and the paid HeyGen run ("Yes, run it") after a balance check (343 credits). He asked for the Brightspace update to be done in Chrome.
+- **HeyGen:** Avatar 6 Turbo, 1080p, green-screen look, as for Videos 7–17. It cost 80 credits, leaving 263 (task #79). The render had a 0.80 s audio lead-in, trimmed before keying; sync after the trim is 0 ms.
+- **Final video:** 3:58, 61 captions. No green pixels in the sampled frames. Slides PDF: 8 pages.
+- **Data:** `VIDEOS[18]` in `p2p_launch_data.py`, listed on the Stage 6 and Stage 8 pages. A rebuild changed only those two pages; the website tab does not list videos, so it is unchanged.
+- **Brightspace (verified):**
+  - The MP4, VTT and slides PDF are in the course files and byte-identical to the local copies. Handouts topic 22901795.
+  - The Stage 6 and Stage 8 pages were overwritten after their live bodies matched the Nov 25 copies.
+  - Video 18 plays on both pages with 61 caption cues and a Slides (PDF) link.
+- **Open:** Sat Dec 12, check README uploads (task #80); cancel HeyGen by Dec 13 (#79).
