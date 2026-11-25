@@ -89,3 +89,11 @@ Poster-to-Product is worth **5%** of your course grade, scored out of 100 points
 - Ties are broken by *Decision usefulness*, then *Evidence and honesty*, then *Clarity and ease of use*; teams still tied all win.
 - To be eligible, submit a complete Launch Package on time and present on your Demo Day.
 - The award is separate from your grade: the judges never see your grades, and your grades never use the judges' scores. Winners are announced by **Mon Dec 14**.
+
+## Keep Your Work
+
+**Your product is yours. The AI workspace is not.** The course's AI workspace closes after **Sat Dec 12**, and the team projects, chats and artifacts inside it close with it. Starting on Launch Day (Mon Dec 7), you save a **Launch Archive** on your own computer: the product's own files, the Launch Package, the slides, the final notebook, the data (only if it may be shared), the Sprint Log and your own AI conversations, with a README that explains what it is, how to open it and how to pick it up again. A GitHub repository is optional: private as a backup, or public as a portfolio.
+
+- **Finish by Sat Dec 12, 11:59 PM** and upload your archive's README to Brightspace. It isn't graded and isn't part of the 100 points.
+- Start with what exists only in the AI workspace: your conversations, your product's files, your prompts and your project's instructions.
+- The checklist and the starter kit are in the Brightspace module's Handouts folder.
