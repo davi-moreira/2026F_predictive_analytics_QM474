@@ -4664,3 +4664,15 @@ Davi asked for every ungraded, past-due item to be graded as drafts for his revi
 - **For Davi:** the review guide `GRADING_RUN_2026-11-25.md` in the grading folder lists every judgment call (project not visible in the workspace screenshot, badges without a name, files added after the deadline, the evidence-pack and build-prompt rules for G1), the reflection cross-check, and three small gradebook gaps found along the way.
 - **Open:** Davi reviews and publishes; imports the Peer Review Result file; decides the flagged cases.
 - **Later the same evening, on Davi's decision:** a reflection survey finished inside its window earns the Participation credit even without the uploaded screenshot. The nine entries this affects (Reflections 1–3) went from an automatic 0 to an unpublished draft at full credit; each was read back from Brightspace as a draft, with the 0 out of the gradebook until he publishes.
+
+## 2026-11-25 — Poster-to-Product: no student names in anything outside Purdue's login
+
+- **Rule (Davi):** nothing the industry judges or the public see may name a student. That covers the product, its link, the brief, the video and the judges' copy of the poster: no names, emails, Purdue IDs, photos, faces or team number. The product goes under a neutral account or repository name.
+- **G4 Launch Package:** now takes `poster_judges.pdf` (the final poster with the author block removed) instead of `poster.pdf`, a brief with no names, and a video with no names or faces. A "names check" step comes before submitting, and "no names or faces" is now one of the launch requirements.
+- **I5 Go Live:** students publish under their own account, and showing their name is their choice.
+- **Updated:**
+  - the build rules, the Launch Award rules, the Stage 6–7 pages, and notes under videos 7, 12 and 15;
+  - the G4/I5 PDFs and assignments, the one-pager, the Playbook and the brief template;
+  - the scheduled Nov 29, Dec 4, Dec 7 and Dec 9 announcements.
+- **Privacy check before judging:** course staff check every team's judge materials against the class roster and by hand, and judge folders are shared only after every team passes. Each folder is shared with one judge's email only, view-only, and closed at noon on Dec 11.
+- **Judge Start Form:** built in Qualtrics (a draft for Davi to publish before Dec 1). Judges must accept the confidentiality statement before they get any materials.
