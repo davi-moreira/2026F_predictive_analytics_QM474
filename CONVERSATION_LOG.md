@@ -4610,3 +4610,32 @@ Davi asked for a folder for the Fall Undergraduate Research Conference photos, a
 - **Update, same day: formats.** At Davi's request, the five HEIC photos (Groups 7, 8, 15, 18, 23) and Group 9's 102 MB PNG were converted to full-resolution JPEG (quality 90; Group 9's is now 4.4 MB). Each displays upright, and the HEIC/PNG copies were removed from the share folder. The students' originals are untouched in the Brightspace download folder. The share folder also holds 69 of Davi's own photos from the day (`20261117_*.jpg`), which he added: 102 files, about 311 MB, synced.
 - **Update, same day: announcement.** The Brightspace announcement "Congratulations and Event Photos" (1983059) was Scheduled to post on its own at 5 PM today. Its placeholder now holds the photo-folder link (text "Dropbox Folder"). At Davi's request it was moved off the 5 PM auto-post and parked on Dec 23, 2027, so nothing went to students; he publishes it himself. Verified through the API (link href, `IsPublished:false`, new start date) and on the list page (Scheduled, Dec 23, 2027). The queue file `_announcements/2026F/brightspace_scheduled_queue.md` is updated.
 - Update 2026-11-23: Groups 11 and 16 also accepted, so all four selected teams are confirmed. Their guidance replies are Outlook drafts (not sent), each with team-specific points from the team's M10 feedback.
+
+## 2026-11-25 — Poster-to-Product: Keep Your Work (the Launch Archive)
+
+Davi asked that every student leave Poster-to-Product with a complete, portable copy of what the team built, saved before the course AI workspace closes (the Team plan is cancelled by Sun Dec 13, task #77). He approved the design as recommended: **not graded**; each student uploads the archive's README to an ungraded assignment; due **Sat Dec 12, 11:59 PM**; a last-call announcement on Fri Dec 11, 9:15 AM. Coursework only: students keep their own AI conversations, and nothing is collected beyond the README. Tracked as task #80.
+
+- **Export facts, verified on Anthropic's help center and in the workspace:**
+  - A Team member can export their own chats (Settings › Privacy › Export data). The download link arrives by email, expires after 24 hours and may work only once.
+  - This needs the owner setting "Allow members to export their own data". It was off; Claude turned it on with Davi's OK and confirmed it after a reload.
+  - The export holds chats only. Each artifact exports separately from the menu next to its title (Export › HTML standalone page, Markdown or PDF), and the sidebar's Artifacts page lists them all.
+  - Nothing moves to a personal account. A product hosted only at an AI-workspace link should be assumed dead after the workspace closes; the I5 copy is the link that lasts.
+  - The exact clicks were checked with one throwaway chat and artifact in Davi's own account, both deleted afterwards.
+- **Single source:** a new `ARCHIVE` block in `p2p_launch_data.py`, which holds the checklist, the folder layout, the README, links, prompts and data-source templates, the hand-over prompt and the GitHub steps. New lines were added to Stages 6–8.
+- **Builders:**
+  - `build_launch_materials.py` writes a Keep Your Work section: short on the Stage 6 and 7 pages, the full checklist on Stage 8, and a short one on the overview.
+  - It also writes the handout `P2P_Keep_Your_Work.pdf` (3 pages: the checklist, the folder, GitHub, what never goes public, the hand-over prompt) and the starter kit `P2P_Launch_Archive_Starter.zip`.
+  - `build_announcements.py` adds a paragraph to announcement 09 and two new announcements, 12 and 13; `build_brightspace_spec.py` and `build_site_tab.py` were updated too.
+  - A diff of every output against a pre-change snapshot showed only the intended files changed.
+- **Website:** a "Keep Your Work" section on the Poster-to-Product tab, with no student work (commits `eb797d8`, `0982975`).
+- **Brightspace (all verified):**
+  - The overview and Stage 6/7/8 pages were overwritten after their live body hashes matched the local copies, and they were rechecked after the upload.
+  - The handout and starter kit are in `P2P/handouts/`, with topics in the Handouts folder and in the Stage 6 and Stage 8 modules.
+  - Ungraded assignment "P2P Keep Your Work: your Launch Archive README (not graded)" (folder 1692125): no grade item, hidden until Mon Dec 7, 7:00 AM, due Sat Dec 12, 11:59 PM. Assignment links are in Stage 6 and Stage 8.
+  - The Dec 9 announcement was updated with a Keep-your-work paragraph. New Scheduled announcements: Thu Dec 10, 9:00 AM (2078539) and Fri Dec 11, 9:15 AM (2078540).
+  - IDs are in `brightspace_build_ids_2026F.json` and the announcement queue file.
+- **Video 18, "Keep your work: your Launch Archive":** a draft cut (ElevenLabs narration + slides, 3:58, about 1,500 credits), awaiting Davi's review. HeyGen runs only after his OK and a balance check (task #79). The Brightspace upload follows the production plan.
+- **Open:**
+  - Davi reviews the Video 18 draft.
+  - Sat Dec 12 morning: check README uploads and nudge students who haven't uploaded.
+  - Keep members, Artifacts and External sharing on until Dec 14 (comment on #77).
