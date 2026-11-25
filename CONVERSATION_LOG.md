@@ -4651,3 +4651,15 @@ Davi asked that every student leave Poster-to-Product with a complete, portable 
   - The Stage 6 and Stage 8 pages were overwritten after their live bodies matched the Nov 25 copies.
   - Video 18 plays on both pages with 61 caption cues and a Slides (PDF) link.
 - **Open:** Sat Dec 12, check README uploads (task #80); cancel HeyGen by Dec 13 (#79).
+
+## 2026-11-25 (evening) — Gradebook catch-up: ungraded items saved as unpublished drafts
+
+Davi asked for every ungraded, past-due item to be graded as drafts for his review, with the survey data pulled from Qualtrics, all through Chrome. Nothing was published.
+
+- **Inventory (Brightspace API):** of 83 grade items, the past-due ones without grades were P2P I1, I2 and G1, the Final Project Peer Review (Submission and Result), one Milestone 12 submission, and Project Reflection 3 (already drafted, unpublished). Items not yet due were left alone.
+- **Qualtrics:** the Final Poster Peer Review and Project Reflections 1–3 were exported and filed in the gitignored grading folder. Davi's call: the reflections come down in full for course purposes; the research export stays the separate after-final-grades step. Only login, completion and date columns were read for credit.
+- **Graded and saved as drafts:** P2P I1 (84 students), I2 (87), G1 (24 teams, with written feedback against the five rubric criteria), Peer Review Submission (25 teams), Milestone 12 (one team). Reflection 3's 84 existing drafts were confirmed against the survey's completion list.
+- **Graded, not entered:** the Peer Review Result (99 points) is a gradebook-only item with no draft state, so an import file was prepared instead. Rule taken from 2025F: mean rating ÷ 5 × 99, rounded. Per-poster feedback workbooks were built in the 2025F format.
+- **Method:** bulk downloads from the submissions pages; text recognition through the macOS Vision framework (no new software); a visual pass on every flagged screenshot; drafts saved through the Brightspace feedback API with a read-back check of score, draft state and feedback text for each entry. A final check showed the same number of released grades as before the run.
+- **For Davi:** the review guide `GRADING_RUN_2026-11-25.md` in the grading folder lists every judgment call (project not visible in the workspace screenshot, badges without a name, files added after the deadline, the evidence-pack and build-prompt rules for G1), the reflection cross-check, and three small gradebook gaps found along the way.
+- **Open:** Davi reviews and publishes; imports the Peer Review Result file; decides the flagged cases.
