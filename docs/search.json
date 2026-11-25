@@ -352,5 +352,15 @@
     "title": "Designing a Course with an AI Co-Designer",
     "section": "8.7 Step 7. Share what you build (and what failed)",
     "text": "8.7 Step 7. Share what you build (and what failed)\n\nOpen an issue on the course repository describing what you adapted, what worked, and what failed.\nOr just email me directly. I keep updating this page as I learn, and a sharper version of any of these patterns from a different discipline is genuinely useful to me."
+  },
+  {
+    "objectID": "p2p.html#keep-your-work",
+    "href": "p2p.html#keep-your-work",
+    "title": "Poster-to-Product",
+    "section": "Keep Your Work",
+    "text": "Keep Your Work\nYour product is yours. The AI workspace is not. The course’s AI workspace closes after Sat Dec 12, and the team projects, chats and artifacts inside it close with it. Starting on Launch Day (Mon Dec 7), you save a Launch Archive on your own computer: the product’s own files, the Launch Package, the slides, the final notebook, the data (only if it may be shared), the Sprint Log and your own AI conversations, with a README that explains what it is, how to open it and how to pick it up again. A GitHub repository is optional: private as a backup, or public as a portfolio.\n\nFinish by Sat Dec 12, 11:59 PM and upload your archive’s README to Brightspace. It isn’t graded and isn’t part of the 100 points.\nStart with what exists only in the AI workspace: your conversations, your product’s files, your prompts and your project’s instructions.\nThe checklist and the starter kit are in the Brightspace module’s Handouts folder.",
+    "crumbs": [
+      "Poster-to-Product"
+    ]
   }
 ]
