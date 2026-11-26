@@ -4676,3 +4676,10 @@ Davi asked for every ungraded, past-due item to be graded as drafts for his revi
   - the scheduled Nov 29, Dec 4, Dec 7 and Dec 9 announcements.
 - **Privacy check before judging:** course staff check every team's judge materials against the class roster and by hand, and judge folders are shared only after every team passes. Each folder is shared with one judge's email only, view-only, and closed at noon on Dec 11.
 - **Judge Start Form:** built in Qualtrics (a draft for Davi to publish before Dec 1). Judges must accept the confidentiality statement before they get any materials.
+
+## 2026-11-26 — Poster-to-Product: judge side ready (Start Form live, judge files at v6, PERA comment posted)
+
+- **Judge Start Form published** in Qualtrics after a preview test (required items enforced; a clear judge-code error message added; browser-tab title fixed; anonymized responses on; test response deleted). Its link is in the Dec 1 Start Form email.
+- **Judge-facing files brought to the IRB-approved v6 text** (private research repo): judging rubric (ratings decide the Launch Award, not grades), judge guide, judge forms, Demo Day rubric, and the Dec 1 and Dec 8 judge emails. Course task #70 closed.
+- **Purdue OneDrive sharing tested** with an outside personal address: view-only sharing with specific people works; the expiration date has no time, so judge folders are unshared by hand at noon on Dec 11 (TA runbook updated). Davi still to open the test invitation signed out.
+- **PERA comment posted** (Nov 26, 11:55 AM) describing the four judging privacy safeguards and asking whether any needs a modification; waiting for the IRB coordinator's answer.
